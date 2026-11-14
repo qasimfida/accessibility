@@ -1,7 +1,7 @@
 # Phase 11 — Post-publish verification
 
-Status: BLOCKED (published React entry, live Pages deployment and missing predecessor tag)
-Date: resumed 2026-11-15, Asia/Karachi; initial checks 2026-11-14. Required previous tag `phase-10-complete` remains absent. Attempt baseline: `349134a`; tested patch/documentation source: `698c274`, with evidence and report commits following.
+Status: BLOCKED (published React entry, remaining CI first-frame failure, live Pages deployment and missing predecessor tag)
+Date: resumed 2026-11-15, Asia/Karachi; initial checks 2026-11-14. Required previous tag `phase-10-complete` remains absent. Attempt baseline: `349134a`; latest tested runtime fix: `faa788a`; documentation source `fb1b0c3`; artifact-directory isolation `13fe12a`. Evidence/report commits follow.
 
 ## Summary
 
@@ -58,7 +58,7 @@ There is no `dist.attestations` field in the observed metadata. Registry signatu
 | https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js            | 200  | text/javascript; charset=utf-8        | 57,849 | Matches |
 | https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js | 200  | application/javascript; charset=utf-8 | 57,849 | Matches |
 
-Both match the registry IIFE and `node scripts/sri.mjs`:
+Both match the registry IIFE and `node scripts/sri.mjs` when run against that release artifact (the current patched local build has a different hash):
 
 ```text
 sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M
@@ -83,9 +83,9 @@ The real-unpkg keyboard-only walk passed in Chromium: Alt+A → focused Close �
 
 `npm run test:examples` passed five installed tarball examples (HTML, Node, consumers, React/Vite and Next.js), both type modes, React 17.0.2/18.3.1 compatibility and fifteen browser integrations. React 19.3.1 is used in the main browser consumer. Tree shaking leaves only the consumer constant when unused; combined core/helper output has one core and one React module. React sources stay outside the core bundle.
 
-`npm run test:site-snippets` passed eleven extracted snippets, five shell syntax checks, both type modes and eighteen packed browser integrations. React and Next core effects each create/remove two hosts under development StrictMode. The packed CDN test is explicitly intercepted for reproducibility; the real CDN results above are a separate non-intercepted check.
+`npm run test:site-snippets` passed eleven extracted snippets, five shell syntax checks, both type modes and eighteen packed browser integrations. React and Next core effects each create/remove two hosts under development StrictMode. After R-11 (`ad3c566`), the extracted CDN snippet loads the real version-pinned CDN bytes with SRI, without interception. The other five browser entries use the installed local tarball. All eighteen integrations passed again after the content fix; see the continuation evidence.
 
-`npm run verify` passed: lint, types, **185 unit tests in 58 files**, six benchmark self-tests, build/SSR, size, publint and attw. Core lines/branches: **98.63%/97.96%**; overall lines/branches **96.12%/90.71%**. The new singleton regression raises the unit count by one. Fast checks ran before each commit; no quality threshold was weakened.
+`npm run verify` passed: lint, types, **186 unit tests in 58 files**, six benchmark self-tests, build/SSR, size, publint and attw. Core lines/branches: **98.63%/97.96%**; overall lines/branches **96.12%/90.84%**. The singleton and character-data regressions are included in that count. Fast checks ran before each commit; no quality threshold was weakened.
 
 `npm run test:site` passed **220 tests (5.1 minutes)** across Chromium, Firefox, WebKit, emulated iPhone and Pixel, with zero retries/skips. All 175 page/media cases passed both closed/open axe scans (350 scans); keyboard, routes, internal links, first-party requests, persisted frames and streamed-parser checks also passed. [Raw updated local-site evidence](assets/phase-11/updated-local-site.json) retains all emitted results. This does not change the live deployment verdict.
 
@@ -129,7 +129,7 @@ No publish/login/token/deprecate/unpublish or credential-read operation. Registr
 
 ### Performance and size
 
-IIFE remains **57,849 bytes raw / 19,603 bytes gzip**, unchanged, under the 35KB limit and identical to published CDN bytes. Fixed React entries are **393 bytes ESM / 847 bytes CJS**. Source maps and the combined-consumer module audit prove no core duplication or React code in core. No fresh absolute init benchmark or physical-device performance claim is made; core runtime bytes are unchanged.
+Published 0.1.0 is **57,849 bytes raw / 19,603 bytes gzip**. The patched local build is **57,894 bytes raw / 19,625 bytes gzip** (+45 raw/+22 gzip), below the unchanged 35KB limit. It differs from the immutable published artifact; never pair its SRI with a 0.1.0 CDN URL. Fixed React entries are **393 bytes ESM / 847 bytes CJS**. Source maps and the combined-consumer module audit prove no core duplication or React code in core. No fresh absolute init benchmark or physical-device performance claim is made; the content observer changed, so historical reference timings are not claimed as a fresh measurement. Both Node 20/22 CI trend guards passed on source fb1b0c3.
 
 ## Known limitations (honest)
 
@@ -144,9 +144,9 @@ The original name checks were superseded by the maintainer's explicit new packag
 
 ## Handoff notes for the next phase
 
-1. Maintainer: review the local React/self-import fix, bump to a new compatible patch (for example 0.1.1) and publish through your own release process. The agent has not published or touched tokens. Verify its React ESM/CJS imports and declaration consumers from a fresh registry installation before announcing the helper as fixed.
+1. Maintainer: review the React/self-import and character-data fixes, resolve the remaining CI first-frame failure, then bump to a new compatible patch (for example 0.1.1) and publish through your own release process. The agent has not published or touched tokens. Verify its React ESM/CJS imports and declaration consumers from a fresh registry installation before announcing the helper as fixed.
 2. Select GitHub Pages Source **GitHub Actions**, resolve mandatory deployment CI failures and deploy the audited site build. Repeat live axe, link, request and keyboard checks against the actual deployed URLs.
-3. Resolve the missing phase-10-complete predecessor; do not create false historical completion tags. Only create phase-11-complete after the published-helper and live-site checks actually pass.
+3. Resolve the remaining first-frame CI blocker and the missing phase-10-complete predecessor; do not create false historical completion tags. Only create phase-11-complete after the published-helper and live-site checks actually pass.
 
 ### First 30 days maintenance plan
 
@@ -170,3 +170,41 @@ ce18dc2 fix(react-tests): resolve renamed self-imports to the source core
 9486736 docs(audit): preserve published and patched package verification
 bae7abf docs(audit): preserve the updated site browser matrix
 ```
+
+## Continuation — 2026-11-15
+
+Read AGENTS.md completely again. Main was clean before this continuation's edits, and `git pull --ff-only` reported already up to date. The registry still reports latest 0.1.0; phase-10-complete remains absent. No new publication or Pages setting confirmation was received.
+
+### Remaining CI blocker and bounded fixes
+
+- **R-9 (High):** text added to an existing empty Text node was not observed. `faa788a` adds characterData observation while retaining private-node filtering and disconnect cleanup. The new unit failed before the fix; the native WebKit five-frame regression read 16px in every frame before the fix. Afterward, eight focused units, fifteen first-frame browser cases and thirty-three content browser cases passed. A real streamed-parser comparison across Chromium, Firefox and WebKit recorded published 0.1.0 at 16px and the patched build at 19.2px in all five frames. [Raw evidence](assets/phase-11/character-data-fix.json).
+- This is a proven separate defect, **not a complete explanation of the original CI failure**. On unchanged Linux CI run [43633496975](https://github.com/qasimfida/accessiblit/actions/runs/43633496975), the iPhone site's first sample is still **16px**, followed by four 19.200001px samples. The feature class and scale are active, but the first sample lacks the font marker. Other projects' first frames pass. The site job reports **224 passed, one failed**; snippets are skipped there because the mandatory site gate failed. [Actual CI samples](assets/phase-11/remaining-ci-failure.json). No assertion, retry, project, runner or timing threshold was relaxed. Section 11's unsuccessful-attempt stop rule applies: the remaining first-frame acceptance failure is reported as a blocker rather than continuing speculative patches.
+- **R-10 (Medium):** `d9c38bb` moves the existing Pages-source check ahead of expensive builds. Run 43632185273 confirms the public repository is not configured for workflow deployment. All build, accessibility, snippet and deployment gates remain in place. The current workflow token has no Administration permission. GitHub's [official update endpoint](https://docs.github.com/en/rest/pages/pages#update-information-about-a-github-pages-site) requires Pages write **and Administration write**, so changing this setting requires the maintainer; no personal token or broader workflow permission was introduced.
+- **R-11 (Medium):** `ad3c566` removes substitution of local bytes for a real pinned CDN snippet. That substitution would make the old release SRI fail after a local code change. Eighteen snippet browser integrations now pass with actual CDN bytes for the pinned snippet and local packed bytes for the five other entries. The published SRI above remains correct. Patched local SRI is `sha384-kVUM8aT3W8Z7jzyUUTm04J0wcl6IKGycMASG7s+VuYwwC0xmsil4c85gxssHCaOk` and is **not** a published-version snippet.
+- **R-12 (Medium, test tooling):** concurrent local runtime/site suites shared Playwright's output directory. One run finished with 224 passing cases and one trace-file ENOENT, rather than a product assertion failure. `13fe12a` separates runtime and site artifact directories under ignored test-results. The failed receipt is retained in this report; the isolated rerun is recorded below. Tests and retries are unchanged.
+
+### Updated live-site observation
+
+The latest real Chromium check still sees Jekyll, no widget hosts and the cdnjs anchor script. Home returns 200 with **four axe rule violations**; install and options return 404 with six each; FAQ returned a **503** with seven on this observation; 404.html returns 404 with six. Eleven discovered same-origin destinations were checked. Earlier observations above remain historical; the 503 is reported as observed, not assigned to the local Vite implementation. [Continued live/CI diagnostics](assets/phase-11/continued-diagnostics.json).
+
+The README and install page now disclose both the published React helper problem and the empty-text scaling issue (`fb1b0c3`). The new patch must include both fixes, and the remaining CI failure must still be resolved. Screen readers and physical devices remain unverified. No new runtime storage, network API or dependency was added.
+
+### Continuation commit list
+
+```text
+6c0800d docs(report): record the verified release and required patch
+a552c76 test(site): retain first-frame diagnostics before assertions
+04ab91f docs(audit): retain remaining CI and live-site failures
+d9c38bb ci(pages): check publishing configuration before build
+faa788a fix(content): scale text filled into existing text nodes
+ad3c566 test(site): preserve release SRI against actual CDN bytes
+fb1b0c3 docs(release): disclose the published empty-text scaling issue
+04a942e docs(audit): preserve the character-data failure and fix evidence
+13fe12a test(browser): isolate runtime and site artifacts
+```
+
+### Final local closing checks
+
+The isolated full site rerun passed **225 tests in 5.0 minutes**, zero retries/skips. This supersedes the local trace-file collision only; it does not supersede the failing Linux iPhone CI evidence. Full `npm run verify` passed again (186 unit tests, six benchmark self-tests, lint, types, build/SSR, size, publint, attw). `actionlint` passed. Both `npm audit` and `npm audit --omit=dev` report **zero vulnerabilities**. Fast lint/type/unit-tooling checks ran before the report commit.
+
+Self-review finds no remaining unsafe API, new storage/network behavior or widened permissions in this continuation. The unresolved High first-frame defect and published-helper/deployment blockers remain explicitly open. No completion tag is created.

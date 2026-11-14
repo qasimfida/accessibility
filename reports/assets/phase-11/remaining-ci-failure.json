@@ -1,0 +1,286 @@
+{
+  "date": "2026-11-14T19:50:04.644Z",
+  "runId": 43633496975,
+  "jobId": 132565136340,
+  "sourceCommit": "fb1b0c3",
+  "status": "FAIL",
+  "frames": [
+    {
+      "project": "chromium",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [19.2, 19.2, 19.2, 19.2, 19.2],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "loading",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    },
+    {
+      "project": "firefox",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [19.2, 19.2, 19.2, 19.2, 19.2],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "interactive",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    },
+    {
+      "project": "webkit",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [19.200001, 19.200001, 19.200001, 19.200001, 19.200001],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    },
+    {
+      "project": "iphone",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [16, 19.200001, 19.200001, 19.200001, 19.200001],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 16,
+          "persistedFontSize": 120,
+          "readyState": "interactive",
+          "marker": null,
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    },
+    {
+      "project": "pixel",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [19.2, 19.2, 19.2, 19.2, 19.2],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "loading",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    }
+  ],
+  "summary": [
+    "2026-11-14T19:49:39.9120776Z     Expected: 19.2",
+    "2026-11-14T19:49:39.9121233Z     Received: 16",
+    "2026-11-14T19:49:39.9130004Z   1 failed",
+    "2026-11-14T19:49:39.9131208Z   224 passed (6.5m)"
+  ],
+  "conclusion": "Character-data observation fixes a separately reproduced defect, but does not resolve the original Linux iPhone first-frame failure. No retries, thresholds or projects changed."
+}
