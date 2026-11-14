@@ -1,0 +1,475 @@
+{
+  "date": "2026-11-14T19:23:09.379Z",
+  "source": "6c0800d334a607c89a837fd6d36d029e078700b9",
+  "latestPublishedVersion": "0.1.0",
+  "predecessorTag": "phase-10-complete absent",
+  "ci": {
+    "run": 43630529054,
+    "siteJob": 132555898855,
+    "result": {
+      "passed": 219,
+      "failed": 1,
+      "test": "iphone head bootstrap restores preferences before the first sampled content frame",
+      "expectedPx": 19.2,
+      "receivedPx": 16
+    },
+    "timingGuards": "both successful"
+  },
+  "pages": {
+    "run": 43630529074,
+    "buildJob": 132555899107,
+    "result": { "passed": 219, "failed": 1, "samePersistenceFailure": true },
+    "deploy": "skipped"
+  },
+  "livePages": {
+    "date": "2026-11-14T19:19:50.309Z",
+    "base": "https://qasimfida.github.io/accessiblit/",
+    "pages": [
+      {
+        "path": "",
+        "status": 200,
+        "title": "Accessiblit | accessiblit",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              [".na:nth-child(2)"],
+              [".na:nth-child(4)"],
+              [".na:nth-child(6)"],
+              [".nb"],
+              [".language-ts > .highlight > pre > code > .na"],
+              [".c1"],
+              [".language-tsx > .highlight > pre > code > .na"]
+            ]
+          },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(3) > a"],
+              ["p:nth-child(5) > a"],
+              ["p:nth-child(16) > a:nth-child(1)"],
+              ["a:nth-child(2)"],
+              ["a:nth-child(3)"],
+              ["p:nth-child(16) > a:nth-child(4)"],
+              ["a[href$=\"LICENSE\"]"],
+              [".footer > a"]
+            ]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [[".container-lg"]]
+          }
+        ],
+        "incomplete": []
+      },
+      {
+        "path": "install/",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "path": "options/",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "path": "faq/",
+        "status": 503,
+        "title": "Unicorn! · GitHub",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [["strong"], ["p:nth-child(3)"], ["#suggestions"]]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "image-alt",
+            "impact": "critical",
+            "targets": [["img[width=\"200\"]"]]
+          },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["p:nth-child(1)"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["bypass"]
+      },
+      {
+        "path": "404.html",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      }
+    ],
+    "requests": [
+      "https://qasimfida.github.io/accessiblit/",
+      "https://qasimfida.github.io/accessiblit/assets/css/style.css?v=6c0800d334a607c89a837fd6d36d029e078700b9",
+      "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js",
+      "https://qasimfida.github.io/accessiblit/install/",
+      "https://qasimfida.github.io/accessiblit/options/",
+      "https://qasimfida.github.io/accessiblit/faq/",
+      "https://qasimfida.github.io/accessiblit/404.html"
+    ],
+    "thirdParty": [
+      "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+    ],
+    "links": {
+      "https://qasimfida.github.io/accessiblit/": { "status": 200 },
+      "https://qasimfida.github.io/accessiblit/docs/ACCESSIBILITY.html": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/#cdn": { "status": 200 },
+      "https://qasimfida.github.io/accessiblit/#npm": { "status": 200 },
+      "https://qasimfida.github.io/accessiblit/#react-and-nextjs": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/site/install/index.html": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/site/options/index.html": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/docs/guides/integrations.html": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/reports/phase-11-post-publish.html": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/LICENSE": { "status": 200 },
+      "https://qasimfida.github.io/": { "status": 404 }
+    }
+  },
+  "nativeMacStylesheetProbe": [
+    {
+      "delay": 0,
+      "samples": [
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        }
+      ]
+    },
+    {
+      "delay": 100,
+      "samples": [
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        }
+      ]
+    },
+    {
+      "delay": 1000,
+      "samples": [
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        },
+        {
+          "font": "19.200001px",
+          "marker": "accessiblit-1-16",
+          "ready": "complete",
+          "rect": { "w": 306, "h": 189.9375 },
+          "rootClass": "accessiblit-font-size",
+          "scale": "1.2",
+          "sheets": [true]
+        }
+      ]
+    }
+  ],
+  "diagnosticPatch": {
+    "commit": "a552c76",
+    "focusedTests": "10 passed (12.2s)",
+    "verify": "PASS: 185 unit tests plus six benchmark self-tests and existing full verification",
+    "changes": "Log preference, marker, class, scale and sheet state before the unchanged first-frame assertion; no runtime change"
+  },
+  "notes": [
+    "The delayed CSS experiment did not reproduce the Linux iPhone failure on native macOS; it does not establish a cause.",
+    "The live page merely contains CDN URLs as README code. It has zero mounted widget hosts; a string match is not deployment proof.",
+    "Docker client exists but no local daemon is running; no daemon or unrelated service was started.",
+    "The maintainer has been asked to publish a fixed patch and configure Pages source."
+  ]
+}
