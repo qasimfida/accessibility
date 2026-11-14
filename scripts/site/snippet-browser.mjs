@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import { chromium, firefox, webkit } from '@playwright/test';
 
-/** Mount the extracted examples in isolated documents and prove their advertised cleanup. */
-export async function checkSnippetBrowsers(url, iife) {
+/** Keep the pinned CDN/SRI real while the other examples exercise the installed local tarball. */
+export async function checkSnippetBrowsers(url) {
   const rows = [];
   for (const [name, engine] of Object.entries({ chromium, firefox, webkit })) {
     const browser = await engine.launch();
@@ -47,12 +47,6 @@ export async function checkSnippetBrowsers(url, iife) {
                 subtree: true,
               });
             });
-          // Keep packed-consumer checks reproducible; live CDN evidence is separate.
-          await context.route(
-            'https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js',
-            (route) =>
-              route.fulfill({ contentType: 'text/javascript', body: iife }),
-          );
           await page.goto(`${url}/${id}.html`);
           if (id === 'lifecycle') {
             assert.equal(

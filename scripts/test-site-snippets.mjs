@@ -170,13 +170,6 @@ try {
     !inputs.some((path) => path.startsWith('src/')),
     'consumer must not use the repository TypeScript alias',
   );
-  const iife = readFileSync(
-    join(
-      folder,
-      'node_modules/@qasimfida/accessibility-widget/dist/accessiblit.min.js',
-    ),
-    'utf8',
-  );
   mkdirSync(join(output, 'vendor'));
   copyFileSync(
     join(
@@ -202,7 +195,7 @@ try {
     );
   }
   server = await serve(output);
-  const rows = await checkSnippetBrowsers(server.url, iife);
+  const rows = await checkSnippetBrowsers(server.url);
   console.log(
     'SITE_SNIPPETS',
     JSON.stringify({
@@ -210,11 +203,13 @@ try {
       types: ['Node16', 'Bundler'],
       shellSyntax: shell,
       installedTarball: packed.filename,
-      packedSource: true,
+      packedEntries: ['self-hosted', 'esm', 'lifecycle', 'react', 'next'],
+      cdnSource:
+        'Real version-pinned CDN URL with release SRI; no interception.',
       strictModeDevelopment: true,
       rows,
       notes: [
-        'CDN bytes intercepted only in packed-consumer checks; Phase 11 records separate real CDN requests.',
+        'The CDN snippet validates published release bytes; other browser snippets use the installed local tarball.',
         'Private registry and Git shell examples are syntax checked; no private credentials or registry is used.',
       ],
     }),
