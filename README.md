@@ -35,6 +35,8 @@ widget.destroy();
 
 Imports are SSR-safe; `init()` is inert without a DOM. Use one owner per document: calling `init()` again destroys the previous instance. Cleanup removes owned DOM, styles and listeners; saved preferences remain under the configured localStorage key.
 
+**Known 0.1.0 content issue:** filling a previously empty Text node can leave that text unscaled until another refresh. The source fixes this for the next maintainer patch; published 0.1.0 is unchanged.
+
 ## React and Next.js
 
 **Known 0.1.0 issue:** the published `/react` helper and declarations still reference the old package name. They require a new maintainer patch release. The repository contains the fix; it does not change the published 0.1.0 artifact. Use the tested core effect below with 0.1.0 instead.
