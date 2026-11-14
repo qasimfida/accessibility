@@ -6,6 +6,6 @@
     "test": "node index.mjs && node require.cjs"
   },
   "dependencies": {
-    "@qasimfida/accessiblit": "file:../accessiblit.tgz"
+    "@qasimfida/accessibility-widget": "file:../accessiblit.tgz"
   }
 }

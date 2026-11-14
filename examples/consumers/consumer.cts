@@ -1,5 +1,5 @@
-import * as core from '@qasimfida/accessiblit';
-import * as adapter from '@qasimfida/accessiblit/react';
+import * as core from '@qasimfida/accessibility-widget';
+import * as adapter from '@qasimfida/accessibility-widget/react';
 const options: Parameters<typeof core.init>[0] = {
   position: 'top-left',
   features: ['readingGuide'],

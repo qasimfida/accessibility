@@ -6,7 +6,7 @@
     "test": "tsc -p tsconfig.node16.json && tsc -p tsconfig.bundler.json"
   },
   "dependencies": {
-    "@qasimfida/accessiblit": "file:../accessiblit.tgz",
+    "@qasimfida/accessibility-widget": "file:../accessiblit.tgz",
     "react": "19.3.1"
   },
   "devDependencies": {

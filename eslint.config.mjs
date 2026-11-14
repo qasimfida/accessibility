@@ -32,7 +32,10 @@ export default tseslint.config(
       '@typescript-eslint/no-require-imports': [
         'error',
         {
-          allow: ['^node:', '^@qasimfida/accessiblit(?:/package\\.json)?$'],
+          allow: [
+            '^node:',
+            '^@qasimfida/accessibility-widget(?:/package\\.json)?$',
+          ],
         },
       ],
     },

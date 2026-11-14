@@ -1,4 +1,4 @@
-import type { init } from '@qasimfida/accessiblit';
+import type { init } from '@qasimfida/accessibility-widget';
 
 declare const Accessiblit: { init: typeof init };
 

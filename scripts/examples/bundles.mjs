@@ -8,7 +8,10 @@ import { build } from 'vite';
 
 /** Source-map ranges attribute raw bytes; gzip belongs to the whole bundle, not additive parts. */
 export async function auditBundles(directory) {
-  const dist = join(directory, 'node_modules/@qasimfida/accessiblit/dist');
+  const dist = join(
+    directory,
+    'node_modules/@qasimfida/accessibility-widget/dist',
+  );
   const read = (name) => readFileSync(join(dist, name), 'utf8');
   const code = read('accessiblit.min.js');
   const payload = JSON.parse(read('accessiblit.min.js.map'));
@@ -50,8 +53,14 @@ export async function auditBundles(directory) {
     ),
     false,
   );
-  assert.match(read('react.mjs'), /from["']@qasimfida\/accessiblit["']/);
-  assert.match(read('react.cjs'), /require\(["']@qasimfida\/accessiblit["']\)/);
+  assert.match(
+    read('react.mjs'),
+    /from["']@qasimfida\/accessibility-widget["']/,
+  );
+  assert.match(
+    read('react.cjs'),
+    /require\(["']@qasimfida\/accessibility-widget["']\)/,
+  );
   for (const name of ['react.mjs', 'react.cjs'])
     assert.ok(read(name).startsWith('"use client";'));
   const compile = async (name, content) => {
@@ -79,7 +88,7 @@ export async function auditBundles(directory) {
   };
   const unused = await compile(
     'tree-unused',
-    'import { init } from "@qasimfida/accessiblit"; import { AccessiblitWidget } from "@qasimfida/accessiblit/react"; export const retained = 1;',
+    'import { init } from "@qasimfida/accessibility-widget"; import { AccessiblitWidget } from "@qasimfida/accessibility-widget/react"; export const retained = 1;',
   );
   assert.deepEqual(unused.exports, ['retained']);
   // Vite's ES library output preserves source-path and sourceMappingURL comments.
@@ -95,13 +104,13 @@ export async function auditBundles(directory) {
   assert.equal(unusedExecutable.includes('accessiblit'), false);
   const used = await compile(
     'tree-used',
-    'export { init, destroy } from "@qasimfida/accessiblit"; export { AccessiblitWidget, useAccessiblit } from "@qasimfida/accessiblit/react";',
+    'export { init, destroy } from "@qasimfida/accessibility-widget"; export { AccessiblitWidget, useAccessiblit } from "@qasimfida/accessibility-widget/react";',
   );
   const coreModules = used.moduleIds.filter((id) =>
-    id.endsWith('/@qasimfida/accessiblit/dist/index.mjs'),
+    id.endsWith('/@qasimfida/accessibility-widget/dist/index.mjs'),
   );
   const reactModules = used.moduleIds.filter((id) =>
-    id.endsWith('/@qasimfida/accessiblit/dist/react.mjs'),
+    id.endsWith('/@qasimfida/accessibility-widget/dist/react.mjs'),
   );
   assert.equal(coreModules.length, 1);
   assert.equal(reactModules.length, 1);

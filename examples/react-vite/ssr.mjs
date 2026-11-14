@@ -8,7 +8,7 @@ Object.defineProperty(globalThis, 'window', {
 const React = await import('react');
 const { renderToString } = await import('react-dom/server');
 const { AccessiblitWidget, useAccessiblit } =
-  await import('@qasimfida/accessiblit/react');
+  await import('@qasimfida/accessibility-widget/react');
 assert.equal(renderToString(React.createElement(AccessiblitWidget, {})), '');
 function HookConsumer() {
   assert.equal(useAccessiblit().current, null);

@@ -18,7 +18,7 @@ export default defineConfig([
     ...shared,
     entry: { react: 'src/react/index.ts' },
     format: ['esm', 'cjs'],
-    external: ['react', '@qasimfida/accessiblit'],
+    external: ['react', '@qasimfida/accessibility-widget'],
     banner: { js: '"use client";' },
     dts: true,
     outExtension: ({ format }) => ({ js: format === 'cjs' ? '.cjs' : '.mjs' }),
