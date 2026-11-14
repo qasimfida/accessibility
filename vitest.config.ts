@@ -5,7 +5,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: /^@qasimfida\/accessiblit$/,
+        find: /^@qasimfida\/accessibility-widget$/,
         replacement: fileURLToPath(new URL('./src/index.ts', import.meta.url)),
       },
     ],

@@ -5,6 +5,7 @@ import { afterEach, expect, it } from 'vitest';
 import type { RefObject } from 'react';
 import type { AccessiblitInstance, AccessiblitOptions } from '../../src/index';
 import { AccessiblitWidget, useAccessiblit } from '../../src/react';
+import { destroy } from '../../src/index';
 const environment = globalThis as typeof globalThis & {
   IS_REACT_ACT_ENVIRONMENT: boolean;
 };
@@ -14,6 +15,17 @@ const roots: ReturnType<typeof createRoot>[] = [];
 afterEach(async () => {
   for (const root of roots.splice(0)) await act(() => root.unmount());
   container.remove();
+});
+it('shares the singleton with the direct core entry', async () => {
+  document.body.append(container);
+  const root = createRoot(container);
+  roots.push(root);
+  await act(() =>
+    root.render(createElement(AccessiblitWidget, { persist: false })),
+  );
+  expect(document.querySelectorAll('[data-accessiblit-host]')).toHaveLength(1);
+  destroy();
+  expect(document.querySelector('[data-accessiblit-host]')).toBeNull();
 });
 it('survives a real StrictMode effect replay and fully unmounts', async () => {
   document.body.append(container);
