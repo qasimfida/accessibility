@@ -1,0 +1,1141 @@
+{
+  "date": "2026-11-14T19:05:18.325Z",
+  "source": "698c274ec172d1382e3ddb87f6c4efa8573c9e3c",
+  "package": "@qasimfida/accessibility-widget",
+  "version": "0.1.0",
+  "registryView": {
+    "version": "0.1.0",
+    "dist-tags": { "latest": "0.1.0" },
+    "license": "MIT",
+    "dist": {
+      "shasum": "ecb532d01584d8f529c3c622260605fbf1941a59",
+      "tarball": "https://registry.npmjs.org/@qasimfida/accessibility-widget/-/accessibility-widget-0.1.0.tgz",
+      "fileCount": 17,
+      "integrity": "sha512-3cDoYKGQw4u4mAgUg8voz/UCzH3FGSlTIgxSJyezuW3IGsHh4kuvpOemvsok0fQrma48Zr0tq9FcAIQdlAaoTQ==",
+      "signatures": [
+        {
+          "sig": "MEUCIGl+sUjbPCCqj+4X/QkLjDGrWARLLaaoFE71xl47oU0ZAiEAqhth6c3r1JIumxv4eo63w57DDm9/RTXbKhfW2VRFWqA=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+          "sig": "MEQCIH6No37wkbZsWdVtk9X2sR+s6N3BDjNEpatRS2QNEi7fAiBt31pBKzylNYGcxWSe5wPGSP6TqSSVc5PYWExGh8Wfvw=="
+        }
+      ],
+      "unpackedSize": 792116
+    }
+  },
+  "versionMetadata": {
+    "name": "@qasimfida/accessibility-widget",
+    "version": "0.1.0",
+    "license": "MIT",
+    "files": null,
+    "repository": {
+      "url": "git+https://github.com/qasimfida/accessiblit.git",
+      "type": "git"
+    },
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "import": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.mjs"
+        },
+        "require": {
+          "types": "./dist/index.d.cts",
+          "default": "./dist/index.cjs"
+        }
+      },
+      "./react": {
+        "import": {
+          "types": "./dist/react.d.ts",
+          "default": "./dist/react.mjs"
+        },
+        "require": {
+          "types": "./dist/react.d.cts",
+          "default": "./dist/react.cjs"
+        }
+      },
+      "./package.json": "./package.json"
+    },
+    "unpkg": "./dist/accessiblit.min.js",
+    "jsdelivr": "./dist/accessiblit.min.js",
+    "dist": {
+      "shasum": "ecb532d01584d8f529c3c622260605fbf1941a59",
+      "tarball": "https://registry.npmjs.org/@qasimfida/accessibility-widget/-/accessibility-widget-0.1.0.tgz",
+      "fileCount": 17,
+      "integrity": "sha512-3cDoYKGQw4u4mAgUg8voz/UCzH3FGSlTIgxSJyezuW3IGsHh4kuvpOemvsok0fQrma48Zr0tq9FcAIQdlAaoTQ==",
+      "signatures": [
+        {
+          "sig": "MEUCIGl+sUjbPCCqj+4X/QkLjDGrWARLLaaoFE71xl47oU0ZAiEAqhth6c3r1JIumxv4eo63w57DDm9/RTXbKhfW2VRFWqA=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEQCIH6No37wkbZsWdVtk9X2sR+s6N3BDjNEpatRS2QNEi7fAiBt31pBKzylNYGcxWSe5wPGSP6TqSSVc5PYWExGh8Wfvw==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 792116
+    },
+    "dependencies": null,
+    "peerDependencies": { "react": ">=17" }
+  },
+  "tarball": {
+    "integrityMatches": true,
+    "files": [
+      "package/LICENSE",
+      "package/dist/index.cjs",
+      "package/dist/react.cjs",
+      "package/dist/index.d.cts",
+      "package/dist/react.d.cts",
+      "package/dist/accessiblit.min.js",
+      "package/package.json",
+      "package/dist/accessiblit.min.js.map",
+      "package/dist/index.cjs.map",
+      "package/dist/index.mjs.map",
+      "package/dist/react.cjs.map",
+      "package/dist/react.mjs.map",
+      "package/README.md",
+      "package/dist/index.mjs",
+      "package/dist/react.mjs",
+      "package/dist/index.d.ts",
+      "package/dist/react.d.ts"
+    ],
+    "publishedFileAllowlist": ["dist", "LICENSE", "README.md"]
+  },
+  "installation": {
+    "command": "npm install --ignore-scripts --no-audit --no-fund @qasimfida/accessibility-widget@0.1.0 react@19.3.1 react-dom@19.3.1 @types/react@19.3.0 @types/react-dom@19.3.0",
+    "folder": "/var/folders/rx/jvtfrpx10ggdvs1c9mwzstzr0000gn/T/accessibility-widget-npm-spec-jLuKUU",
+    "success": true
+  },
+  "publishedConsumers": {
+    "package": "@qasimfida/accessibility-widget",
+    "version": "0.1.0",
+    "installedFrom": "https://registry.npmjs.org/@qasimfida/accessibility-widget/-/accessibility-widget-0.1.0.tgz",
+    "rows": [
+      {
+        "consumer": "esm.mjs",
+        "pass": true,
+        "source": "installed registry tarball"
+      },
+      {
+        "consumer": "cjs.cjs",
+        "pass": true,
+        "source": "installed registry tarball"
+      },
+      {
+        "consumer": "Published React declarations Node16",
+        "pass": false,
+        "error": "node_modules/@qasimfida/accessibility-widget/dist/react.d.ts(3,57): error TS2307: Cannot find module '@qasimfida/accessiblit' or its corresponding type declarations."
+      },
+      { "consumer": "Core and React-effect TypeScript Node16", "pass": true },
+      {
+        "consumer": "Published React declarations Bundler",
+        "pass": false,
+        "error": "node_modules/@qasimfida/accessibility-widget/dist/react.d.ts(3,57): error TS2307: Cannot find module '@qasimfida/accessiblit' or its corresponding type declarations."
+      },
+      { "consumer": "Core and React-effect TypeScript Bundler", "pass": true },
+      {
+        "consumer": "React effect",
+        "browser": "chromium",
+        "pass": true,
+        "cleanup": true,
+        "errors": []
+      },
+      {
+        "consumer": "React effect",
+        "browser": "firefox",
+        "pass": true,
+        "cleanup": true,
+        "errors": []
+      },
+      {
+        "consumer": "React effect",
+        "browser": "webkit",
+        "pass": true,
+        "cleanup": true,
+        "errors": []
+      }
+    ]
+  },
+  "publishedReactRuntime": [
+    {
+      "mode": "esm",
+      "pass": false,
+      "error": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@qasimfida/accessiblit' imported from /private/var/folders/rx/jvtfrpx10ggdvs1c9mwzstzr0000gn/T/accessibility-widget-npm-spec-jLuKUU/node_modules/@qasimfida/accessibility-widget/dist/react.mjs\n  code: 'ERR_MODULE_NOT_FOUND'"
+    },
+    {
+      "mode": "cjs",
+      "pass": false,
+      "error": "Error: Cannot find module '@qasimfida/accessiblit'\nRequire stack:\n- /private/var/folders/rx/jvtfrpx10ggdvs1c9mwzstzr0000gn/T/accessibility-widget-npm-spec-jLuKUU/node_modules/@qasimfida/accessibility-widget/dist/react.cjs\n    at Object.<anonymous> (/private/var/folders/rx/jvtfrpx10ggdvs1c9mwzstzr0000gn/T/accessibility-widget-npm-spec-jLuKUU/node_modules/@qasimfida/accessibility-widget/dist/react.cjs:2:545)\n  code: 'MODULE_NOT_FOUND',\n    '/private/var/folders/rx/jvtfrpx10ggdvs1c9mwzstzr0000gn/T/accessibility-widget-npm-spec-jLuKUU/node_modules/@qasimfida/accessibility-widget/dist/react.cjs',"
+    }
+  ],
+  "realCdn": {
+    "date": "2026-11-14T18:59:20.387Z",
+    "package": "@qasimfida/accessibility-widget",
+    "version": "0.1.0",
+    "publishedSri": "sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M",
+    "providers": [
+      {
+        "provider": "unpkg",
+        "url": "https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 57849,
+        "sri": "sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M",
+        "matchesPublished": true
+      },
+      {
+        "provider": "jsdelivr",
+        "url": "https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 57849,
+        "sri": "sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M",
+        "matchesPublished": true
+      }
+    ],
+    "rows": [
+      {
+        "browser": "chromium",
+        "provider": "unpkg",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64412/unpkg.html",
+          "https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      },
+      {
+        "browser": "chromium",
+        "provider": "jsdelivr",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64412/jsdelivr.html",
+          "https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      },
+      {
+        "browser": "firefox",
+        "provider": "unpkg",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64412/unpkg.html",
+          "https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      },
+      {
+        "browser": "firefox",
+        "provider": "jsdelivr",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64412/jsdelivr.html",
+          "https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      },
+      {
+        "browser": "webkit",
+        "provider": "unpkg",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64412/unpkg.html",
+          "https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      },
+      {
+        "browser": "webkit",
+        "provider": "jsdelivr",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64412/jsdelivr.html",
+          "https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      }
+    ],
+    "intercepted": false,
+    "independentInteractionAndAuditContexts": true
+  },
+  "firstCdnAttempt": {
+    "date": "2026-11-14T18:58:15.169Z",
+    "package": "@qasimfida/accessibility-widget",
+    "version": "0.1.0",
+    "publishedSri": "sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M",
+    "providers": [
+      {
+        "provider": "unpkg",
+        "url": "https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 57849,
+        "sri": "sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M",
+        "matchesPublished": true
+      },
+      {
+        "provider": "jsdelivr",
+        "url": "https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 57849,
+        "sri": "sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M",
+        "matchesPublished": true
+      }
+    ],
+    "rows": [
+      {
+        "browser": "chromium",
+        "provider": "unpkg",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64260/unpkg.html",
+          "https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      },
+      {
+        "browser": "chromium",
+        "provider": "jsdelivr",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64260/jsdelivr.html",
+          "https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      },
+      {
+        "browser": "firefox",
+        "provider": "unpkg",
+        "pass": false,
+        "error": "Error: locator.click: Page crashed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Dark mode', exact: true })\u001b[22m\n"
+      },
+      {
+        "browser": "firefox",
+        "provider": "jsdelivr",
+        "pass": false,
+        "error": "Error: locator.click: Page crashed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Dark mode', exact: true })\u001b[22m\n"
+      },
+      {
+        "browser": "webkit",
+        "provider": "unpkg",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64260/unpkg.html",
+          "https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      },
+      {
+        "browser": "webkit",
+        "provider": "jsdelivr",
+        "pass": true,
+        "closedAxe": 0,
+        "openAxe": 0,
+        "requests": [
+          "http://127.0.0.1:64260/jsdelivr.html",
+          "https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
+        ],
+        "extraFeatureRequests": 0,
+        "errors": [],
+        "cleanup": true
+      }
+    ],
+    "intercepted": false
+  },
+  "realCdnKeyboard": {
+    "date": "2026-11-14T19:04:35.176Z",
+    "source": "real unpkg 0.1.0 with SRI; no interception",
+    "browser": "158.0.8127.18",
+    "keyboardOnly": true,
+    "path": [
+      "Alt+A",
+      "Close focused",
+      "Tab",
+      "Tab",
+      "Increase Font size",
+      "Enter",
+      "Tab to Reset all",
+      "Space",
+      "Escape",
+      "Launcher focused"
+    ],
+    "tabsToReset": 19,
+    "announcement": "Font size 110 percent",
+    "resetAnnouncement": "All options reset.",
+    "focusReturned": true,
+    "note": "Announcements intentionally use a separate task; assertions wait for the unchanged required text."
+  },
+  "livePages": {
+    "date": "2026-11-14T19:02:00.469Z",
+    "base": "https://qasimfida.github.io/accessiblit/",
+    "pages": [
+      {
+        "path": "",
+        "status": 200,
+        "title": "Accessiblit | accessiblit",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [
+              ["p > a:nth-child(1)"],
+              ["a:nth-child(2)"],
+              [".footer > a"]
+            ]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [[".container-lg"]]
+          }
+        ],
+        "incomplete": []
+      },
+      {
+        "path": "install/",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "path": "options/",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "path": "faq/",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "path": "404.html",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      }
+    ],
+    "requests": [
+      "https://qasimfida.github.io/accessiblit/",
+      "https://qasimfida.github.io/accessiblit/assets/css/style.css?v=255198f42cec1554c45be1795b0110ad4c369acc",
+      "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js",
+      "https://qasimfida.github.io/accessiblit/install/",
+      "https://qasimfida.github.io/accessiblit/options/",
+      "https://qasimfida.github.io/accessiblit/faq/",
+      "https://qasimfida.github.io/accessiblit/404.html"
+    ],
+    "thirdParty": [
+      "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+    ],
+    "links": {
+      "https://qasimfida.github.io/accessiblit/": { "status": 200 },
+      "https://qasimfida.github.io/accessiblit/site/install/index.html": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/docs/ACCESSIBILITY.html": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/": { "status": 404 }
+    }
+  },
+  "fixedLocalPackedExamples": {
+    "compatibility": [
+      {
+        "version": "17.0.2",
+        "strictMode": true,
+        "restored": true,
+        "ssrMarkup": ""
+      },
+      {
+        "version": "18.3.1",
+        "strictMode": true,
+        "restored": true,
+        "ssrMarkup": ""
+      }
+    ],
+    "bundleAudit": {
+      "rawBytes": 57849,
+      "gzipBytes": 19603,
+      "sourceMapRawAttribution": {
+        "wrapper/unmapped": 615,
+        "entry": 140,
+        "features": 24759,
+        "core": 14292,
+        "ui": 18043
+      },
+      "coreSourceCount": 55,
+      "reactSources": ["../src/react/index.ts"],
+      "reactEsmBytes": 393,
+      "reactCjsBytes": 847,
+      "unusedImportOutput": "var e = 1;\nexport { e as retained };",
+      "combinedCoreModuleCount": 1,
+      "combinedReactModuleCount": 1
+    },
+    "files": [
+      "LICENSE",
+      "README.md",
+      "dist/accessiblit.min.js",
+      "dist/accessiblit.min.js.map",
+      "dist/index.cjs",
+      "dist/index.cjs.map",
+      "dist/index.d.cts",
+      "dist/index.d.ts",
+      "dist/index.mjs",
+      "dist/index.mjs.map",
+      "dist/react.cjs",
+      "dist/react.cjs.map",
+      "dist/react.d.cts",
+      "dist/react.d.ts",
+      "dist/react.mjs",
+      "dist/react.mjs.map",
+      "package.json"
+    ],
+    "sri": "sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M",
+    "examples": ["html", "node-ssr-check", "react-vite", "nextjs", "consumers"],
+    "types": ["Node16 ESM/CJS", "Bundler ESM/TSX"],
+    "rows": [
+      {
+        "browser": "chromium",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          { "owner": "effect", "hiddenBeforeShortcut": true },
+          { "owner": "component", "hiddenBeforeShortcut": false }
+        ]
+      },
+      {
+        "browser": "chromium",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [{ "owner": "next", "hiddenBeforeShortcut": false }]
+      },
+      {
+        "browser": "firefox",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          { "owner": "effect", "hiddenBeforeShortcut": true },
+          { "owner": "component", "hiddenBeforeShortcut": false }
+        ]
+      },
+      {
+        "browser": "firefox",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [{ "owner": "next", "hiddenBeforeShortcut": false }]
+      },
+      {
+        "browser": "webkit",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          { "owner": "effect", "hiddenBeforeShortcut": true },
+          { "owner": "component", "hiddenBeforeShortcut": false }
+        ]
+      },
+      {
+        "browser": "webkit",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [{ "owner": "next", "hiddenBeforeShortcut": false }]
+      }
+    ]
+  },
+  "fixedLocalExtractedSnippets": {
+    "extracted": [
+      "cdn",
+      "npm-install",
+      "esm",
+      "react-install",
+      "react",
+      "next",
+      "self-hosted",
+      "pack",
+      "git",
+      "private-registry",
+      "lifecycle"
+    ],
+    "types": ["Node16", "Bundler"],
+    "shellSyntax": [
+      "npm-install",
+      "react-install",
+      "pack",
+      "git",
+      "private-registry"
+    ],
+    "installedTarball": "qasimfida-accessibility-widget-0.1.0.tgz",
+    "packedSource": true,
+    "strictModeDevelopment": true,
+    "rows": [
+      {
+        "browser": "chromium",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": { "created": 2, "removed": 2 }
+      },
+      {
+        "browser": "chromium",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": { "created": 2, "removed": 2 }
+      },
+      {
+        "browser": "firefox",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": { "created": 2, "removed": 2 }
+      },
+      {
+        "browser": "firefox",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": { "created": 2, "removed": 2 }
+      },
+      {
+        "browser": "webkit",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": { "created": 2, "removed": 2 }
+      },
+      {
+        "browser": "webkit",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": { "created": 2, "removed": 2 }
+      }
+    ],
+    "notes": [
+      "CDN bytes intercepted only in packed-consumer checks; Phase 11 records separate real CDN requests.",
+      "Private registry and Git shell examples are syntax checked; no private credentials or registry is used."
+    ]
+  },
+  "audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "runtimeAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "notes": [
+    "Initial E404 discovery responses preceded successful exact-version and normal npm metadata reads; original evidence is not rewritten.",
+    "Published React helper/declaration failures remain failures. Local fixed-package results do not replace registry-artifact results.",
+    "First combined audit/interaction attempt crashed Firefox after axe; final interaction and both full-rule axe states use independent browser contexts, with no intercepted CDN responses.",
+    "An immediate live-region read in the ad-hoc keyboard probe was corrected to await the intentionally asynchronous announcement; expected text was unchanged."
+  ]
+}
