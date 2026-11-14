@@ -1,0 +1,293 @@
+{
+  "date": "2026-11-14T17:59:15.471Z",
+  "source": "349134ac90721bde824bcbdb44131d6e869ec378",
+  "preflight": {
+    "branch": "main",
+    "pull": "Already up to date.",
+    "initialWorkingTree": "clean",
+    "phase10Tag": "absent locally and from git ls-remote --tags origin",
+    "versionInCheckout": "0.0.0"
+  },
+  "registry": {
+    "command": "npm view @qasimfida/accessiblit version dist-tags files license dist --json",
+    "exitCode": 1,
+    "status": 404,
+    "code": "E404",
+    "url": "https://registry.npmjs.org/@qasimfida%2faccessiblit",
+    "version": null,
+    "distTags": null,
+    "files": null,
+    "license": null,
+    "provenance": "not verifiable: package metadata unavailable"
+  },
+  "cdns": [
+    {
+      "url": "https://unpkg.com/@qasimfida/accessiblit/dist/accessiblit.min.js",
+      "status": 404,
+      "contentType": "text/plain;charset=UTF-8"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/@qasimfida/accessiblit/dist/accessiblit.min.js",
+      "status": 404,
+      "contentType": "text/plain; charset=utf-8"
+    }
+  ],
+  "install": {
+    "folder": "/var/folders/rx/jvtfrpx10ggdvs1c9mwzstzr0000gn/T/accessiblit-registry-consumer-gTh1hE",
+    "installed": false,
+    "exitCode": 1,
+    "errors": [
+      "npm error code E404",
+      "npm error 404 Not Found - GET https://registry.npmjs.org/@qasimfida%2faccessiblit - Not found"
+    ]
+  },
+  "live": {
+    "date": "2026-11-14T17:58:06.544Z",
+    "base": "https://qasimfida.github.io/accessiblit/",
+    "pages": [
+      {
+        "path": "",
+        "status": 200,
+        "title": "Accessiblit | accessiblit",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [[".footer > a"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [[".container-lg"]]
+          }
+        ],
+        "incomplete": []
+      },
+      {
+        "path": "install/",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "path": "options/",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "path": "faq/",
+        "status": 404,
+        "title": "Page not found · GitHub Pages",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [
+              ["p:nth-child(2) > strong"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["code:nth-child(2)"],
+              ["code:nth-child(3)"],
+              ["p:nth-child(5)"],
+              ["a[href$=\"pages/\"]"],
+              ["p:nth-child(5) > strong"]
+            ]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "targets": [["a[href$=\"pages/\"]"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["h1"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["p:nth-child(4)"],
+              ["p:nth-child(5)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["color-contrast"]
+      },
+      {
+        "path": "404.html",
+        "status": 503,
+        "title": "Unicorn! · GitHub",
+        "widgetHosts": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "targets": [["strong"], ["p:nth-child(3)"], ["#suggestions"]]
+          },
+          { "id": "html-has-lang", "impact": "serious", "targets": [["html"]] },
+          {
+            "id": "image-alt",
+            "impact": "critical",
+            "targets": [["img[width=\"200\"]"]]
+          },
+          {
+            "id": "landmark-one-main",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "targets": [[".logo-img-1x"]]
+          },
+          {
+            "id": "page-has-heading-one",
+            "impact": "moderate",
+            "targets": [["html"]]
+          },
+          {
+            "id": "region",
+            "impact": "moderate",
+            "targets": [
+              ["p:nth-child(1)"],
+              ["p:nth-child(2)"],
+              ["p:nth-child(3)"],
+              ["#suggestions"]
+            ]
+          }
+        ],
+        "incomplete": ["bypass"]
+      }
+    ],
+    "requests": [
+      "https://qasimfida.github.io/accessiblit/",
+      "https://qasimfida.github.io/accessiblit/assets/css/style.css?v=349134ac90721bde824bcbdb44131d6e869ec378",
+      "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js",
+      "https://qasimfida.github.io/accessiblit/install/",
+      "https://qasimfida.github.io/accessiblit/options/",
+      "https://qasimfida.github.io/accessiblit/faq/",
+      "https://qasimfida.github.io/accessiblit/404.html"
+    ],
+    "thirdParty": [
+      "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+    ],
+    "links": {
+      "https://qasimfida.github.io/accessiblit/": { "status": 200 },
+      "https://qasimfida.github.io/": { "status": 404 }
+    }
+  },
+  "notes": [
+    "CDN discovery URLs are unversioned because the registry exposed no published version. No version-pinned artifact was invented.",
+    "404 response bodies are not JavaScript artifacts and were not represented as valid SRI inputs.",
+    "The observed GitHub error pages are external deployment responses, not the local Vite site."
+  ]
+}
