@@ -1,0 +1,280 @@
+{
+  "source": "a552c7685b862c2ea38c915e258eecee4311b06e",
+  "run": 43631618653,
+  "job": 132559268687,
+  "passed": 219,
+  "failed": 1,
+  "samples": [
+    {
+      "project": "chromium",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [19.2, 19.2, 19.2, 19.2, 19.2],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "loading",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    },
+    {
+      "project": "firefox",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [19.2, 19.2, 19.2, 19.2, 19.2],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "interactive",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    },
+    {
+      "project": "webkit",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [19.200001, 19.200001, 19.200001, 19.200001, 19.200001],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    },
+    {
+      "project": "iphone",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [16, 19.200001, 19.200001, 19.200001, 19.200001],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 16,
+          "persistedFontSize": 120,
+          "readyState": "interactive",
+          "marker": null,
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.200001,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    },
+    {
+      "project": "pixel",
+      "baseline": 16,
+      "expected": 19.2,
+      "frames": [19.2, 19.2, 19.2, 19.2, 19.2],
+      "emptyFrames": 0,
+      "diagnostics": [
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "loading",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        },
+        {
+          "fontSize": 19.2,
+          "persistedFontSize": 120,
+          "readyState": "complete",
+          "marker": "accessiblit-1-16",
+          "enabled": true,
+          "scale": "1.2",
+          "stylesheetsReady": [true]
+        }
+      ]
+    }
+  ],
+  "conclusion": "The first iPhone text frame is unmarked despite persisted 120%, active class/scale, and ready stylesheets. Subsequent marked frames are 19.2px. A missing characterData subscription is reproduced independently against the published bytes and fixed in faa788a."
+}

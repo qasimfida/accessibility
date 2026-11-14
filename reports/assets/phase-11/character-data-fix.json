@@ -1,0 +1,281 @@
+{
+  "date": "2026-11-14T19:43:34.891Z",
+  "fixCommit": "faa788a",
+  "diagnosticCommit": "a552c76",
+  "before": {
+    "unit": "1 failed, 4 passed",
+    "nativeWebKit": "1 failed; all five frames 16px"
+  },
+  "after": {
+    "units": "8 passed in two touched modules",
+    "targetedBrowsers": "15 passed (14.9s)",
+    "textDataFrames": [
+      { "project": "chromium", "frames": [19.2, 19.2, 19.2, 19.2, 19.2] },
+      { "project": "firefox", "frames": [19.2, 19.2, 19.2, 19.2, 19.2] },
+      {
+        "project": "webkit",
+        "frames": [19.200001, 19.200001, 19.200001, 19.200001, 19.200001]
+      },
+      {
+        "project": "iphone",
+        "frames": [19.200001, 19.200001, 19.200001, 19.200001, 19.200001]
+      },
+      { "project": "pixel", "frames": [19.2, 19.2, 19.2, 19.2, 19.2] }
+    ],
+    "contentRegression": "33 passed (15.0s), Chromium/Firefox/WebKit",
+    "verify": "186 unit tests plus six benchmark self-tests; full verify passed"
+  },
+  "streamedParserComparison": [
+    {
+      "browserName": "chromium",
+      "version": "published",
+      "frames": [
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null }
+      ]
+    },
+    {
+      "browserName": "chromium",
+      "version": "patched",
+      "frames": [
+        { "font": "19.2px", "marker": "accessiblit-1-16" },
+        { "font": "19.2px", "marker": "accessiblit-1-16" },
+        { "font": "19.2px", "marker": "accessiblit-1-16" },
+        { "font": "19.2px", "marker": "accessiblit-1-16" },
+        { "font": "19.2px", "marker": "accessiblit-1-16" }
+      ]
+    },
+    {
+      "browserName": "firefox",
+      "version": "published",
+      "frames": [
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null }
+      ]
+    },
+    {
+      "browserName": "firefox",
+      "version": "patched",
+      "frames": [
+        { "font": "19.2px", "marker": "accessiblit-1-16" },
+        { "font": "19.2px", "marker": "accessiblit-1-16" },
+        { "font": "19.2px", "marker": "accessiblit-1-16" },
+        { "font": "19.2px", "marker": "accessiblit-1-16" },
+        { "font": "19.2px", "marker": "accessiblit-1-16" }
+      ]
+    },
+    {
+      "browserName": "webkit",
+      "version": "published",
+      "frames": [
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null },
+        { "font": "16px", "marker": null }
+      ]
+    },
+    {
+      "browserName": "webkit",
+      "version": "patched",
+      "frames": [
+        { "font": "19.200001px", "marker": "accessiblit-1-16" },
+        { "font": "19.200001px", "marker": "accessiblit-1-16" },
+        { "font": "19.200001px", "marker": "accessiblit-1-16" },
+        { "font": "19.200001px", "marker": "accessiblit-1-16" },
+        { "font": "19.200001px", "marker": "accessiblit-1-16" }
+      ]
+    }
+  ],
+  "published": {
+    "raw": 57849,
+    "gzip": 19603,
+    "sri": "sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M"
+  },
+  "localPatched": {
+    "raw": 57894,
+    "gzip": 19625,
+    "sri": "sha384-kVUM8aT3W8Z7jzyUUTm04J0wcl6IKGycMASG7s+VuYwwC0xmsil4c85gxssHCaOk"
+  },
+  "snippetSeparation": {
+    "commit": "ad3c566",
+    "result": {
+      "extracted": [
+        "cdn",
+        "npm-install",
+        "esm",
+        "react-install",
+        "react",
+        "next",
+        "self-hosted",
+        "pack",
+        "git",
+        "private-registry",
+        "lifecycle"
+      ],
+      "types": ["Node16", "Bundler"],
+      "shellSyntax": [
+        "npm-install",
+        "react-install",
+        "pack",
+        "git",
+        "private-registry"
+      ],
+      "installedTarball": "qasimfida-accessibility-widget-0.1.0.tgz",
+      "packedEntries": ["self-hosted", "esm", "lifecycle", "react", "next"],
+      "cdnSource": "Real version-pinned CDN URL with release SRI; no interception.",
+      "strictModeDevelopment": true,
+      "rows": [
+        {
+          "browser": "chromium",
+          "snippet": "cdn",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "chromium",
+          "snippet": "self-hosted",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "chromium",
+          "snippet": "esm",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "chromium",
+          "snippet": "lifecycle",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "chromium",
+          "snippet": "react",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": { "created": 2, "removed": 2 }
+        },
+        {
+          "browser": "chromium",
+          "snippet": "next",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": { "created": 2, "removed": 2 }
+        },
+        {
+          "browser": "firefox",
+          "snippet": "cdn",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "firefox",
+          "snippet": "self-hosted",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "firefox",
+          "snippet": "esm",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "firefox",
+          "snippet": "lifecycle",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "firefox",
+          "snippet": "react",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": { "created": 2, "removed": 2 }
+        },
+        {
+          "browser": "firefox",
+          "snippet": "next",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": { "created": 2, "removed": 2 }
+        },
+        {
+          "browser": "webkit",
+          "snippet": "cdn",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "webkit",
+          "snippet": "self-hosted",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "webkit",
+          "snippet": "esm",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "webkit",
+          "snippet": "lifecycle",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": null
+        },
+        {
+          "browser": "webkit",
+          "snippet": "react",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": { "created": 2, "removed": 2 }
+        },
+        {
+          "browser": "webkit",
+          "snippet": "next",
+          "errors": [],
+          "cleanup": true,
+          "strictMode": { "created": 2, "removed": 2 }
+        }
+      ],
+      "notes": [
+        "The CDN snippet validates published release bytes; other browser snippets use the installed local tarball.",
+        "Private registry and Git shell examples are syntax checked; no private credentials or registry is used."
+      ]
+    }
+  },
+  "pagesPreflight": {
+    "commit": "d9c38bb",
+    "run": 43632185273,
+    "job": 132561522787,
+    "result": "failed: Check Pages publishing source",
+    "message": "Choose Settings > Pages > Build and deployment > Source: GitHub Actions. The workflow token cannot change repository administration settings."
+  },
+  "notes": [
+    "Published 0.1.0 is immutable; its SRI remains valid for those published bytes.",
+    "The local core hash changes with this fix. It must not replace the published hash under the old URL.",
+    "The complete fixed CI site matrix is not yet claimed; validation follows the source push.",
+    "Two initial scratch streamed-fixture attempts timed out before navigation committed. The final comparison flushes headers and pads its first HTML chunk; only completed browser observations are used as parser evidence."
+  ]
+}
