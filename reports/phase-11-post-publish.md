@@ -1,113 +1,152 @@
 # Phase 11 — Post-publish verification
 
-Status: BLOCKED
-Date: 2026-11-14 (Asia/Karachi). Attempt baseline: `349134a`; the requested previous tag `phase-10-complete` does not exist locally or on origin.
+Status: BLOCKED (published React entry, live Pages deployment and missing predecessor tag)
+Date: resumed 2026-11-15, Asia/Karachi; initial checks 2026-11-14. Required previous tag `phase-10-complete` remains absent. Attempt baseline: `349134a`; tested patch/documentation source: `698c274`, with evidence and report commits following.
 
 ## Summary
 
-The public release described in the prompt could not be verified. The configured package, `@qasimfida/accessiblit`, returns HTTP 404/E404 from the public npm registry. Both CDN discovery URLs return HTTP 404 with plain-text error responses. No published version, tarball, license declaration, dist-tags or provenance attestation is available to validate. A fresh temporary registry installation also failed with E404.
+The maintainer clarified the published name: **@qasimfida/accessibility-widget@0.1.0**. Normal `npm view` now succeeds: latest is 0.1.0, license MIT, no runtime dependencies. The registry tarball contains the intended 17 files and matches its advertised SHA-512 integrity. Both version-pinned CDNs now serve the IIFE with the correct JavaScript content type and matching SHA-384 SRI.
 
-The live GitHub Pages URL serves an older Jekyll page, not the Vite demo: no widget is mounted, three documentation routes return 404, and the custom error-page URL returned 503 during this session. Its axe and network results do not pass. No completion tag is created for a blocked phase.
+A real release defect remains: the published 0.1.0 React JavaScript and declarations import the old, unavailable `@qasimfida/accessiblit`. Published React entry imports fail in ESM and CJS; its declarations fail in Node16 and Bundler consumers. The source is fixed and local packed consumers pass, but the agent has not published anything or changed the registry artifact. React users can use the tested core `init()`/`destroy()` effect while awaiting a maintainer patch.
+
+The live Pages URL still serves the old Jekyll page with no widget, missing documentation routes, axe violations and a cdnjs request. Therefore this phase is not marked complete and no `phase-11-complete` tag is created.
 
 ## What changed (files and why)
 
-- `README.md`: corrected the obsolete statement that no widget features are implemented. The repository contains the eighteen-feature implementation; its accessibility limitations remain explicit. Commit `eb9b382`.
-- `reports/assets/phase-11/public-checks.json`: preserved public registry/CDN statuses, fresh-install failure, all live-page axe results, request URLs and checked internal links. Commit `84bdb60`.
-- This report records the actual failure boundaries and a first-month maintenance plan. No runtime source, dependency, version, token, registry data or site source changed.
-
-A version-pinned release snippet and SRI could not be safely added to README/site: there is no published version or served JavaScript artifact to pin and hash. Existing development-only site examples were not relabelled as a verified release. The exact published package name/version and release tag/URL have been requested from the maintainer.
+- `715bc03` — align the renamed package throughout React source/externalization, TS resolution, package/lock metadata, examples and consumer checks. `scripts/check-ssr.mjs` now resolves both React entries while a throwing window getter is installed, catching broken self-imports as part of every build. The maintainer's pre-existing package.json name/version edits were retained and formatted, not discarded; PKG_NAME now follows the explicitly clarified name. Browser global, repository and Pages URL remain Accessiblit/accessiblit.
+- `ce18dc2` — correct the stale Vitest alias and add a cross-entry singleton test. With the old alias, React could load built output and the new test failed (one failed, four passed); with the source alias, all five React tests pass.
+- `698c274` — README, site installation/options and integration guide now use the real package name and pinned 0.1.0 CDN SRI, explain the published React issue, and demonstrate the working core-effect pattern for React/Next. Packed snippet checks follow the updated names and explicitly distinguish intercepted packed tests from real CDN tests.
+- `9486736` — preserve registry metadata, tarball inventory, published failures, fixed local examples, actual CDN requests, keyboard and live-site results in [renamed-release-verification.json](assets/phase-11/renamed-release-verification.json).
+- Earlier attempt commits `eb9b382`, `84bdb60`, `255198f` corrected the obsolete foundation-only README and preserved unavailable-package checks. Their [original evidence](assets/phase-11/public-checks.json) remains historical, not the current result for the new name.
 
 ## Verification (commands run, real results)
 
-### Repository and tools
+### Preflight and registry
 
-- Read AGENTS.md in full, including continuous section 10 commit rules.
-- Branch: `main`; initial working tree clean; `git pull --ff-only`: `Already up to date.`
-- `git tag --list phase-10-complete` and `git ls-remote --tags origin 'refs/tags/phase-10-complete*' 'refs/tags/v*'`: no matching tags.
-- Checkout package version: `0.0.0`. Tools: Node `v24.13.0`, npm `11.6.2`, git `2.54.0 (Apple Git-157)`.
-- Fast checks before each commit: lint, typecheck and six benchmark self-tests.
-- `npm run verify`: PASS in this session. Lint, strict typecheck, 184 unit tests in 58 files, six benchmark self-tests, ESM/CJS/IIFE/types build, SSR import checks, size-limit, publint and attw passed. Core line/branch coverage: 98.63%/97.96%; overall lines/branches: 96.12%/90.71%. Historical Phase 7/8 results are not substituted for these commands.
+Read AGENTS.md completely. Branch is main; pull reported already up to date. This resumption began with the maintainer's uncommitted package.json rename/version edits; these exact intended values were included in the related fix. No unrelated work was reset, stashed or discarded. `git ls-remote --tags origin 'refs/tags/phase-10-complete*'` returned no tag. Do not infer Phase 9/10 completion from npm availability.
 
-### Registry, files, provenance and consumer installation
+`npm view @qasimfida/accessibility-widget@0.1.0 version dist-tags license dist --json --prefer-online` succeeds. It reports version/latest 0.1.0, MIT, 17 files and the tarball URL. Initial discovery URLs returned E404, while the exact-version endpoint already worked; a later normal lookup and exact npm-spec install succeeded. Those earlier responses were not relabelled as passes.
 
-`npm view @qasimfida/accessiblit version dist-tags files license dist --json` exited 1 with `E404`, from `https://registry.npmjs.org/@qasimfida%2faccessiblit`. A separate direct public HTTP read returned 404. This proves public unavailability at the time of the checks, not that the package could not exist privately or under a different name.
+A fresh temporary project installed the exact npm spec with lifecycle scripts disabled, alongside React and its types for the consumer tests. The separate registry tarball download was verified against dist.integrity using SHA-512. Registry metadata omitted `files`; the actual tarball manifest's allowlist is `dist`, LICENSE and README.md. Its complete file inventory is:
 
-A fresh folder with a private throwaway `package.json` ran:
-
-```sh
-npm install --ignore-scripts --no-audit --no-fund --registry=https://registry.npmjs.org @qasimfida/accessiblit
+```text
+LICENSE
+README.md
+dist/accessiblit.min.js
+dist/accessiblit.min.js.map
+dist/index.cjs
+dist/index.cjs.map
+dist/index.d.cts
+dist/index.d.ts
+dist/index.mjs
+dist/index.mjs.map
+dist/react.cjs
+dist/react.cjs.map
+dist/react.d.cts
+dist/react.d.ts
+dist/react.mjs
+dist/react.mjs.map
+package.json
 ```
 
-It exited 1 with E404. The folder path and exact safe errors are in the evidence JSON. TypeScript, ESM, CJS and React consumer execution is **not run**, because no registry artifact could be installed. A local tarball was not substituted for the requested registry package. Public version, dist-tags, tarball files, registry license and provenance are **not verified**; absent metadata is not evidence that an available artifact lacks provenance.
+There is no `dist.attestations` field in the observed metadata. Registry signature entries are present, but no provenance attestation was verified or advertised as verified. No credentials were inspected and no registry write/token operation was run.
 
-No `npm publish`, login, token, deprecate or unpublish command was run. No token or credential file was read or changed.
+### Real CDN files and browser consumers
 
-### CDN and SRI
+| Provider / pinned URL                                                                      | HTTP | Content type                          | Bytes  | SHA-384 |
+| ------------------------------------------------------------------------------------------ | ---- | ------------------------------------- | ------ | ------- |
+| https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js            | 200  | text/javascript; charset=utf-8        | 57,849 | Matches |
+| https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js | 200  | application/javascript; charset=utf-8 | 57,849 | Matches |
 
-| Endpoint                                                                      | HTTP result | Content type                | Artifact/SRI result |
-| ----------------------------------------------------------------------------- | ----------- | --------------------------- | ------------------- |
-| `https://unpkg.com/@qasimfida/accessiblit/dist/accessiblit.min.js`            | 404         | `text/plain;charset=UTF-8`  | No IIFE to compare  |
-| `https://cdn.jsdelivr.net/npm/@qasimfida/accessiblit/dist/accessiblit.min.js` | 404         | `text/plain; charset=utf-8` | No IIFE to compare  |
+Both match the registry IIFE and `node scripts/sri.mjs`:
 
-These are discovery URLs, not invented version-pinned release URLs: npm supplied no version. Error text was not hashed and presented as JavaScript SRI. A real CDN-backed HTML consumer is **not run** because these URLs do not serve the package. A freshly built local SRI, if recorded below, is local diagnostic evidence only and cannot certify a missing CDN artifact.
+```text
+sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M
+```
 
-### Live site: actual Chromium browser
+Real HTML pages load each actual CDN URL with integrity and crossorigin=anonymous. **Six browser/provider integrations pass**, across Chromium, Firefox and WebKit: open/close, change/reset, cleanup, no page errors and zero extra feature requests. **Twelve closed/open axe scans report zero violations**, with no disabled rules or response interception.
 
-Opened all five intended URLs in Chromium `158.0.8127.18` through Playwright, with no response interception or substituted local build. Ran the default axe rules without exclusions on each returned document.
+The first ad-hoc combined audit/interaction probe crashed Firefox on a post-axe interaction in two cases. That receipt is retained. Final keyboard/action checks and full-rule axe scans use independent contexts, preserving every state/action while avoiding interaction with an instrumented audit document. No runtime package byte changed between those runs.
 
-| Path under `/accessiblit/` | HTTP | Returned page                | Axe rule violations |
-| -------------------------- | ---- | ---------------------------- | ------------------- |
-| Home                       | 200  | `Accessiblit \| accessiblit` | 3                   |
-| `install/`                 | 404  | GitHub Pages default error   | 6                   |
-| `options/`                 | 404  | GitHub Pages default error   | 6                   |
-| `faq/`                     | 404  | GitHub Pages default error   | 6                   |
-| `404.html`                 | 503  | GitHub service-error page    | 7                   |
+The real-unpkg keyboard-only walk passed in Chromium: Alt+A → focused Close → Tab twice → increase Font size → Enter → 19 Tabs to Reset all → Space → Escape → focused launcher. Announcements were exactly “Font size 110 percent” and “All options reset.” The probe awaits these deliberately asynchronous live-region updates; an initial immediate read was corrected rather than changing the expected text.
 
-The 503 is an observed response, not a claim that the URL always returns 503. Error-page violations belong to the external response actually received, not to the local Vite implementation.
+### Published versus fixed local consumers
 
-The home violations are `landmark-one-main`, `link-in-text-block`, and `region`. The raw receipt retains every rule ID, impact, node target and incomplete result for all pages. Each page has zero `[data-accessiblit-host]` elements. Widget-open/closed axe cannot be claimed because the deployed page does not contain the widget.
+| Consumer                                                | Published 0.1.0                     | Fixed local packed build       |
+| ------------------------------------------------------- | ----------------------------------- | ------------------------------ |
+| Plain JS ESM/CJS, SSR lifecycle                         | Pass / pass                         | Pass / pass                    |
+| Core + core React effect, TypeScript Node16 and Bundler | Pass / pass                         | Pass / pass                    |
+| `/react` ESM/CJS imports                                | Fail / fail: old package not found  | Pass / pass                    |
+| `/react` declarations, Node16 and Bundler               | Fail / fail: TS2307 for old package | Pass / pass                    |
+| Core useEffect integration, Chromium/Firefox/WebKit     | Three pass, including cleanup       | Three pass                     |
+| Helper/Next browser integrations                        | Published helper cannot resolve     | Fixed packed integrations pass |
 
-Recorded seven page/asset requests. One was third-party: `https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js`. Therefore the live no-third-party check **fails**; the request comes from the old Jekyll site, not a demonstrated widget runtime call. Two discovered same-origin link destinations were checked: the project home returned 200 and `https://qasimfida.github.io/` returned 404. The three expected documentation routes also failed their explicit route checks. There is no passing live link-check verdict.
+`npm run test:examples` passed five installed tarball examples (HTML, Node, consumers, React/Vite and Next.js), both type modes, React 17.0.2/18.3.1 compatibility and fifteen browser integrations. React 19.3.1 is used in the main browser consumer. Tree shaking leaves only the consumer constant when unused; combined core/helper output has one core and one React module. React sources stay outside the core bundle.
+
+`npm run test:site-snippets` passed eleven extracted snippets, five shell syntax checks, both type modes and eighteen packed browser integrations. React and Next core effects each create/remove two hosts under development StrictMode. The packed CDN test is explicitly intercepted for reproducibility; the real CDN results above are a separate non-intercepted check.
+
+`npm run verify` passed: lint, types, **185 unit tests in 58 files**, six benchmark self-tests, build/SSR, size, publint and attw. Core lines/branches: **98.63%/97.96%**; overall lines/branches **96.12%/90.71%**. The new singleton regression raises the unit count by one. Fast checks ran before each commit; no quality threshold was weakened.
+
+`npm run test:site` passed **220 tests (5.1 minutes)** across Chromium, Firefox, WebKit, emulated iPhone and Pixel, with zero retries/skips. All 175 page/media cases passed both closed/open axe scans (350 scans); keyboard, routes, internal links, first-party requests, persisted frames and streamed-parser checks also passed. [Raw updated local-site evidence](assets/phase-11/updated-local-site.json) retains all emitted results. This does not change the live deployment verdict.
+
+### Live Pages: current public URL
+
+Chromium opened the actual URL and ran default axe plus same-origin link/request checks, without substituting the local Vite build:
+
+| Path under /accessiblit/ | HTTP | Axe rule violations | Widget hosts |
+| ------------------------ | ---- | ------------------- | ------------ |
+| Home                     | 200  | 3                   | 0            |
+| install/                 | 404  | 6                   | 0            |
+| options/                 | 404  | 6                   | 0            |
+| faq/                     | 404  | 6                   | 0            |
+| 404.html                 | 404  | 6                   | 0            |
+
+Home is titled “Accessiblit | accessiblit”; its rules are landmark-one-main, link-in-text-block and region. Error-page violations apply to GitHub's returned error document, not the local Vite page. A widget-open audit is unavailable on this deployment because no widget exists there.
+
+Seven page/asset requests included one third-party request: `https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js`. Four discovered same-origin link destinations were checked: project home, source installation HTML and accessibility HTML returned 200; the owner home returned 404. The intended install/options/FAQ routes failed explicitly. The live link/network/accessibility verdict remains **FAIL**, separate from passing local/CDN checks.
 
 ## Review findings and fixes
 
-| Severity | Finding                                                                                                  | Fix or required resolution                                                                                                      | Status |
-| -------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| High     | R-1: README falsely said widget features were not implemented                                            | `eb9b382`: replace the stale foundation-only description and retain honest conformance wording                                  | Fixed  |
-| Blocker  | R-2: configured package is unavailable publicly; CDN and registry consumers cannot run                   | Maintainer must supply the exact published package/version or correct the publication independently                             | Open   |
-| Blocker  | R-3: required Phase 10/release tag is absent on origin                                                   | Maintainer must identify the correct repository/tag; no fabricated predecessor or completion tag                                | Open   |
-| High     | R-4: live Pages deployment is the old site, with missing routes, axe violations and a third-party script | Resolve earlier deployment prerequisites; deploy the actual audited Vite output using GitHub Actions and repeat the live checks | Open   |
-
-No source workaround, suppressed axe rule, loosened gate or retry was used to turn these failures into passes. Registry lookup, independent HTTP confirmation and fresh installation all failed; repeating the same unavailable-package checks would not create a release artifact.
+| Severity | Finding                                                                  | Fix / resolution                                                                        | Status                                  |
+| -------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | --------------------------------------- |
+| High     | R-1: obsolete foundation-only README                                     | eb9b382; further release accuracy in 698c274                                            | Fixed source                            |
+| Blocker  | R-2: wrong package name used for public verification                     | Maintainer clarified @qasimfida/accessibility-widget; normal npm and CDN reads now pass | Resolved for corrected name             |
+| Blocker  | R-3: phase-10-complete tag absent                                        | Maintainer must identify/complete the real predecessor; no fabricated tag               | Open                                    |
+| High     | R-4: old live Pages site, missing routes, violations and external script | Correct deployment/source configuration and remaining Pages CI prerequisites            | Open                                    |
+| Blocker  | R-5: published React runtime/types self-import old name                  | 715bc03 fixes source and adds build-time entry resolution                               | Local fix; published 0.1.0 still broken |
+| Medium   | R-6: stale Vitest alias tested built output                              | ce18dc2; new cross-entry singleton guard fails before and passes after                  | Fixed                                   |
+| High     | R-7: snippets use obsolete name/version and lack release integrity       | 698c274; real CDN SRI and tested core React workaround; extracted checks pass           | Fixed source                            |
 
 ## Audits
 
 ### Accessibility
 
-The live axe results above are failures. A separate keyboard-only browser walk used four Tab presses: project-title link → “Improve this page” → document body → project-title link. Alt+A exposed no launcher; widget host and launcher counts remained zero. The two observed focused link boxes were 156.046875×38px and 129.203125×18px; the latter is an inline footer link. Browser-provided focused-link outlines were 1px `auto` with 1px offset. These are measurements of the old deployed page, not widget target/focus evidence. Computed widget contrast and widget keyboard operation remain **not verified** because no widget is present. No screen reader or physical mobile device was used.
+Real CDN closed/open axe: twelve clean scans. Real unpkg keyboard walk and fifteen packed browser keyboard flows pass. Packed targets measure at least **24px**, focus width **3px**, and zero panel horizontal overflow. Updated local-site minimum text contrast: **6.240363:1** for authored site text and **6.820450:1** for widget text; minimum site navigation/button/skip target **43.1875px** under spacing overrides, widget **24px**. Axe incomplete identifiers, including color-contrast, remain in the receipt; computed solid-background checks supplement them rather than calling incomplete results passes. These automated/browser results do not establish human screen-reader or physical-device qualification. Live Pages remains a failed audit and is never replaced by local results.
 
 ### Security and privacy
 
-Registry and CDN access was read-only. The throwaway install disabled lifecycle scripts. No credentials, token operations, runtime network code, runtime dependencies, cookies or storage mechanisms were introduced. The existing 21 development dependencies and package lockfile are unchanged. The public site's observed cdnjs request is explicitly retained as a failed privacy/network check. `npm audit --json` and `npm audit --omit=dev --json` each reported zero vulnerabilities of every severity in this session. Workflow permissions are unchanged; `actionlint` also passed.
+No publish/login/token/deprecate/unpublish or credential-read operation. Registry installs disable lifecycle scripts. No runtime dependencies, network code, cookies, storage keys or browser globals were introduced. Both npm audit and npm audit --omit=dev report **zero vulnerabilities**. The 21 existing development dependencies and their versions are unchanged; lockfile changes only align the package name/version. The CJS lint allowlist was renamed narrowly, not broadened. Workflow permissions are unchanged; actionlint is run before closing.
 
 ### Performance and size
 
-No runtime source changed. Fresh local build: IIFE **57,849 bytes raw / 19,603 bytes gzip**, below the unchanged 35,000-byte limit. `node scripts/sri.mjs` produced `sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M`. This certifies only the freshly built local bytes, **not a published release or CDN response**, and was not inserted into a purported release snippet. Coverage is recorded above. No historical timing is relabelled as a fresh benchmark.
+IIFE remains **57,849 bytes raw / 19,603 bytes gzip**, unchanged, under the 35KB limit and identical to published CDN bytes. Fixed React entries are **393 bytes ESM / 847 bytes CJS**. Source maps and the combined-consumer module audit prove no core duplication or React code in core. No fresh absolute init benchmark or physical-device performance claim is made; core runtime bytes are unchanged.
 
 ## Known limitations (honest)
 
-- Published package/version, public tarball contents, registry license, dist-tags and provenance: unavailable/not verified.
-- Registry-installed TypeScript/ESM/CJS/React consumers and real CDN HTML integration: blocked, not executed.
-- Correct live Vite deployment and widget accessibility/network behavior: not verified; the observed old deployment fails.
-- No screen-reader, physical-device or new absolute performance qualification was performed.
+- Published 0.1.0 `/react` runtime/types remain broken until a new maintainer release. Do not overwrite/reuse 0.1.0 or treat the local tarball's same metadata version as a registry fix; bump a new patch version before publishing.
+- Live Vite deployment and the required predecessor tag remain unresolved.
+- No verified provenance attestation was returned, and no screen reader or physical device was tested.
+- Browser audit instrumentation initially caused post-axe Firefox crashes; all original results are retained alongside the separated-context checks.
 
 ## Deviations from the prompt (and why)
 
-The release premise and required previous tag do not match the public registry and configured repository. Version-pinned snippets and release SRI were withheld rather than invented. The complete consumer/live-widget checks and `phase-11-complete` tag are withheld until a real published artifact and correct deployment are available. The useful independent README correction and failure evidence are committed separately, following section 10.
+The original name checks were superseded by the maintainer's explicit new package name. The existing name/version edit was retained and committed with the required self-import/lockfile alignment, rather than claiming the resumption began clean. The initial Phase 11 report and raw evidence remain in Git history. React helper failure, old live deployment and missing predecessor prevent a completion tag despite passing core/CDN/local-patch checks. No registry mutation is authorized or performed.
 
 ## Handoff notes for the next phase
 
-Supply the exact public package name/version and release/tag URL. For Pages, select **Settings → Pages → Build and deployment → Source: GitHub Actions**, resolve any remaining mandatory CI failure and deploy the actual `site/dist` output. Repository administration and npm publication remain maintainer actions. After those changes, rerun registry metadata/attestation and tarball inspection, hash the version-pinned bytes from both CDNs against `scripts/sri.mjs`, install that exact registry version in fresh consumers, then repeat live axe/link/network and keyboard checks. Do not approve a completion tag while these checks fail.
+1. Maintainer: review the local React/self-import fix, bump to a new compatible patch (for example 0.1.1) and publish through your own release process. The agent has not published or touched tokens. Verify its React ESM/CJS imports and declaration consumers from a fresh registry installation before announcing the helper as fixed.
+2. Select GitHub Pages Source **GitHub Actions**, resolve mandatory deployment CI failures and deploy the audited site build. Repeat live axe, link, request and keyboard checks against the actual deployed URLs.
+3. Resolve the missing phase-10-complete predecessor; do not create false historical completion tags. Only create phase-11-complete after the published-helper and live-site checks actually pass.
 
 ### First 30 days maintenance plan
 
@@ -119,9 +158,15 @@ Supply the exact public package name/version and release/tag URL. For Pages, sel
 
 ## Attempt commit list
 
-The required preceding phase tag is missing. These commits are relative to the checked-out attempt baseline `349134a`, not a fabricated Phase 10 boundary:
+The required predecessor tag is absent, so this list uses the recorded attempt baseline `349134a`, without claiming a Phase 10 boundary. The closing report commit follows these entries.
 
 ```text
 eb9b382 docs(readme): replace the stale foundation-only description
 84bdb60 docs(audit): record unavailable registry CDN and live-site checks
+255198f docs(report): record blocked post-publish checks and maintenance
+715bc03 fix(react): align self-imports with the published package name
+ce18dc2 fix(react-tests): resolve renamed self-imports to the source core
+698c274 docs(integrations): pin the release SRI and explain the React workaround
+9486736 docs(audit): preserve published and patched package verification
+bae7abf docs(audit): preserve the updated site browser matrix
 ```
