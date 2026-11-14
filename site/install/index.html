@@ -73,10 +73,13 @@
       </p>
       <aside class="notice" aria-label="Release availability">
         <p>
-          <strong>Development build 0.0.0.</strong> This repository is not yet
-          published to the public npm registry. npm and CDN examples describe
-          the release format; use a locally built tarball or the Git build steps
-          today. Only the maintainer publishes releases.
+          <strong
+            >Published package: @qasimfida/accessibility-widget 0.1.0.</strong
+          >
+          The browser global is Accessiblit. Both pinned CDN files and the core
+          npm integrations have been checked against the published artifact. The
+          0.1.0 /react helper has a stale package reference; use the core effect
+          examples below until a maintainer publishes the fixed patch.
         </p>
       </aside>
       <nav class="on-this-page" aria-label="Installation methods">
@@ -90,7 +93,7 @@
           Place the script before the init call. The library exposes the
           Accessiblit global and can wait for the document body.
         </p>
-        <pre><code data-snippet="cdn" data-language="html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@qasimfida/accessiblit@0.0.0/dist/accessiblit.min.js&quot;&gt;&lt;/script&gt;
+        <pre><code data-snippet="cdn" data-language="html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js&quot; integrity=&quot;sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   Accessiblit.init();
 &lt;/script&gt;</code></pre>
@@ -98,11 +101,11 @@
       <section aria-labelledby="npm">
         <h2 id="npm">npm and ESM</h2>
         <p>
-          Install the package after a public release, then import the module
-          from your application entry.
+          Install the published package, then import the module from your
+          application entry.
         </p>
-        <pre><code data-snippet="npm-install" data-language="sh">npm install @qasimfida/accessiblit</code></pre>
-        <pre><code data-snippet="esm" data-language="ts">import { init } from &#x27;@qasimfida/accessiblit&#x27;;
+        <pre><code data-snippet="npm-install" data-language="sh">npm install @qasimfida/accessibility-widget@0.1.0</code></pre>
+        <pre><code data-snippet="esm" data-language="ts">import { init } from &#x27;@qasimfida/accessibility-widget&#x27;;
 
 const widget = init({ position: &#x27;bottom-left&#x27; });
 // Call widget.destroy() when removing this integration.</code></pre>
@@ -114,9 +117,9 @@ const widget = init({ position: &#x27;bottom-left&#x27; });
           keeps DOM work on the client and cleans up the instance it created,
           including under StrictMode.
         </p>
-        <pre><code data-snippet="react-install" data-language="sh">npm install @qasimfida/accessiblit react react-dom</code></pre>
+        <pre><code data-snippet="react-install" data-language="sh">npm install @qasimfida/accessibility-widget@0.1.0 react react-dom</code></pre>
         <pre><code data-snippet="react" data-language="tsx">import { useEffect } from &#x27;react&#x27;;
-import { init } from &#x27;@qasimfida/accessiblit&#x27;;
+import { init } from &#x27;@qasimfida/accessibility-widget&#x27;;
 
 export default function Accessibility() {
   useEffect(() =&gt; {
@@ -129,15 +132,21 @@ export default function Accessibility() {
       <section aria-labelledby="next">
         <h2 id="next">Next.js App Router</h2>
         <p>
-          Create a client component and render it from your layout. The separate
-          React entry keeps React out of the core browser bundle.
+          Create a client component and render it from your layout. This core
+          effect avoids the published 0.1.0 React-helper issue; React stays out
+          of the core browser bundle.
         </p>
         <pre><code data-snippet="next" data-language="tsx">&#x27;use client&#x27;;
 
-import { AccessiblitWidget } from &#x27;@qasimfida/accessiblit/react&#x27;;
+import { useEffect } from &#x27;react&#x27;;
+import { init } from &#x27;@qasimfida/accessibility-widget&#x27;;
 
 export default function Accessibility() {
-  return &lt;AccessiblitWidget position=&quot;bottom-right&quot; /&gt;;
+  useEffect(() =&gt; {
+    const widget = init({ position: &#x27;bottom-right&#x27; });
+    return () =&gt; widget.destroy();
+  }, []);
+  return null;
 }</code></pre>
       </section>
       <section aria-labelledby="self-hosted">
@@ -163,7 +172,7 @@ export default function Accessibility() {
         <pre><code data-snippet="pack" data-language="sh">npm run build
 npm pack
 # In the consuming project:
-npm install ./path/to/qasimfida-accessiblit-0.0.0.tgz</code></pre>
+npm install ./path/to/qasimfida-accessibility-widget-0.1.0.tgz</code></pre>
         <h3>Git source</h3>
         <p>
           For private distribution, use these build-and-pack steps with your
@@ -174,7 +183,7 @@ npm install ./path/to/qasimfida-accessiblit-0.0.0.tgz</code></pre>
         </p>
         <pre><code data-snippet="git" data-language="sh">git clone https://github.com/qasimfida/accessiblit.git
 cd accessiblit
-git checkout phase-7-complete
+git checkout ce18dc2
 npm ci
 npm run build
 npm pack</code></pre>
@@ -184,7 +193,7 @@ npm pack</code></pre>
           credential management. Replace the example registry URL with yours; no
           credentials belong in page source or these snippets.
         </p>
-        <pre><code data-snippet="private-registry" data-language="sh">npm install @qasimfida/accessiblit --registry=https://registry.example.invalid</code></pre>
+        <pre><code data-snippet="private-registry" data-language="sh">npm install @qasimfida/accessibility-widget --registry=https://registry.example.invalid</code></pre>
       </section>
     </main>
     <footer class="site-footer wrap">

@@ -47,9 +47,9 @@ export async function checkSnippetBrowsers(url, iife) {
                 subtree: true,
               });
             });
-          // The public package is not released; exercise the exact URL against packed bytes.
+          // Keep packed-consumer checks reproducible; live CDN evidence is separate.
           await context.route(
-            'https://cdn.jsdelivr.net/npm/@qasimfida/accessiblit@0.0.0/dist/accessiblit.min.js',
+            'https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js',
             (route) =>
               route.fulfill({ contentType: 'text/javascript', body: iife }),
           );

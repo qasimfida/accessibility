@@ -39,7 +39,7 @@ try {
       private: true,
       type: 'module',
       dependencies: {
-        '@qasimfida/accessiblit': `file:./${packed.filename}`,
+        '@qasimfida/accessibility-widget': `file:./${packed.filename}`,
         react: versions.react,
         'react-dom': versions['react-dom'],
         '@types/react': versions['@types/react'],
@@ -54,7 +54,7 @@ try {
   );
   assert.equal(
     lstatSync(
-      join(folder, 'node_modules/@qasimfida/accessiblit'),
+      join(folder, 'node_modules/@qasimfida/accessibility-widget'),
     ).isSymbolicLink(),
     false,
   );
@@ -161,7 +161,9 @@ try {
   });
   assert.ok(
     inputs.some((path) =>
-      path.includes('node_modules/@qasimfida/accessiblit/dist/index.mjs'),
+      path.includes(
+        'node_modules/@qasimfida/accessibility-widget/dist/index.mjs',
+      ),
     ),
   );
   assert.ok(
@@ -169,12 +171,18 @@ try {
     'consumer must not use the repository TypeScript alias',
   );
   const iife = readFileSync(
-    join(folder, 'node_modules/@qasimfida/accessiblit/dist/accessiblit.min.js'),
+    join(
+      folder,
+      'node_modules/@qasimfida/accessibility-widget/dist/accessiblit.min.js',
+    ),
     'utf8',
   );
   mkdirSync(join(output, 'vendor'));
   copyFileSync(
-    join(folder, 'node_modules/@qasimfida/accessiblit/dist/accessiblit.min.js'),
+    join(
+      folder,
+      'node_modules/@qasimfida/accessibility-widget/dist/accessiblit.min.js',
+    ),
     join(output, 'vendor/accessiblit.min.js'),
   );
   for (const id of [
@@ -206,7 +214,7 @@ try {
       strictModeDevelopment: true,
       rows,
       notes: [
-        'CDN bytes intercepted from the tarball because the public package is not published.',
+        'CDN bytes intercepted only in packed-consumer checks; Phase 11 records separate real CDN requests.',
         'Private registry and Git shell examples are syntax checked; no private credentials or registry is used.',
       ],
     }),

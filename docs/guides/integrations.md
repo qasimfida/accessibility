@@ -1,6 +1,6 @@
 # Delivery and integration contracts
 
-The package has zero runtime dependencies. Its core exports `init`, `destroy` and TypeScript types; React is an optional peer (`>=17`) needed only for `/react`. Choose one core delivery format per document. The React entry imports that core rather than embedding another engine.
+The public package is `@qasimfida/accessibility-widget@0.1.0` and has zero runtime dependencies. **Published 0.1.0 React-helper warning:** its runtime and types retain the old self-import. The source fixes this for a maintainer patch; use the core useEffect example in README with 0.1.0. The helper ownership guarantees below describe the fixed source and local packed tests. Its core exports `init`, `destroy` and TypeScript types; React is an optional peer (`>=17`) needed only for `/react`. Choose one core delivery format per document. The React entry imports that core rather than embedding another engine.
 
 | Consumer       | Entry                                           | Declarations             |
 | -------------- | ----------------------------------------------- | ------------------------ |
@@ -10,7 +10,7 @@ The package has zero runtime dependencies. Its core exports `init`, `destroy` an
 | React ESM      | `dist/react.mjs`                                | `dist/react.d.ts`        |
 | React CommonJS | `dist/react.cjs`                                | `dist/react.d.cts`       |
 
-All JavaScript files have adjacent sourcemaps. Both React files start with a `"use client"` banner. Conditional exports select types before the runtime target within each import/require branch. A typesVersions mapping also supports legacy resolution of `/react`. Package metadata is available at `@qasimfida/accessiblit/package.json`.
+All JavaScript files have adjacent sourcemaps. Both React files start with a `"use client"` banner. Conditional exports select types before the runtime target within each import/require branch. A typesVersions mapping also supports legacy resolution of `/react`. Package metadata is available at `@qasimfida/accessibility-widget/package.json`.
 
 ## Classic script and integrity
 
@@ -38,6 +38,6 @@ The example builds with the real production webpack pipeline and serves with nex
 
 `npm run test:examples` builds, packs, installs every example into fresh temporary directories, compiles consumer declarations, builds Vite and Next, runs real browsers and removes the temporary installs. It uses no symlinks or source aliases. Browser audits exercise the local script tag, intercepted CDN snippet, ESM position option, React component/effect ownership and Next hydration. The separate Node consumer works with neither React nor its type declarations installed.
 
-To run an example manually, build and pack from the root into examples, rename the archive to `examples/accessiblit.tgz`, then install in the selected example directory. Use a fresh install when replacing this development archive at the same 0.0.0 version. Framework versions are pinned; fresh example installs resolve their transitive dependencies, while the repository's own development dependencies are locked in package-lock.json.
+To run an example manually, build and pack from the root into examples, rename the archive to `examples/accessiblit.tgz`, then install in the selected example directory. Use a fresh install when replacing this development archive without changing a development archive filename. Framework versions are pinned; fresh example installs resolve their transitive dependencies, while the repository's own development dependencies are locked in package-lock.json.
 
 The bundle audit proves unused JavaScript imports leave only a consumer constant and that a combined React/core ESM consumer has one of each entry. Using init intentionally retains all eighteen built-in features. Its source-map byte attribution is approximate for minifier boundaries; gzip is measured for the complete IIFE, never by summing independently compressed parts. Legacy React renderer tests run in a bounded worker so their scheduler ports cannot hold the smoke CLI open.
