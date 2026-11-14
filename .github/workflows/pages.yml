@@ -32,6 +32,18 @@ jobs:
       contents: read
       pages: read
     steps:
+      - name: Check Pages publishing source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! task_pages_build_type="$(gh api 'repos/${{ github.repository }}/pages' --jq '.build_type')"; then
+            echo '::error::Cannot read Pages configuration. Enable Pages with Source: GitHub Actions, or check the workflow Pages read permission.'
+            exit 1
+          fi
+          if [ "$task_pages_build_type" != 'workflow' ]; then
+            echo '::error::Choose Settings > Pages > Build and deployment > Source: GitHub Actions. The workflow token cannot change repository administration settings.'
+            exit 1
+          fi
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
@@ -45,15 +57,6 @@ jobs:
       - run: npm run test:site
       - run: npm run test:site-snippets
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-      - name: Check Pages publishing source
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          task_pages_build_type="$(gh api 'repos/${{ github.repository }}/pages' --jq '.build_type')"
-          if [ "$task_pages_build_type" != 'workflow' ]; then
-            echo '::error::Choose Settings > Pages > Build and deployment > Source: GitHub Actions. The workflow token cannot change repository administration settings.'
-            exit 1
-          fi
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site/dist
