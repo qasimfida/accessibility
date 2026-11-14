@@ -47,6 +47,7 @@ export function observeContent(
     signature = next;
     const relevant = records.some((record) => {
       if (owned(record.target)) return false;
+      if (record.type === 'characterData') return true;
       if (record.type === 'attributes')
         return (
           record.target !== doc.documentElement ||
@@ -70,6 +71,8 @@ export function observeContent(
   api.onCleanup(stop);
   observer.observe(doc.documentElement, {
     childList: true,
+    // Parsers/frameworks can fill an existing empty Text node without inserting a child.
+    characterData: true,
     subtree: true,
     attributes: true,
     attributeFilter: ['class', 'style', 'hidden', 'aria-hidden', 'role'],

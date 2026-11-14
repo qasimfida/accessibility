@@ -80,6 +80,31 @@ it('contains callback errors and logs once', async () => {
   window.dispatchEvent(new Event('resize'));
   expect(warn).toHaveBeenCalledTimes(1);
 });
+it('observes text data edits while ignoring private text and stopping cleanly', async () => {
+  const p = document.createElement('p');
+  const text = document.createTextNode('');
+  p.append(text);
+  const host = document.createElement('div');
+  host.setAttribute('data-accessiblit-host', '');
+  const privateText = document.createTextNode('');
+  host.append(privateText);
+  document.body.append(p, host);
+  const refresh = vi.fn();
+  const stop = setup(refresh);
+  privateText.appendData('Private');
+  await tick();
+  expect(refresh).not.toHaveBeenCalled();
+  text.appendData('Visible');
+  await tick();
+  expect(refresh).toHaveBeenCalledTimes(1);
+  text.data = 'Revised';
+  await tick();
+  expect(refresh).toHaveBeenCalledTimes(2);
+  stop();
+  text.data = 'After cleanup';
+  await tick();
+  expect(refresh).toHaveBeenCalledTimes(2);
+});
 it('does not acquire resources for a document without a Window', () => {
   const listen = vi.fn();
   const stop = observeContent(
