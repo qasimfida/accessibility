@@ -28,7 +28,6 @@ test('head bootstrap restores preferences before the first sampled content frame
   const frames = await page.evaluate(
     () => Reflect.get(window, 'siteFirstFrames') as number[],
   );
-  for (const value of frames) expect(value).toBeCloseTo(baseline * 1.2, 1);
   console.log(
     'SITE_FIRST_FRAME',
     JSON.stringify({
@@ -39,6 +38,10 @@ test('head bootstrap restores preferences before the first sampled content frame
       emptyFrames: await page.evaluate(
         () => Reflect.get(window, 'siteEmptyFrames') as number,
       ),
+      diagnostics: await page.evaluate(() =>
+        Reflect.get(window, 'siteFrameDiagnostics'),
+      ),
     }),
   );
+  for (const value of frames) expect(value).toBeCloseTo(baseline * 1.2, 1);
 });
