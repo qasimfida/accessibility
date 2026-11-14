@@ -2,6 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './e2e/site',
+  outputDir: './test-results/site',
   forbidOnly: !!process.env.CI,
   retries: 0,
   workers: 1,
