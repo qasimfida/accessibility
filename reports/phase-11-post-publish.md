@@ -208,3 +208,39 @@ fb1b0c3 docs(release): disclose the published empty-text scaling issue
 The isolated full site rerun passed **225 tests in 5.0 minutes**, zero retries/skips. This supersedes the local trace-file collision only; it does not supersede the failing Linux iPhone CI evidence. Full `npm run verify` passed again (186 unit tests, six benchmark self-tests, lint, types, build/SSR, size, publint, attw). `actionlint` passed. Both `npm audit` and `npm audit --omit=dev` report **zero vulnerabilities**. Fast lint/type/unit-tooling checks ran before the report commit.
 
 Self-review finds no remaining unsafe API, new storage/network behavior or widened permissions in this continuation. The unresolved High first-frame defect and published-helper/deployment blockers remain explicitly open. No completion tag is created.
+
+## Build-failure follow-up — 2026-11-16
+
+The maintainer explicitly requested another fix pass for build errors and warnings. Read AGENTS.md completely; main was clean and `git pull --ff-only` was already up to date. `npm run build` and `npm run build:site` both succeeded without compiler or bundler warnings before this patch. The latest failing checks were downstream CI gates, not compilation: iPhone first-frame scaling, Node 20 WebKit trend regression (median **5ms**, p95 **7ms**, unchanged guard **4.5ms**), and the Pages publishing-source preflight.
+
+### New findings and fixes
+
+| Severity | Finding                                                                                 | Fix                                                                                                                                                                                                                                                         | Status                                                             |
+| -------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| High     | R-13: empty semantic blocks have no measured font baseline until their text is observed | `d9ec36a`: font scaling includes empty semantic text blocks before text arrives; empty icon wrappers remain excluded. New unit checks baseline ownership and exact reset; browser regression asserts the baseline exists while the paragraph is still empty | Local checks pass; CI must confirm the original Linux iPhone frame |
+| Medium   | R-14: initialization builds hidden feature controls                                     | `15e62c6`: defer controls until first panel open, read current settings at that time, retain the dialog shell and launcher, and create controls only once. New tests cover state changes before opening, repeated open/close, and destroy                   | Local checks pass; unchanged CI trend guard must confirm           |
+| Low      | Local Playwright processes inherit conflicting NO_COLOR and FORCE_COLOR variables       | Run the checks with `env -u NO_COLOR`, removing the conflicting user environment override. No warning suppression, config weakening or production change                                                                                                    | Conflict removed for final browser checks                          |
+
+The diagnostic Chromium CPU profile sampled 200 init/destroy loops at 100 microsecond intervals. Total measured loop time fell from **128.1ms to 69.6ms**; controlShell self-time was **6.826ms** before and did not appear among the top 25 afterward. These numbers include destroy, profiling overhead and a non-reference workload; they are **not** the absolute init gate. The standard `npm run perf -- --other-apps-open --output /tmp/build-fix-perf.json` was attempted but correctly refused to run because the Mac reported Battery Power. No benchmark baseline, method, threshold or CI runner was changed.
+
+`npm run verify` passes with **189 unit tests across 58 files**, six benchmark tooling tests, lint, typecheck, build/SSR, size, publint and attw. Core line/branch coverage remains **98.63%/97.96%**. The focused first-frame checks passed ten tests across five projects; 48 feature tests and 129 UI/core/React tests pass. A full site run started before the panel change was deliberately interrupted (exit 130), then restarted against the final source; it is not counted as a pass.
+
+The patched IIFE is **57,997 bytes raw / 19,704 bytes gzip**, below the unchanged 35KB limit. Its local SRI is `sha384-+Q/vEhA44ocbj80FFsWUI6m2P4FuZEZ0YjVEi1bZd2cUHqV3y1vToiL57pD0OKrQ`; this is not a hash for the immutable published 0.1.0 file. Published snippets retain the actual release SRI. No new dependency, storage key, network request, unsafe DOM operation or workflow permission was introduced. Publication and completion tagging remain blocked until the mandatory checks and public artifact checks pass.
+
+### Follow-up verification and remaining blocker
+
+`c4a4191` updates the streamed-parser regression to require the **scaled 19.2px baseline on the empty paragraph**, while retaining the empty-text check and every first-visible-frame assertion. The prior full final-source site run had **220 passes and five failures**, all five expecting the obsolete unscaled 16px empty baseline. The corrected five streamed cases then passed across Chromium, Firefox, WebKit, iPhone and Pixel (**9.3 seconds**). This is not relabelled as a single clean 225-test rerun.
+
+Extracted snippet checks pass **18 browser integrations**, eleven snippets, five shell checks, both TypeScript modes, and StrictMode cleanup. The actual pinned CDN bytes remain independently checked. The broader panel/accessibility/keyboard run records **103 passed, one failed, two capability skips (3.3 minutes)**. The skipped cases are existing non-Chromium pinch-zoom tests, not new exclusions. All eighteen-feature keyboard flows passed. The failure is Chromium desktop/light/reduced-motion: `uiEvidence` finds null focus after the open axe audit and the existing focus-width assertion cannot evaluate. **This remains an open High audit blocker; no claim that the panel audit is fully passing.**
+
+Two uncommitted test-order/context experiments did not resolve that blocker; both triggered Firefox page crashes during the open axe scan. Their runs were stopped after clear failures, and every experimental test edit was reverted to HEAD. Three unsuccessful attempts were reached, so AGENTS.md section 11 requires reporting the blocker and stopping further attempts. Neither axe rules nor focus assertions were removed, and no failing test was retried into a claimed pass. Investigation of audit-induced focus changes remains a hypothesis, not an established product cause.
+
+Self-review: no new runtime networking, storage, dependencies or unsafe DOM methods; deferred controls remain owned by the existing cleanup scope and use current state when first opened. `npm audit` reports zero vulnerabilities; actionlint passes. Final production behavior and bundle checks pass locally, but the panel audit, original Linux iPhone CI check, unchanged CI performance guard and public deployment/release checks still require a verified passing result. Main receives granular forward fixes only; no publication, completion tag, secret access, baseline reset or threshold change is performed in this follow-up.
+
+Follow-up commit list:
+
+```text
+d9ec36a fix(font-size): classify semantic blocks before parser text arrives
+15e62c6 perf(panel): build feature controls only on first open
+c4a4191 test(font-size): require scaled baselines on empty parser blocks
+```

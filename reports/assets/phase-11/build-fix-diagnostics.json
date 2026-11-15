@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-16",
+  "commits": ["d9ec36a", "15e62c6"],
+  "profileBefore": {
+    "date": "2026-11-15T18:59:50.535Z",
+    "method": "Chromium CPU sampling at 100 microseconds; 200 init/destroy loops, persist false; profiling includes destroy and profiler overhead, not an absolute gate",
+    "elapsedMs": 128.09999999403954,
+    "selfTimeMs": [
+      ["(anonymous)", 36.73000000000004],
+      ["(program)", 15.144000000000002],
+      ["set", 14.311000000000005],
+      ["showPopover", 7.899000000000001],
+      ["controlShell", 6.826],
+      ["append", 6.353000000000001],
+      ["createUI", 6.084000000000001],
+      ["(garbage collector)", 5.965000000000002],
+      ["remove", 5.311999999999999],
+      ["setAttribute", 4],
+      ["createElement", 3.6879999999999997],
+      ["add", 1.8910000000000002],
+      ["addEventListener", 1.8250000000000002],
+      ["getBoundingClientRect", 1.819],
+      ["init", 1.549],
+      ["(idle)", 1.5159999999999998],
+      ["createRadios", 1.4280000000000004],
+      ["createPanel", 1.4249999999999998],
+      ["dispose", 1.264],
+      ["release", 1.21],
+      ["placeUI", 1.15],
+      ["createScope", 1.053],
+      ["removeEventListener", 1.049],
+      ["update", 1.046],
+      ["enable", 0.915]
+    ]
+  },
+  "profileAfter": {
+    "date": "2026-11-15T19:00:37.793Z",
+    "method": "Chromium CPU sampling at 100 microseconds; 200 init/destroy loops, persist false; profiling includes destroy and profiler overhead, not an absolute gate",
+    "elapsedMs": 69.59999999403954,
+    "selfTimeMs": [
+      ["(anonymous)", 22.588000000000015],
+      ["set", 15.352000000000002],
+      ["(program)", 14.174999999999999],
+      ["showPopover", 7.157000000000001],
+      ["(garbage collector)", 3.0420000000000003],
+      ["createUI", 1.6800000000000002],
+      ["getBoundingClientRect", 1.6669999999999998],
+      ["(idle)", 1.38],
+      ["init", 1.291],
+      ["setAttribute", 1.198],
+      ["createScope", 1.1800000000000002],
+      ["remove", 1.038],
+      ["addEventListener", 0.905],
+      ["enable", 0.9],
+      ["createPanel", 0.753],
+      ["draw", 0.647],
+      ["placeUI", 0.643],
+      ["add", 0.549],
+      ["resolveOptions", 0.545],
+      ["detach", 0.52],
+      ["createLauncher", 0.41300000000000003],
+      ["observe", 0.398],
+      ["release", 0.396],
+      ["hidePopover", 0.388],
+      ["isFeatureValue", 0.386]
+    ]
+  },
+  "profileNote": "Diagnostic only; includes cleanup and profiler overhead. No absolute gate claim.",
+  "referenceBenchmark": {
+    "status": "BLOCKED",
+    "reason": "Mac is on Battery Power; standard script refused before measuring."
+  },
+  "originalCiPerformanceFailure": {
+    "runId": 43634353159,
+    "jobId": 132567761590,
+    "node": 20,
+    "browser": "webkit",
+    "medianMs": 5,
+    "p95Ms": 7,
+    "guardLimitMs": 4.5
+  },
+  "verify": {
+    "unitFiles": 58,
+    "units": 189,
+    "benchmarkTests": 6,
+    "pass": true
+  },
+  "focusedBrowsers": {
+    "tests": 10,
+    "pass": true
+  },
+  "iife": {
+    "rawBytes": 57997,
+    "gzipBytes": 19704,
+    "sri": "sha384-+Q/vEhA44ocbj80FFsWUI6m2P4FuZEZ0YjVEi1bZd2cUHqV3y1vToiL57pD0OKrQ"
+  },
+  "streamedRegression": {
+    "commit": "c4a4191",
+    "before": "full site: 220 passed, 5 obsolete empty-baseline expectations failed",
+    "after": "5 streamed cases passed (9.3s); first visible frames unchanged"
+  },
+  "panelAudit": {
+    "result": "103 passed, 1 failed, 2 existing capability skips (3.3m)",
+    "failure": "Chromium desktop light reduced-motion: null focus after open axe audit",
+    "experiments": "Two test ordering/context experiments caused Firefox open-axe crashes; interrupted and all uncommitted test edits reverted. No fourth attempt.",
+    "open": true
+  },
+  "snippets": {
+    "browserIntegrations": 18,
+    "pass": true
+  },
+  "warnings": "Conflicting inherited NO_COLOR removed for checks using env -u NO_COLOR; no warning suppression."
+}
