@@ -2,6 +2,21 @@ import { afterEach, expect, it, vi } from 'vitest';
 import { fontSize } from '../../src/features/font-size';
 import { featureEngine } from '../helpers/feature-engine';
 const cleanups: (() => void)[] = [];
+it('classifies empty semantic blocks before text arrives without scaling icon wrappers', () => {
+  const p = document.createElement('p');
+  p.style.fontSize = '16px';
+  const icon = document.createElement('span');
+  icon.style.fontSize = '16px';
+  document.body.append(p, icon);
+  const before = document.documentElement.outerHTML;
+  const engine = featureEngine(fontSize);
+  cleanups.push(engine.destroy);
+  engine.set(120);
+  expect(p.hasAttribute('data-accessiblit-font-size')).toBe(true);
+  expect(icon.hasAttribute('data-accessiblit-font-size')).toBe(false);
+  engine.set(100);
+  expect(document.documentElement.outerHTML).toBe(before);
+});
 afterEach(() => {
   cleanups.forEach((fn) => fn());
   cleanups.length = 0;

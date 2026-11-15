@@ -20,7 +20,8 @@ test('scales text data filled after an empty node before its first frame', async
   await probe.evaluate((element) =>
     element.replaceChildren(document.createTextNode('')),
   );
-  await expect(probe).not.toHaveAttribute('data-accessiblit-font-size', /.+/);
+  // Semantic blocks retain their baseline even while the parser has not filled their text.
+  await expect(probe).toHaveAttribute('data-accessiblit-font-size', /.+/);
   const frames = await probe.evaluate(
     (element) =>
       new Promise<number[]>((resolve) => {

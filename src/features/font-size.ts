@@ -35,7 +35,7 @@ export const fontSize: Feature = {
         enabled = root.classList.contains(CLASS);
       if (enabled) root.classList.remove(CLASS);
       try {
-        const measured = textElements(doc)
+        const measured = textElements(doc, true)
           .map((element) => ({
             element,
             size: parseFloat(view.getComputedStyle(element).fontSize),

@@ -43,9 +43,14 @@ export function contentElements(doc: Document): HTMLElement[] {
 }
 
 /** Text ownership avoids scaling empty icon-font wrappers; value controls have no text child nodes. */
-export function textElements(doc: Document): HTMLElement[] {
+export function textElements(
+  doc: Document,
+  includeEmptyBlocks = false,
+): HTMLElement[] {
   return contentElements(doc).filter((element) => {
     if (element.matches('input,select,textarea')) return true;
+    // A streaming parser can paint a semantic block before its text mutation is delivered.
+    if (includeEmptyBlocks && element.matches(TEXT_BLOCKS)) return true;
     // Avoid allocating a child-node array for every text block on large pages.
     for (let node = element.firstChild; node; node = node.nextSibling)
       if (node.nodeType === 3 && node.textContent?.trim()) return true;
