@@ -55,7 +55,9 @@ test('parser shells are empty until their first correctly scaled text frame', as
         fontSize: parseFloat(getComputedStyle(element).fontSize),
         sampled: Reflect.get(window, 'siteFirstFrames') as number[],
       }));
-    expect(shell).toEqual({ text: '', fontSize: 16, sampled: [] });
+    // Persisted scaling owns the empty semantic block before parser text arrives.
+    expect(shell).toMatchObject({ text: '', sampled: [] });
+    expect(shell.fontSize).toBeCloseTo(19.2, 1);
     release();
     await page.waitForFunction(
       () => Reflect.get(window, 'siteFirstFrames').length >= 5,
