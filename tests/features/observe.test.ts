@@ -134,3 +134,28 @@ it('refreshes for another feature while ignoring temporary root-state round trip
   await tick();
   expect(refresh).toHaveBeenCalledTimes(1);
 });
+
+it('reconciles synchronously at parser completion and releases the boundary listener', () => {
+  const state = vi.spyOn(document, 'readyState', 'get');
+  state.mockReturnValue('loading');
+  const refresh = vi.fn();
+  const sampled: number[] = [];
+  const sample = () => sampled.push(refresh.mock.calls.length);
+  // An owner listener registered first must still observe reconciled content.
+  document.addEventListener('readystatechange', sample);
+  cleanups.push(() => document.removeEventListener('readystatechange', sample));
+  const stop = setup(refresh);
+  document.dispatchEvent(new Event('readystatechange'));
+  expect(refresh).not.toHaveBeenCalled();
+  state.mockReturnValue('interactive');
+  document.dispatchEvent(new Event('readystatechange'));
+  expect(refresh).toHaveBeenCalledTimes(1);
+  expect(sampled).toEqual([0, 1]);
+  state.mockReturnValue('complete');
+  document.dispatchEvent(new Event('readystatechange'));
+  expect(refresh).toHaveBeenCalledTimes(1);
+  stop();
+  state.mockReturnValue('interactive');
+  document.dispatchEvent(new Event('readystatechange'));
+  expect(refresh).toHaveBeenCalledTimes(1);
+});

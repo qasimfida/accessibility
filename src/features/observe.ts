@@ -81,6 +81,17 @@ export function observeContent(
   releases.push(
     api.listen(
       doc,
+      'readystatechange',
+      () => {
+        // Reconcile before ordinary readiness listeners can sample parser content.
+        if (doc.readyState === 'interactive') safe();
+      },
+      { capture: true },
+    ),
+  );
+  releases.push(
+    api.listen(
+      doc,
       'load',
       (event) => {
         if ((event.target as Element).tagName === 'LINK') safe();
