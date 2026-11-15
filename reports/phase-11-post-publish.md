@@ -1,7 +1,7 @@
 # Phase 11 — Post-publish verification
 
-Status: BLOCKED (published React entry, remaining CI first-frame failure, live Pages deployment and missing predecessor tag)
-Date: resumed 2026-11-15, Asia/Karachi; initial checks 2026-11-14. Required previous tag `phase-10-complete` remains absent. Attempt baseline: `349134a`; latest tested runtime fix: `faa788a`; documentation source `fb1b0c3`; artifact-directory isolation `13fe12a`. Evidence/report commits follow.
+Status: BLOCKED (published React entry, unavailable npm authentication and missing predecessor tag; first-frame failure and Pages deployment resolved)
+Date: resumed 2026-11-15, Asia/Karachi; initial checks 2026-11-14. Required previous tag `phase-10-complete` remains absent. Attempt baseline: `349134a`; latest tested runtime fix: `90ef0c0`; first-frame CI and Pages build/deploy now pass. Earlier fixes and evidence remain below. Evidence/report commits follow.
 
 ## Summary
 
@@ -9,7 +9,7 @@ The maintainer clarified the published name: **@qasimfida/accessibility-widget@0
 
 A real release defect remains: the published 0.1.0 React JavaScript and declarations import the old, unavailable `@qasimfida/accessiblit`. Published React entry imports fail in ESM and CJS; its declarations fail in Node16 and Bundler consumers. The source is fixed and local packed consumers pass, but the agent has not published anything or changed the registry artifact. React users can use the tested core `init()`/`destroy()` effect while awaiting a maintainer patch.
 
-The live Pages URL still serves the old Jekyll page with no widget, missing documentation routes, axe violations and a cdnjs request. Therefore this phase is not marked complete and no `phase-11-complete` tag is created.
+The first-frame failure is fixed in `90ef0c0`: the GitHub Pages build passes all 230 tests, including every iPhone frame at 19.200001px. Pages deployment succeeds, and the actual live site passes 40 browser checks. Phase 11 remains blocked by the unchanged published React artifact, unavailable npm authentication (E401), and the missing predecessor tag; no `phase-11-complete` tag is created.
 
 ## What changed (files and why)
 
@@ -89,7 +89,7 @@ The real-unpkg keyboard-only walk passed in Chromium: Alt+A → focused Close �
 
 `npm run test:site` passed **220 tests (5.1 minutes)** across Chromium, Firefox, WebKit, emulated iPhone and Pixel, with zero retries/skips. All 175 page/media cases passed both closed/open axe scans (350 scans); keyboard, routes, internal links, first-party requests, persisted frames and streamed-parser checks also passed. [Raw updated local-site evidence](assets/phase-11/updated-local-site.json) retains all emitted results. This does not change the live deployment verdict.
 
-### Live Pages: current public URL
+### Earlier live Pages observation (superseded by the verified deployment below)
 
 Chromium opened the actual URL and ran default axe plus same-origin link/request checks, without substituting the local Vite build:
 
@@ -112,7 +112,7 @@ Seven page/asset requests included one third-party request: `https://cdnjs.cloud
 | High     | R-1: obsolete foundation-only README                                     | eb9b382; further release accuracy in 698c274                                            | Fixed source                            |
 | Blocker  | R-2: wrong package name used for public verification                     | Maintainer clarified @qasimfida/accessibility-widget; normal npm and CDN reads now pass | Resolved for corrected name             |
 | Blocker  | R-3: phase-10-complete tag absent                                        | Maintainer must identify/complete the real predecessor; no fabricated tag               | Open                                    |
-| High     | R-4: old live Pages site, missing routes, violations and external script | Correct deployment/source configuration and remaining Pages CI prerequisites            | Open                                    |
+| High     | R-4: old live Pages site, missing routes, violations and external script | Pages run 43762441286 deploys 90ef0c0; 40 live checks pass                              | Resolved                                |
 | Blocker  | R-5: published React runtime/types self-import old name                  | 715bc03 fixes source and adds build-time entry resolution                               | Local fix; published 0.1.0 still broken |
 | Medium   | R-6: stale Vitest alias tested built output                              | ce18dc2; new cross-entry singleton guard fails before and passes after                  | Fixed                                   |
 | High     | R-7: snippets use obsolete name/version and lack release integrity       | 698c274; real CDN SRI and tested core React workaround; extracted checks pass           | Fixed source                            |
@@ -134,7 +134,7 @@ Published 0.1.0 is **57,849 bytes raw / 19,603 bytes gzip**. The patched local b
 ## Known limitations (honest)
 
 - Published 0.1.0 `/react` runtime/types remain broken until a new maintainer release. Do not overwrite/reuse 0.1.0 or treat the local tarball's same metadata version as a registry fix; bump a new patch version before publishing.
-- Live Vite deployment and the required predecessor tag remain unresolved.
+- Live Vite deployment is now verified; the required predecessor tag remains absent.
 - No verified provenance attestation was returned, and no screen reader or physical device was tested.
 - Browser audit instrumentation initially caused post-axe Firefox crashes; all original results are retained alongside the separated-context checks.
 
@@ -145,8 +145,8 @@ The original name checks were superseded by the maintainer's explicit new packag
 ## Handoff notes for the next phase
 
 1. Maintainer: review the React/self-import and character-data fixes, resolve the remaining CI first-frame failure, then bump to a new compatible patch (for example 0.1.1) and publish through your own release process. The agent has not published or touched tokens. Verify its React ESM/CJS imports and declaration consumers from a fresh registry installation before announcing the helper as fixed.
-2. Select GitHub Pages Source **GitHub Actions**, resolve mandatory deployment CI failures and deploy the audited site build. Repeat live axe, link, request and keyboard checks against the actual deployed URLs.
-3. Resolve the remaining first-frame CI blocker and the missing phase-10-complete predecessor; do not create false historical completion tags. Only create phase-11-complete after the published-helper and live-site checks actually pass.
+2. Pages Source is now GitHub Actions, deployment succeeds, and live checks pass. Repeat live checks after future site/releases; no further source-setting change is requested.
+3. The first-frame CI blocker is resolved in 90ef0c0. Resolve the missing phase-10-complete predecessor; do not create false historical completion tags. Only create phase-11-complete after the published-helper and live-site checks actually pass.
 
 ### First 30 days maintenance plan
 
@@ -244,3 +244,31 @@ d9ec36a fix(font-size): classify semantic blocks before parser text arrives
 15e62c6 perf(panel): build feature controls only on first open
 c4a4191 test(font-size): require scaled baselines on empty parser blocks
 ```
+
+## Parser-completion fix — 2026-11-16
+
+The maintainer asked to fix the specific iPhone first-frame failure and rerun. Read AGENTS.md completely, confirmed clean main, and pulled fast-forward-only (already up to date). The pasted result also reproduces on source 7e028ef: CI run 43750801327/site job 132924086799 reports 224 passes and one failure. Its first iPhone sample is 16px at interactive readiness with no font marker, followed by four 19.200001px samples. Both trend guards and all runtime browser jobs on that source passed; the Pages source preflight also passed, confirming the maintainer's settings change.
+
+**R-16 (High), `90ef0c0`:** active content observers now reconcile synchronously in capture phase when the parser reaches interactive readiness, before ordinary owner readiness listeners can sample content. The listener is owned by the existing feature scope and removed on off/destroy. This supplements mutation observation; it does not defer sampling, skip frames, change expected 19.2px values, retry failures or change any runner/gate.
+
+A deterministic test withholds mutation callbacks through the parser-completion boundary. Before the fix it fails on Firefox, WebKit and iPhone (16px), while Chromium/Pixel pass. The first ordinary-phase readiness listener still fails those three cases (17 passes/three failures in the focused set), so it was not pushed. The capture-phase implementation passes all **20 focused browser tests (16.5s)**. A new unit proves capture ordering ahead of an already-registered ordinary listener and verifies cleanup; ten focused units pass. Only the local, unpublished commit was amended after these results; no pushed history was rewritten.
+
+Full `npm run verify` passes with **190 unit tests / 58 files**, six benchmark self-tests, lint, types, build/SSR, size, publint and attw. Overall lines/branches: **96.15%/90.98%**; core **98.63%/97.96%**. The full local site suite passes **230 tests in 2.6 minutes**, two local workers, zero retries/skips. This includes unchanged first-frame expectations, the new parser-boundary case, all five browser/device projects, keyboard, links, requests and full-rule closed/open axe scans. Axe incomplete results remain reported separately. CI keeps its existing worker count and zero retries.
+
+Both CI trend guards pass on 90ef0c0 against the unchanged committed baselines: Node 20 Chromium median/p95 **1.1/1.6ms**, WebKit **1/3ms**; Node 22 Chromium **1/1.2ms**, WebKit **2/3ms**. These are shared-runner trend results, not fresh absolute reference-machine qualification. IIFE: **58,089 bytes raw / 19,734 gzip**, under 35KB. Local SRI is `sha384-92p98tW9X5RIeEH3DgJaTj4mWx29zz9C5jAH1Jd+AeCQUHivVa6CYiWAkYtQ3JC3`, not the published 0.1.0 SRI.
+
+Security/privacy review: one scoped DOM readiness listener; no new network, storage, dependency or unsafe DOM API. Runtime audit reports zero vulnerabilities; actionlint passes. A read-only registry identity check returns E401, so registry authentication is unavailable. No login, token operation or publication was attempted. Maintainer authentication was requested without asking for secrets in chat. The published latest version still reads 0.1.0. Full phase completion remains separate from the source fix.
+
+[Raw parser-completion evidence](assets/phase-11/parser-completion-fix.json). New CI run 43762441180 and Pages run 43762441286 are being checked; their final outcomes and live-site checks follow below.
+
+### Confirmed GitHub rerun and live deployment
+
+The reported error is **FIXED** in `90ef0c0`. [Pages run 43762441286](https://github.com/qasimfida/accessiblit/actions/runs/43762441286) passes its complete build and deployment. The Linux build reports **230 tests passed (7.4 minutes)**, without retries: iPhone frames are **[19.200001, 19.200001, 19.200001, 19.200001, 19.200001]**, and all other projects' five first frames also pass. The independent [CI site job](https://github.com/qasimfida/accessiblit/actions/runs/43762441180) succeeds too, including the snippet checks. The CI run currently has thirteen successful jobs; the two native WebKit runtime jobs remain in progress at this evidence capture. Their overall result is not claimed yet. [Raw CI jobs and frames](assets/phase-11/parser-fix-ci.json).
+
+The actual public site now passes **40 live Chromium browser tests (53.4s)**, zero retries, using the repository's existing full-rule accessibility, keyboard, internal-link, network and RTL table-keyboard tests against https://qasimfida.github.io/accessiblit/ . No webServer, response substitution or intercepted CDN is used for this live run. All 35 page/media cases pass both closed/open scans (70 scans); the exact emitted incomplete checks remain in the receipt. The real keyboard walk visits the pages, operates the demo, changes/reset settings and returns focus. Internal destinations/fragments/assets resolve and no third-party request is observed. This supersedes the old Jekyll failure; its historical evidence remains preserved.
+
+A separate direct audit confirms home, install, options, FAQ and 404.html all return **200**, each has exactly one widget host, and all five closed scans have zero violations. Eighteen same-origin link URLs checked in that direct audit return 200. The fuller live suite additionally checks assets and fragments. Published 0.1.0 remains immutable and its React-helper problem is not fixed by deploying the local source.
+
+Review R-4 (Pages deployment) and R-16 (first-frame scaling) are now resolved by the tested workflow/deployment and `90ef0c0`. No gate was weakened and no failing sample discarded. The prior local focus-audit failure is retained historically; the current Linux Chromium/Firefox runtime jobs pass and the live widget focus/contrast checks pass. Two native WebKit runtime jobs remain pending, so no overall CI pass or complete-phase tag is claimed.
+
+Remaining handoff: npm's read-only identity check returns E401; authenticate locally without sharing credentials before any authorized release can proceed. The published latest is still 0.1.0, and `git ls-remote` still finds no phase-10-complete tag. Do not infer registry/publication completion from this successfully fixed build. The phase maintenance plan and manual screen-reader/device limitations remain applicable.

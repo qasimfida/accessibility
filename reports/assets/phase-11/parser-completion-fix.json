@@ -1,0 +1,1070 @@
+{
+  "date": "2026-11-16",
+  "source": "90ef0c0",
+  "originalCi": {
+    "run": 43750801327,
+    "job": 132924086799,
+    "iphone": {
+      "frames": [16, 19.200001, 19.200001, 19.200001, 19.200001],
+      "readyState": "interactive",
+      "firstMarker": null
+    }
+  },
+  "before": {
+    "delayedMutationRegression": "3 failed (Firefox, WebKit, iPhone), 2 passed (Chromium, Pixel); 9.0s",
+    "ordinaryReadinessListener": "17 passed, 3 delayed-mutation failures; 19.2s"
+  },
+  "after": {
+    "captureReadinessListener": "20 focused browser tests passed (16.5s)",
+    "units": "10 focused tests passed",
+    "fullVerify": "190 tests in 58 files, six benchmark tooling self-tests; lint, typecheck, build/SSR, size, publint, attw passed",
+    "fullLocalSite": "230 passed (2.6m), workers=2, retries=0"
+  },
+  "cleanup": "Unit proves listener removal and capture ordering before an earlier ordinary owner listener.",
+  "ciTrend": {
+    "node20": {
+      "date": "2026-11-15T21:13:43.681Z",
+      "source": "90ef0c01e2e89331cbf80e05e9cdcac30c85895b",
+      "mode": "ci-trend",
+      "machine": {
+        "model": "VirtualMac2,1",
+        "chip": "Apple M1 (Virtual)",
+        "ramBytes": 7516192768,
+        "platform": "darwin",
+        "architecture": "arm64",
+        "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.7.2\nBuildVersion:\t\t25G332",
+        "node": "v20.20.2",
+        "logicalCpus": 3
+      },
+      "conditions": {
+        "power": "Now drawing from 'AC Power'",
+        "otherAppsClosed": "not applicable: shared CI",
+        "appsConditionException": null,
+        "headless": true,
+        "tracing": false
+      },
+      "method": {
+        "warmupRuns": 5,
+        "measuredRuns": 30,
+        "timer": "performance.now around init() only",
+        "fixture": "plain semantic host; 5000 paragraphs; default options; empty storage",
+        "gate": "report absolute; fail above 1.5 times committed CI median",
+        "median": "mean of middle pair",
+        "p95": "nearest rank"
+      },
+      "browsers": {
+        "chromium": {
+          "version": "158.0.8127.18",
+          "warmups": [
+            14.300000000046566, 1.3000000000465661, 1.6000000000349246,
+            1.7999999999883585, 2.7000000000116415
+          ],
+          "samples": [
+            1.400000000023283, 1, 1.2999999999883585, 1.2999999999883585,
+            1.599999999976717, 2, 1.599999999976717, 0.9000000000232831,
+            1.2000000000116415, 1.1000000000349246, 1, 1.099999999976717,
+            1.2000000000116415, 1.2000000000116415, 1.099999999976717,
+            1.2000000000116415, 1.099999999976717, 0.7999999999883585, 1,
+            1.2000000000116415, 0.8999999999650754, 1, 1.2000000000116415,
+            1.2000000000116415, 1.1000000000349246, 1.2000000000116415, 1,
+            1.099999999976717, 0.7999999999883585, 1.1000000000349246
+          ],
+          "medianMs": 1.1000000000349246,
+          "p95Ms": 1.599999999976717,
+          "guard": {
+            "limitMs": 2.25,
+            "pass": true
+          },
+          "pass": true
+        },
+        "webkit": {
+          "version": "27.2",
+          "warmups": [48, 3, 2, 1, 1],
+          "samples": [
+            2, 2, 1, 1, 1, 2, 2, 2, 1, 1, 2, 1, 3, 3, 1, 2, 1, 1, 1, 1, 2, 1, 1,
+            1, 2, 2, 1, 1, 1, 1
+          ],
+          "medianMs": 1,
+          "p95Ms": 3,
+          "guard": {
+            "limitMs": 4.5,
+            "pass": true
+          },
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    "node22": {
+      "date": "2026-11-15T21:13:28.995Z",
+      "source": "90ef0c01e2e89331cbf80e05e9cdcac30c85895b",
+      "mode": "ci-trend",
+      "machine": {
+        "model": "VirtualMac2,1",
+        "chip": "Apple M1 (Virtual)",
+        "ramBytes": 7516192768,
+        "platform": "darwin",
+        "architecture": "arm64",
+        "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.7.2\nBuildVersion:\t\t25G332",
+        "node": "v22.23.4",
+        "logicalCpus": 3
+      },
+      "conditions": {
+        "power": "Now drawing from 'AC Power'",
+        "otherAppsClosed": "not applicable: shared CI",
+        "appsConditionException": null,
+        "headless": true,
+        "tracing": false
+      },
+      "method": {
+        "warmupRuns": 5,
+        "measuredRuns": 30,
+        "timer": "performance.now around init() only",
+        "fixture": "plain semantic host; 5000 paragraphs; default options; empty storage",
+        "gate": "report absolute; fail above 1.5 times committed CI median",
+        "median": "mean of middle pair",
+        "p95": "nearest rank"
+      },
+      "browsers": {
+        "chromium": {
+          "version": "158.0.8127.18",
+          "warmups": [
+            10.80000000000291, 1.1999999999970896, 1.3000000000029104,
+            1.1999999999970896, 1.1999999999970896
+          ],
+          "samples": [
+            1.1000000000058208, 0.8000000000029104, 1, 1, 1.1999999999970896,
+            1.0999999999912689, 1.1000000000058208, 1.1000000000058208, 1,
+            0.8999999999941792, 1, 1, 1.1000000000058208, 1, 1,
+            1.1999999999970896, 1.1000000000058208, 0.9000000000087311,
+            1.1999999999970896, 0.8000000000029104, 0.8999999999941792,
+            0.8999999999941792, 0.8999999999941792, 1.1000000000058208, 1,
+            0.8000000000029104, 1.1000000000058208, 0.8999999999941792,
+            0.9000000000087311, 0.7999999999883585
+          ],
+          "medianMs": 1,
+          "p95Ms": 1.1999999999970896,
+          "guard": {
+            "limitMs": 2.625,
+            "pass": true
+          },
+          "pass": true
+        },
+        "webkit": {
+          "version": "27.2",
+          "warmups": [30, 1, 1, 2, 1],
+          "samples": [
+            2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 3, 2, 1, 1, 2, 1, 3, 1, 2, 2, 2, 2, 2,
+            3, 2, 3, 2, 2, 2, 2
+          ],
+          "medianMs": 2,
+          "p95Ms": 3,
+          "guard": {
+            "limitMs": 7.5,
+            "pass": true
+          },
+          "pass": true
+        }
+      },
+      "pass": true
+    }
+  },
+  "bundle": {
+    "rawBytes": 58089,
+    "gzipBytes": 19734,
+    "localSri": "sha384-92p98tW9X5RIeEH3DgJaTj4mWx29zz9C5jAH1Jd+AeCQUHivVa6CYiWAkYtQ3JC3"
+  },
+  "publication": {
+    "registryVersion": "0.1.0",
+    "identityCheck": "E401",
+    "registryWrites": false
+  },
+  "ciRuns": {
+    "ci": 43762441180,
+    "pages": 43762441286,
+    "status": "pending",
+    "site": "success",
+    "pagesBuild": "success",
+    "pagesDeploy": "success",
+    "remainingAtCapture": "Two native WebKit runtime jobs still in progress; other 13 CI jobs pass."
+  },
+  "live": {
+    "result": "40 passed (53.4s), real public URL, Chromium",
+    "interception": false,
+    "retries": 0,
+    "evidence": [
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 8.0412727813986,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": []
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": []
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": []
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": []
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "tab": "Tab",
+        "path": [
+          "Skip to main content",
+          "Main",
+          "Open live demo options",
+          "Close",
+          "Increase Font size",
+          "Reset all",
+          "Launcher focus restored",
+          "Shift+Tab back to the header",
+          "Install",
+          "Options",
+          "FAQ and privacy",
+          "Home"
+        ],
+        "errors": []
+      },
+      {
+        "checked": 23,
+        "destinations": 10,
+        "broken": 0
+      },
+      {
+        "project": "chromium",
+        "urls": [
+          "https://qasimfida.github.io/accessiblit/",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css",
+          "https://qasimfida.github.io/accessiblit/install/",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css",
+          "https://qasimfida.github.io/accessiblit/options/",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css",
+          "https://qasimfida.github.io/accessiblit/faq/",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css",
+          "https://qasimfida.github.io/accessiblit/404.html",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css"
+        ],
+        "thirdParty": []
+      },
+      {
+        "project": "chromium",
+        "direction": "ltr",
+        "initial": 0,
+        "moved": 64,
+        "focus": {
+          "width": "3px",
+          "style": "solid"
+        },
+        "tabExit": true
+      },
+      {
+        "project": "chromium",
+        "direction": "rtl",
+        "initial": 0,
+        "moved": -64,
+        "focus": {
+          "width": "3px",
+          "style": "solid"
+        },
+        "tabExit": true
+      }
+    ]
+  },
+  "liveQuickCheck": {
+    "date": "2026-11-15T21:22:46.241Z",
+    "base": "https://qasimfida.github.io/accessiblit/",
+    "pages": [
+      {
+        "path": "",
+        "status": 200,
+        "title": "Accessiblit \u2014 accessibility personalisation",
+        "widgetHosts": 1,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "path": "install/",
+        "status": 200,
+        "title": "Install Accessiblit \u2014 script, npm, React and Next.js",
+        "widgetHosts": 1,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "path": "options/",
+        "status": 200,
+        "title": "Accessiblit options and lifecycle",
+        "widgetHosts": 1,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "path": "faq/",
+        "status": 200,
+        "title": "Accessiblit FAQ, privacy and limits",
+        "widgetHosts": 1,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "path": "404.html",
+        "status": 200,
+        "title": "Page not found \u2014 Accessiblit",
+        "widgetHosts": 1,
+        "violations": [],
+        "incomplete": []
+      }
+    ],
+    "requests": [
+      "https://qasimfida.github.io/accessiblit/",
+      "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+      "https://qasimfida.github.io/accessiblit/bootstrap.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css",
+      "https://qasimfida.github.io/accessiblit/install/",
+      "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+      "https://qasimfida.github.io/accessiblit/bootstrap.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css",
+      "https://qasimfida.github.io/accessiblit/options/",
+      "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+      "https://qasimfida.github.io/accessiblit/bootstrap.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css",
+      "https://qasimfida.github.io/accessiblit/faq/",
+      "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+      "https://qasimfida.github.io/accessiblit/bootstrap.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css",
+      "https://qasimfida.github.io/accessiblit/404.html",
+      "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+      "https://qasimfida.github.io/accessiblit/bootstrap.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-BWUJ2vb1.js",
+      "https://qasimfida.github.io/accessiblit/assets/main-NyYvs6mz.css"
+    ],
+    "thirdParty": [],
+    "links": {
+      "https://qasimfida.github.io/accessiblit/#main": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/install/": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/options/": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/faq/": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/#demo": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/faq/#limits": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/faq/#privacy": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/install/#main": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/install/#cdn": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/install/#npm": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/install/#react": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/install/#next": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/install/#self-hosted": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/install/#private": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/options/#main": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/faq/#main": {
+        "status": 200
+      },
+      "https://qasimfida.github.io/accessiblit/404.html#main": {
+        "status": 200
+      }
+    }
+  }
+}
