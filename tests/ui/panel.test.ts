@@ -157,3 +157,32 @@ it('renders a device note from metadata without knowing a feature id', () => {
     panel.element.querySelector('.accessiblit-cursor-note')?.textContent,
   ).toContain('mouse or trackpad');
 });
+
+it('reads current state when deferred controls are prepared and ignores prepare after destroy', () => {
+  const state = createState();
+  const panel = createPanel(
+    document,
+    testFeatures(),
+    resolveOptions().messages,
+    'deferred',
+    {
+      getState: () => state,
+      setFeature: vi.fn(),
+      close: vi.fn(),
+      reset: vi.fn(),
+    },
+    true,
+  );
+  releases.push(panel.destroy);
+  expect(panel.element.querySelector('[aria-pressed]')).toBeNull();
+  state.darkMode = true;
+  panel.prepare();
+  expect(
+    panel.element.querySelector('[aria-pressed]')?.getAttribute('aria-pressed'),
+  ).toBe('true');
+  panel.prepare();
+  expect(panel.element.querySelectorAll('[aria-pressed]')).toHaveLength(1);
+  panel.destroy();
+  panel.prepare();
+  expect(panel.element.isConnected).toBe(false);
+});

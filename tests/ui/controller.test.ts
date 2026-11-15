@@ -231,3 +231,16 @@ it('protects the outline of a host control beside the launcher', () => {
     true,
   );
 });
+
+it('defers controls until first open and creates them exactly once', () => {
+  const { ui, root } = setup();
+  expect(root.querySelector('.accessiblit-feature')).toBeNull();
+  ui.open();
+  const controls = [...root.querySelectorAll('.accessiblit-feature')];
+  expect(controls.length).toBeGreaterThan(0);
+  ui.close();
+  ui.open();
+  expect([...root.querySelectorAll('.accessiblit-feature')]).toEqual(controls);
+  ui.destroy();
+  expect(root.childNodes).toHaveLength(0);
+});

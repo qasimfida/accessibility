@@ -35,6 +35,7 @@ export function createPanel(
   messages: Messages,
   prefix: string,
   actions: PanelActions,
+  deferControls = false,
 ) {
   const report = createReporter();
   const scope = createScope(() => report('panel', 'Panel cleanup failed.'));
@@ -63,63 +64,72 @@ export function createPanel(
   element.append(header, intro);
   scope.listen(closeButton, 'click', actions.close);
   const records = new Map<FeatureId, RenderedControl>();
-  const groups = [
-    ['content', 'contentGroup'],
-    ['colour', 'colourGroup'],
-    ['navigation', 'navigationGroup'],
-  ] as const;
-  for (const [id, key] of groups) {
-    const group = doc.createElement('section');
-    group.className = 'accessiblit-group';
-    group.setAttribute('aria-labelledby', `${prefix}-${id}`);
-    const heading = doc.createElement('h3');
-    heading.id = `${prefix}-${id}`;
-    heading.textContent = messages[key];
-    group.append(heading);
-    if (id === 'colour') {
-      const note = doc.createElement('p');
-      note.className = 'accessiblit-forced-colours-note';
-      note.textContent = messages.forcedColoursNote ?? '';
-      group.append(note);
-    }
-    for (const feature of features.filter((feature) => feature.group === id)) {
-      try {
-        if (records.has(feature.id)) continue;
-        const control = render({
-          document: doc,
-          feature,
-          messages,
-          prefix,
-          getValue: () => actions.getState()[feature.id],
-          setValue: (value) => actions.setFeature(feature.id, value),
-        });
-        scope.add(control.destroy);
-        control.update(actions.getState()[feature.id]);
-        records.set(feature.id, control);
-        group.append(control.element);
-      } catch {
-        report(
-          `control:${feature.id}`,
-          `Control for ${feature.id} could not render; other controls remain available.`,
-        );
-      }
-    }
-    if (!features.some((feature) => feature.group === id)) {
-      const empty = doc.createElement('p');
-      empty.className = 'accessiblit-empty';
-      empty.textContent = messages.emptyGroup;
-      group.append(empty);
-    }
-    element.append(group);
-  }
   const resetButton = makeButton(doc, messages.reset);
-  resetButton.className = 'accessiblit-reset';
-  element.append(resetButton);
-  scope.listen(resetButton, 'click', actions.reset);
+  let prepared = false;
+  const prepare = () => {
+    if (prepared || !scope.active) return;
+    prepared = true;
+    const groups = [
+      ['content', 'contentGroup'],
+      ['colour', 'colourGroup'],
+      ['navigation', 'navigationGroup'],
+    ] as const;
+    for (const [id, key] of groups) {
+      const group = doc.createElement('section');
+      group.className = 'accessiblit-group';
+      group.setAttribute('aria-labelledby', `${prefix}-${id}`);
+      const heading = doc.createElement('h3');
+      heading.id = `${prefix}-${id}`;
+      heading.textContent = messages[key];
+      group.append(heading);
+      if (id === 'colour') {
+        const note = doc.createElement('p');
+        note.className = 'accessiblit-forced-colours-note';
+        note.textContent = messages.forcedColoursNote ?? '';
+        group.append(note);
+      }
+      for (const feature of features.filter(
+        (feature) => feature.group === id,
+      )) {
+        try {
+          if (records.has(feature.id)) continue;
+          const control = render({
+            document: doc,
+            feature,
+            messages,
+            prefix,
+            getValue: () => actions.getState()[feature.id],
+            setValue: (value) => actions.setFeature(feature.id, value),
+          });
+          scope.add(control.destroy);
+          control.update(actions.getState()[feature.id]);
+          records.set(feature.id, control);
+          group.append(control.element);
+        } catch {
+          report(
+            `control:${feature.id}`,
+            `Control for ${feature.id} could not render; other controls remain available.`,
+          );
+        }
+      }
+      if (!features.some((feature) => feature.group === id)) {
+        const empty = doc.createElement('p');
+        empty.className = 'accessiblit-empty';
+        empty.textContent = messages.emptyGroup;
+        group.append(empty);
+      }
+      element.append(group);
+    }
+    resetButton.className = 'accessiblit-reset';
+    element.append(resetButton);
+    scope.listen(resetButton, 'click', actions.reset);
+  };
+  if (!deferControls) prepare();
   return {
     element,
     closeButton,
     resetButton,
+    prepare,
     update(state: Record<FeatureId, unknown>) {
       if (scope.active)
         for (const [id, control] of records) control.update(state[id]);

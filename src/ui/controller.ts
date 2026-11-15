@@ -34,10 +34,14 @@ export function createUI(
   try {
     const sheet = createSheet(root, options.nonce);
     scope.add(sheet.destroy);
-    const panel = createPanel(doc, features, options.messages, prefix, {
-      ...actions,
-      close: () => close(),
-    });
+    const panel = createPanel(
+      doc,
+      features,
+      options.messages,
+      prefix,
+      { ...actions, close: () => close() },
+      true,
+    );
     scope.add(panel.destroy);
     const launcher = createLauncher(
       doc,
@@ -135,6 +139,7 @@ export function createUI(
     });
     function open() {
       if (!scope.active || opened) return;
+      panel.prepare();
       opened = true;
       launcherLayer.show();
       panelLayer.show();
