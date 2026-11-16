@@ -54,6 +54,7 @@ it('generates all three control kinds and stable non-modal grouping from metadat
   );
   expect(panel.resetButton.parentElement?.className).toBe('accessiblit-footer');
   expect(panel.body.contains(panel.resetButton)).toBe(false);
+  expect(panel.body.tabIndex).toBe(-1);
   expect(panel.element.querySelector('h2')?.textContent).toBe(
     'Accessibility options',
   );

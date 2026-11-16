@@ -82,6 +82,8 @@ export function createPanel(
   header.append(intro);
   const body = doc.createElement('div');
   body.className = 'accessiblit-body';
+  // Firefox otherwise inserts a redundant tab stop before the first native control.
+  body.tabIndex = -1;
   const footer = doc.createElement('div');
   footer.className = 'accessiblit-footer';
   element.append(header, body, footer);
