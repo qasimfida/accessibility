@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { loadSite } from './helpers';
+import { loadSite, siteMetrics } from './helpers';
 
 test('installation anchors leave heading clearance on a narrow screen', async ({
   page,
@@ -22,6 +22,20 @@ test('installation anchors leave heading clearance on a narrow screen', async ({
       }),
     )
     .toBeGreaterThanOrEqual(-1);
+});
+
+test('forced-color hover states retain readable text in both schemes', async ({
+  page,
+}) => {
+  await loadSite(page, '', 'forced');
+  for (const colorScheme of ['light', 'dark'] as const) {
+    await page.emulateMedia({ colorScheme, forcedColors: 'active' });
+    await page
+      .getByRole('link', { name: 'Try the live demo', exact: true })
+      .hover();
+    const metrics = await siteMetrics(page);
+    expect(metrics.minimumTextContrast).toBeGreaterThanOrEqual(4.5);
+  }
 });
 
 test('pressed actions keep visible feedback in forced colors', async ({

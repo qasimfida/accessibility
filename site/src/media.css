@@ -29,8 +29,8 @@
     --muted: CanvasText;
     --accent: LinkText;
     --accent-ink: Canvas;
-    --accent-hover: Highlight;
-    --accent-hover-ink: HighlightText;
+    --accent-hover: CanvasText;
+    --accent-hover-ink: Canvas;
     --border: CanvasText;
   }
   .button,
