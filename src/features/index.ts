@@ -1,3 +1,4 @@
+import { featureIcons } from './icons';
 import { focusHighlight } from './focus-highlight';
 import { readingMask } from './reading-mask';
 import { readingGuide } from './reading-guide';
@@ -20,7 +21,7 @@ import { wordSpacing } from './word-spacing';
 import type { Feature } from '../core/types';
 /** Fresh catalogues keep owner configuration local to an init and out of module-level browser state. */
 export function createFeatures(options: ResolvedOptions): readonly Feature[] {
-  return [
+  const features: Feature[] = [
     fontSize,
     lineHeight,
     letterSpacing,
@@ -40,4 +41,8 @@ export function createFeatures(options: ResolvedOptions): readonly Feature[] {
     stopAnimations,
     focusHighlight,
   ];
+  return features.map((feature) => ({
+    ...feature,
+    icon: featureIcons[feature.id],
+  }));
 }

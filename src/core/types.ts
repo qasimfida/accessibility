@@ -120,6 +120,8 @@ export interface Feature {
   readonly label: string;
   readonly description: string;
   readonly control: FeatureControl;
+  /** Original decorative SVG paths let the registry supply imagery without UI feature switches. */
+  readonly icon?: readonly string[];
   /** Lets generic controls explain device-dependent pointer availability. */
   readonly requiresFinePointer?: boolean;
   apply(value: unknown, api: FeatureApi): Cleanup;

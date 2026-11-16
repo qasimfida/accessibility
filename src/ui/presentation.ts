@@ -1,3 +1,4 @@
+import { createIcon } from './icon';
 import { createReporter } from '../core/diagnostics';
 import { createScope } from '../core/scope';
 import type { Feature, Messages } from '../core/types';
@@ -57,6 +58,13 @@ export function controlShell(context: ControlContext) {
   const description = doc.createElement('p');
   description.id = `${prefix}-${feature.id}-description`;
   description.textContent = text.description;
+  if (feature.icon?.length) {
+    const badge = doc.createElement('span');
+    badge.className = 'accessiblit-feature-icon';
+    badge.setAttribute('aria-hidden', 'true');
+    badge.append(createIcon(doc, feature.icon));
+    element.append(badge);
+  }
   element.append(label, description);
   if (feature.requiresFinePointer) {
     const note = doc.createElement('p');
