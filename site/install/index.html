@@ -87,14 +87,12 @@
       <aside class="notice" aria-label="Release availability">
         <p>
           <strong
-            >Published package: @qasimfida/accessibility-widget 0.1.0.</strong
+            >Published package: @qasimfida/accessibility-widget 0.1.1.</strong
           >
-          The browser global is Accessiblit. Both pinned CDN files and the core
-          npm integrations have been checked against the published artifact. The
-          0.1.0 /react helper has a stale package reference; use the core effect
-          examples below until a maintainer publishes the fixed patch. The
-          source also fixes font scaling when existing empty Text nodes receive
-          content; that fix requires the next maintainer patch too.
+          The browser global is Accessiblit. Both pinned CDN files and the npm
+          integrations, including the React helper and declarations, have been
+          checked against this release. Version 0.1.1 includes the React import
+          and early font-scaling fixes.
         </p>
       </aside>
       <nav class="on-this-page" aria-label="Installation methods">
@@ -108,7 +106,7 @@
           Place the script before the init call. The library exposes the
           Accessiblit global and can wait for the document body.
         </p>
-        <pre><code data-snippet="cdn" data-language="html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js&quot; integrity=&quot;sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+        <pre><code data-snippet="cdn" data-language="html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.1/dist/accessiblit.min.js&quot; integrity=&quot;sha384-92p98tW9X5RIeEH3DgJaTj4mWx29zz9C5jAH1Jd+AeCQUHivVa6CYiWAkYtQ3JC3&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   Accessiblit.init();
 &lt;/script&gt;</code></pre>
@@ -119,7 +117,7 @@
           Install the published package, then import the module from your
           application entry.
         </p>
-        <pre><code data-snippet="npm-install" data-language="sh">npm install @qasimfida/accessibility-widget@0.1.0</code></pre>
+        <pre><code data-snippet="npm-install" data-language="sh">npm install @qasimfida/accessibility-widget@0.1.1</code></pre>
         <pre><code data-snippet="esm" data-language="ts">import { init } from &#x27;@qasimfida/accessibility-widget&#x27;;
 
 const widget = init({ position: &#x27;bottom-left&#x27; });
@@ -132,7 +130,7 @@ const widget = init({ position: &#x27;bottom-left&#x27; });
           keeps DOM work on the client and cleans up the instance it created,
           including under StrictMode.
         </p>
-        <pre><code data-snippet="react-install" data-language="sh">npm install @qasimfida/accessibility-widget@0.1.0 react react-dom</code></pre>
+        <pre><code data-snippet="react-install" data-language="sh">npm install @qasimfida/accessibility-widget@0.1.1 react react-dom</code></pre>
         <pre><code data-snippet="react" data-language="tsx">import { useEffect } from &#x27;react&#x27;;
 import { init } from &#x27;@qasimfida/accessibility-widget&#x27;;
 
@@ -147,9 +145,9 @@ export default function Accessibility() {
       <section aria-labelledby="next">
         <h2 id="next">Next.js App Router</h2>
         <p>
-          Create a client component and render it from your layout. This core
-          effect avoids the published 0.1.0 React-helper issue; React stays out
-          of the core browser bundle.
+          Create a client component and render it from your layout. The effect
+          owns and cleans up the widget instance. React stays in your
+          application rather than the core browser bundle.
         </p>
         <pre><code data-snippet="next" data-language="tsx">&#x27;use client&#x27;;
 
@@ -187,7 +185,7 @@ export default function Accessibility() {
         <pre><code data-snippet="pack" data-language="sh">npm run build
 npm pack
 # In the consuming project:
-npm install ./path/to/qasimfida-accessibility-widget-0.1.0.tgz</code></pre>
+npm install ./path/to/qasimfida-accessibility-widget-0.1.1.tgz</code></pre>
         <h3>Git source</h3>
         <p>
           For private distribution, use these build-and-pack steps with your
@@ -198,7 +196,7 @@ npm install ./path/to/qasimfida-accessibility-widget-0.1.0.tgz</code></pre>
         </p>
         <pre><code data-snippet="git" data-language="sh">git clone https://github.com/qasimfida/accessiblit.git
 cd accessiblit
-git checkout ce18dc2
+git checkout caca0bf
 npm ci
 npm run build
 npm pack</code></pre>

@@ -1,6 +1,6 @@
 # Delivery and integration contracts
 
-The public package is `@qasimfida/accessibility-widget@0.1.0` and has zero runtime dependencies. **Published 0.1.0 React-helper warning:** its runtime and types retain the old self-import. The source fixes this for a maintainer patch; use the core useEffect example in README with 0.1.0. The helper ownership guarantees below describe the fixed source and local packed tests. Its core exports `init`, `destroy` and TypeScript types; React is an optional peer (`>=17`) needed only for `/react`. Choose one core delivery format per document. The React entry imports that core rather than embedding another engine.
+The public package is `@qasimfida/accessibility-widget@0.1.1` and has zero runtime dependencies. Its core exports `init`, `destroy` and TypeScript types; React is an optional peer (`>=17`) needed only for `/react`. The 0.1.1 React helper and declarations resolve the corrected package name and were checked from a fresh registry installation. Choose one core delivery format per document. The React entry imports that core rather than embedding another engine.
 
 | Consumer       | Entry                                           | Declarations             |
 | -------------- | ----------------------------------------------- | ------------------------ |
@@ -16,7 +16,7 @@ All JavaScript files have adjacent sourcemaps. Both React files start with a `"u
 
 Load the local build as demonstrated in `examples/html/index.html`, then call `Accessiblit.init()`. Loading a second copy releases the old global instance; call init on the new namespace to mount it. Loading after DOMContentLoaded is supported. The script creates only the Accessiblit window namespace and never mounts automatically.
 
-Run `node scripts/sri.mjs` after building to get the SHA-384 integrity value for that exact IIFE. Paste it into the script tag's integrity attribute; cross-origin script tags also need `crossorigin="anonymous"` and a server that permits the request. Pin a package version in any CDN URL. This project is not published by the agent: the CDN-shaped consumer test intercepts its URL and serves the packed local artifact, without claiming live CDN availability.
+Run `node scripts/sri.mjs` after building to get the SHA-384 integrity value for that exact IIFE. Paste it into the script tag's integrity attribute; cross-origin script tags also need `crossorigin="anonymous"` and a server that permits the request. Pin a package version in any CDN URL. Release 0.1.1 was verified from the registry and both real version-pinned CDNs. The CDN-shaped test in `test:examples` still intercepts its URL to exercise the local tarball; `test:site-snippets` and the post-publish CDN checks separately load actual published bytes without interception.
 
 For strict CSP, supply the owner's nonce to init for fallback style elements and apply the site's normal nonce policy to its own script tags. Custom cursor data URIs retain the documented img-src fallback behaviour. No runtime request, font download or new storage key is introduced by packaging.
 
