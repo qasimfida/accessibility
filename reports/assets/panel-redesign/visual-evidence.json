@@ -1,0 +1,122 @@
+[
+  {
+    "name": "light",
+    "source": "03037d0",
+    "minimumTarget": 24,
+    "minimumSolidTextContrast": 5.70550151553722,
+    "gradientContrastBound": 4.5749648875216025,
+    "focus": {
+      "width": 3,
+      "style": "solid",
+      "ratio": 7.358070835144347
+    },
+    "panel": {
+      "left": 824,
+      "right": 1264,
+      "top": 268,
+      "bottom": 1028,
+      "width": 440,
+      "height": 760,
+      "scrollWidth": 438,
+      "clientWidth": 438,
+      "scrollHeight": 1157,
+      "clientHeight": 758
+    }
+  },
+  {
+    "name": "dark",
+    "source": "03037d0",
+    "minimumTarget": 24,
+    "minimumSolidTextContrast": 7.358070835144347,
+    "gradientContrastBound": 4.5749648875216025,
+    "focus": {
+      "width": 3,
+      "style": "solid",
+      "ratio": 7.358070835144347
+    },
+    "panel": {
+      "left": 824,
+      "right": 1264,
+      "top": 268,
+      "bottom": 1028,
+      "width": 440,
+      "height": 760,
+      "scrollWidth": 438,
+      "clientWidth": 438,
+      "scrollHeight": 1157,
+      "clientHeight": 758
+    }
+  },
+  {
+    "name": "forced",
+    "source": "03037d0",
+    "minimumTarget": 24,
+    "minimumSolidTextContrast": 21,
+    "gradientContrastBound": 4.5749648875216025,
+    "focus": {
+      "width": 3,
+      "style": "solid",
+      "ratio": 21
+    },
+    "panel": {
+      "left": 824,
+      "right": 1264,
+      "top": 268,
+      "bottom": 1028,
+      "width": 440,
+      "height": 760,
+      "scrollWidth": 438,
+      "clientWidth": 438,
+      "scrollHeight": 1157,
+      "clientHeight": 758
+    }
+  },
+  {
+    "name": "mobile",
+    "source": "03037d0",
+    "minimumTarget": 24,
+    "minimumSolidTextContrast": 5.70550151553722,
+    "gradientContrastBound": 4.5749648875216025,
+    "focus": {
+      "width": 3,
+      "style": "solid",
+      "ratio": 7.358070835144347
+    },
+    "panel": {
+      "left": 8,
+      "right": 312,
+      "top": 68,
+      "bottom": 828,
+      "width": 304,
+      "height": 760,
+      "scrollWidth": 302,
+      "clientWidth": 302,
+      "scrollHeight": 1642,
+      "clientHeight": 758
+    }
+  },
+  {
+    "name": "rtl",
+    "source": "03037d0",
+    "minimumTarget": 24,
+    "minimumSolidTextContrast": 5.70550151553722,
+    "gradientContrastBound": 4.5749648875216025,
+    "focus": {
+      "width": 3,
+      "style": "solid",
+      "ratio": 7.358070835144347
+    },
+    "panel": {
+      "left": 824,
+      "right": 1264,
+      "top": 268,
+      "bottom": 1028,
+      "width": 440,
+      "height": 760,
+      "scrollWidth": 438,
+      "clientWidth": 438,
+      "scrollHeight": 1157,
+      "clientHeight": 758
+    }
+  }
+]

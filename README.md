@@ -57,6 +57,6 @@ export default function Accessibility() {
 
 For Next.js App Router, put `'use client';` at the top of that component file, then render it from your layout. Keep React and DOM work inside this client boundary. The effect is safe under StrictMode and destroys the instance it created.
 
-See the [installation examples](https://qasimfida.github.io/accessiblit/install/), [options reference](https://qasimfida.github.io/accessiblit/options/) and [integration contracts](https://github.com/qasimfida/accessiblit/blob/main/docs/guides/integrations.md). The source demo loads a local build; the public Pages deployment is tracked separately in the [post-publish report](https://github.com/qasimfida/accessiblit/blob/main/reports/phase-11-post-publish.md).
+See the [installation examples](https://qasimfida.github.io/accessiblit/install/), [options reference](https://qasimfida.github.io/accessiblit/options/) and [integration contracts](https://github.com/qasimfida/accessiblit/blob/main/docs/guides/integrations.md). The [panel redesign and organization rename report](https://github.com/qasimfida/accessiblit/blob/main/reports/panel-redesign-and-package-rename.md) records the current local build and release blockers. The source demo loads a local build; the public Pages deployment is tracked separately in the [post-publish report](https://github.com/qasimfida/accessiblit/blob/main/reports/phase-11-post-publish.md).
 
 MIT © 2026 Qasim Fida. See [LICENSE](LICENSE).

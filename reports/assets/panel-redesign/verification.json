@@ -1,0 +1,4440 @@
+{
+  "source": "03037d0bebf52b8a52a7c1533dfe719ad84aa7b0",
+  "package": "@widgets/accessibility",
+  "version": "0.1.1",
+  "registry": {
+    "published": false,
+    "packageView": "E404",
+    "organizationMembershipResult": {},
+    "writes": 0
+  },
+  "examples": {
+    "compatibility": [
+      {
+        "version": "17.0.2",
+        "strictMode": true,
+        "restored": true,
+        "ssrMarkup": ""
+      },
+      {
+        "version": "18.3.1",
+        "strictMode": true,
+        "restored": true,
+        "ssrMarkup": ""
+      }
+    ],
+    "bundleAudit": {
+      "rawBytes": 65255,
+      "gzipBytes": 21794,
+      "sourceMapRawAttribution": {
+        "wrapper/unmapped": 617,
+        "entry": 140,
+        "features": 26248,
+        "core": 14292,
+        "ui": 23958
+      },
+      "coreSourceCount": 60,
+      "reactSources": ["../src/react/index.ts"],
+      "reactEsmBytes": 384,
+      "reactCjsBytes": 838,
+      "unusedImportOutput": "var e = 1;\nexport { e as retained };",
+      "combinedCoreModuleCount": 1,
+      "combinedReactModuleCount": 1
+    },
+    "files": [
+      "LICENSE",
+      "README.md",
+      "dist/accessiblit.min.js",
+      "dist/accessiblit.min.js.map",
+      "dist/index.cjs",
+      "dist/index.cjs.map",
+      "dist/index.d.cts",
+      "dist/index.d.ts",
+      "dist/index.mjs",
+      "dist/index.mjs.map",
+      "dist/react.cjs",
+      "dist/react.cjs.map",
+      "dist/react.d.cts",
+      "dist/react.d.ts",
+      "dist/react.mjs",
+      "dist/react.mjs.map",
+      "package.json"
+    ],
+    "sri": "sha384-e+lXDxA3TY8hH2WWtKG8CtSMV06t9hIg0Cq0oKwFoyBsYw0523CcA2TR54GiXRRe",
+    "examples": ["html", "node-ssr-check", "react-vite", "nextjs", "consumers"],
+    "types": ["Node16 ESM/CJS", "Bundler ESM/TSX"],
+    "rows": [
+      {
+        "browser": "chromium",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": [
+          {
+            "owner": "effect",
+            "hiddenBeforeShortcut": true
+          },
+          {
+            "owner": "component",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "chromium",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": [
+          {
+            "owner": "next",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "firefox",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": [
+          {
+            "owner": "effect",
+            "hiddenBeforeShortcut": true
+          },
+          {
+            "owner": "component",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "firefox",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": [
+          {
+            "owner": "next",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "webkit",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": [
+          {
+            "owner": "effect",
+            "hiddenBeforeShortcut": true
+          },
+          {
+            "owner": "component",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "webkit",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(36, 91, 227)",
+          "overflow": 0
+        },
+        "tabStops": 24,
+        "remounts": [
+          {
+            "owner": "next",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      }
+    ]
+  },
+  "earlierSnippets": {
+    "extracted": [
+      "cdn",
+      "npm-install",
+      "esm",
+      "react-install",
+      "react",
+      "next",
+      "self-hosted",
+      "pack",
+      "git",
+      "private-registry",
+      "lifecycle"
+    ],
+    "types": ["Node16", "Bundler"],
+    "shellSyntax": [
+      "npm-install",
+      "react-install",
+      "pack",
+      "git",
+      "private-registry"
+    ],
+    "installedTarball": "widgets-accessibility-0.1.1.tgz",
+    "packedEntries": ["self-hosted", "esm", "lifecycle", "react", "next"],
+    "cdnSource": "Real version-pinned CDN URL with release SRI; no interception.",
+    "strictModeDevelopment": true,
+    "rows": [
+      {
+        "browser": "chromium",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "chromium",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "firefox",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "firefox",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "webkit",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "webkit",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      }
+    ],
+    "notes": [
+      "The CDN snippet validates published release bytes; other browser snippets use the installed local tarball.",
+      "Private registry and Git shell examples are syntax checked; no private credentials or registry is used."
+    ]
+  },
+  "latestCdnRecheck": {
+    "pass": false,
+    "failures": [
+      "Browser page.goto timed out after 30000 ms",
+      "curl HEAD connection timed out after 15008 ms",
+      "Second browser page.goto timed out after 30000 ms"
+    ],
+    "furtherAttemptsStopped": true,
+    "gateChanged": false
+  },
+  "audits": {
+    "runtime": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "full": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "lifecycle": [
+    {
+      "times": [
+        1, 0.5999999940395355, 0.4000000059604645, 0.3999999761581421, 0.5,
+        0.4000000059604645, 0.3999999761581421, 0.5, 0.5, 0.29999998211860657,
+        0.4000000059604645, 0.3999999761581421, 0.29999998211860657,
+        0.4000000059604645, 0.4000000059604645, 0.19999998807907104,
+        0.19999998807907104, 0.30000001192092896, 0.19999998807907104,
+        0.20000001788139343, 0.29999998211860657, 0.4000000059604645,
+        0.30000001192092896, 0.3999999761581421, 0.19999998807907104,
+        0.20000001788139343, 0.30000001192092896, 0.4000000059604645,
+        0.19999998807907104, 0.4000000059604645, 0.20000001788139343,
+        0.5999999940395355, 0.3999999761581421, 0.3999999761581421,
+        0.30000001192092896, 0.30000001192092896, 0.30000001192092896,
+        0.19999998807907104, 0.20000001788139343, 0.4000000059604645,
+        0.29999998211860657, 0.29999998211860657, 0.30000001192092896,
+        0.30000001192092896, 0.19999998807907104, 0.09999999403953552,
+        0.30000001192092896, 0.29999998211860657, 0.30000001192092896,
+        0.3999999761581421, 0.20000001788139343, 0.30000001192092896,
+        0.4000000059604645, 0.30000001192092896, 0.4000000059604645,
+        0.29999998211860657, 0.30000001192092896, 0.20000001788139343,
+        0.4000000059604645, 0.30000001192092896, 1.199999988079071,
+        0.4000000059604645, 0.30000001192092896, 0.30000001192092896,
+        0.29999998211860657, 0.29999998211860657, 0.20000001788139343,
+        0.4000000059604645, 0.29999998211860657, 0.19999998807907104,
+        0.19999998807907104, 0.20000001788139343, 0.19999998807907104,
+        0.19999998807907104, 0.20000001788139343, 0.5, 0.4000000059604645,
+        0.4000000059604645, 0.30000001192092896, 0.30000001192092896,
+        0.19999998807907104, 1.199999988079071, 0.5, 0.5, 0.19999998807907104,
+        0.30000001192092896, 0.19999998807907104, 0.4000000059604645,
+        0.30000001192092896, 0.29999998211860657, 0.29999998211860657,
+        0.30000001192092896, 0.30000001192092896, 0.29999998211860657,
+        0.20000001788139343, 0.29999998211860657, 0.20000001788139343,
+        0.19999998807907104, 0.30000001192092896, 0.29999998211860657,
+        0.20000001788139343, 0.29999998211860657, 0.30000001192092896,
+        0.20000001788139343, 0.29999998211860657, 0.20000001788139343,
+        0.19999998807907104, 0.20000001788139343, 0.29999998211860657,
+        0.20000001788139343, 0.4000000059604645, 0.19999998807907104,
+        0.30000001192092896, 0.19999998807907104, 0.30000001192092896,
+        0.3999999761581421, 0.20000001788139343, 0.5, 0.5, 0.7000000178813934,
+        0.5, 0.30000001192092896, 0.29999998211860657, 0.29999998211860657,
+        0.30000001192092896, 0.30000001192092896, 0.19999998807907104,
+        0.4000000059604645, 0.29999998211860657, 0.20000001788139343,
+        0.19999998807907104, 0.20000001788139343, 0.29999998211860657,
+        0.20000001788139343, 0.29999998211860657, 0.30000001192092896,
+        0.4000000059604645, 0.20000001788139343, 0.30000001192092896,
+        0.30000001192092896, 0.19999998807907104, 0.30000001192092896,
+        0.30000001192092896, 0.30000001192092896, 0.19999998807907104,
+        0.19999998807907104, 0.30000001192092896, 0.30000001192092896,
+        0.29999998211860657, 0.20000001788139343, 0.19999998807907104,
+        0.30000001192092896, 0.29999998211860657, 0.30000001192092896,
+        0.29999998211860657, 0.20000001788139343, 0.29999998211860657,
+        0.30000001192092896, 0.30000001192092896, 0.29999998211860657,
+        0.19999998807907104, 0.20000001788139343, 0.19999998807907104,
+        0.19999998807907104, 0.19999998807907104, 0.30000001192092896,
+        0.29999998211860657, 0.20000001788139343, 0.3999999761581421,
+        0.30000001192092896, 0.30000001192092896, 0.30000001192092896,
+        0.20000001788139343, 0.19999998807907104, 0.30000001192092896,
+        0.19999998807907104, 0.5999999940395355, 0.4000000059604645,
+        0.30000001192092896, 0.30000001192092896, 0.29999998211860657,
+        0.19999998807907104, 0.29999998211860657, 0.30000001192092896,
+        0.30000001192092896, 0.7000000178813934, 0.29999998211860657,
+        0.29999998211860657, 0.19999998807907104, 0.29999998211860657,
+        0.29999998211860657, 0.29999998211860657, 0.30000001192092896,
+        0.30000001192092896, 0.30000001192092896, 0.30000001192092896,
+        0.30000001192092896, 0.20000001788139343, 0.30000001192092896,
+        0.4000000059604645
+      ],
+      "additions": 8200,
+      "removals": 8200,
+      "residue": [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0
+      ],
+      "restored": true,
+      "sameSheets": true
+    },
+    {
+      "times": [
+        2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 0, 1, 2, 1, 1, 1, 1, 1, 1, 0, 1,
+        1, 1, 1, 0, 1, 2, 1, 0, 2, 0, 1, 0, 1, 0, 1, 2, 1, 0, 0, 1, 0, 1, 1, 0,
+        2, 0, 0, 1, 1, 2, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 2, 0, 1, 1, 1, 1, 0,
+        1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0,
+        1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 3, 1, 1, 1, 1, 0, 0,
+        1, 0, 0, 1, 0, 0, 2, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
+        1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1,
+        0, 1, 1, 0, 1, 1, 1, 1
+      ],
+      "additions": 8200,
+      "removals": 8200,
+      "residue": [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0
+      ],
+      "restored": true,
+      "sameSheets": true
+    },
+    {
+      "times": [
+        1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0,
+        1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1,
+        0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1,
+        0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1,
+        0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0,
+        1, 0, 0, 3, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1,
+        0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1,
+        1, 1, 1, 0, 0, 0, 1, 0
+      ],
+      "additions": 8200,
+      "removals": 8200,
+      "residue": [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0
+      ],
+      "restored": true,
+      "sameSheets": true
+    },
+    {
+      "times": [
+        1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0,
+        1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0,
+        0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1,
+        0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1,
+        1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0,
+        0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1,
+        1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
+        1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0,
+        0, 0, 0, 1, 0, 1, 1, 1
+      ],
+      "additions": 8200,
+      "removals": 8200,
+      "residue": [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0
+      ],
+      "restored": true,
+      "sameSheets": true
+    },
+    {
+      "times": [
+        0.7000000178813934, 0.5999999940395355, 0.5, 0.29999998211860657,
+        0.3999999761581421, 0.29999998211860657, 0.19999998807907104,
+        0.29999998211860657, 0.30000001192092896, 0.19999998807907104,
+        0.20000001788139343, 0.29999998211860657, 0.20000001788139343,
+        0.30000001192092896, 0.30000001192092896, 0.29999998211860657,
+        0.30000001192092896, 0.29999998211860657, 0.20000001788139343,
+        0.19999998807907104, 0.30000001192092896, 0.4000000059604645,
+        0.30000001192092896, 0.4000000059604645, 0.19999998807907104,
+        0.30000001192092896, 0.29999998211860657, 0.4000000059604645,
+        0.29999998211860657, 0.20000001788139343, 0.5999999940395355,
+        0.30000001192092896, 0.30000001192092896, 0.29999998211860657,
+        0.20000001788139343, 0.19999998807907104, 0.20000001788139343,
+        0.09999999403953552, 0.19999998807907104, 0.30000001192092896,
+        0.30000001192092896, 0.19999998807907104, 0.30000001192092896,
+        0.19999998807907104, 0.19999998807907104, 0.30000001192092896,
+        0.29999998211860657, 0.09999999403953552, 0.30000001192092896,
+        0.29999998211860657, 0.19999998807907104, 0.4000000059604645,
+        0.29999998211860657, 0.30000001192092896, 0.29999998211860657,
+        0.29999998211860657, 0.30000001192092896, 0.4000000059604645,
+        0.20000001788139343, 0.19999998807907104, 0.20000001788139343,
+        0.4000000059604645, 0.09999999403953552, 0.20000001788139343,
+        0.19999998807907104, 0.20000001788139343, 0.30000001192092896,
+        0.19999998807907104, 0.20000001788139343, 0.29999998211860657,
+        0.30000001192092896, 0.19999998807907104, 0.19999998807907104,
+        0.20000001788139343, 0.29999998211860657, 0.19999998807907104,
+        0.4000000059604645, 0.29999998211860657, 0.29999998211860657,
+        0.20000001788139343, 0.19999998807907104, 0.5, 0.30000001192092896,
+        0.30000001192092896, 0.19999998807907104, 0.20000001788139343,
+        0.09999999403953552, 0.30000001192092896, 0.09999999403953552,
+        0.29999998211860657, 0.30000001192092896, 0.29999998211860657,
+        0.19999998807907104, 0.20000001788139343, 0.19999998807907104,
+        0.30000001192092896, 0.20000001788139343, 0.29999998211860657,
+        0.20000001788139343, 0.19999998807907104, 0.29999998211860657,
+        0.20000001788139343, 0.19999998807907104, 0.19999998807907104,
+        0.20000001788139343, 0.19999998807907104, 0.20000001788139343,
+        0.09999999403953552, 0.30000001192092896, 0.30000001192092896,
+        0.19999998807907104, 0.4000000059604645, 0.19999998807907104,
+        0.19999998807907104, 0.19999998807907104, 0.19999998807907104,
+        0.30000001192092896, 0.19999998807907104, 0.5999999940395355,
+        0.30000001192092896, 0.29999998211860657, 0.30000001192092896,
+        0.20000001788139343, 0.30000001192092896, 0.29999998211860657,
+        0.30000001192092896, 0.29999998211860657, 0.20000001788139343,
+        0.19999998807907104, 0.29999998211860657, 0.30000001192092896,
+        0.10000002384185791, 0.30000001192092896, 0.09999999403953552,
+        0.19999998807907104, 0.20000001788139343, 0.29999998211860657,
+        0.20000001788139343, 0.19999998807907104, 0.19999998807907104,
+        0.30000001192092896, 0.20000001788139343, 0.29999998211860657,
+        0.19999998807907104, 0.09999999403953552, 0.20000001788139343,
+        0.19999998807907104, 0.30000001192092896, 0.19999998807907104,
+        0.09999999403953552, 0.20000001788139343, 0.19999998807907104,
+        0.29999998211860657, 0.20000001788139343, 0.30000001192092896,
+        0.19999998807907104, 0.19999998807907104, 0.20000001788139343,
+        0.19999998807907104, 0.19999998807907104, 0.30000001192092896,
+        0.09999999403953552, 0.30000001192092896, 0.30000001192092896,
+        0.19999998807907104, 0.19999998807907104, 0.20000001788139343,
+        0.29999998211860657, 0.29999998211860657, 0.4000000059604645,
+        0.20000001788139343, 0.29999998211860657, 0.30000001192092896,
+        0.20000001788139343, 0.19999998807907104, 0.30000001192092896,
+        0.20000001788139343, 0.19999998807907104, 0.29999998211860657,
+        0.20000001788139343, 0.19999998807907104, 0.29999998211860657,
+        0.30000001192092896, 0.29999998211860657, 0.30000001192092896,
+        0.19999998807907104, 0.4000000059604645, 0.29999998211860657,
+        0.29999998211860657, 0.30000001192092896, 0.19999998807907104,
+        0.19999998807907104, 0.30000001192092896, 0.19999998807907104,
+        0.20000001788139343, 0.19999998807907104, 0.19999998807907104,
+        0.29999998211860657, 0.30000001192092896, 0.19999998807907104
+      ],
+      "additions": 8200,
+      "removals": 8200,
+      "residue": [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0
+      ],
+      "restored": true,
+      "sameSheets": true
+    }
+  ],
+  "panelAudit": [
+    {
+      "browser": "chromium",
+      "times": [
+        0.800000011920929, 1, 1.199999988079071, 1.0999999940395355,
+        0.9000000059604645, 1.0999999940395355, 1.0999999940395355, 1,
+        1.0999999940395355, 0.9000000059604645
+      ],
+      "unmoved": true,
+      "restored": true,
+      "cls": 0
+    },
+    {
+      "browser": "firefox",
+      "times": [1, 1, 2, 1, 2, 2, 2, 2, 2, 1],
+      "unmoved": true,
+      "restored": true,
+      "cls": null
+    },
+    {
+      "browser": "webkit",
+      "times": [1, 1, 1, 1, 1, 1, 2, 1, 1, 1],
+      "unmoved": true,
+      "restored": true,
+      "cls": null
+    }
+  ],
+  "contrast": {
+    "gradientConservativeLowerBound": 4.5749648875216025,
+    "minimumTarget": 24
+  },
+  "notes": [
+    "Earlier real CDN snippets passed in this session before the final connection timeouts. This is not a fresh final CDN pass.",
+    "The CDN-shaped packed example intercepts a synthetic URL; it proves local IIFE integration only.",
+    "The published historical CDN URL and SRI remain unchanged."
+  ],
+  "site": {
+    "source": "d8412a4",
+    "passed": 245,
+    "duration": "2.0m",
+    "axe": [
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 8.0412727813986,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 8.0412727813986,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 43.19999694824219
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "install/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "install/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "install/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "install/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "install/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "install/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "install/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.19999694824219
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "options/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "options/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "options/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "options/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "options/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "options/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "options/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.19999694824219
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "faq/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "faq/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 8.0412727813986,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "faq/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "faq/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "faq/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "faq/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "faq/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.19999694824219
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "404.html",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "install/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "404.html",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "install/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "install/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "404.html",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "install/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "404.html",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "install/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "404.html",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "install/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "404.html",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "install/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "firefox",
+        "path": "404.html",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.19999694824219
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "options/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "options/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "options/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "options/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "options/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "options/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "options/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "faq/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "faq/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "faq/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "faq/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 8.0412727813986,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "faq/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "faq/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "faq/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "404.html",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "404.html",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "404.html",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "404.html",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "install/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "404.html",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "install/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "404.html",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "install/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "webkit",
+        "path": "404.html",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "install/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "install/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "install/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "install/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "options/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "options/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "options/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "options/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "options/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "options/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 8.0412727813986,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "options/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "faq/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "faq/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "faq/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "faq/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "install/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "faq/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "install/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "faq/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "install/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "install/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "faq/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "install/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "404.html",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "install/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "404.html",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "install/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "options/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "404.html",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 9.397615840239814,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "options/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "404.html",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "options/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "404.html",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "options/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "options/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "404.html",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "options/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "iphone",
+        "path": "404.html",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "options/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "faq/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "faq/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "faq/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "faq/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "faq/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "faq/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "faq/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "404.html",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "404.html",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.358070835144347,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "404.html",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "404.html",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "404.html",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "404.html",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      },
+      {
+        "project": "pixel",
+        "path": "404.html",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 5.70550151553722,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    ]
+  },
+  "finalKeyboard": {
+    "source": "d8412a4",
+    "passed": 5,
+    "duration": "24.9s",
+    "rows": [
+      {
+        "project": "chromium",
+        "profile": "standard",
+        "changed": [
+          "fontSize",
+          "lineHeight",
+          "letterSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight"
+        ],
+        "path": [
+          "Close",
+          "fontSize",
+          "fontSize",
+          "lineHeight",
+          "lineHeight",
+          "letterSpacing",
+          "letterSpacing",
+          "wordSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight",
+          "Reset all"
+        ],
+        "outside": true,
+        "auditedConfigurations": 18,
+        "auditPage": "independent"
+      },
+      {
+        "project": "firefox",
+        "profile": "standard",
+        "changed": [
+          "fontSize",
+          "lineHeight",
+          "letterSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight"
+        ],
+        "path": [
+          "Close",
+          "fontSize",
+          "fontSize",
+          "lineHeight",
+          "lineHeight",
+          "letterSpacing",
+          "letterSpacing",
+          "wordSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight",
+          "Reset all"
+        ],
+        "outside": true,
+        "auditedConfigurations": 18,
+        "auditPage": "independent"
+      },
+      {
+        "project": "webkit",
+        "profile": "standard",
+        "changed": [
+          "fontSize",
+          "lineHeight",
+          "letterSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight"
+        ],
+        "path": [
+          "Close",
+          "fontSize",
+          "fontSize",
+          "lineHeight",
+          "lineHeight",
+          "letterSpacing",
+          "letterSpacing",
+          "wordSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight",
+          "Reset all"
+        ],
+        "outside": true,
+        "auditedConfigurations": 18,
+        "auditPage": "independent"
+      },
+      {
+        "project": "iphone",
+        "profile": "standard",
+        "changed": [
+          "fontSize",
+          "lineHeight",
+          "letterSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight"
+        ],
+        "path": [
+          "Close",
+          "fontSize",
+          "fontSize",
+          "lineHeight",
+          "lineHeight",
+          "letterSpacing",
+          "letterSpacing",
+          "wordSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight",
+          "Reset all"
+        ],
+        "outside": true,
+        "auditedConfigurations": 18,
+        "auditPage": "independent"
+      },
+      {
+        "project": "pixel",
+        "profile": "standard",
+        "changed": [
+          "fontSize",
+          "lineHeight",
+          "letterSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight"
+        ],
+        "path": [
+          "Close",
+          "fontSize",
+          "fontSize",
+          "lineHeight",
+          "lineHeight",
+          "letterSpacing",
+          "letterSpacing",
+          "wordSpacing",
+          "wordSpacing",
+          "textAlign",
+          "contentScale",
+          "contentScale",
+          "readableFont",
+          "darkMode",
+          "highContrast",
+          "monochrome",
+          "lowSaturation",
+          "readingGuide",
+          "readingMask",
+          "highlightLinks",
+          "highlightHeadings",
+          "bigCursor",
+          "stopAnimations",
+          "focusHighlight",
+          "Reset all"
+        ],
+        "outside": true,
+        "auditedConfigurations": 18,
+        "auditPage": "independent"
+      }
+    ]
+  }
+}
