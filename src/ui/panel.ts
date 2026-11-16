@@ -60,6 +60,13 @@ export function createPanel(
   title.textContent = messages.panelTitle;
   const closeButton = makeButton(doc, messages.close);
   closeButton.className = 'accessiblit-close';
+  const closeText = doc.createElement('span');
+  closeText.className = 'accessiblit-step-text';
+  closeText.textContent = messages.close;
+  closeButton.replaceChildren(
+    closeText,
+    createIcon(doc, ['M6 6l12 12M18 6 6 18']),
+  );
   const emblem = doc.createElement('span');
   emblem.className = 'accessiblit-emblem';
   emblem.setAttribute('aria-hidden', 'true');

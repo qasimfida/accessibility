@@ -32,8 +32,8 @@ export const UI_CSS = `
 .accessiblit-emblem svg { inline-size:34px; block-size:34px; }
 .accessiblit-header h2 { grid-column:1/-1; margin:4px 0 0; min-inline-size:0; font-size:24px; line-height:1.3; font-weight:750; text-wrap:balance; }
 .accessiblit-brand { grid-column:1/-1; font-size:14px; font-weight:650; }
-.accessiblit-surface .accessiblit-close { min-inline-size:44px; inline-size:44px; block-size:44px; padding:0; border:1px solid #fff; border-radius:50%; color:#fff; background:#194bc5; font-size:0; --ui-focus:#fff; --ui-bg:#194bc5; }
-.accessiblit-close::before { content:'×'; font-size:28px; line-height:1; }
+.accessiblit-surface .accessiblit-close { min-inline-size:44px; inline-size:44px; block-size:44px; padding:0; border:1px solid #fff; border-radius:50%; color:#fff; background:#194bc5; --ui-focus:#fff; --ui-bg:#194bc5; }
+.accessiblit-surface .accessiblit-close { display:flex; align-items:center; justify-content:center; }
 .accessiblit-intro { grid-column:1/-1; margin:0; color:#fff; font-size:13px; line-height:1.5; }
 .accessiblit-body { flex:1; min-block-size:0; padding:18px 16px 0; background:var(--ui-body); overflow:auto; overscroll-behavior:contain; scroll-padding:12px; }
 .accessiblit-footer { flex:none; padding:14px 16px; border-block-start:1px solid var(--ui-border); background:var(--ui-body); }
@@ -55,7 +55,6 @@ ${CARD_CSS}
   .accessiblit-header { color:CanvasText; background:Canvas; }
   .accessiblit-intro { color:CanvasText; }
   .accessiblit-feature,.accessiblit-emblem { border-color:CanvasText; box-shadow:none; }
-  .accessiblit-close::before { color:CanvasText; }
   .accessiblit-surface .accessiblit-close { --ui-focus:CanvasText; --ui-bg:Canvas; background:Canvas; color:CanvasText; border-color:CanvasText; }
   .accessiblit-choice:has(input:checked) { background:Canvas; color:CanvasText; border-color:CanvasText; }
 
