@@ -1,3 +1,4 @@
+import { keepPanelFocusVisible } from './focus';
 import { createReporter } from '../core/diagnostics';
 import { createScope } from '../core/scope';
 import { createSheet } from '../core/sheet';
@@ -62,22 +63,8 @@ export function createUI(
         lastCSS = css;
       }
     };
-    function keepFocusVisible(target: HTMLElement) {
-      const bounds = panel.element.getBoundingClientRect();
-      const focus = target.getBoundingClientRect();
-      // Balance clearance when a tall control fits, rather than clipping its opposite focus edge.
-      const gap = Math.min(
-        10,
-        Math.max(
-          0,
-          (bounds.bottom - bounds.top - (focus.bottom - focus.top)) / 2,
-        ),
-      );
-      if (focus.top < bounds.top + gap)
-        panel.element.scrollTop -= bounds.top + gap - focus.top;
-      else if (focus.bottom > bounds.bottom - gap)
-        panel.element.scrollTop += focus.bottom - bounds.bottom + gap;
-    }
+    const keepFocusVisible = (target: HTMLElement) =>
+      keepPanelFocusVisible(panel.element, panel.body, target);
     function refresh() {
       if (!scope.active) return;
       const position = placeUI(viewport(), options);
@@ -146,6 +133,7 @@ export function createUI(
       launcher.update(true);
       refresh();
       panel.element.scrollTop = 0;
+      panel.body.scrollTop = 0;
       panel.closeButton.focus({ preventScroll: true });
       keepFocusVisible(panel.closeButton);
     }

@@ -52,15 +52,15 @@ it('generates all three control kinds and stable non-modal grouping from metadat
   expect(panel.element.getAttribute('aria-label')).toBe(
     'Accessibility options',
   );
+  expect(panel.resetButton.parentElement?.className).toBe('accessiblit-footer');
+  expect(panel.body.contains(panel.resetButton)).toBe(false);
   expect(panel.element.querySelector('h2')?.textContent).toBe(
     'Accessibility options',
   );
   expect(
     [...panel.element.querySelectorAll('h3')].map((e) => e.textContent),
   ).toEqual(['Content', 'Colour and contrast', 'Navigation and orientation']);
-  expect(panel.element.querySelectorAll('.accessiblit-feature')).toHaveLength(
-    4,
-  );
+  expect(panel.body.querySelectorAll('.accessiblit-feature')).toHaveLength(4);
   const toggle = panel.element.querySelector(
     '[aria-pressed]',
   ) as HTMLButtonElement;

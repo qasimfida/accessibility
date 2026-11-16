@@ -22,7 +22,11 @@ export function createStepper(context: ControlContext): RenderedControl {
   const buttons = [-1, 1].map((direction) => {
     const action =
       direction < 0 ? context.messages.decrease : context.messages.increase;
-    const button = makeButton(context.document, action);
+    const button = makeButton(context.document, '');
+    const actionText = context.document.createElement('span');
+    actionText.className = 'accessiblit-step-text';
+    actionText.textContent = action;
+    button.append(actionText);
     button.className = 'accessiblit-step';
     const symbol = context.document.createElement('span');
     symbol.setAttribute('aria-hidden', 'true');
@@ -54,7 +58,8 @@ export function createStepper(context: ControlContext): RenderedControl {
         ? range.min
         : 0;
   }
-  shell.element.append(value, group);
+  group.insertBefore(value, buttons[1]!);
+  shell.element.append(group);
   const update = (input: unknown) => {
     if (!shell.scope.active) return;
     const current = numeric(input);

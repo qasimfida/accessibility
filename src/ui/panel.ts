@@ -1,3 +1,4 @@
+import { createIcon } from './icon';
 import { createReporter } from '../core/diagnostics';
 import { createScope } from '../core/scope';
 import { createToggle } from './toggle';
@@ -56,12 +57,24 @@ export function createPanel(
   title.textContent = messages.panelTitle;
   const closeButton = makeButton(doc, messages.close);
   closeButton.className = 'accessiblit-close';
-  header.append(title, closeButton);
+  const emblem = doc.createElement('span');
+  emblem.className = 'accessiblit-emblem';
+  emblem.setAttribute('aria-hidden', 'true');
+  const brand = doc.createElement('span');
+  brand.className = 'accessiblit-brand';
+  brand.textContent = 'Accessiblit';
+  brand.setAttribute('translate', 'no');
+  header.append(emblem, closeButton, title, brand);
   const intro = doc.createElement('p');
   intro.id = `${prefix}-intro`;
   intro.className = 'accessiblit-intro';
   intro.textContent = messages.panelDescription;
-  element.append(header, intro);
+  header.append(intro);
+  const body = doc.createElement('div');
+  body.className = 'accessiblit-body';
+  const footer = doc.createElement('div');
+  footer.className = 'accessiblit-footer';
+  element.append(header, body, footer);
   scope.listen(closeButton, 'click', actions.close);
   const records = new Map<FeatureId, RenderedControl>();
   const resetButton = makeButton(doc, messages.reset);
@@ -69,6 +82,12 @@ export function createPanel(
   const prepare = () => {
     if (prepared || !scope.active) return;
     prepared = true;
+    emblem.append(
+      createIcon(doc, [
+        'M10 4a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z',
+        'M3 9l9 2 9-2M12 11v5m0 0-5 6m5-6 5 6',
+      ]),
+    );
     const groups = [
       ['content', 'contentGroup'],
       ['colour', 'colourGroup'],
@@ -118,15 +137,16 @@ export function createPanel(
         empty.textContent = messages.emptyGroup;
         group.append(empty);
       }
-      element.append(group);
+      body.append(group);
     }
     resetButton.className = 'accessiblit-reset';
-    element.append(resetButton);
+    footer.append(resetButton);
     scope.listen(resetButton, 'click', actions.reset);
   };
   if (!deferControls) prepare();
   return {
     element,
+    body,
     closeButton,
     resetButton,
     prepare,
