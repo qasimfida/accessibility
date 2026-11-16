@@ -1,15 +1,15 @@
 # Accessiblit
 
-Accessiblit is a dependency-free accessibility personalisation widget with eighteen controls for text, colour and navigation. The public npm package is **`@qasimfida/accessibility-widget`**, version **0.1.0**; the browser global remains `Accessiblit`. Personalisation does not make a website WCAG compliant. See the [accessibility report](docs/ACCESSIBILITY.md) for tested scope and remaining manual checks.
+Accessiblit is a dependency-free accessibility personalisation widget with eighteen controls for text, colour and navigation. The public npm package is **`@qasimfida/accessibility-widget`**, version **0.1.1**; the browser global remains `Accessiblit`. Personalisation does not make a website WCAG compliant. See the [accessibility report](https://github.com/qasimfida/accessiblit/blob/main/docs/ACCESSIBILITY.md) for tested scope and remaining manual checks.
 
 ## CDN
 
-Pin the version and keep its integrity value together. Both jsDelivr and [unpkg](https://unpkg.com/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js) serve the verified 0.1.0 IIFE.
+Pin the version and keep its integrity value together. Use jsDelivr or [unpkg](https://unpkg.com/@qasimfida/accessibility-widget@0.1.1/dist/accessiblit.min.js) for the 0.1.1 IIFE.
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.0/dist/accessiblit.min.js"
-  integrity="sha384-16q5Bwqwx+EGwUWGN1IpmuUfkCwMctpxWVZg84pmiOw3FRectQlkJ9Q4RW30QS7M"
+  src="https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.1/dist/accessiblit.min.js"
+  integrity="sha384-92p98tW9X5RIeEH3DgJaTj4mWx29zz9C5jAH1Jd+AeCQUHivVa6CYiWAkYtQ3JC3"
   crossorigin="anonymous"
 ></script>
 <script>
@@ -22,7 +22,7 @@ The hash is for the exact published IIFE, not a future build. `node scripts/sri.
 ## npm
 
 ```sh
-npm install @qasimfida/accessibility-widget@0.1.0
+npm install @qasimfida/accessibility-widget@0.1.1
 ```
 
 ```ts
@@ -35,11 +35,11 @@ widget.destroy();
 
 Imports are SSR-safe; `init()` is inert without a DOM. Use one owner per document: calling `init()` again destroys the previous instance. Cleanup removes owned DOM, styles and listeners; saved preferences remain under the configured localStorage key.
 
-**Known 0.1.0 content issue:** filling a previously empty Text node can leave that text unscaled until another refresh. The source fixes this for the next maintainer patch; published 0.1.0 is unchanged.
+Version 0.1.1 fixes scaling for text filled into existing empty nodes and reconciles restored settings at the parser-completion boundary. Upgrade from 0.1.0 to receive these fixes.
 
 ## React and Next.js
 
-**Known 0.1.0 issue:** the published `/react` helper and declarations still reference the old package name. They require a new maintainer patch release. The repository contains the fix; it does not change the published 0.1.0 artifact. Use the tested core effect below with 0.1.0 instead.
+Version 0.1.1 corrects the React helper’s package imports and declarations. The optional `@qasimfida/accessibility-widget/react` entry exports `AccessiblitWidget` and `useAccessiblit`. The core effect below also works without using the helper.
 
 ```tsx
 import { useEffect } from 'react';
@@ -56,6 +56,6 @@ export default function Accessibility() {
 
 For Next.js App Router, put `'use client';` at the top of that component file, then render it from your layout. Keep React and DOM work inside this client boundary. The effect is safe under StrictMode and destroys the instance it created.
 
-See the [installation examples](site/install/index.html), [options reference](site/options/index.html) and [integration contracts](docs/guides/integrations.md). The source demo loads a local build; the public Pages deployment is tracked separately in the [post-publish report](reports/phase-11-post-publish.md).
+See the [installation examples](https://qasimfida.github.io/accessiblit/install/), [options reference](https://qasimfida.github.io/accessiblit/options/) and [integration contracts](https://github.com/qasimfida/accessiblit/blob/main/docs/guides/integrations.md). The source demo loads a local build; the public Pages deployment is tracked separately in the [post-publish report](https://github.com/qasimfida/accessiblit/blob/main/reports/phase-11-post-publish.md).
 
 MIT © 2026 Qasim Fida. See [LICENSE](LICENSE).
