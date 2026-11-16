@@ -1,0 +1,251 @@
+{
+  "date": "2026-11-16T09:15:23.576Z",
+  "rows": [
+    {
+      "browser": "chromium",
+      "scheme": "light",
+      "forced": "none",
+      "before": "rgb(7, 91, 151)",
+      "background": "rgb(6, 70, 117)",
+      "foreground": "rgb(255, 255, 255)",
+      "textContrast": 9.809976032966073,
+      "width": 168.515625,
+      "height": 51.171875,
+      "pressed": {
+        "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px inset",
+        "outlineWidth": 3,
+        "outlineStyle": "none"
+      },
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "scheme": "light",
+      "forced": "active",
+      "before": "rgb(255, 255, 255)",
+      "background": "rgb(0, 0, 0)",
+      "foreground": "rgb(255, 255, 255)",
+      "textContrast": 21,
+      "width": 168.515625,
+      "height": 51.171875,
+      "pressed": {
+        "shadow": "none",
+        "outlineWidth": 3,
+        "outlineStyle": "solid"
+      },
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "scheme": "dark",
+      "forced": "none",
+      "before": "rgb(133, 210, 255)",
+      "background": "rgb(181, 227, 255)",
+      "foreground": "rgb(11, 25, 39)",
+      "textContrast": 13.019335371016007,
+      "width": 168.515625,
+      "height": 51.171875,
+      "pressed": {
+        "shadow": "rgb(11, 25, 39) 0px 0px 0px 2px inset",
+        "outlineWidth": 3,
+        "outlineStyle": "none"
+      },
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "scheme": "dark",
+      "forced": "active",
+      "before": "rgb(0, 0, 0)",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(0, 0, 0)",
+      "textContrast": 21,
+      "width": 168.515625,
+      "height": 51.171875,
+      "pressed": {
+        "shadow": "none",
+        "outlineWidth": 3,
+        "outlineStyle": "solid"
+      },
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "anchorClearance": 15.75,
+      "modeledGutter": {
+        "width": 844,
+        "scroll": 844,
+        "wraps": [
+          {
+            "left": 64,
+            "right": 780
+          },
+          {
+            "left": 64,
+            "right": 780
+          },
+          {
+            "left": 64,
+            "right": 780
+          }
+        ]
+      },
+      "notchNote": "64px gutter modeled via CSS variable; no physical notch/device claim."
+    },
+    {
+      "browser": "firefox",
+      "scheme": "light",
+      "forced": "none",
+      "before": "rgb(7, 91, 151)",
+      "background": "rgb(6, 70, 117)",
+      "foreground": "rgb(255, 255, 255)",
+      "textContrast": 9.809976032966073,
+      "width": 169.4166717529297,
+      "height": 51.19999694824219,
+      "pressed": {
+        "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px inset",
+        "outlineWidth": 3,
+        "outlineStyle": "none"
+      },
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "scheme": "light",
+      "forced": "active",
+      "before": "rgb(255, 255, 255)",
+      "background": "rgb(0, 0, 0)",
+      "foreground": "rgb(255, 255, 255)",
+      "textContrast": 21,
+      "width": 169.4166717529297,
+      "height": 51.19999694824219,
+      "pressed": {
+        "shadow": "none",
+        "outlineWidth": 3,
+        "outlineStyle": "solid"
+      },
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "scheme": "dark",
+      "forced": "none",
+      "before": "rgb(133, 210, 255)",
+      "background": "rgb(181, 227, 255)",
+      "foreground": "rgb(11, 25, 39)",
+      "textContrast": 13.019335371016007,
+      "width": 169.4166717529297,
+      "height": 51.19999694824219,
+      "pressed": {
+        "shadow": "rgb(11, 25, 39) 0px 0px 0px 2px inset",
+        "outlineWidth": 3,
+        "outlineStyle": "none"
+      },
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "scheme": "dark",
+      "forced": "active",
+      "before": "rgb(28, 27, 34)",
+      "background": "rgb(251, 251, 254)",
+      "foreground": "rgb(28, 27, 34)",
+      "textContrast": 16.54009959765456,
+      "width": 169.4166717529297,
+      "height": 51.19999694824219,
+      "pressed": {
+        "shadow": "none",
+        "outlineWidth": 3,
+        "outlineStyle": "solid"
+      },
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "scheme": "light",
+      "forced": "none",
+      "before": "rgb(7, 91, 151)",
+      "background": "rgb(6, 70, 117)",
+      "foreground": "rgb(255, 255, 255)",
+      "textContrast": 9.809976032966073,
+      "width": 168.5,
+      "height": 51.171875,
+      "pressed": {
+        "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px inset",
+        "outlineWidth": 3,
+        "outlineStyle": "none"
+      },
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "scheme": "light",
+      "forced": "active",
+      "before": "rgb(255, 255, 255)",
+      "background": "rgb(0, 0, 0)",
+      "foreground": "rgb(255, 255, 255)",
+      "textContrast": 21,
+      "width": 168.5,
+      "height": 51.171875,
+      "pressed": {
+        "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px inset",
+        "outlineWidth": 3,
+        "outlineStyle": "solid"
+      },
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "scheme": "dark",
+      "forced": "none",
+      "before": "rgb(133, 210, 255)",
+      "background": "rgb(181, 227, 255)",
+      "foreground": "rgb(11, 25, 39)",
+      "textContrast": 13.019335371016007,
+      "width": 168.5,
+      "height": 51.171875,
+      "pressed": {
+        "shadow": "rgb(11, 25, 39) 0px 0px 0px 2px inset",
+        "outlineWidth": 3,
+        "outlineStyle": "none"
+      },
+      "errors": []
+    },
+    {
+      "browser": "webkit",
+      "scheme": "dark",
+      "forced": "active",
+      "before": "rgb(30, 30, 30)",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(30, 30, 30)",
+      "textContrast": 16.67115667431794,
+      "width": 168.5,
+      "height": 51.171875,
+      "pressed": {
+        "shadow": "rgb(30, 30, 30) 0px 0px 0px 2px inset",
+        "outlineWidth": 3,
+        "outlineStyle": "solid"
+      },
+      "errors": []
+    }
+  ],
+  "weights": [
+    {
+      "file": "main-BQHSSmZC.js",
+      "rawBytes": 1167,
+      "gzipBytes": 631
+    },
+    {
+      "file": "main-Bt6wlr15.css",
+      "rawBytes": 9982,
+      "gzipBytes": 2128
+    }
+  ],
+  "screenshots": [
+    "home-hover-light.png",
+    "home-hover-dark.png",
+    "home-dark-320.png",
+    "install-anchor-320.png",
+    "modeled-safe-gutter-rtl.png"
+  ]
+}
