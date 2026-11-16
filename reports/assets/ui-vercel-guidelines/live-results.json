@@ -1,0 +1,876 @@
+{
+  "date": "2026-11-16",
+  "url": "https://qasimfida.github.io/accessiblit/",
+  "source": "7722738",
+  "pagesRun": 43839116488,
+  "deployment": "success",
+  "result": "44 passed (1.1m)",
+  "browser": "Chromium",
+  "retries": 0,
+  "intercepted": false,
+  "webServer": false,
+  "events": [
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 8.0412727813986,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": []
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.24036343149602,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": []
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "install/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": ["color-contrast"],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "options/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": []
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "faq/",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "light",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "dark",
+        "site": {
+          "minimumTextContrast": 10.705375589410613,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 7.8678914128040836,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "forced",
+        "site": {
+          "minimumTextContrast": 13.994023083921398,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 21,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "reduced",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "rtl",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "small",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 44
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": []
+        }
+      }
+    },
+    {
+      "kind": "SITE_AXE",
+      "data": {
+        "project": "chromium",
+        "path": "404.html",
+        "profile": "spacing",
+        "site": {
+          "minimumTextContrast": 6.7860473732564275,
+          "minimumTarget": 43.1875
+        },
+        "widget": {
+          "minimumTextContrast": 6.820449946885106,
+          "minimumTarget": 24
+        },
+        "closed": 0,
+        "open": 0,
+        "incomplete": {
+          "closed": [],
+          "open": ["color-contrast"]
+        }
+      }
+    },
+    {
+      "kind": "SITE_KEYBOARD",
+      "data": {
+        "project": "chromium",
+        "tab": "Tab",
+        "path": [
+          "Skip to main content",
+          "Main",
+          "Open live demo options",
+          "Close",
+          "Increase Font size",
+          "Reset all",
+          "Launcher focus restored",
+          "Shift+Tab back to the header",
+          "Install",
+          "Options",
+          "FAQ and privacy",
+          "Home"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "kind": "SITE_LINKS",
+      "data": {
+        "checked": 23,
+        "destinations": 10,
+        "broken": 0
+      }
+    },
+    {
+      "kind": "SITE_REQUESTS",
+      "data": {
+        "project": "chromium",
+        "urls": [
+          "https://qasimfida.github.io/accessiblit/",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BQHSSmZC.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-Bt6wlr15.css",
+          "https://qasimfida.github.io/accessiblit/install/",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BQHSSmZC.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-Bt6wlr15.css",
+          "https://qasimfida.github.io/accessiblit/options/",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BQHSSmZC.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-Bt6wlr15.css",
+          "https://qasimfida.github.io/accessiblit/faq/",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BQHSSmZC.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-Bt6wlr15.css",
+          "https://qasimfida.github.io/accessiblit/404.html",
+          "https://qasimfida.github.io/accessiblit/accessiblit.min.js",
+          "https://qasimfida.github.io/accessiblit/bootstrap.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-BQHSSmZC.js",
+          "https://qasimfida.github.io/accessiblit/assets/main-Bt6wlr15.css"
+        ],
+        "thirdParty": []
+      }
+    },
+    {
+      "kind": "SITE_TABLE_KEYBOARD",
+      "data": {
+        "project": "chromium",
+        "direction": "ltr",
+        "initial": 0,
+        "moved": 64,
+        "focus": {
+          "width": "3px",
+          "style": "solid"
+        },
+        "tabExit": true
+      }
+    },
+    {
+      "kind": "SITE_TABLE_KEYBOARD",
+      "data": {
+        "project": "chromium",
+        "direction": "rtl",
+        "initial": 0,
+        "moved": -64,
+        "focus": {
+          "width": "3px",
+          "style": "solid"
+        },
+        "tabExit": true
+      }
+    }
+  ]
+}

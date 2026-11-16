@@ -71,3 +71,9 @@ Used the chosen Vercel review skill, not a redesign generator. Existing sentence
 ## Handoff notes for the next phase
 
 The skill is installed for future turns. Review the [light hover](assets/ui-vercel-guidelines/home-hover-light.png), [dark narrow page](assets/ui-vercel-guidelines/home-dark-320.png), [anchor landing](assets/ui-vercel-guidelines/install-anchor-320.png), and [modeled RTL gutter](assets/ui-vercel-guidelines/modeled-safe-gutter-rtl.png). Repeat physical-device and screen-reader checks with the existing manual scripts. Resume the separately authorized release only after its package/consumer gates pass.
+
+## Live deployment confirmation
+
+[Pages run 43839116488](https://github.com/qasimfida/accessiblit/actions/runs/43839116488) successfully deployed source 7722738. The actual [public site](https://qasimfida.github.io/accessiblit/) then passed **44 Chromium tests in 1.1 minutes**, zero retries, without a local webServer or response interception. This includes 70 closed/open axe scans across the five pages and seven profiles, the three new guideline checks, light/dark metadata checks, keyboard operation, internal links/assets/fragments, first-party requests and LTR/RTL table keys. [Live receipt](assets/ui-vercel-guidelines/live-results.json).
+
+UI review and deployment are complete. The separate 0.1.1 release candidate passes its package/consumer checks, but publication is awaiting npm browser two-factor confirmation; no published-version claim is made by this UI report.
