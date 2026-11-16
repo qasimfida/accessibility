@@ -7,6 +7,7 @@
     --muted: #c0d0e0;
     --accent: #85d2ff;
     --accent-ink: #0b1927;
+    --accent-hover: #b5e3ff;
     --border: #809bb3;
   }
 }
@@ -28,6 +29,8 @@
     --muted: CanvasText;
     --accent: LinkText;
     --accent-ink: Canvas;
+    --accent-hover: Highlight;
+    --accent-hover-ink: HighlightText;
     --border: CanvasText;
   }
   .button,
