@@ -50,6 +50,28 @@ test('catalogue, public options and search metadata describe the actual build', 
       'content',
       'https://qasimfida.github.io/accessiblit/og.png',
     );
+    for (const colorScheme of ['light', 'dark'] as const) {
+      await page.emulateMedia({ colorScheme });
+      const colors = await page.evaluate(() => {
+        const themes = [
+          ...document.querySelectorAll<HTMLMetaElement>(
+            'meta[name="theme-color"]',
+          ),
+        ]
+          .filter((meta) => matchMedia(meta.media).matches)
+          .map((meta) => meta.content.toLowerCase());
+        const channels =
+          getComputedStyle(document.body).backgroundColor.match(/\d+/g) ?? [];
+        const background =
+          '#' +
+          channels
+            .slice(0, 3)
+            .map((value) => Number(value).toString(16).padStart(2, '0'))
+            .join('');
+        return { themes, background };
+      });
+      expect(colors.themes).toEqual([colors.background]);
+    }
   }
   const sitemap = await (await request.get('sitemap.xml')).text();
   for (const path of SITE_PAGES.filter((p) => p !== '404.html'))
