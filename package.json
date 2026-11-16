@@ -1,6 +1,6 @@
 {
   "name": "@qasimfida/accessibility-widget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A dependency-free accessibility personalisation widget.",
   "type": "module",
   "license": "MIT",
