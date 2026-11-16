@@ -51,6 +51,7 @@ ${CARD_CSS}
   .accessiblit-forced-colours-note,.accessiblit-cursor-note { display:block; }
   .accessiblit-surface { --ui-bg:Canvas; --ui-ink:CanvasText; --ui-muted:CanvasText; --ui-border:CanvasText; --ui-quiet:Canvas; --ui-body:Canvas; --ui-accent:CanvasText; --ui-accent-ink:Canvas; --ui-focus:CanvasText; forced-color-adjust:auto; box-shadow:none; }
   .accessiblit-surface button, .accessiblit-launcher { background:Canvas; color:CanvasText; border-color:CanvasText; }
+  .accessiblit-surface .accessiblit-step { background:Canvas; color:CanvasText; border-color:CanvasText; }
   .accessiblit-choice input { accent-color:auto; }
   .accessiblit-header { color:CanvasText; background:Canvas; }
   .accessiblit-intro { color:CanvasText; }

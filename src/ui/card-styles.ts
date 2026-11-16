@@ -15,6 +15,7 @@ export const CARD_CSS = `
 .accessiblit-value { min-inline-size:0; font-size:16px; font-weight:700; text-align:center; font-variant-numeric:tabular-nums; }
 .accessiblit-stepper { display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:4px; }
 .accessiblit-surface .accessiblit-step { display:flex; align-items:center; justify-content:center; inline-size:44px; block-size:44px; padding:0; border:1px solid var(--ui-accent-ink); border-radius:50%; color:var(--ui-accent-ink); background:var(--ui-accent); font-size:26px; line-height:1; }
+.accessiblit-surface .accessiblit-step[aria-disabled=true] { border-color:var(--ui-border); }
 .accessiblit-step-text { position:absolute; inline-size:1px; block-size:1px; overflow:hidden; clip-path:inset(50%); }
 .accessiblit-options { display:flex; justify-content:center; flex-wrap:wrap; gap:6px; }
 .accessiblit-choice { display:flex; gap:6px; align-items:center; padding:8px 10px; min-block-size:44px; border:1px solid var(--ui-border); border-radius:12px; cursor:pointer; background:var(--ui-quiet); }
