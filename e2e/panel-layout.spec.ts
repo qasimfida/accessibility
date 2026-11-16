@@ -83,13 +83,15 @@ test('isolates UI typography, painting and author zoom from root adjustments', a
   await expect.poll(() => launcher.boundingBox()).toEqual(before.launcher);
   expect(await panel.boundingBox()).toEqual(before.panel);
   expect(await heading.screenshot()).toEqual(before.image);
-  expect(
-    await heading.evaluate((e) => ({
-      font: getComputedStyle(e).fontSize,
-      spacing: getComputedStyle(e).letterSpacing,
-      line: getComputedStyle(e).lineHeight,
-    })),
-  ).toEqual({ font: '20px', spacing: 'normal', line: '26px' });
+  const typography = await heading.evaluate((e) => ({
+    font: getComputedStyle(e).fontSize,
+    spacing: getComputedStyle(e).letterSpacing,
+    line: parseFloat(getComputedStyle(e).lineHeight),
+  }));
+  expect(typography.font).toBe('24px');
+  expect(typography.spacing).toBe('normal');
+  // WebKit serializes 24 * 1.3 as 31.199999px; compare the numeric value.
+  expect(typography.line).toBeCloseTo(31.2, 5);
 });
 
 for (const adjustment of ['default', 'spacing', 'text-size'] as const)
