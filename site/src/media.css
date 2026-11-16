@@ -42,4 +42,9 @@
   :focus-visible {
     outline-color: Highlight;
   }
+  .button:active,
+  button:enabled:active {
+    outline: 3px solid currentColor;
+    outline-offset: -6px;
+  }
 }

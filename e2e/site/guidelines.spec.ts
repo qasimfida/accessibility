@@ -23,3 +23,31 @@ test('installation anchors leave heading clearance on a narrow screen', async ({
     )
     .toBeGreaterThanOrEqual(-1);
 });
+
+test('pressed actions keep visible feedback in forced colors', async ({
+  page,
+}) => {
+  await loadSite(page, '', 'forced');
+  const action = page.getByRole('link', {
+    name: 'Try the live demo',
+    exact: true,
+  });
+  await action.hover();
+  await page.mouse.down();
+  try {
+    const pressed = await action.evaluate((element) => {
+      const style = getComputedStyle(element);
+      return {
+        active: element.matches(':active'),
+        width: parseFloat(style.outlineWidth),
+        style: style.outlineStyle,
+      };
+    });
+    expect(pressed.active).toBe(true);
+    expect(pressed.width).toBeGreaterThanOrEqual(2);
+    expect(pressed.style).toBe('solid');
+  } finally {
+    await page.mouse.move(0, 0);
+    await page.mouse.up();
+  }
+});
