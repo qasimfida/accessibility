@@ -1,3 +1,4 @@
+import { createOptionStepper } from './option-stepper';
 import { createIcon } from './icon';
 import { createReporter } from '../core/diagnostics';
 import { createScope } from '../core/scope';
@@ -23,7 +24,9 @@ function render(context: ControlContext): RenderedControl {
     case 'range':
       return createStepper(context);
     case 'select':
-      return createRadios(context);
+      return context.feature.control.presentation === 'stepper'
+        ? createOptionStepper(context)
+        : createRadios(context);
     default:
       throw new Error('Unknown control type');
   }

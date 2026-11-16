@@ -110,6 +110,8 @@ export type FeatureControl =
       type: 'select';
       values: readonly (string | number | boolean)[];
       labels?: readonly string[];
+      /** Ordered numeric levels can use minus/plus without changing their stored values. */
+      presentation?: 'stepper';
     }
   | { type: 'range'; min: number; max: number; step: number; unit?: string };
 

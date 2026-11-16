@@ -10,6 +10,7 @@ export const letterSpacing: Feature = {
   description: 'Add space between letters.',
   control: {
     type: 'select',
+    presentation: 'stepper',
     values: [0, 0.12, 0.16, 0.2],
     labels: ['Off', '0.12em', '0.16em', '0.2em'],
   },

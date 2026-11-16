@@ -10,6 +10,7 @@ export const wordSpacing: Feature = {
   description: 'Add space between words.',
   control: {
     type: 'select',
+    presentation: 'stepper',
     values: [0, 0.16, 0.24, 0.32],
     labels: ['Off', '0.16em', '0.24em', '0.32em'],
   },

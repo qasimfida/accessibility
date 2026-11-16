@@ -6,6 +6,8 @@ export interface ControlContext {
   feature: Feature;
   messages: Messages;
   prefix: string;
+  /** A renderer can format an ordinal index without exposing it as a feature setting. */
+  formatValue?(value: number): string;
   getValue(): unknown;
   setValue(value: unknown): void;
 }

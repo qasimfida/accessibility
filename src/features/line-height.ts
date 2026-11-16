@@ -10,6 +10,7 @@ export const lineHeight: Feature = {
   description: 'Set line spacing and paragraph gaps.',
   control: {
     type: 'select',
+    presentation: 'stepper',
     values: [0, 1.5, 1.75, 2],
     labels: ['Off', '1.5', '1.75', '2'],
   },

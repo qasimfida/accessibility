@@ -26,7 +26,7 @@ it('exposes visible values, clamps steps and preserves nodes/focus at limits', (
   expect(minus?.getAttribute('aria-label')).toBe('Decrease Test font size');
   expect(plus?.getAttribute('aria-label')).toBe('Increase Test font size');
   expect(control.element.querySelector('.accessiblit-value')?.textContent).toBe(
-    '100 percent',
+    '100%',
   );
   plus!.focus();
   plus!.click();
@@ -48,7 +48,7 @@ it('exposes visible values, clamps steps and preserves nodes/focus at limits', (
   current = 'bad';
   control.update(current);
   expect(control.element.querySelector('.accessiblit-value')?.textContent).toBe(
-    '80 percent',
+    '80%',
   );
   plus!.click();
   expect(current).toBe(90);

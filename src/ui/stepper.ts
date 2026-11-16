@@ -63,7 +63,11 @@ export function createStepper(context: ControlContext): RenderedControl {
   const update = (input: unknown) => {
     if (!shell.scope.active) return;
     const current = numeric(input);
-    value.textContent = valueText(context.feature, current, context.messages);
+    value.textContent = context.formatValue
+      ? context.formatValue(current)
+      : range.unit === 'percent'
+        ? `${current}%`
+        : valueText(context.feature, current, context.messages);
     buttons[0]!.setAttribute('aria-disabled', String(current <= range.min));
     buttons[1]!.setAttribute('aria-disabled', String(current >= range.max));
   };
