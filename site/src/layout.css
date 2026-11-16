@@ -99,6 +99,8 @@ h2,
 h3,
 h4 {
   line-height: 1.2;
+  scroll-margin-block-start: 1rem;
+  text-wrap: balance;
 }
 h1 {
   max-inline-size: 19ch;
