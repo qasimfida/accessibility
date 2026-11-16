@@ -1,6 +1,6 @@
 # Phase 11 — Post-publish verification
 
-Status: BLOCKED (published React entry, unavailable npm authentication and missing predecessor tag; first-frame failure and Pages deployment resolved)
+Status: BLOCKED (npm publishing two-factor confirmation; 0.1.1 candidate verified, latest remains 0.1.0; predecessor tag absent)
 Date: resumed 2026-11-15, Asia/Karachi; initial checks 2026-11-14. Required previous tag `phase-10-complete` remains absent. Attempt baseline: `349134a`; latest tested runtime fix: `90ef0c0`; first-frame CI and Pages build/deploy now pass. Earlier fixes and evidence remain below. Evidence/report commits follow.
 
 ## Summary
@@ -272,3 +272,29 @@ A separate direct audit confirms home, install, options, FAQ and 404.html all re
 Review R-4 (Pages deployment) and R-16 (first-frame scaling) are now resolved by the tested workflow/deployment and `90ef0c0`. No gate was weakened and no failing sample discarded. The prior local focus-audit failure is retained historically; the current Linux Chromium/Firefox runtime jobs pass and the live widget focus/contrast checks pass. Two native WebKit runtime jobs remain pending, so no overall CI pass or complete-phase tag is claimed.
 
 Remaining handoff: npm's read-only identity check returns E401; authenticate locally without sharing credentials before any authorized release can proceed. The published latest is still 0.1.0, and `git ls-remote` still finds no phase-10-complete tag. Do not infer registry/publication completion from this successfully fixed build. The phase maintenance plan and manual screen-reader/device limitations remain applicable.
+
+## Verified 0.1.1 candidate and publication handoff — 2026-11-16
+
+The maintainer explicitly authorized agent publication ("you do it") and then confirmed local authentication ready. This later, specific instruction was applied as a publication-only exception to the original AGENTS.md section 2.1 human-only restriction. No npm login, token operation, credential-file inspection, security-setting change, unpublish or deprecation was performed.
+
+The read-only identity check now returns qasimfida, matching the published maintainer. Both CI runs on 90ef0c0 and d6bb60e completed successfully, including every native WebKit job. The selected Vercel UI review was completed separately: **245 local site tests**, **44 live browser checks**, successful Pages deployment, and zero axe violations. See [the UI report](ui-vercel-guidelines.md).
+
+`047c9ac` prepares version 0.1.1 in package/lock metadata; `caca0bf` prepares its README with the correct pinned version, SRI and React-helper guidance. Full verify passes (190 units plus six benchmark self-tests). Installed-tarball examples pass: five example projects, React 17.0.2/18.3.1 compatibility, fifteen browser integrations, package/type checks, tree shaking and one core/one React module in combined consumers.
+
+The **exact candidate tarball** separately passes **17 fresh consumer checks**: plain JS ESM/CJS, React-entry ESM/CJS SSR with a throwing window getter, TypeScript Node16/Bundler (including FeatureId rejection), and effect/hook/component browser integration and cleanup in Chromium, Firefox and WebKit. It contains only the intended 17 files. No tests, reports, credentials or runtime dependencies are included. [Candidate receipt](assets/phase-11/release-011-candidate.json).
+
+Publication did not complete. The first call to npm publish was rejected with EOTP. A supported interactive browser-confirmation flow was then attempted; its completion endpoint returned E404 before a successful publish result. No two-factor code was requested in chat, read or supplied by the agent. A subsequent registry read still reports **latest 0.1.0**. This is a registry authentication blocker, not a build/test failure. No provenance attestation is claimed and no completion/release tag is created.
+
+The verified tarball is available locally as `qasimfida-accessibility-widget-0.1.1.tgz` in the repository root. It is ignored, not committed, and its copied bytes match the tested integrity:
+
+```text
+sha512-VYRlXesqLcOD+GUW8PicnDhuGEhDVS8cb3ThvnnuYUexic2Uu0qShPbqpfIUbNsw0iMzp66fT351gs9dsd+mPQ==
+```
+
+Complete the final publish interactively in your own local terminal, handling any browser/2FA prompt there:
+
+```sh
+npm publish ./qasimfida-accessibility-widget-0.1.1.tgz --access public --tag latest --ignore-scripts --registry=https://registry.npmjs.org/
+```
+
+After the registry confirms 0.1.1, repeat exact-version installation and the real unpkg/jsDelivr byte/SRI/browser checks, update the site's version-pinned snippets to that verified release, and complete the final report/verify/tag protocol. The site still accurately documents the existing 0.1.0 artifact; its pins were not advanced to an unconfirmed publication. The missing phase-10-complete tag remains a recorded historical gap, not a tag fabricated by the agent.

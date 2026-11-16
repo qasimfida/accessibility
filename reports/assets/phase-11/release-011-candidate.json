@@ -1,0 +1,471 @@
+{
+  "date": "2026-11-16",
+  "source": "caca0bf",
+  "candidate": {
+    "version": "0.1.1",
+    "filename": "qasimfida-accessibility-widget-0.1.1.tgz",
+    "integrity": "sha512-VYRlXesqLcOD+GUW8PicnDhuGEhDVS8cb3ThvnnuYUexic2Uu0qShPbqpfIUbNsw0iMzp66fT351gs9dsd+mPQ==",
+    "shasum": "dbc7e7044af9aa9b30d402e42d915e73a644f97a",
+    "files": [
+      "LICENSE",
+      "README.md",
+      "dist/accessiblit.min.js",
+      "dist/accessiblit.min.js.map",
+      "dist/index.cjs",
+      "dist/index.cjs.map",
+      "dist/index.d.cts",
+      "dist/index.d.ts",
+      "dist/index.mjs",
+      "dist/index.mjs.map",
+      "dist/react.cjs",
+      "dist/react.cjs.map",
+      "dist/react.d.cts",
+      "dist/react.d.ts",
+      "dist/react.mjs",
+      "dist/react.mjs.map",
+      "package.json"
+    ]
+  },
+  "consumerChecks": [
+    {
+      "consumer": "esm.mjs",
+      "pass": true,
+      "source": "exact local 0.1.1 release tarball"
+    },
+    {
+      "consumer": "cjs.cjs",
+      "pass": true,
+      "source": "exact local 0.1.1 release tarball"
+    },
+    {
+      "consumer": "React helper SSR esm",
+      "pass": true,
+      "source": "exact local 0.1.1 release tarball"
+    },
+    {
+      "consumer": "React helper SSR cjs",
+      "pass": true,
+      "source": "exact local 0.1.1 release tarball"
+    },
+    {
+      "consumer": "Published React declarations Node16",
+      "pass": true
+    },
+    {
+      "consumer": "Core and React-effect TypeScript Node16",
+      "pass": true
+    },
+    {
+      "consumer": "Published React declarations Bundler",
+      "pass": true
+    },
+    {
+      "consumer": "Core and React-effect TypeScript Bundler",
+      "pass": true
+    },
+    {
+      "consumer": "React effect",
+      "browser": "chromium",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    },
+    {
+      "consumer": "React hook",
+      "browser": "chromium",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    },
+    {
+      "consumer": "React component",
+      "browser": "chromium",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    },
+    {
+      "consumer": "React effect",
+      "browser": "firefox",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    },
+    {
+      "consumer": "React hook",
+      "browser": "firefox",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    },
+    {
+      "consumer": "React component",
+      "browser": "firefox",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    },
+    {
+      "consumer": "React effect",
+      "browser": "webkit",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    },
+    {
+      "consumer": "React hook",
+      "browser": "webkit",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    },
+    {
+      "consumer": "React component",
+      "browser": "webkit",
+      "pass": true,
+      "cleanup": true,
+      "errors": []
+    }
+  ],
+  "packedExamples": {
+    "compatibility": [
+      {
+        "version": "17.0.2",
+        "strictMode": true,
+        "restored": true,
+        "ssrMarkup": ""
+      },
+      {
+        "version": "18.3.1",
+        "strictMode": true,
+        "restored": true,
+        "ssrMarkup": ""
+      }
+    ],
+    "bundleAudit": {
+      "rawBytes": 58089,
+      "gzipBytes": 19734,
+      "sourceMapRawAttribution": {
+        "wrapper/unmapped": 615,
+        "entry": 140,
+        "features": 24921,
+        "core": 14292,
+        "ui": 18121
+      },
+      "coreSourceCount": 55,
+      "reactSources": ["../src/react/index.ts"],
+      "reactEsmBytes": 393,
+      "reactCjsBytes": 847,
+      "unusedImportOutput": "var e = 1;\nexport { e as retained };",
+      "combinedCoreModuleCount": 1,
+      "combinedReactModuleCount": 1
+    },
+    "files": [
+      "LICENSE",
+      "README.md",
+      "dist/accessiblit.min.js",
+      "dist/accessiblit.min.js.map",
+      "dist/index.cjs",
+      "dist/index.cjs.map",
+      "dist/index.d.cts",
+      "dist/index.d.ts",
+      "dist/index.mjs",
+      "dist/index.mjs.map",
+      "dist/react.cjs",
+      "dist/react.cjs.map",
+      "dist/react.d.cts",
+      "dist/react.d.ts",
+      "dist/react.mjs",
+      "dist/react.mjs.map",
+      "package.json"
+    ],
+    "sri": "sha384-92p98tW9X5RIeEH3DgJaTj4mWx29zz9C5jAH1Jd+AeCQUHivVa6CYiWAkYtQ3JC3",
+    "examples": ["html", "node-ssr-check", "react-vite", "nextjs", "consumers"],
+    "types": ["Node16 ESM/CJS", "Bundler ESM/TSX"],
+    "rows": [
+      {
+        "browser": "chromium",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "chromium",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          {
+            "owner": "effect",
+            "hiddenBeforeShortcut": true
+          },
+          {
+            "owner": "component",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "chromium",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          {
+            "owner": "next",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "firefox",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "firefox",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          {
+            "owner": "effect",
+            "hiddenBeforeShortcut": true
+          },
+          {
+            "owner": "component",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "firefox",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          {
+            "owner": "next",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "webkit",
+        "format": "html",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "cdn",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "esm",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": []
+      },
+      {
+        "browser": "webkit",
+        "format": "react",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          {
+            "owner": "effect",
+            "hiddenBeforeShortcut": true
+          },
+          {
+            "owner": "component",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      },
+      {
+        "browser": "webkit",
+        "format": "next",
+        "axeClosed": 0,
+        "axeOpen": 0,
+        "measured": {
+          "minimumTarget": 24,
+          "focusWidth": 3,
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(20, 86, 160)",
+          "overflow": 0
+        },
+        "tabStops": 21,
+        "remounts": [
+          {
+            "owner": "next",
+            "hiddenBeforeShortcut": false
+          }
+        ]
+      }
+    ]
+  },
+  "registryAfterAttempt": {
+    "version": "0.1.0",
+    "dist-tags": {
+      "latest": "0.1.0"
+    },
+    "license": "MIT"
+  },
+  "publication": {
+    "authorization": "Maintainer explicitly authorized agent publication and confirmed local authentication ready.",
+    "identity": "qasimfida",
+    "firstAttempt": "EOTP; no non-interactive publication",
+    "browserAttempt": "Interactive npm browser challenge ended with E404 on its completion endpoint; no completed release observed.",
+    "secretsReadOrChanged": false,
+    "provenanceClaimed": false
+  },
+  "handoff": "Exact tested tarball copied to ignored project-root qasimfida-accessibility-widget-0.1.1.tgz; checksum verified. Complete publication in a local interactive terminal; do not send 2FA codes in chat."
+}
