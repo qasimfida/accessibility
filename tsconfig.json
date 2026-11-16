@@ -12,7 +12,7 @@
     "skipLibCheck": true,
     "types": ["node"],
     "paths": {
-      "@qasimfida/accessibility-widget": ["./src/index.ts"]
+      "@widgets/accessibility": ["./src/index.ts"]
     }
   },
   "include": ["src", "tests", "e2e", "*.config.ts", "site/**/*.ts"]

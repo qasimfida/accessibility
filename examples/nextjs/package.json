@@ -7,7 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@qasimfida/accessibility-widget": "file:../accessiblit.tgz",
+    "@widgets/accessibility": "file:../accessiblit.tgz",
     "next": "16.4.6",
     "react": "19.3.1",
     "react-dom": "19.3.1"

@@ -39,7 +39,7 @@ try {
       private: true,
       type: 'module',
       dependencies: {
-        '@qasimfida/accessibility-widget': `file:./${packed.filename}`,
+        '@widgets/accessibility': `file:./${packed.filename}`,
         react: versions.react,
         'react-dom': versions['react-dom'],
         '@types/react': versions['@types/react'],
@@ -54,7 +54,7 @@ try {
   );
   assert.equal(
     lstatSync(
-      join(folder, 'node_modules/@qasimfida/accessibility-widget'),
+      join(folder, 'node_modules/@widgets/accessibility'),
     ).isSymbolicLink(),
     false,
   );
@@ -161,9 +161,7 @@ try {
   });
   assert.ok(
     inputs.some((path) =>
-      path.includes(
-        'node_modules/@qasimfida/accessibility-widget/dist/index.mjs',
-      ),
+      path.includes('node_modules/@widgets/accessibility/dist/index.mjs'),
     ),
   );
   assert.ok(
@@ -172,10 +170,7 @@ try {
   );
   mkdirSync(join(output, 'vendor'));
   copyFileSync(
-    join(
-      folder,
-      'node_modules/@qasimfida/accessibility-widget/dist/accessiblit.min.js',
-    ),
+    join(folder, 'node_modules/@widgets/accessibility/dist/accessiblit.min.js'),
     join(output, 'vendor/accessiblit.min.js'),
   );
   for (const id of [

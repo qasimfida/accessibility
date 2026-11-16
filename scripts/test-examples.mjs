@@ -62,7 +62,7 @@ try {
     );
     assert.equal(
       lstatSync(
-        join(directory, 'node_modules/@qasimfida/accessibility-widget'),
+        join(directory, 'node_modules/@widgets/accessibility'),
       ).isSymbolicLink(),
       false,
     );
@@ -96,7 +96,7 @@ try {
   const bundle = readFileSync(
     join(
       installed.html,
-      'node_modules/@qasimfida/accessibility-widget/dist/accessiblit.min.js',
+      'node_modules/@widgets/accessibility/dist/accessiblit.min.js',
     ),
     'utf8',
   );

@@ -6,7 +6,7 @@
 
 | Constant | Value |
 |---|---|
-| PKG_NAME | @qasimfida/accessibility-widget |
+| PKG_NAME | @widgets/accessibility |
 | GLOBAL_NAME | Accessiblit |
 | REPO_URL | https://github.com/qasimfida/accessiblit |
 | PAGES_URL | https://qasimfida.github.io/accessiblit/ |

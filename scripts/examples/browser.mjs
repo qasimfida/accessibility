@@ -26,7 +26,7 @@ export async function browserExamples(servers, bundle, cdnHtml) {
         });
         if (format === 'cdn') {
           await page.route(
-            'https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.0.0/dist/accessiblit.min.js',
+            'https://cdn.jsdelivr.net/npm/@widgets/accessibility@0.0.0/dist/accessiblit.min.js',
             (route) =>
               route.fulfill({ contentType: 'text/javascript', body: bundle }),
           );

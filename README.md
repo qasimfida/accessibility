@@ -1,10 +1,10 @@
 # Accessiblit
 
-Accessiblit is a dependency-free accessibility personalisation widget with eighteen controls for text, colour and navigation. The public npm package is **`@qasimfida/accessibility-widget`**, version **0.1.1**; the browser global remains `Accessiblit`. Personalisation does not make a website WCAG compliant. See the [accessibility report](https://github.com/qasimfida/accessiblit/blob/main/docs/ACCESSIBILITY.md) for tested scope and remaining manual checks.
+Accessiblit is a dependency-free accessibility personalisation widget with eighteen controls for text, colour and navigation. The prepared package name is **`@widgets/accessibility`** (not yet published; npm organization access is pending); the browser global remains `Accessiblit`. Personalisation does not make a website WCAG compliant. See the [accessibility report](https://github.com/qasimfida/accessiblit/blob/main/docs/ACCESSIBILITY.md) for tested scope and remaining manual checks.
 
 ## CDN
 
-Pin the version and keep its integrity value together. Use jsDelivr or [unpkg](https://unpkg.com/@qasimfida/accessibility-widget@0.1.1/dist/accessiblit.min.js) for the 0.1.1 IIFE.
+The CDN snippet below remains the last published release, `@qasimfida/accessibility-widget@0.1.1`; it does not include the new panel design. Pin the version and keep its integrity value together. Use jsDelivr or [unpkg](https://unpkg.com/@qasimfida/accessibility-widget@0.1.1/dist/accessiblit.min.js) for the 0.1.1 IIFE.
 
 ```html
 <script
@@ -22,11 +22,12 @@ The hash is for the exact published IIFE, not a future build. `node scripts/sri.
 ## npm
 
 ```sh
-npm install @qasimfida/accessibility-widget@0.1.1
+# After the new organization package is published:
+npm install @widgets/accessibility@0.1.1
 ```
 
 ```ts
-import { init } from '@qasimfida/accessibility-widget';
+import { init } from '@widgets/accessibility';
 
 const widget = init({ position: 'bottom-left' });
 // When this integration is removed:
@@ -39,11 +40,11 @@ Version 0.1.1 fixes scaling for text filled into existing empty nodes and reconc
 
 ## React and Next.js
 
-Version 0.1.1 corrects the React helper’s package imports and declarations. The optional `@qasimfida/accessibility-widget/react` entry exports `AccessiblitWidget` and `useAccessiblit`. The core effect below also works without using the helper.
+Version 0.1.1 corrects the React helper’s package imports and declarations. The optional `@widgets/accessibility/react` entry exports `AccessiblitWidget` and `useAccessiblit`. The core effect below also works without using the helper.
 
 ```tsx
 import { useEffect } from 'react';
-import { init } from '@qasimfida/accessibility-widget';
+import { init } from '@widgets/accessibility';
 
 export default function Accessibility() {
   useEffect(() => {

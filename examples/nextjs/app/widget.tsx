@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { AccessiblitWidget } from '@qasimfida/accessibility-widget/react';
+import { AccessiblitWidget } from '@widgets/accessibility/react';
 /** A client boundary owns browser effects; unmounting releases the singleton. */
 export default function Widget() {
   const [enabled, setEnabled] = useState(true);

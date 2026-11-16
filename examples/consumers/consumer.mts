@@ -1,9 +1,9 @@
-import { init, destroy } from '@qasimfida/accessibility-widget';
+import { init, destroy } from '@widgets/accessibility';
 import type {
   FeatureId,
   AccessiblitOptions,
   ChangeEvent,
-} from '@qasimfida/accessibility-widget';
+} from '@widgets/accessibility';
 const features: FeatureId[] = [
   'fontSize',
   'lineHeight',

@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@qasimfida/accessibility-widget": "file:../accessiblit.tgz"
+    "@widgets/accessibility": "file:../accessiblit.tgz"
   }
 }

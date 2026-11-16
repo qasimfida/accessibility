@@ -15,7 +15,7 @@ export async function reactCompatibility(folder) {
       JSON.stringify({
         private: true,
         dependencies: {
-          '@qasimfida/accessibility-widget': 'file:../accessiblit.tgz',
+          '@widgets/accessibility': 'file:../accessiblit.tgz',
           react: version,
           'react-dom': version,
         },
@@ -45,9 +45,7 @@ export async function reactCompatibility(folder) {
     });
     try {
       const React = require('react');
-      const {
-        AccessiblitWidget,
-      } = require('@qasimfida/accessibility-widget/react');
+      const { AccessiblitWidget } = require('@widgets/accessibility/react');
       const act = React.act ?? require('react-dom/test-utils').act;
       const container = dom.window.document.getElementById('root');
       const before = dom.window.document.documentElement.outerHTML;

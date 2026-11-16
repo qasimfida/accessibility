@@ -87,7 +87,8 @@
       <aside class="notice" aria-label="Release availability">
         <p>
           <strong
-            >Published package: @qasimfida/accessibility-widget 0.1.1.</strong
+            >Prepared package: @widgets/accessibility (not yet
+            published).</strong
           >
           The browser global is Accessiblit. Both pinned CDN files and the npm
           integrations, including the React helper and declarations, have been
@@ -117,8 +118,14 @@
           Install the published package, then import the module from your
           application entry.
         </p>
-        <pre><code data-snippet="npm-install" data-language="sh">npm install @qasimfida/accessibility-widget@0.1.1</code></pre>
-        <pre><code data-snippet="esm" data-language="ts">import { init } from &#x27;@qasimfida/accessibility-widget&#x27;;
+        <p>
+          The npm examples below are prepared for the new organization package.
+          Until it is published, use a locally packed tarball. The CDN example
+          above remains the previous published package and does not include the
+          redesigned panel.
+        </p>
+        <pre><code data-snippet="npm-install" data-language="sh">npm install @widgets/accessibility@0.1.1</code></pre>
+        <pre><code data-snippet="esm" data-language="ts">import { init } from &#x27;@widgets/accessibility&#x27;;
 
 const widget = init({ position: &#x27;bottom-left&#x27; });
 // Call widget.destroy() when removing this integration.</code></pre>
@@ -130,9 +137,9 @@ const widget = init({ position: &#x27;bottom-left&#x27; });
           keeps DOM work on the client and cleans up the instance it created,
           including under StrictMode.
         </p>
-        <pre><code data-snippet="react-install" data-language="sh">npm install @qasimfida/accessibility-widget@0.1.1 react react-dom</code></pre>
+        <pre><code data-snippet="react-install" data-language="sh">npm install @widgets/accessibility@0.1.1 react react-dom</code></pre>
         <pre><code data-snippet="react" data-language="tsx">import { useEffect } from &#x27;react&#x27;;
-import { init } from &#x27;@qasimfida/accessibility-widget&#x27;;
+import { init } from &#x27;@widgets/accessibility&#x27;;
 
 export default function Accessibility() {
   useEffect(() =&gt; {
@@ -152,7 +159,7 @@ export default function Accessibility() {
         <pre><code data-snippet="next" data-language="tsx">&#x27;use client&#x27;;
 
 import { useEffect } from &#x27;react&#x27;;
-import { init } from &#x27;@qasimfida/accessibility-widget&#x27;;
+import { init } from &#x27;@widgets/accessibility&#x27;;
 
 export default function Accessibility() {
   useEffect(() =&gt; {
@@ -206,7 +213,7 @@ npm pack</code></pre>
           credential management. Replace the example registry URL with yours; no
           credentials belong in page source or these snippets.
         </p>
-        <pre><code data-snippet="private-registry" data-language="sh">npm install @qasimfida/accessibility-widget --registry=https://registry.example.invalid</code></pre>
+        <pre><code data-snippet="private-registry" data-language="sh">npm install @widgets/accessibility --registry=https://registry.example.invalid</code></pre>
       </section>
     </main>
     <footer class="site-footer wrap">

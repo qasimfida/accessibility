@@ -1,7 +1,7 @@
 import React, { StrictMode, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { init, destroy } from '@qasimfida/accessibility-widget';
-import { AccessiblitWidget } from '@qasimfida/accessibility-widget/react';
+import { init, destroy } from '@widgets/accessibility';
+import { AccessiblitWidget } from '@widgets/accessibility/react';
 
 // The brief's effect pattern also works without the convenience component.
 function EffectSnippet() {

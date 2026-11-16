@@ -1,2 +1,2 @@
-import { init } from '@qasimfida/accessibility-widget';
+import { init } from '@widgets/accessibility';
 init({ position: 'bottom-left' });

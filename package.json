@@ -1,5 +1,5 @@
 {
-  "name": "@qasimfida/accessibility-widget",
+  "name": "@widgets/accessibility",
   "version": "0.1.1",
   "description": "A dependency-free accessibility personalisation widget.",
   "type": "module",

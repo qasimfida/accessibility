@@ -1,11 +1,11 @@
 'use client';
 import { memo, useEffect, useRef } from 'react';
 import type { RefObject } from 'react';
-import { init } from '@qasimfida/accessibility-widget';
+import { init } from '@widgets/accessibility';
 import type {
   AccessiblitInstance,
   AccessiblitOptions,
-} from '@qasimfida/accessibility-widget';
+} from '@widgets/accessibility';
 
 /** The ref becomes available after commit; memoize options to avoid unnecessary replacement. */
 export function useAccessiblit(

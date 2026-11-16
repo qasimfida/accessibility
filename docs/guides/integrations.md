@@ -1,6 +1,6 @@
 # Delivery and integration contracts
 
-The public package is `@qasimfida/accessibility-widget@0.1.1` and has zero runtime dependencies. Its core exports `init`, `destroy` and TypeScript types; React is an optional peer (`>=17`) needed only for `/react`. The 0.1.1 React helper and declarations resolve the corrected package name and were checked from a fresh registry installation. Choose one core delivery format per document. The React entry imports that core rather than embedding another engine.
+The prepared package is `@widgets/accessibility@0.1.1` (not yet published; organization access is pending) and has zero runtime dependencies. Its core exports `init`, `destroy` and TypeScript types; React is an optional peer (`>=17`) needed only for `/react`. The 0.1.1 React helper and declarations resolve the corrected package name and were previously checked from a fresh registry installation of `@qasimfida/accessibility-widget@0.1.1`; the renamed package must be checked again after publication. Choose one core delivery format per document. The React entry imports that core rather than embedding another engine.
 
 | Consumer       | Entry                                           | Declarations             |
 | -------------- | ----------------------------------------------- | ------------------------ |
@@ -10,7 +10,7 @@ The public package is `@qasimfida/accessibility-widget@0.1.1` and has zero runti
 | React ESM      | `dist/react.mjs`                                | `dist/react.d.ts`        |
 | React CommonJS | `dist/react.cjs`                                | `dist/react.d.cts`       |
 
-All JavaScript files have adjacent sourcemaps. Both React files start with a `"use client"` banner. Conditional exports select types before the runtime target within each import/require branch. A typesVersions mapping also supports legacy resolution of `/react`. Package metadata is available at `@qasimfida/accessibility-widget/package.json`.
+All JavaScript files have adjacent sourcemaps. Both React files start with a `"use client"` banner. Conditional exports select types before the runtime target within each import/require branch. A typesVersions mapping also supports legacy resolution of `/react`. Package metadata is available at `@widgets/accessibility/package.json`.
 
 ## Classic script and integrity
 

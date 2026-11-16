@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
-const { init, destroy } = require('@qasimfida/accessibility-widget');
-const metadata = require('@qasimfida/accessibility-widget/package.json');
-assert.equal(metadata.name, '@qasimfida/accessibility-widget');
+const { init, destroy } = require('@widgets/accessibility');
+const metadata = require('@widgets/accessibility/package.json');
+assert.equal(metadata.name, '@widgets/accessibility');
 assert.equal(typeof document, 'undefined');
 init({ position: 'bottom-left' }).destroy();
 destroy();
