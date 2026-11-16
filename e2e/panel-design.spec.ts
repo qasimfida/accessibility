@@ -1,3 +1,4 @@
+import { bannerContrast } from './helpers/gradient-contrast';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
@@ -13,6 +14,16 @@ for (const width of [1280, 320])
     const panel = page.getByRole('dialog', { name: 'Accessibility options' });
     const body = panel.locator('.accessiblit-body');
     const header = panel.locator('.accessiblit-header');
+    const contrast = bannerContrast(
+      await header.evaluate((node) => getComputedStyle(node).backgroundImage),
+    );
+    expect(contrast).toBeGreaterThanOrEqual(4.5);
+    console.log(
+      'PANEL_BANNER_CONTRAST',
+      test.info().project.name,
+      width,
+      contrast,
+    );
     const reset = panel.getByRole('button', { name: 'Reset all', exact: true });
     await expect(
       panel.locator('.accessiblit-feature-icon svg[aria-hidden=true]'),
