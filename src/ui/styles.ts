@@ -31,6 +31,7 @@ export const UI_CSS = `
 .accessiblit-emblem { display:flex; align-items:center; justify-content:center; inline-size:58px; block-size:58px; border:2px solid #ffffff80; border-radius:50%; background:#ffffff20; }
 .accessiblit-emblem svg { inline-size:34px; block-size:34px; }
 .accessiblit-header h2 { grid-column:1/-1; margin:4px 0 0; min-inline-size:0; font-size:24px; line-height:1.3; font-weight:750; text-wrap:balance; }
+.accessiblit-header h2,.accessiblit-brand,.accessiblit-intro { text-align:center; }
 .accessiblit-brand { grid-column:1/-1; font-size:14px; font-weight:650; }
 .accessiblit-surface .accessiblit-close { min-inline-size:44px; inline-size:44px; block-size:44px; padding:0; border:1px solid #fff; border-radius:50%; color:#fff; background:#194bc5; --ui-focus:#fff; --ui-bg:#194bc5; }
 .accessiblit-surface .accessiblit-close { display:flex; align-items:center; justify-content:center; }
