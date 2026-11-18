@@ -85,7 +85,7 @@
     border-color: CanvasText;
   }
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) and (forced-colors: none) {
   :root {
     --accent: #245be3;
     --accent-hover: #194bc5;
