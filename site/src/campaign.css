@@ -95,3 +95,40 @@
 button {
   border-radius: 999px;
 }
+/* A centred, softly lit hero echoes the reference's visual direction with original styling. */
+.site-header {
+  margin-block: 1.25rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  background: var(--surface);
+}
+.campaign-hero {
+  text-align: center;
+  padding-block: clamp(3rem, 8vw, 7rem);
+}
+.campaign-hero h1,
+.campaign-hero .lede,
+.campaign-hero .eyebrow {
+  margin-inline: auto;
+}
+.campaign-hero .actions,
+.campaign-hero .facts {
+  justify-content: center;
+}
+@media (prefers-color-scheme: light) and (forced-colors: none) {
+  .campaign-hero {
+    background-color: #f7fafc;
+    background-image:
+      radial-gradient(ellipse at 0% 0%, #dce7ff, transparent 65%),
+      radial-gradient(ellipse at 100% 0%, #cfddfb, transparent 60%);
+  }
+}
+@media (max-width: 40rem) {
+  .site-header {
+    padding: 1rem;
+  }
+  .campaign-hero {
+    padding-inline: 1.25rem;
+  }
+}
