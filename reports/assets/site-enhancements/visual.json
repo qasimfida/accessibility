@@ -1,0 +1,134 @@
+[
+  {
+    "name": "landing",
+    "overflow": 0,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/accessiblit.min.js",
+        "bytes": 65339
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/bootstrap.js",
+        "bytes": 114
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/assets/main-Dd2IyT3z.js",
+        "bytes": 1167
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/assets/main-Ck3r9BIl.css",
+        "bytes": 12282
+      }
+    ],
+    "loadMs": 60.70000001788139,
+    "keyboard": [
+      "Skip to main content",
+      "Accessiblit",
+      "Home",
+      "Install",
+      "Options",
+      "Pricing",
+      "FAQ and privacy",
+      "Try the live demo"
+    ]
+  },
+  {
+    "name": "pricing",
+    "overflow": 0,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/bootstrap.js",
+        "bytes": 114
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/accessiblit.min.js",
+        "bytes": 65339
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/assets/main-Dd2IyT3z.js",
+        "bytes": 1167
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/assets/main-Ck3r9BIl.css",
+        "bytes": 12282
+      }
+    ],
+    "loadMs": 28.299999982118607,
+    "keyboard": [
+      "Skip to main content",
+      "Accessiblit",
+      "Home",
+      "Install",
+      "Options",
+      "Pricing",
+      "FAQ and privacy",
+      "Get the toolkit"
+    ]
+  },
+  {
+    "name": "mobile",
+    "overflow": 0,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/accessiblit.min.js",
+        "bytes": 65339
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/assets/main-Ck3r9BIl.css",
+        "bytes": 12282
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/bootstrap.js",
+        "bytes": 114
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/assets/main-Dd2IyT3z.js",
+        "bytes": 1167
+      }
+    ],
+    "loadMs": 28.80000001192093,
+    "keyboard": [
+      "Skip to main content",
+      "Accessiblit",
+      "Home",
+      "Install",
+      "Options",
+      "Pricing",
+      "FAQ and privacy",
+      "Try the live demo"
+    ]
+  },
+  {
+    "name": "faq",
+    "overflow": 0,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/accessiblit.min.js",
+        "bytes": 65339
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/bootstrap.js",
+        "bytes": 114
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/assets/main-Ck3r9BIl.css",
+        "bytes": 12282
+      },
+      {
+        "name": "http://127.0.0.1:4180/accessiblit/assets/main-Dd2IyT3z.js",
+        "bytes": 1167
+      }
+    ],
+    "loadMs": 25,
+    "keyboard": [
+      "Skip to main content",
+      "Accessiblit",
+      "Home",
+      "Install",
+      "Options",
+      "Pricing",
+      "FAQ and privacy",
+      "See what the free toolkit includes"
+    ]
+  }
+]
