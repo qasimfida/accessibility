@@ -19,6 +19,7 @@ export default defineConfig({
           'install/index.html',
           'options/index.html',
           'faq/index.html',
+          'pricing/index.html',
           '404.html',
         ].map((path) => [path, fileURLToPath(new URL(path, import.meta.url))]),
       ),
