@@ -85,3 +85,13 @@
     border-color: CanvasText;
   }
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent: #245be3;
+    --accent-hover: #194bc5;
+  }
+}
+.button,
+button {
+  border-radius: 999px;
+}
