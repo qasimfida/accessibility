@@ -1,6 +1,10 @@
 /* Original composition based on the supplied visual reference, not its assets. */
+.landing-page {
+  background: var(--cream);
+}
 .marketing-main {
   padding: 0;
+  background: var(--surface);
 }
 .marketing-main section {
   margin-block: 0;
