@@ -31,7 +31,7 @@ test('forced-color hover states retain readable text in both schemes', async ({
   for (const colorScheme of ['light', 'dark'] as const) {
     await page.emulateMedia({ colorScheme, forcedColors: 'active' });
     await page
-      .getByRole('link', { name: 'Try the live demo', exact: true })
+      .getByRole('link', { name: 'Explore the live demo', exact: true })
       .hover();
     const metrics = await siteMetrics(page);
     expect(metrics.minimumTextContrast).toBeGreaterThanOrEqual(4.5);
@@ -43,7 +43,7 @@ test('pressed actions keep visible feedback in forced colors', async ({
 }) => {
   await loadSite(page, '', 'forced');
   const action = page.getByRole('link', {
-    name: 'Try the live demo',
+    name: 'Explore the live demo',
     exact: true,
   });
   await action.hover();

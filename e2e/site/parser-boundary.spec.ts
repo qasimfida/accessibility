@@ -23,7 +23,7 @@ test('parser completion reconciles text before delayed mutation delivery', async
     document.addEventListener('readystatechange', () => {
       if (document.readyState === 'interactive')
         queueMicrotask(() => {
-          const probe = document.querySelector('.demo-copy p');
+          const probe = document.querySelector('[data-site-sample]');
           Reflect.set(
             window,
             'parserBoundaryFont',

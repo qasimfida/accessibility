@@ -8,8 +8,10 @@ test('parser shells are empty until their first correctly scaled text frame', as
   baseURL,
 }, info) => {
   const html = await readFile('site/dist/index.html', 'utf8');
-  const cut = html.indexOf('A clear page');
-  expect(cut).toBeGreaterThan(0);
+  // Split after the semantic sample opens, independently of its marketing copy.
+  const sample = /<p\b[^>]*\bdata-site-sample\b[^>]*>/.exec(html);
+  expect(sample).not.toBeNull();
+  const cut = sample!.index + sample![0].length;
   let release = () => {};
   const gate = new Promise<void>((resolve) => {
     release = resolve;
@@ -48,7 +50,7 @@ test('parser shells are empty until their first correctly scaled text frame', as
       () => Reflect.get(window, 'siteEmptyFrames') >= 2,
     );
     const shell = await page
-      .locator('.demo-copy p')
+      .locator('[data-site-sample]')
       .first()
       .evaluate((element) => ({
         text: element.textContent?.trim(),

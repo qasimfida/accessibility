@@ -16,7 +16,7 @@ test('scales text data filled after an empty node before its first frame', async
   await increase.click();
   await expect(page.getByRole('status')).toHaveText('Font size 120 percent');
   await page.getByRole('button', { name: 'Close', exact: true }).click();
-  const probe = page.locator('.demo-copy p').first();
+  const probe = page.locator('[data-site-sample]').first();
   await probe.evaluate((element) =>
     element.replaceChildren(document.createTextNode('')),
   );

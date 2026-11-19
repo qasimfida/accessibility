@@ -6,7 +6,7 @@ export function sampleContentFrames() {
   Reflect.set(window, 'siteFrameDiagnostics', diagnostics);
   Reflect.set(window, 'siteEmptyFrames', 0);
   const sample = () => {
-    const probe = document.querySelector('.demo-copy p');
+    const probe = document.querySelector('[data-site-sample]');
     if (probe?.textContent?.trim()) {
       const fontSize = parseFloat(getComputedStyle(probe).fontSize);
       frames.push(fontSize);

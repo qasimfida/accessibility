@@ -6,7 +6,7 @@ test('head bootstrap restores preferences before the first sampled content frame
   page,
 }, info) => {
   await loadSite(page, '');
-  const probe = page.locator('.demo-copy p').first();
+  const probe = page.locator('[data-site-sample]').first();
   const baseline = await probe.evaluate((element) =>
     parseFloat(getComputedStyle(element).fontSize),
   );
