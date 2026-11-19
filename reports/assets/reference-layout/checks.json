@@ -1,0 +1,4194 @@
+{
+  "source": "b2f210c45ffd36615c192f836d8fc3094b88f472",
+  "matrix": {
+    "passed": 285,
+    "duration": "3.4m",
+    "retries": 0,
+    "skipped": 0
+  },
+  "axe": [
+    {
+      "project": "chromium",
+      "path": "",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "install/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "install/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "install/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "install/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "install/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "install/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "install/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "options/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "options/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "options/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "options/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "options/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "options/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "options/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "faq/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "faq/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "faq/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 43.19999694824219
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "faq/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "faq/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "install/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "faq/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "faq/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "install/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "pricing/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "install/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "pricing/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "pricing/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "pricing/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "install/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "pricing/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "pricing/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "install/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "pricing/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "404.html",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "install/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "404.html",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "install/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.19999694824219
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "404.html",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "404.html",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "options/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "404.html",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "404.html",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "options/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "chromium",
+      "path": "404.html",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "options/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "options/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "options/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "options/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "options/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.19999694824219
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "faq/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "faq/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "faq/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "faq/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "faq/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "faq/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "faq/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.19999694824219
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "pricing/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "pricing/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "pricing/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "pricing/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "pricing/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "pricing/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "install/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "pricing/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.19999694824219
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "install/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "404.html",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "install/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "404.html",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "install/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "404.html",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "install/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "404.html",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "install/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "404.html",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "install/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "options/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "404.html",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "options/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "404.html",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.19999694824219
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "options/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "options/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "options/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "options/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "options/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "faq/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "faq/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "faq/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "faq/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "faq/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "faq/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "faq/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "pricing/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "pricing/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "pricing/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "pricing/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "pricing/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "pricing/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "pricing/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "404.html",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "404.html",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "404.html",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "install/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "404.html",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "install/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "404.html",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "install/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "404.html",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "install/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "404.html",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "install/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "install/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "install/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "options/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "options/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "options/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "options/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "options/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "options/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "options/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "faq/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "faq/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "faq/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "faq/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "faq/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "faq/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "faq/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "pricing/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "pricing/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "install/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "pricing/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "install/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "pricing/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "install/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "pricing/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "install/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "install/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "pricing/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "install/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "pricing/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "install/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "404.html",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "404.html",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "404.html",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 9.397615840239814,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "404.html",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "404.html",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "404.html",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "faq/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "404.html",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "faq/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "faq/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "faq/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "faq/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "faq/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "faq/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "pricing/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "pricing/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "pricing/",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "pricing/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "pricing/",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "pricing/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "pricing/",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "404.html",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "404.html",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.358070835144347,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "404.html",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 13.994023083921398,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "404.html",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "404.html",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "404.html",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "404.html",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 5.70550151553722,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    }
+  ],
+  "audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "productionAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "snippets": {
+    "extracted": [
+      "cdn",
+      "npm-install",
+      "esm",
+      "react-install",
+      "react",
+      "next",
+      "self-hosted",
+      "pack",
+      "git",
+      "private-registry",
+      "lifecycle"
+    ],
+    "types": ["Node16", "Bundler"],
+    "shellSyntax": [
+      "npm-install",
+      "react-install",
+      "pack",
+      "git",
+      "private-registry"
+    ],
+    "installedTarball": "widgets-accessibility-0.1.1.tgz",
+    "packedEntries": ["self-hosted", "esm", "lifecycle", "react", "next"],
+    "cdnSource": "Real version-pinned CDN URL with release SRI; no interception.",
+    "strictModeDevelopment": true,
+    "rows": [
+      {
+        "browser": "chromium",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "chromium",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "chromium",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "firefox",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "firefox",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "firefox",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "webkit",
+        "snippet": "cdn",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "self-hosted",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "esm",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "lifecycle",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": null
+      },
+      {
+        "browser": "webkit",
+        "snippet": "react",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      },
+      {
+        "browser": "webkit",
+        "snippet": "next",
+        "errors": [],
+        "cleanup": true,
+        "strictMode": {
+          "created": 2,
+          "removed": 2
+        }
+      }
+    ],
+    "notes": [
+      "The CDN snippet validates published release bytes; other browser snippets use the installed local tarball.",
+      "Private registry and Git shell examples are syntax checked; no private credentials or registry is used."
+    ]
+  }
+}

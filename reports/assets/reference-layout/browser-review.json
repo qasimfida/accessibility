@@ -1,0 +1,131 @@
+{
+  "keyboard": [
+    {
+      "name": "Skip to main content",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Meet the free toolkit",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Accessiblit",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Home",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Install",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Options",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Pricing",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "FAQ and privacy",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Try the toolkit",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Explore the live demo",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Find your installation",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Explore all 18 controls",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Read the privacy details",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Try it on this page",
+      "tag": "A",
+      "id": ""
+    },
+    {
+      "name": "Open live demo options",
+      "tag": "BUTTON",
+      "id": "demo-open"
+    }
+  ],
+  "opened": true,
+  "returned": true,
+  "faqOpened": true,
+  "mobile": {
+    "viewport": 390,
+    "width": 390
+  },
+  "performance": {
+    "load": 51.30000001192093,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4182/accessiblit/accessiblit.min.js",
+        "bytes": 65339
+      },
+      {
+        "name": "http://127.0.0.1:4182/accessiblit/bootstrap.js",
+        "bytes": 114
+      },
+      {
+        "name": "http://127.0.0.1:4182/accessiblit/assets/main-BDN3xiSY.css",
+        "bytes": 27602
+      },
+      {
+        "name": "http://127.0.0.1:4182/accessiblit/images/toolkit-preview.svg",
+        "bytes": 5045
+      },
+      {
+        "name": "http://127.0.0.1:4182/accessiblit/assets/main-BO6rvfAF.js",
+        "bytes": 1167
+      }
+    ]
+  },
+  "requests": [
+    "http://127.0.0.1:4182/accessiblit/",
+    "http://127.0.0.1:4182/accessiblit/accessiblit.min.js",
+    "http://127.0.0.1:4182/accessiblit/bootstrap.js",
+    "http://127.0.0.1:4182/accessiblit/assets/main-BO6rvfAF.js",
+    "http://127.0.0.1:4182/accessiblit/assets/main-BDN3xiSY.css",
+    "http://127.0.0.1:4182/accessiblit/images/toolkit-preview.svg"
+  ],
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "nodes": [
+        {
+          "html": "<span aria-hidden=\"true\">✓</span>",
+          "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+        }
+      ]
+    }
+  ]
+}
