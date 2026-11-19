@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="660" viewBox="0 0 900 660" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="80" y1="120" x2="790" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#e5edff"/><stop offset="1" stop-color="#d8eeee"/></linearGradient>
+    <linearGradient id="cover" x1="480" y1="180" x2="690" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#245fe6"/><stop offset="1" stop-color="#102e65"/></linearGradient>
+    <filter id="shadow" x="0" y="0" width="900" height="660" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="15" stdDeviation="16" flood-color="#163453" flood-opacity=".16"/></filter>
+  </defs>
+  <rect x="45" y="92" width="810" height="460" rx="32" fill="url(#paper)"/>
+  <g filter="url(#shadow)">
+    <rect x="70" y="115" width="760" height="402" rx="19" fill="#fff"/>
+    <path d="M89 115h722a19 19 0 0 1 19 19v33H70v-33a19 19 0 0 1 19-19Z" fill="#f0f3f8"/>
+    <circle cx="94" cy="142" r="4" fill="#a3b5c7"/><circle cx="109" cy="142" r="4" fill="#a3b5c7"/><circle cx="124" cy="142" r="4" fill="#a3b5c7"/>
+    <rect x="332" y="130" width="237" height="24" rx="7" fill="#fff"/>
+    <g fill="#163453" font-family="Arial, sans-serif">
+      <text x="103" y="207" font-size="17" font-weight="700">THE READING ROOM</text>
+      <text x="640" y="207" font-size="12">Stories</text><text x="709" y="207" font-size="12">Our library</text>
+      <text x="107" y="289" font-size="37" letter-spacing="-1">A little room</text>
+      <text x="107" y="333" font-size="37" letter-spacing="-1">for a new</text>
+      <text x="107" y="377" font-size="37" letter-spacing="-1">perspective.</text>
+      <text x="109" y="416" font-size="14">Good stories. At your own pace.</text>
+    </g>
+    <rect x="109" y="441" width="121" height="32" rx="6" fill="#163453"/>
+    <text x="124" y="461" fill="#fff" font-family="Arial, sans-serif" font-size="12">Explore the library</text>
+    <rect x="517" y="242" width="235" height="236" rx="18" fill="#d8eeee"/>
+    <path d="m548 282 116-28 53 173-116 28z" fill="url(#cover)"/>
+    <path d="m558 282 9-2 53 173-9 2z" fill="#92baff"/>
+    <circle cx="638" cy="332" r="33" stroke="#a6d3ff" stroke-width="2"/>
+    <path d="m611 349 54-35m-40-12 25 57" stroke="#a6d3ff" stroke-width="2"/>
+    <path d="m608 402 62-17m-59 28 43-12" stroke="#fff" stroke-width="3"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="282" y="40" width="338" height="567" rx="18" fill="#f5f6fa"/>
+    <path d="M300 40h302a18 18 0 0 1 18 18v104H282V58a18 18 0 0 1 18-18Z" fill="#0755e8"/>
+    <circle cx="316" cy="77" r="16" fill="#fff" fill-opacity=".18"/>
+    <circle cx="316" cy="69" r="3" fill="#fff"/>
+    <path d="M307 76h18m-9-1v8m0-1-5 8m5-8 5 8" stroke="#fff" stroke-width="2"/>
+    <path d="m584 72 9 9m0-9-9 9" stroke="#fff" stroke-width="2"/>
+    <g fill="#fff" font-family="Arial, sans-serif"><text x="304" y="122" font-size="20" font-weight="700">Accessibility options</text><text x="304" y="145" font-size="12">Make this page work for you.</text></g>
+    <g font-family="Arial, sans-serif" fill="#163453">
+      <text x="302" y="188" font-size="13" font-weight="700">Content</text>
+      <rect x="299" y="202" width="145" height="119" rx="13" fill="#fff"/>
+      <rect x="457" y="202" width="145" height="119" rx="13" fill="#fff"/>
+      <text x="356" y="237" font-size="25" font-weight="700">Tt</text><text x="509" y="237" font-size="25">↕</text>
+      <text x="342" y="263" font-size="13">Font size</text><text x="495" y="263" font-size="13">Line height</text>
+      <circle cx="329" cy="292" r="12" fill="#0755e8"/><circle cx="413" cy="292" r="12" fill="#0755e8"/>
+      <circle cx="487" cy="292" r="12" fill="#0755e8"/><circle cx="571" cy="292" r="12" fill="#0755e8"/>
+      <text x="352" y="297" font-size="14" font-weight="700">100%</text><text x="521" y="297" font-size="14" font-weight="700">Off</text>
+      <path d="M324 292h10m74 0h10m-5-5v10m69-5h10m74 0h10m-5-5v10" stroke="#fff" stroke-width="2"/>
+      <text x="302" y="350" font-size="13" font-weight="700">Colour and contrast</text>
+      <rect x="299" y="365" width="145" height="96" rx="13" fill="#fff"/><rect x="457" y="365" width="145" height="96" rx="13" fill="#fff"/>
+      <path d="M378 384a14 14 0 1 0 12 20 13 13 0 0 1-12-20Z" fill="#163453"/>
+      <circle cx="529" cy="399" r="13" stroke="#163453" stroke-width="2"/><path d="M529 386a13 13 0 0 1 0 26Z" fill="#163453"/>
+      <text x="338" y="439" font-size="13">Dark mode</text><text x="488" y="439" font-size="13">High contrast</text>
+      <text x="302" y="490" font-size="13" font-weight="700">Navigation and orientation</text>
+      <rect x="299" y="504" width="303" height="43" rx="10" fill="#fff"/><path d="M316 520h22m-22 5h22m-22 5h22" stroke="#163453" stroke-width="2"/><text x="351" y="530" font-size="13">Reading guide</text>
+      <path d="M282 560h338" stroke="#dfe4ed"/><rect x="299" y="570" width="303" height="27" rx="8" fill="#fff"/><text x="408" y="588" font-size="12">Reset all</text>
+    </g>
+  </g>
+</svg>
