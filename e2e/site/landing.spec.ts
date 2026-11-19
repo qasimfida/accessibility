@@ -6,6 +6,9 @@ test('landing disclosures expose every feature and answer by keyboard', async ({
   page,
 }) => {
   const errors = await loadSite(page, '');
+  await expect(
+    page.getByRole('complementary', { name: 'Toolkit announcement' }),
+  ).toContainText('Free, open source and private');
   const catalogue = page.locator('.full-catalogue');
   await catalogue.locator('summary').focus();
   await page.keyboard.press('Enter');
