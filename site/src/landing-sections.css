@@ -1,0 +1,232 @@
+.soft-section {
+  padding-block: 5rem;
+  background: var(--soft);
+}
+.benefit-grid,
+.responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-block: 2.5rem 2rem;
+}
+.benefit-card {
+  padding: 2rem;
+  border-radius: 1.25rem;
+}
+.benefit-card h3 {
+  margin-block-start: 0;
+  font-size: 1.4rem;
+}
+.benefit-card p {
+  margin-block-end: 0;
+}
+.deep-card {
+  background: #0c363d;
+  color: #fff;
+}
+.aqua-card {
+  background: var(--aqua);
+}
+.cream-card {
+  background: var(--cream);
+}
+.technology-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background: var(--cream);
+}
+.technology-copy {
+  padding: 5rem max(2rem, calc((100vw - 72rem) / 2));
+  padding-inline-end: clamp(2rem, 5vw, 5rem);
+}
+.accordion details {
+  border-block-end: 1px solid var(--border);
+}
+summary {
+  padding: 1.15rem 0.25rem;
+  cursor: pointer;
+  font-weight: 650;
+  min-block-size: 44px;
+}
+summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.accordion details > p {
+  padding: 0 0.25rem 1rem;
+  font-size: 0.95rem;
+}
+.technology-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: #050c20;
+}
+.focus-scene {
+  position: relative;
+  inline-size: min(100%, 26rem);
+  padding: 2rem;
+  background: #a9cacc;
+  border-radius: 1rem;
+  color: #153450;
+}
+.scene-label {
+  display: block;
+  font-size: 0.8rem;
+  margin-block-end: 2rem;
+}
+.scene-page {
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 20px 40px #19335233;
+}
+.scene-kicker {
+  font-size: 0.7rem;
+}
+.scene-title {
+  display: block;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  margin-block: 1.5rem;
+}
+.scene-rule {
+  display: block;
+  block-size: 0.4rem;
+  background: #cdd9e3;
+  margin-block: 0.6rem;
+}
+.scene-rule.short {
+  inline-size: 65%;
+}
+.scene-pill {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  margin-block-start: 1.5rem;
+  border: 3px solid #0755e8;
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+  background: #153450;
+  color: #fff;
+  font-size: 0.85rem;
+}
+.focus-key {
+  display: block;
+  inline-size: fit-content;
+  margin-block-start: 1.5rem;
+  margin-inline-start: auto;
+  background: #0755e8;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.4rem 1.25rem;
+}
+.format-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.format-grid > span {
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-weight: 750;
+  border-radius: 0.6rem;
+  background: var(--soft);
+  min-inline-size: 0;
+}
+.format-grid small {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-block-start: 0.5rem;
+}
+.feature-section {
+  padding-block: 3rem 6rem;
+}
+.feature-accordions details {
+  margin-block: 0.75rem;
+  padding: 0.25rem 1.75rem;
+  background: var(--soft);
+  border-radius: 1rem;
+}
+.feature-accordions summary span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-inline-start: 0.75rem;
+}
+.feature-accordions details[open]:not(.full-catalogue) {
+  background: #004cde;
+  color: #fff;
+}
+.feature-detail {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding-block-end: 1rem;
+}
+.feature-detail h3 {
+  font-size: 1.75rem;
+  margin-block-start: 0;
+}
+.type-visual {
+  text-align: center;
+  font-size: 5rem;
+  line-height: 1.1;
+}
+.type-visual span {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  margin-block: 1rem;
+}
+.catalogue-content {
+  padding-block-end: 2rem;
+}
+.catalogue-content .feature-group {
+  margin-block-end: 2rem;
+}
+.responsibility-grid article {
+  padding: 1rem;
+}
+.responsibility-grid article > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 3rem;
+  min-block-size: 3rem;
+  background: var(--aqua);
+  border-radius: 50%;
+  font-weight: 650;
+}
+.responsibility-grid h3 {
+  font-size: 1.15rem;
+  margin-block: 1rem 0.5rem;
+}
+.responsibility-grid p {
+  font-size: 0.95rem;
+}
+.privacy-section {
+  background: #050c20;
+  color: #fff;
+  padding-block: 6rem;
+}
+.privacy-section .eyebrow {
+  color: #bbd9fa;
+}
+.privacy-visual {
+  text-align: center;
+}
+.privacy-visual svg {
+  display: block;
+  margin-inline: auto;
+  inline-size: min(18rem, 100%);
+  block-size: auto;
+}
+.privacy-visual > span {
+  display: block;
+  font-size: 1.1rem;
+  margin-block-start: 1rem;
+}

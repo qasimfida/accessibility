@@ -54,10 +54,14 @@
     <script src="/bootstrap.js"></script>
     <script type="module" src="/src/main.ts"></script>
   </head>
-  <body>
+  <body class="landing-page">
     <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="announcement">
+      <p>18 ways to make a page your own. Free, open source and private.</p>
+      <a href="%BASE_URL%pricing/">Meet the free toolkit</a>
+    </div>
     <header class="site-header wrap">
-      <a class="brand" href="%BASE_URL%"
+      <a class="brand" href="%BASE_URL%" translate="no"
         ><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
           <rect width="32" height="32" rx="8" fill="currentColor" />
           <path
@@ -74,210 +78,694 @@
         ><a href="%BASE_URL%pricing/">Pricing</a
         ><a href="%BASE_URL%faq/">FAQ and privacy</a>
       </nav>
+      <a class="button header-cta" href="#demo">Try the toolkit</a>
     </header>
-    <main id="main" class="wrap" tabindex="-1">
-      <section class="hero campaign-hero" aria-labelledby="hero-title">
-        <p class="eyebrow">Your visitors. Their preferences.</p>
-        <h1 id="hero-title">
-          Different people.<br />Different ways to browse.
-        </h1>
-        <p class="lede">
-          Give every visitor more control over how they read and navigate.
-          Eighteen personalisation tools. One lightweight widget. No accounts,
-          cookies or tracking.
-        </p>
-        <div class="actions">
-          <a class="button" href="#demo">Try the live demo</a
-          ><a href="%BASE_URL%install/">Installation guide</a>
+    <main id="main" class="marketing-main" tabindex="-1">
+      <section class="product-hero" aria-labelledby="hero-title">
+        <div class="wrap centre">
+          <p class="eyebrow">The accessibility personalisation toolkit</p>
+          <h1 id="hero-title">
+            A more comfortable web.<br />A little more choice.
+          </h1>
+          <p class="lede">
+            Give visitors the freedom to adjust text, colours and navigation.<br
+              class="desktop-break"
+            />
+            Eighteen thoughtful tools. One free, lightweight widget.
+          </p>
+          <a class="button" href="#demo">Explore the live demo</a>
+          <img
+            class="hero-product"
+            src="/images/toolkit-preview.svg"
+            width="900"
+            height="660"
+            fetchpriority="high"
+            alt="Illustration of Accessiblit’s content, colour and navigation controls over an example reading website."
+          />
+          <p class="hero-caption">Your website. Their reading preferences.</p>
         </div>
-        <ul class="facts">
-          <li>18 visitor controls</li>
-          <li>Zero runtime dependencies</li>
-          <li>JavaScript, TypeScript and React</li>
+      </section>
+      <section
+        class="integration-strip wrap centre"
+        aria-labelledby="works-title"
+      >
+        <h2 id="works-title">Fits the way you build for the web</h2>
+        <ul class="platform-list" aria-label="Integration formats">
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>WordPress</li>
+          <li>Plain HTML</li>
         </ul>
       </section>
-      <section class="promise-strip" aria-label="Toolkit principles">
-        <p>
-          <strong>Built for choice.</strong> Text, colour and navigation
-          adjustments.
-        </p>
-        <p>
-          <strong>Private by design.</strong> Preferences stay in the browser.
-        </p>
-        <p>
-          <strong>Free to make yours.</strong> MIT licensed and self-hostable.
-        </p>
+      <section class="journey wrap" aria-labelledby="journey-title">
+        <div class="section-heading centre">
+          <p class="eyebrow">Simple by design</p>
+          <h2 id="journey-title">
+            A small addition.<br />More room for personal choice.
+          </h2>
+        </div>
+        <div class="journey-grid">
+          <article class="journey-card">
+            <div class="journey-art setup-art" aria-hidden="true">
+              <div class="code-window">
+                <span></span
+                ><code
+                  >&lt;script src="…"&gt;<br />&nbsp; Accessiblit.init()<br />&lt;/script&gt;</code
+                >
+              </div>
+            </div>
+            <div class="journey-copy">
+              <h3>Add it once</h3>
+              <p>
+                Load a script, import the module or use the React helper. Keep
+                the integration that suits your site.
+              </p>
+              <a href="%BASE_URL%install/">Find your installation</a>
+            </div>
+          </article>
+          <article class="journey-card">
+            <div class="journey-art choice-art" aria-hidden="true">
+              <span class="sample-aa">Aa</span>
+              <div class="choice-tags">
+                <span>Text</span><span>Colour</span><span>Focus</span>
+              </div>
+            </div>
+            <div class="journey-copy">
+              <h3>Let visitors choose</h3>
+              <p>
+                Open a keyboard-accessible panel with clear controls for
+                content, colour and orientation.
+              </p>
+              <a href="#features">Explore all 18 controls</a>
+            </div>
+          </article>
+          <article class="journey-card">
+            <div class="journey-art privacy-art" aria-hidden="true">
+              <div class="privacy-orbit">
+                <svg viewBox="0 0 80 80" width="80" height="80">
+                  <path
+                    d="M40 8 65 18v20c0 17-25 32-25 32S15 55 15 38V18Z"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    fill="none"
+                  />
+                  <path
+                    d="m28 38 8 8 17-18"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="journey-copy">
+              <h3>Keep choice local</h3>
+              <p>
+                Preferences stay in the browser. No cookies, visitor accounts,
+                tracking or runtime requests.
+              </p>
+              <a href="%BASE_URL%faq/#privacy">Read the privacy details</a>
+            </div>
+          </article>
+        </div>
       </section>
-      <section id="demo" aria-labelledby="demo-title">
-        <p class="eyebrow">Try it on this page</p>
-        <h2 id="demo-title">Make room for your reading preferences.</h2>
-        <p>
-          This demo loads the real widget from this repository's local build.
-          Production integrations use npm, a CDN script or a self-hosted file.
-        </p>
-        <button id="demo-open" type="button" aria-haspopup="dialog" disabled>
-          Open live demo options</button
-        ><noscript
-          ><p>
-            The interactive demo needs JavaScript. The installation guide and
-            reference remain readable without it.
-          </p></noscript
+      <section class="blue-band">
+        <div class="wrap band-layout">
+          <h2>See what a little<br />personalisation can do.</h2>
+          <a class="button light-button" href="#demo">Try it on this page</a>
+        </div>
+      </section>
+      <section id="demo" class="demo-section wrap" aria-labelledby="demo-title">
+        <div>
+          <p class="eyebrow">A real toolkit. Ready to try.</p>
+          <h2 id="demo-title">Your reading preferences.<br />Your own pace.</h2>
+          <p>
+            Make the text larger. Find a more comfortable colour palette. Follow
+            a line as you read. Try the actual widget on this page and see what
+            works for you.
+          </p>
+          <button id="demo-open" type="button" aria-haspopup="dialog" disabled>
+            Open live demo options
+          </button>
+          <p class="small demo-note">
+            This demo uses our local build. For your site, choose npm, a CDN
+            script or a self-hosted file.
+          </p>
+          <noscript
+            ><p>
+              The live demo needs JavaScript. You can still read the
+              installation guide and every feature description.
+            </p></noscript
+          >
+        </div>
+        <article
+          class="reading-preview demo-copy"
+          aria-labelledby="sample-title"
         >
-        <article class="demo-copy" aria-labelledby="sample-title">
+          <p class="eyebrow">The reading room</p>
           <h3 id="sample-title">Take a different pace</h3>
           <p>
-            A clear page gives readers room to choose their own pace. Try larger
-            text, different spacing or a reading guide. You can combine settings
-            and use Reset all to return to the defaults.
+            A good story leaves room for you. A sentence to pause on. A new idea
+            to explore. A page you can read in your own way.
           </p>
           <p>
-            <a href="%BASE_URL%faq/#limits"
-              >Read about the boundaries of page adjustments</a
-            >
-            before adding the widget to your own site.
+            Try combining a larger font with more line spacing. Use Reset all
+            when you want to return to the original page.
           </p>
+          <a href="%BASE_URL%faq/#limits"
+            >Understand the boundaries of page adjustments</a
+          ><span class="reading-preview-decoration" aria-hidden="true">Aa</span>
         </article>
       </section>
-      <section class="feature-showcase" aria-labelledby="features-title">
-        <p class="eyebrow">The feature catalogue</p>
-        <h2 id="features-title">18 controls, grouped by purpose.</h2>
-        <p>
-          Controls are generated from the widget's feature registry. Your
-          integration can allow or exclude features through its options.
-        </p>
-        <section class="feature-group">
-          <h3>Content</h3>
-          <div class="feature-grid">
-            <article class="feature-card" data-feature="fontSize">
-              <h4>Font size</h4>
-              <p>Scale text from 80% to 200%, in 10 percentage point steps.</p>
-            </article>
-            <article class="feature-card" data-feature="lineHeight">
-              <h4>Line height</h4>
-              <p>Choose the original spacing, 1.5, 1.75 or 2.</p>
-            </article>
-            <article class="feature-card" data-feature="letterSpacing">
-              <h4>Letter spacing</h4>
-              <p>Choose original spacing, 0.12em, 0.16em or 0.2em.</p>
-            </article>
-            <article class="feature-card" data-feature="wordSpacing">
-              <h4>Word spacing</h4>
-              <p>Choose original spacing, 0.16em, 0.24em or 0.32em.</p>
-            </article>
-            <article class="feature-card" data-feature="textAlign">
-              <h4>Text alignment</h4>
+      <section class="soft-section">
+        <div class="wrap">
+          <div class="section-heading centre">
+            <h2>Thoughtful tools.<br />A straightforward integration.</h2>
+          </div>
+          <div class="benefit-grid">
+            <article class="benefit-card deep-card">
+              <h3>Visitor choice, built in</h3>
               <p>
-                Align eligible text blocks left, centre or right without
-                treating navigation and layout containers as text blocks.
+                Text, colour and navigation controls work together, so each
+                visitor can choose a combination that feels comfortable.
               </p>
             </article>
-            <article class="feature-card" data-feature="contentScale">
-              <h4>Content scale</h4>
-              <p>Zoom the page layout from 100% to 200%.</p>
-            </article>
-            <article class="feature-card" data-feature="readableFont">
-              <h4>Readable font</h4>
+            <article class="benefit-card aqua-card">
+              <h3>A small footprint</h3>
               <p>
-                Choose a system stack or an owner-preloaded dyslexia-friendly
-                font, with a system fallback.
+                No runtime dependencies. No bundled fonts. Separate JavaScript,
+                TypeScript and React entry points for the way you build.
+              </p>
+            </article>
+            <article class="benefit-card cream-card">
+              <h3>Your site, your settings</h3>
+              <p>
+                Choose features, position, spacing, shortcut and messages. Match
+                your integration to your site's needs.
               </p>
             </article>
           </div>
-        </section>
-        <section class="feature-group">
-          <h3>Colour and contrast</h3>
-          <div class="feature-grid">
-            <article class="feature-card" data-feature="darkMode">
-              <h4>Dark mode</h4>
-              <p>Use a dark HTML palette with light text.</p>
-            </article>
-            <article class="feature-card" data-feature="highContrast">
-              <h4>High contrast</h4>
-              <p>
-                Use a strong text/background palette; this takes priority when
-                dark mode is also enabled.
-              </p>
-            </article>
-            <article class="feature-card" data-feature="monochrome">
-              <h4>Monochrome</h4>
-              <p>Remove colour from eligible page content.</p>
-            </article>
-            <article class="feature-card" data-feature="lowSaturation">
-              <h4>Low saturation</h4>
-              <p>
-                Reduce colour intensity; monochrome takes priority when both are
-                enabled.
-              </p>
-            </article>
+          <div class="centre">
+            <a class="button navy-button" href="%BASE_URL%options/"
+              >Explore the options</a
+            >
           </div>
-        </section>
-        <section class="feature-group">
-          <h3>Navigation and orientation</h3>
-          <div class="feature-grid">
-            <article class="feature-card" data-feature="readingGuide">
-              <h4>Reading guide</h4>
-              <p>
-                Follow a pointer, touch point or keyboard focus with a
-                horizontal guide.
-              </p>
-            </article>
-            <article class="feature-card" data-feature="readingMask">
-              <h4>Reading mask</h4>
-              <p>
-                Keep a reading strip clear while gently dimming the surrounding
-                page.
-              </p>
-            </article>
-            <article class="feature-card" data-feature="highlightLinks">
-              <h4>Highlight links</h4>
-              <p>Outline and underline links, using more than colour alone.</p>
-            </article>
-            <article class="feature-card" data-feature="highlightHeadings">
-              <h4>Highlight headings</h4>
-              <p>Outline headings and show a visual level badge.</p>
-            </article>
-            <article class="feature-card" data-feature="bigCursor">
-              <h4>Larger cursor</h4>
-              <p>
-                Choose 32px or 48px pointers on fine-pointer devices. Touch-only
-                devices keep their native behaviour.
-              </p>
-            </article>
-            <article class="feature-card" data-feature="stopAnimations">
-              <h4>Stop animations</h4>
-              <p>
-                Pause CSS animation, remove transitions and smooth scrolling,
-                and pause autoplay video.
-              </p>
-            </article>
-            <article class="feature-card" data-feature="focusHighlight">
-              <h4>Focus highlight</h4>
-              <p>Emphasise keyboard focus with a two-tone ring.</p>
-            </article>
-          </div>
-        </section>
+        </div>
       </section>
-      <section class="notice">
-        <h2>Visitor choice is one part of accessibility.</h2>
-        <p>
-          Personalisation does not repair headings, labels, keyboard flows or
-          inaccessible content. Build and test the underlying site as well.
+      <section class="technology-section" aria-labelledby="technology-title">
+        <div class="technology-copy">
+          <p class="eyebrow">Designed to fit your page</p>
+          <h2 id="technology-title">
+            Control where it matters.<br />Care behind the scenes.
+          </h2>
+          <div class="accordion">
+            <details open>
+              <summary>Make text easier to follow</summary>
+              <p>
+                Adjust font size, line height, letter and word spacing,
+                alignment and readable fonts. Content scaling can enlarge the
+                whole layout.
+              </p>
+            </details>
+            <details>
+              <summary>Choose a different colour palette</summary>
+              <p>
+                Use dark mode, high contrast, monochrome or lower saturation.
+                Operating-system forced colours take priority.
+              </p>
+            </details>
+            <details>
+              <summary>Find your place on the page</summary>
+              <p>
+                Reading guides and masks follow the pointer, touch point or
+                keyboard focus. Highlight links, headings and keyboard focus.
+              </p>
+            </details>
+            <details>
+              <summary>Keep settings between visits</summary>
+              <p>
+                Preferences are saved under one localStorage key. If storage is
+                blocked, the current session still works. Persistence can be
+                disabled.
+              </p>
+            </details>
+            <details>
+              <summary>Use the keyboard from the start</summary>
+              <p>
+                Open with Alt+A by default, move through native controls and
+                close with Escape. The shortcut can be changed or disabled.
+              </p>
+            </details>
+            <details>
+              <summary>Keep the integration reversible</summary>
+              <p>
+                Reset restores default settings. Destroy removes the widget and
+                its page adjustments. Imports are safe during server rendering.
+              </p>
+            </details>
+          </div>
+        </div>
+        <div class="technology-art" aria-hidden="true">
+          <div class="focus-scene">
+            <span class="scene-label">A page with room to focus</span>
+            <div class="scene-page">
+              <span class="scene-kicker">THE READING ROOM</span
+              ><span class="scene-title"
+                >One line.<br />One moment.<br />Your own pace.</span
+              ><span class="scene-rule"></span
+              ><span class="scene-rule short"></span
+              ><span class="scene-pill">Read your way</span>
+            </div>
+            <span class="focus-key">Tab</span>
+          </div>
+        </div>
+      </section>
+      <section class="integration-section wrap">
+        <div class="format-grid" aria-label="Supported integration methods">
+          <span>JS <small>Script tag</small></span
+          ><span>TS <small>Typed modules</small></span
+          ><span>React <small>Component or hook</small></span
+          ><span>Next.js <small>Client component</small></span
+          ><span>HTML <small>Self-hosted file</small></span
+          ><span>CMS <small>Theme integration</small></span>
+        </div>
+        <div>
+          <p class="eyebrow">Built for the web you use</p>
+          <h2>One toolkit.<br />Several ways to make it yours.</h2>
+          <p>
+            Use the browser global, import ESM or CommonJS, or add the optional
+            React helper. The install guide also covers private distribution.
+          </p>
+          <a class="button navy-button" href="%BASE_URL%install/"
+            >See installation methods</a
+          >
+        </div>
+      </section>
+      <section
+        id="features"
+        class="feature-section wrap"
+        aria-labelledby="features-title"
+      >
+        <div class="section-heading centre">
+          <p class="eyebrow">Eighteen ways to personalise</p>
+          <h2 id="features-title">
+            Welcome different ways<br />of reading and navigating.
+          </h2>
+          <p>
+            Choose individual controls and combine them. There is no single
+            setting that fits everyone.
+          </p>
+        </div>
+        <div class="feature-accordions">
+          <details open>
+            <summary>Content and readability <span>7 controls</span></summary>
+            <div class="feature-detail">
+              <div>
+                <h3>A little more breathing room.</h3>
+                <p>
+                  Scale text from 80% to 200%, open up spacing, change text
+                  alignment or select a readable system font.
+                </p>
+              </div>
+              <div class="type-visual" aria-hidden="true">
+                Aa<span>Read at your own pace.</span>
+              </div>
+            </div>
+          </details>
+          <details>
+            <summary>Colour and contrast <span>4 controls</span></summary>
+            <p>
+              Dark mode, high contrast, monochrome and low saturation let
+              visitors choose a different view of eligible page content.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Navigation and orientation <span>7 controls</span>
+            </summary>
+            <p>
+              Reading guide, reading mask, link and heading highlights, a larger
+              cursor, stopped animations and a stronger keyboard focus ring.
+            </p>
+          </details>
+          <details class="full-catalogue">
+            <summary>
+              Every control, in detail <span>All 18 features</span>
+            </summary>
+            <div class="catalogue-content">
+              <section class="feature-group">
+                <h3>Content</h3>
+                <div class="feature-grid">
+                  <article class="feature-card" data-feature="fontSize">
+                    <h4>Font size</h4>
+                    <p>
+                      Scale text from 80% to 200%, in 10 percentage point steps.
+                    </p>
+                  </article>
+                  <article class="feature-card" data-feature="lineHeight">
+                    <h4>Line height</h4>
+                    <p>Choose the original spacing, 1.5, 1.75 or 2.</p>
+                  </article>
+                  <article class="feature-card" data-feature="letterSpacing">
+                    <h4>Letter spacing</h4>
+                    <p>Choose original spacing, 0.12em, 0.16em or 0.2em.</p>
+                  </article>
+                  <article class="feature-card" data-feature="wordSpacing">
+                    <h4>Word spacing</h4>
+                    <p>Choose original spacing, 0.16em, 0.24em or 0.32em.</p>
+                  </article>
+                  <article class="feature-card" data-feature="textAlign">
+                    <h4>Text alignment</h4>
+                    <p>
+                      Align eligible text blocks left, centre or right without
+                      treating navigation and layout containers as text blocks.
+                    </p>
+                  </article>
+                  <article class="feature-card" data-feature="contentScale">
+                    <h4>Content scale</h4>
+                    <p>Zoom the page layout from 100% to 200%.</p>
+                  </article>
+                  <article class="feature-card" data-feature="readableFont">
+                    <h4>Readable font</h4>
+                    <p>
+                      Choose a system stack or an owner-preloaded
+                      dyslexia-friendly font, with a system fallback.
+                    </p>
+                  </article>
+                </div>
+              </section>
+              <section class="feature-group">
+                <h3>Colour and contrast</h3>
+                <div class="feature-grid">
+                  <article class="feature-card" data-feature="darkMode">
+                    <h4>Dark mode</h4>
+                    <p>Use a dark HTML palette with light text.</p>
+                  </article>
+                  <article class="feature-card" data-feature="highContrast">
+                    <h4>High contrast</h4>
+                    <p>
+                      Use a strong text/background palette; this takes priority
+                      when dark mode is also enabled.
+                    </p>
+                  </article>
+                  <article class="feature-card" data-feature="monochrome">
+                    <h4>Monochrome</h4>
+                    <p>Remove colour from eligible page content.</p>
+                  </article>
+                  <article class="feature-card" data-feature="lowSaturation">
+                    <h4>Low saturation</h4>
+                    <p>
+                      Reduce colour intensity; monochrome takes priority when
+                      both are enabled.
+                    </p>
+                  </article>
+                </div>
+              </section>
+              <section class="feature-group">
+                <h3>Navigation and orientation</h3>
+                <div class="feature-grid">
+                  <article class="feature-card" data-feature="readingGuide">
+                    <h4>Reading guide</h4>
+                    <p>
+                      Follow a pointer, touch point or keyboard focus with a
+                      horizontal guide.
+                    </p>
+                  </article>
+                  <article class="feature-card" data-feature="readingMask">
+                    <h4>Reading mask</h4>
+                    <p>
+                      Keep a reading strip clear while gently dimming the
+                      surrounding page.
+                    </p>
+                  </article>
+                  <article class="feature-card" data-feature="highlightLinks">
+                    <h4>Highlight links</h4>
+                    <p>
+                      Outline and underline links, using more than colour alone.
+                    </p>
+                  </article>
+                  <article
+                    class="feature-card"
+                    data-feature="highlightHeadings"
+                  >
+                    <h4>Highlight headings</h4>
+                    <p>Outline headings and show a visual level badge.</p>
+                  </article>
+                  <article class="feature-card" data-feature="bigCursor">
+                    <h4>Larger cursor</h4>
+                    <p>
+                      Choose 32px or 48px pointers on fine-pointer devices.
+                      Touch-only devices keep their native behaviour.
+                    </p>
+                  </article>
+                  <article class="feature-card" data-feature="stopAnimations">
+                    <h4>Stop animations</h4>
+                    <p>
+                      Pause CSS animation, remove transitions and smooth
+                      scrolling, and pause autoplay video.
+                    </p>
+                  </article>
+                  <article class="feature-card" data-feature="focusHighlight">
+                    <h4>Focus highlight</h4>
+                    <p>Emphasise keyboard focus with a two-tone ring.</p>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section class="soft-section responsibility-section">
+        <div class="wrap centre">
+          <div class="section-heading">
+            <p class="eyebrow">One part of a better experience</p>
+            <h2>
+              Personalisation helps.<br />Accessible foundations still matter.
+            </h2>
+            <p>
+              The toolkit gives visitors choices. It does not repair page markup
+              or make a website WCAG conformant by itself.
+            </p>
+          </div>
+          <div class="responsibility-grid">
+            <article>
+              <span aria-hidden="true">Aa</span>
+              <h3>Build accessibly</h3>
+              <p>
+                Use meaningful headings, labels, text alternatives and clear
+                content.
+              </p>
+            </article>
+            <article>
+              <span aria-hidden="true">Tab</span>
+              <h3>Test real journeys</h3>
+              <p>
+                Check keyboard access, zoom and assistive technology on your own
+                pages.
+              </p>
+            </article>
+            <article>
+              <span aria-hidden="true">✓</span>
+              <h3>Offer more choice</h3>
+              <p>
+                Let visitors adjust their experience without replacing the work
+                of accessibility.
+              </p>
+            </article>
+          </div>
+          <a class="button navy-button" href="%BASE_URL%faq/#limits"
+            >Read the limitations</a
+          >
+        </div>
+      </section>
+      <section class="privacy-section">
+        <div class="wrap split-layout">
+          <div>
+            <p class="eyebrow">Less data. More peace of mind.</p>
+            <h2>Visitor preferences<br />belong to the visitor.</h2>
+            <p>
+              No cookies. No tracking. No accounts. The widget makes no network
+              requests at runtime and stores preferences only in the visitor's
+              browser.
+            </p>
+            <a class="button light-button" href="%BASE_URL%faq/#privacy"
+              >How privacy works</a
+            >
+          </div>
+          <div class="privacy-visual" aria-hidden="true">
+            <svg viewBox="0 0 180 180" width="180" height="180">
+              <circle cx="90" cy="90" r="76" fill="#12335a" />
+              <circle cx="90" cy="90" r="62" fill="#1453b5" />
+              <path
+                d="m90 47 34 13v27c0 23-34 45-34 45S56 110 56 87V60Z"
+                fill="#bdeaf1"
+              />
+              <path
+                d="m75 86 11 11 22-26"
+                stroke="#103f6d"
+                stroke-width="5"
+                fill="none"
+              /></svg
+            ><span>Local by design</span>
+          </div>
+        </div>
+      </section>
+      <section class="pricing-section wrap" aria-labelledby="pricing-title">
+        <div class="section-heading centre">
+          <p class="eyebrow">A toolkit for every budget</p>
+          <h2 id="pricing-title">
+            All the features.<br />None of the subscription.
+          </h2>
+          <p>
+            Free and open source under the MIT license. No trial countdown or
+            paid feature unlocks.
+          </p>
+        </div>
+        <div class="free-plan">
+          <div>
+            <p class="eyebrow">The complete toolkit</p>
+            <h3>Free. For your next website.</h3>
+            <p>
+              For personal projects, businesses and teams who want to offer
+              visitors more choice.
+            </p>
+          </div>
+          <div class="plan-price">
+            <p><strong>$0</strong> <span>license cost</span></p>
+            <a class="button" href="%BASE_URL%install/">Get started for free</a
+            ><a href="%BASE_URL%pricing/">See what is included</a>
+          </div>
+          <ul>
+            <li>All 18 visitor controls</li>
+            <li>Unlimited self-hosted sites</li>
+            <li>JavaScript, TypeScript and React</li>
+            <li>No runtime dependencies</li>
+            <li>Commercial use under MIT</li>
+            <li>Your hosting and maintenance</li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq-section wrap" aria-labelledby="faq-title">
+        <h2 id="faq-title" class="centre">
+          A few things you might be wondering.
+        </h2>
+        <div class="accordion">
+          <details open>
+            <summary>What does Accessiblit actually do?</summary>
+            <p>
+              It adds a personalisation panel to your website. Visitors can
+              adjust text, colour and navigation using 18 individual controls.
+              It does not change your underlying content or repair inaccessible
+              markup.
+            </p>
+          </details>
+          <details>
+            <summary>Is it really free for commercial websites?</summary>
+            <p>
+              Yes. The MIT license permits personal and commercial use. All 18
+              features are included. You provide hosting, integration and
+              maintenance; managed hosting and guaranteed support are not part
+              of the offering.
+            </p>
+          </details>
+          <details>
+            <summary>Will it make my website WCAG compliant?</summary>
+            <p>
+              No. A widget does not make a site conformant by itself. Accessible
+              design, implementation, content and testing remain essential.
+            </p>
+          </details>
+          <details>
+            <summary>Does it send visitor data anywhere?</summary>
+            <p>
+              No. The widget has no tracking, cookies or runtime network
+              requests. When enabled, persistence uses a single localStorage key
+              in the visitor's browser.
+            </p>
+          </details>
+          <details>
+            <summary>Can visitors use it with a keyboard?</summary>
+            <p>
+              Yes. Alt+A opens the panel by default, native controls support
+              keyboard input and Escape closes the panel. Site owners can change
+              or disable the shortcut.
+            </p>
+          </details>
+          <details>
+            <summary>Can I choose which features appear?</summary>
+            <p>
+              Yes. Use the features allowlist or exclude option, and configure
+              position, offset, messages and persistence through the public API.
+            </p>
+          </details>
+          <details>
+            <summary>What should I test on my own site?</summary>
+            <p>
+              Test your content, page layouts, fixed elements, forms and
+              integrations with the settings you offer. Iframes, other shadow
+              roots, canvas and rigid layouts have limitations.
+            </p>
+          </details>
+        </div>
+        <p class="centre">
+          <a href="%BASE_URL%faq/">More answers and privacy details</a>
         </p>
-        <a href="%BASE_URL%faq/">Read the FAQ and privacy notes</a>
+      </section>
+      <section class="closing-section">
+        <div class="wrap band-layout">
+          <h2>Make a little room<br />for every visitor's preferences.</h2>
+          <a class="button" href="%BASE_URL%install/"
+            >Add Accessiblit for free</a
+          >
+        </div>
       </section>
     </main>
-    <footer class="site-footer wrap">
-      <p>
-        Personalisation supports visitor choice. It does not make a site
-        conformant by itself.
-      </p>
-      <nav aria-label="Footer">
-        <a href="%BASE_URL%faq/#privacy">Privacy</a
-        ><a href="https://github.com/qasimfida/accessiblit" rel="noreferrer"
-          >Source code</a
-        >
-      </nav>
-      <p class="small">MIT licensed · Qasim Fida</p>
+    <footer class="marketing-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="%BASE_URL%" translate="no">Accessiblit</a>
+            <p>A small toolkit.<br />More personal choice.</p>
+          </div>
+          <div>
+            <h2>Toolkit</h2>
+            <nav aria-label="Toolkit footer">
+              <a href="#demo">Live demo</a
+              ><a href="#features">All 18 features</a
+              ><a href="%BASE_URL%pricing/">Free pricing</a>
+            </nav>
+          </div>
+          <div>
+            <h2>Build with it</h2>
+            <nav aria-label="Integration footer">
+              <a href="%BASE_URL%install/">Installation</a
+              ><a href="%BASE_URL%options/">Options reference</a
+              ><a
+                href="https://github.com/qasimfida/accessiblit"
+                rel="noreferrer"
+                >Source code</a
+              >
+            </nav>
+          </div>
+          <div>
+            <h2>Good to know</h2>
+            <nav aria-label="Information footer">
+              <a href="%BASE_URL%faq/">FAQ</a
+              ><a href="%BASE_URL%faq/#privacy">Privacy</a
+              ><a href="%BASE_URL%faq/#limits">Limitations</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>MIT licensed · Qasim Fida</p>
+          <p>
+            Personalisation supports visitor choice. It does not make a site
+            conformant by itself.
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

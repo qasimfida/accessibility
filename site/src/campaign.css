@@ -1,72 +1,44 @@
-/* Original campaign treatment; all assets and fonts remain local. */
+/* Shared site shell; the landing page composition lives in landing.css. */
 .site-header {
-  border: 0;
-  padding-block: 1.5rem;
+  margin-block: 1rem;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface);
 }
 .brand {
-  font-size: 1.5rem;
-  letter-spacing: -0.04em;
-}
-.site-header nav a {
-  border-radius: 999px;
-  font-weight: 650;
-}
-.site-header nav a:hover {
-  background: var(--soft);
-}
-.campaign-hero {
-  position: relative;
-  isolation: isolate;
-  padding: clamp(2rem, 6vw, 5rem);
-  border-radius: 2.5rem;
-  background: var(--soft);
-  border: 1px solid var(--border);
-}
-.campaign-hero h1 {
-  max-inline-size: 16ch;
-  font-size: clamp(2.5rem, 6vw, 5.2rem);
+  font-size: 1.45rem;
   letter-spacing: -0.045em;
 }
-.campaign-hero .lede {
-  max-inline-size: 44ch;
+.site-header nav {
+  gap: 0.25rem;
 }
-.campaign-hero .button {
-  border-radius: 999px;
-  padding-inline: 1.75rem;
+.site-header nav a {
+  border-radius: 0.35rem;
+  font-size: 0.9rem;
+  text-decoration: none;
 }
-.promise-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-  gap: 2rem;
-  padding: 1rem;
+.site-header nav a:hover {
+  text-decoration: underline;
+  background: var(--soft);
 }
-.promise-strip strong {
-  display: block;
-  color: var(--ink);
-  font-size: 1.2rem;
-}
-.promise-strip p {
-  color: var(--muted);
-}
-#demo {
-  padding: clamp(1.25rem, 4vw, 3rem);
-  border-radius: 2rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-}
-.feature-showcase {
-  padding-block: 2rem;
+.button,
+button {
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.1rem;
+  touch-action: manipulation;
 }
 .pricing-card {
   max-inline-size: 40rem;
   padding: clamp(1.25rem, 5vw, 3rem);
   border: 2px solid var(--accent);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   background: var(--surface);
 }
 .price {
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 750;
   letter-spacing: -0.05em;
 }
 .price span {
@@ -77,58 +49,13 @@
 .pricing-card li {
   margin-block: 0.75rem;
 }
-@media (forced-colors: active) {
-  .campaign-hero,
-  .pricing-card,
-  #demo {
-    background: Canvas;
-    border-color: CanvasText;
-  }
-}
 @media (prefers-color-scheme: light) and (forced-colors: none) {
   :root {
-    --accent: #245be3;
-    --accent-hover: #194bc5;
-  }
-}
-.button,
-button {
-  border-radius: 999px;
-}
-/* A centred, softly lit hero echoes the reference's visual direction with original styling. */
-.site-header {
-  margin-block: 1.25rem;
-  padding: 1rem 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: 1.5rem;
-  background: var(--surface);
-}
-.campaign-hero {
-  text-align: center;
-  padding-block: clamp(3rem, 8vw, 7rem);
-}
-.campaign-hero h1,
-.campaign-hero .lede,
-.campaign-hero .eyebrow {
-  margin-inline: auto;
-}
-.campaign-hero .actions,
-.campaign-hero .facts {
-  justify-content: center;
-}
-@media (prefers-color-scheme: light) and (forced-colors: none) {
-  .campaign-hero {
-    background-color: #f7fafc;
-    background-image:
-      radial-gradient(ellipse at 0% 0%, #dce7ff, transparent 65%),
-      radial-gradient(ellipse at 100% 0%, #cfddfb, transparent 60%);
-  }
-}
-@media (max-width: 40rem) {
-  .site-header {
-    padding: 1rem;
-  }
-  .campaign-hero {
-    padding-inline: 1.25rem;
+    --accent: #004cde;
+    --accent-hover: #003aaa;
+    --background: #ffffff;
+    --soft: #f5f7fb;
+    --ink: #153450;
+    --muted: #3c526b;
   }
 }

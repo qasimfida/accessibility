@@ -1,0 +1,215 @@
+.pricing-section {
+  padding-block: 6rem;
+}
+.free-plan {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+}
+.free-plan h3 {
+  font-size: 1.6rem;
+  margin-block-start: 0;
+}
+.plan-price {
+  text-align: center;
+}
+.plan-price strong {
+  font-size: 3.5rem;
+  letter-spacing: -0.05em;
+}
+.plan-price span {
+  color: var(--muted);
+}
+.plan-price > a:last-child {
+  display: block;
+  margin-block-start: 1rem;
+}
+.free-plan ul {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 2rem;
+  margin: 0;
+  padding-inline-start: 1.25rem;
+}
+.faq-section {
+  padding-block: 1rem 6rem;
+}
+.faq-section .accordion {
+  max-inline-size: 50rem;
+  margin: 3rem auto 2rem;
+}
+.closing-section {
+  background: var(--cream);
+  padding-block: 4rem;
+}
+.marketing-footer {
+  background: #050c20;
+  color: #d2e0f4;
+  padding-block: 4rem 2rem;
+}
+.marketing-footer a {
+  color: #d2e0f4;
+}
+.marketing-footer .brand {
+  color: #fff;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer-grid h2 {
+  font-size: 1rem;
+  color: #fff;
+  margin-block: 0.75rem 1.25rem;
+}
+.footer-grid nav {
+  flex-direction: column;
+  gap: 0;
+}
+.footer-grid nav a {
+  font-size: 0.9rem;
+  padding-inline: 0;
+  text-decoration: none;
+}
+.footer-grid nav a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  border-block-start: 1px solid #58738e;
+  margin-block-start: 3rem;
+  padding-block-start: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+:root {
+  --cream: #faf8f5;
+  --aqua: #e0f0f1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cream: #11263a;
+    --aqua: #183e47;
+  }
+}
+@media (max-width: 64rem) {
+  .header-cta {
+    display: none;
+  }
+  .journey-copy {
+    padding: 1.25rem;
+  }
+  .journey-art {
+    padding: 1.5rem;
+  }
+  .technology-copy {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 48rem) {
+  .product-hero {
+    padding-block-start: 3rem;
+  }
+  .desktop-break {
+    display: none;
+  }
+  .journey-grid,
+  .benefit-grid,
+  .responsibility-grid,
+  .demo-section,
+  .integration-section,
+  .technology-section,
+  .split-layout,
+  .free-plan {
+    grid-template-columns: 1fr;
+  }
+  .journey-grid {
+    gap: 1.25rem;
+    border-radius: 0;
+    overflow: visible;
+  }
+  .journey-card {
+    border-radius: 1rem;
+    overflow: clip;
+  }
+  .journey-copy p {
+    min-block-size: 0;
+  }
+  .band-layout {
+    flex-direction: column;
+    align-items: start;
+  }
+  .technology-art {
+    padding: 2rem 1rem;
+  }
+  .technology-copy {
+    padding: 3rem var(--page-gutter);
+  }
+  .feature-detail {
+    grid-template-columns: 1fr;
+  }
+  .free-plan ul {
+    grid-template-columns: 1fr;
+  }
+  .free-plan {
+    padding: 1.5rem;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .product-hero .eyebrow {
+    max-inline-size: 25ch;
+  }
+  .reading-preview {
+    padding: 1.5rem;
+  }
+  .format-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (forced-colors: active) {
+  :root {
+    --cream: Canvas;
+    --aqua: Canvas;
+  }
+  .announcement,
+  .blue-band,
+  .deep-card,
+  .technology-art,
+  .privacy-section,
+  .marketing-footer,
+  .feature-accordions details[open]:not(.full-catalogue) {
+    background: Canvas;
+    color: CanvasText;
+  }
+  .announcement a,
+  .marketing-footer a,
+  .marketing-footer .brand,
+  .footer-grid h2,
+  .privacy-section .eyebrow {
+    color: CanvasText;
+  }
+  .light-button,
+  .navy-button {
+    --accent: ButtonText;
+    --accent-ink: ButtonFace;
+    --accent-hover: Highlight;
+    --accent-hover-ink: HighlightText;
+  }
+  .hero-product {
+    border: 1px solid CanvasText;
+  }
+  .journey-card,
+  .benefit-card,
+  .free-plan,
+  .feature-accordions details {
+    border: 1px solid CanvasText;
+  }
+}
