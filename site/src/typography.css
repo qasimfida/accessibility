@@ -1,0 +1,17 @@
+/* Self-hosted SIL OFL font: no request leaves the site's own origin. */
+@font-face {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/manrope-latin.woff2') format('woff2');
+}
+:root {
+  font-family: Manrope, Arial, sans-serif;
+}
+.marketing-main h1,
+.marketing-main h2 {
+  font-family: Manrope, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
