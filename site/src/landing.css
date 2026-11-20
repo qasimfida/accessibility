@@ -35,7 +35,8 @@
   font-weight: 600;
 }
 .announcement {
-  background: #090d24;
+  background: #121633;
+  background-image: linear-gradient(100deg, #141238, #07182d);
   color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +50,7 @@
   margin: 0;
 }
 .announcement a {
-  color: #c5e7ff;
+  color: #d5ebbf;
   display: inline-flex;
   align-items: center;
   min-block-size: 32px;
@@ -59,13 +60,19 @@
   margin-block: 0.75rem;
 }
 .product-hero {
-  padding-block: 4.5rem 3rem;
-  background: var(--cream);
+  padding-block: 5.5rem 4rem;
+  background: var(--surface);
+  background-image: radial-gradient(
+    ellipse at 50% 72%,
+    var(--hero-glow),
+    transparent 65%
+  );
 }
 .product-hero h1 {
   max-inline-size: 25ch;
   margin: 1.25rem auto;
-  font-size: clamp(2.25rem, 4.2vw, 3.5rem);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.22;
 }
 .product-hero .lede {
   font-size: 1.1rem;
@@ -115,16 +122,21 @@
 }
 .journey-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 0.5rem;
   border-radius: 2rem;
   overflow: clip;
 }
 .journey-card {
+  display: flex;
+  flex-direction: column;
   background: var(--soft);
 }
 .journey-copy {
-  padding: 1.6rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .journey-copy h3 {
   margin-block-start: 0;
@@ -138,9 +150,10 @@
   display: inline-flex;
   align-items: center;
   min-block-size: 44px;
+  margin-block-start: auto;
 }
 .journey-art {
-  min-block-size: 16rem;
+  min-block-size: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,6 +180,7 @@
 }
 .choice-art {
   background: #0755e8;
+  background-image: linear-gradient(140deg, #4299f4, #0755e8);
   color: #fff;
 }
 .sample-aa {

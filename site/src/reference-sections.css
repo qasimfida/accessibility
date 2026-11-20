@@ -1,0 +1,206 @@
+@media (min-width: 64rem) {
+  .wrap {
+    inline-size: min(78rem, 88%);
+  }
+}
+.site-header {
+  padding-block: 0.4rem;
+}
+.brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.marketing-main h2 {
+  font-size: clamp(1.65rem, 2.6vw, 2.25rem);
+}
+.marketing-main h3 {
+  font-weight: 600;
+}
+.marketing-main .eyebrow {
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+.marketing-main .section-heading {
+  margin-block-end: 3.5rem;
+}
+.product-hero .eyebrow {
+  letter-spacing: 0.04em;
+}
+.product-hero h1 {
+  max-inline-size: 30ch;
+}
+.product-hero .lede {
+  font-size: 1rem;
+  max-inline-size: 66ch;
+}
+.journey-copy h3 {
+  font-size: 1.4rem;
+}
+.journey-copy p {
+  font-size: 0.85rem;
+}
+.journey-copy a {
+  font-size: 0.85rem;
+}
+.privacy-art {
+  background: #0f2e54;
+  background-image: radial-gradient(circle at 50% 45%, #34618e, #0f2e54 75%);
+  color: #fff;
+}
+.privacy-orbit {
+  border: 1px solid #a8d5ff;
+  background: #244c75;
+  box-shadow: 0 0 0 1.25rem #244c7540;
+}
+.technology-copy h2 {
+  max-inline-size: 20ch;
+}
+.principle-section,
+.open-section {
+  padding-block: 6rem;
+}
+.principle-section > p {
+  max-inline-size: 44rem;
+}
+.principle-seals {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 0;
+  margin-block: 3rem 0;
+}
+.principle-seals li {
+  font-size: 0.8rem;
+  inline-size: 8rem;
+}
+.principle-seals li > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  inline-size: 5rem;
+  block-size: 5rem;
+  border-radius: 42%;
+  background: var(--aqua);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.open-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-block-end: 3rem;
+}
+.project-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 0;
+  list-style: none;
+}
+.project-facts li {
+  font-size: 0.8rem;
+}
+.project-facts strong {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+.principle-quote {
+  margin-inline: auto;
+  max-inline-size: 60rem;
+  padding: 3rem;
+  border-radius: 3rem 1rem 3rem 1rem;
+  background: var(--aqua);
+}
+.principle-quote > p:not(.eyebrow) {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+  max-inline-size: 40ch;
+}
+.principle-quote > span {
+  font-size: 0.85rem;
+}
+.demo-band {
+  background: #004cde;
+  color: #fff;
+  padding-block: 3rem;
+}
+.demo-band > .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.demo-band-art {
+  position: relative;
+  block-size: 18rem;
+  border: 8px solid #8eb7f6;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #d5e4f9;
+}
+.demo-band-photo {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+.demo-band-panel {
+  position: absolute;
+  inset-inline-start: 12%;
+  inset-block-start: 1rem;
+  inline-size: 10rem;
+  block-size: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 12px 25px #002a8a40;
+}
+.free-plan {
+  max-inline-size: 62rem;
+  margin-inline: auto;
+}
+.faq-section {
+  padding-block-end: 7rem;
+}
+.faq-section h2 {
+  margin-inline: auto;
+  max-inline-size: 27ch;
+}
+@media (max-width: 48rem) {
+  .open-heading {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  .principle-quote {
+    padding: 2rem;
+  }
+  .demo-band > .wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media (forced-colors: active) {
+  .announcement,
+  .product-hero,
+  .choice-art,
+  .privacy-art,
+  .demo-band {
+    background: Canvas;
+    color: CanvasText;
+  }
+  .announcement a {
+    color: LinkText;
+  }
+  .principle-quote,
+  .principle-seals li > span {
+    border: 1px solid CanvasText;
+  }
+}

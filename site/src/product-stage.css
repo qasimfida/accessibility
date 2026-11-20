@@ -1,0 +1,275 @@
+.product-stage {
+  position: relative;
+  inline-size: min(46rem, 100%);
+  block-size: 39rem;
+  margin: 6rem auto 0;
+}
+.store-browser {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: 4rem;
+  block-size: 24rem;
+  display: grid;
+  grid-template-rows: 36px minmax(0, 1fr);
+  border: 10px solid #edf2fb;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #fff;
+  color: #153450;
+  box-shadow: 0 12px 40px #183f7010;
+}
+.store-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-inline: 14px;
+  background: #fff;
+  border-block-end: 1px solid #e1e9f3;
+}
+.store-toolbar i {
+  inline-size: 4px;
+  block-size: 4px;
+  background: #70869a;
+  border-radius: 50%;
+}
+.store-toolbar > span {
+  margin-inline: auto;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+.store-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-block-size: 0;
+}
+/* A real toolkit capture is layered over an explicitly fictional demonstration site. */
+.product-stage {
+  position: relative;
+  inline-size: min(43rem, 100%);
+  block-size: 35rem;
+  margin: 6.5rem auto 1rem;
+  text-align: start;
+}
+.store-browser {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: 4.5rem;
+  border: 8px solid #eef2fa;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #fff;
+  color: #153450;
+  box-shadow: 0 12px 40px #254c7620;
+}
+.store-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 13px 16px;
+  background: #fff;
+  color: #153450;
+  border-block-end: 1px solid #edf0f4;
+}
+.store-toolbar i {
+  inline-size: 5px;
+  block-size: 5px;
+  background: #8296ac;
+  border-radius: 50%;
+}
+.store-toolbar > span {
+  margin-inline-start: 14px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.store-page {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  min-block-size: 20rem;
+}
+.store-page > img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: 72% center;
+  min-inline-size: 0;
+}
+.store-copy {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+  background: #fff;
+  color: #153450;
+}
+.store-copy strong {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  margin-block: 1.5rem 1rem;
+}
+.store-copy > span {
+  font-size: 11px;
+}
+.store-copy .store-label {
+  font-size: 9px;
+  letter-spacing: 0.05em;
+}
+.store-copy .store-cta {
+  align-self: start;
+  margin-block-start: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 4px;
+  background: #153450;
+  color: #fff;
+  font-size: 9px;
+}
+.toolkit-preview {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 35%;
+  inline-size: 16rem;
+  block-size: auto;
+  border-radius: 0.6rem;
+  box-shadow: 0 16px 30px #102c4a30;
+}
+.floating-setting {
+  position: absolute;
+  inset-inline-start: 5%;
+  inset-block-end: 6rem;
+  display: inline-flex;
+  gap: 0.7rem;
+  align-items: center;
+  background: #fff;
+  color: #153450;
+  padding: 0.75rem 1rem;
+  border-radius: 0.7rem;
+  font-size: 0.7rem;
+  box-shadow: 0 10px 30px #123f7133;
+}
+.floating-setting > span {
+  color: #004cde;
+  font-size: 1.25rem;
+}
+.product-stage .hero-caption {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.journey-art {
+  position: relative;
+  overflow: hidden;
+}
+.setup-art {
+  justify-content: end;
+  align-items: start;
+  background: #173958;
+  padding: 2.5rem 0 1.5rem;
+}
+.mini-store {
+  position: absolute;
+  inset: 1.5rem -3rem 4rem 1.25rem;
+  border: 6px solid #d7e5ee;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  background: #fff;
+}
+.mini-store img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: 70%;
+}
+.mini-store > span {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  padding: 1rem;
+  background: #fff;
+  color: #153450;
+  font-size: 1.25rem;
+  line-height: 1.15;
+}
+.art-caption {
+  padding-inline: 1.5rem;
+  font-size: 0.75rem;
+}
+.choice-browser {
+  position: absolute;
+  inset: 4rem 3rem 0;
+  border: 8px solid #bbd2f4;
+  border-radius: 1.25rem 1.25rem 0 0;
+  overflow: hidden;
+}
+.choice-browser > img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+.choice-focus {
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-end: 1rem;
+  padding: 0.4rem 0.75rem;
+  outline: 2px solid #fff;
+  border: 2px solid #0755e8;
+  background: #fff;
+  color: #153450;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+}
+.keyboard-tile,
+.type-tile {
+  position: absolute;
+  border: 1px solid #bfd6ff;
+  border-radius: 1rem;
+  background: #0755e8;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 12px 25px #002a8a40;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+.keyboard-tile {
+  inset-block-end: 2rem;
+  inset-inline-start: 3rem;
+}
+.type-tile {
+  inset-block-end: 1rem;
+  inset-inline-end: 1rem;
+}
+.keyboard-tile small,
+.type-tile small {
+  display: block;
+  font-size: 0.65rem;
+  margin-block-start: 0.75rem;
+}
+@media (max-width: 48rem) {
+  .product-stage {
+    block-size: 25rem;
+    margin-block-start: 4rem;
+  }
+  .store-page {
+    min-block-size: 14rem;
+  }
+  .store-copy {
+    padding: 2rem 0.75rem;
+  }
+  .store-copy strong {
+    font-size: 1.5rem;
+  }
+  .store-copy > span:not(.store-label) {
+    display: none;
+  }
+  .toolkit-preview {
+    inline-size: 11rem;
+  }
+  .floating-setting {
+    display: none;
+  }
+  .keyboard-tile {
+    inset-inline-start: 1.5rem;
+  }
+}

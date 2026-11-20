@@ -40,7 +40,7 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="theme-color"
-      content="#faf8f5"
+      content="#ffffff"
       media="(prefers-color-scheme: light)"
     />
     <meta
@@ -49,6 +49,13 @@
       media="(prefers-color-scheme: dark)"
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="/src/styles.css" />
     <script src="/accessiblit.min.js"></script>
     <script src="/bootstrap.js"></script>
@@ -83,9 +90,9 @@
     <main id="main" class="marketing-main" tabindex="-1">
       <section class="product-hero" aria-labelledby="hero-title">
         <div class="wrap centre">
-          <p class="eyebrow">The accessibility personalisation toolkit</p>
+          <p class="eyebrow">Accessiblit</p>
           <h1 id="hero-title">
-            A more comfortable web.<br />A little more choice.
+            Web accessibility tools,<br />built around your visitors.
           </h1>
           <p class="lede">
             Give visitors the freedom to adjust text, colours and navigation.<br
@@ -94,15 +101,47 @@
             Eighteen thoughtful tools. One free, lightweight widget.
           </p>
           <a class="button" href="#demo">Explore the live demo</a>
-          <img
-            class="hero-product"
-            src="/images/toolkit-preview.svg"
-            width="900"
-            height="660"
-            fetchpriority="high"
-            alt="Illustration of Accessiblit’s content, colour and navigation controls over an example reading website."
-          />
-          <p class="hero-caption">Your website. Their reading preferences.</p>
+          <figure
+            class="product-stage"
+            aria-label="Illustration of the real Accessiblit toolkit over a fictional fashion website."
+          >
+            <div class="store-browser" aria-hidden="true">
+              <div class="store-toolbar">
+                <i></i><i></i><i></i><span>THE EVERYDAY EDIT</span>
+              </div>
+              <div class="store-page">
+                <div class="store-copy">
+                  <span class="store-label">A FRESH PERSPECTIVE</span
+                  ><strong>See things<br />your way.</strong
+                  ><span
+                    >Considered essentials.<br />A different point of
+                    view.</span
+                  ><span class="store-cta">Explore the collection</span>
+                </div>
+                <img
+                  src="/images/editorial-demo.webp"
+                  width="1120"
+                  height="747"
+                  fetchpriority="high"
+                  alt=""
+                />
+              </div>
+            </div>
+            <img
+              class="toolkit-preview"
+              src="/images/toolkit-white.png"
+              width="440"
+              height="760"
+              fetchpriority="high"
+              alt=""
+            />
+            <span class="floating-setting" aria-hidden="true"
+              ><span>Aa</span> Your page. Your preferences.</span
+            >
+            <figcaption class="hero-caption">
+              A fictional store. The real toolkit. Your own preferences.
+            </figcaption>
+          </figure>
         </div>
       </section>
       <section
@@ -129,12 +168,16 @@
         <div class="journey-grid">
           <article class="journey-card">
             <div class="journey-art setup-art" aria-hidden="true">
-              <div class="code-window">
-                <span></span
-                ><code
-                  >&lt;script src="…"&gt;<br />&nbsp; Accessiblit.init()<br />&lt;/script&gt;</code
-                >
+              <div class="mini-store">
+                <img
+                  src="/images/editorial-demo.webp"
+                  width="1120"
+                  height="747"
+                  loading="lazy"
+                  alt=""
+                /><span>New<br />perspectives.</span>
               </div>
+              <span class="art-caption">One small addition.</span>
             </div>
             <div class="journey-copy">
               <h3>Add it once</h3>
@@ -147,10 +190,17 @@
           </article>
           <article class="journey-card">
             <div class="journey-art choice-art" aria-hidden="true">
-              <span class="sample-aa">Aa</span>
-              <div class="choice-tags">
-                <span>Text</span><span>Colour</span><span>Focus</span>
+              <div class="choice-browser">
+                <img
+                  src="/images/editorial-demo.webp"
+                  width="1120"
+                  height="747"
+                  loading="lazy"
+                  alt=""
+                /><span class="choice-focus">Focus</span>
               </div>
+              <span class="keyboard-tile">Tab <small>Find your way</small></span
+              ><span class="type-tile">Aa <small>Read your way</small></span>
             </div>
             <div class="journey-copy">
               <h3>Let visitors choose</h3>
@@ -584,6 +634,26 @@
           >
         </div>
       </section>
+      <section
+        class="principle-section wrap centre"
+        aria-labelledby="principle-title"
+      >
+        <p class="eyebrow">Practical details. Clear intentions.</p>
+        <h2 id="principle-title">
+          Built around familiar accessibility patterns.
+        </h2>
+        <p>
+          Native controls, clear feedback and visitor choice. Designed to work
+          alongside the accessibility of your own site.
+        </p>
+        <ul class="principle-seals">
+          <li><span aria-hidden="true">Tab</span>Keyboard controls</li>
+          <li><span aria-hidden="true">Aa</span>Text spacing</li>
+          <li><span aria-hidden="true">↔</span>Responsive panel</li>
+          <li><span aria-hidden="true">◎</span>Visible focus</li>
+          <li><span aria-hidden="true">✓</span>Status messages</li>
+        </ul>
+      </section>
       <section class="privacy-section">
         <div class="wrap split-layout">
           <div>
@@ -613,6 +683,56 @@
                 fill="none"
               /></svg
             ><span>Local by design</span>
+          </div>
+        </div>
+      </section>
+      <section class="open-section wrap" aria-labelledby="open-title">
+        <div class="open-heading">
+          <h2 id="open-title">
+            Small by design.<br />Open for you to explore.
+          </h2>
+          <ul class="project-facts">
+            <li><strong>18</strong>visitor controls</li>
+            <li><strong>0</strong>runtime dependencies</li>
+            <li><strong>MIT</strong>open-source license</li>
+          </ul>
+        </div>
+        <div class="principle-quote">
+          <p class="eyebrow">Our approach</p>
+          <p>
+            Make a little room for the person on the other side of the screen.
+          </p>
+          <span
+            >Personal choice complements accessible design. It never replaces
+            it.</span
+          >
+        </div>
+      </section>
+      <section class="demo-band">
+        <div class="wrap">
+          <div class="demo-band-art" aria-hidden="true">
+            <img
+              class="demo-band-photo"
+              src="/images/editorial-demo.webp"
+              width="1120"
+              height="747"
+              loading="lazy"
+              alt=""
+            /><img
+              class="demo-band-panel"
+              src="/images/toolkit-white.png"
+              width="440"
+              height="760"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2>See Accessiblit<br />in action.</h2>
+            <p>
+              A more personal browsing experience starts with a little choice.
+            </p>
+            <a class="button light-button" href="#demo">Open the live demo</a>
           </div>
         </div>
       </section>
@@ -710,6 +830,37 @@
               Test your content, page layouts, fixed elements, forms and
               integrations with the settings you offer. Iframes, other shadow
               roots, canvas and rigid layouts have limitations.
+            </p>
+          </details>
+          <details>
+            <summary>Do font adjustments work with pixel-sized text?</summary>
+            <p>
+              Font scaling handles pixel-sized text as well as relative units.
+              Rigid containers and third-party embedded content can still limit
+              the result, so test your own pages at the largest settings.
+            </p>
+          </details>
+          <details>
+            <summary>Does Stop animations stop every kind of motion?</summary>
+            <p>
+              It stops CSS animations, transitions and smooth scrolling, and
+              pauses autoplay video. Animated images, canvas and
+              JavaScript-driven motion may continue.
+            </p>
+          </details>
+          <details>
+            <summary>What happens if browser storage is blocked?</summary>
+            <p>
+              The current session continues with an in-memory fallback. Settings
+              cannot persist across visits when localStorage is unavailable.
+            </p>
+          </details>
+          <details>
+            <summary>Can I use it with React or Next.js?</summary>
+            <p>
+              Yes. Use the separate React component or hook, or initialise and
+              destroy the toolkit in your own effect. The installation guide
+              includes the Next.js client-component pattern.
             </p>
           </details>
         </div>
