@@ -251,6 +251,10 @@
     block-size: 25rem;
     margin-block-start: 4rem;
   }
+  .store-browser {
+    block-size: 17.5rem;
+    inset-block-start: 3rem;
+  }
   .store-page {
     min-block-size: 14rem;
   }

@@ -29,3 +29,20 @@ test('landing disclosures expose every feature and answer by keyboard', async ({
   await expect(question.locator('summary')).toBeFocused();
   expect(errors).toEqual([]);
 });
+
+test('hero artwork leaves its caption clear on mobile and desktop', async ({
+  page,
+}) => {
+  await loadSite(page, '');
+  await page.evaluate(() => document.fonts.ready);
+  for (const width of [320, 390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    const caption = await page
+      .locator('.product-stage figcaption')
+      .boundingBox();
+    for (const selector of ['.store-browser', '.toolkit-preview']) {
+      const art = await page.locator(selector).boundingBox();
+      expect(art!.y + art!.height).toBeLessThanOrEqual(caption!.y - 8);
+    }
+  }
+});
