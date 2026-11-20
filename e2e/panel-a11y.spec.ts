@@ -62,10 +62,20 @@ for (const small of [false, true])
             evidence.panel.scrollWidth - evidence.panel.clientWidth,
           ).toBeLessThanOrEqual(1);
           expect(evidence.documentOverflow).toBeLessThanOrEqual(1);
-          if (small)
+          if (small) {
             expect(evidence.panel.scrollHeight).toBeGreaterThan(
               evidence.panel.clientHeight,
             );
+            // The compact header must give its title the flexible column, not the emblem slot.
+            const title = await page
+              .getByRole('dialog')
+              .getByRole('heading', {
+                name: 'Accessibility options',
+                exact: true,
+              })
+              .boundingBox();
+            expect(title!.width).toBeGreaterThanOrEqual(160);
+          }
           console.log(
             'PANEL_A11Y',
             test.info().project.name,
