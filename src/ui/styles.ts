@@ -30,7 +30,7 @@ export const UI_CSS = `
 .accessiblit-header { flex:none; display:grid; grid-template-columns:40px 1fr 44px; gap:4px 12px; padding:20px; color:var(--ui-ink); background:var(--ui-bg); background-image:linear-gradient(125deg,var(--ui-bg) 35%,var(--ui-quiet)); border-block-end:1px solid var(--ui-border); }
 .accessiblit-emblem { grid-column:1; grid-row:1/3; display:flex; align-items:center; justify-content:center; inline-size:40px; block-size:40px; border:1px solid var(--ui-accent); border-radius:10px; color:var(--ui-accent-ink); background:var(--ui-accent); }
 .accessiblit-emblem svg { inline-size:26px; block-size:26px; }
-.accessiblit-header h2 { grid-column:2; grid-row:1; margin:0; align-self:end; min-inline-size:0; font-size:19px; line-height:1.3; font-weight:600; text-wrap:balance; letter-spacing:-.025em; }
+.accessiblit-header h2 { grid-column:2; grid-row:1; margin:0; align-self:end; min-inline-size:0; font-size:19px; line-height:1.4; font-weight:600; text-wrap:balance; letter-spacing:-.025em; }
 .accessiblit-brand { grid-column:2; grid-row:2; color:var(--ui-muted); font-size:12px; font-weight:500; }
 .accessiblit-surface .accessiblit-close { grid-column:3; grid-row:1/3; display:flex; align-items:center; justify-content:center; min-inline-size:44px; inline-size:44px; block-size:44px; padding:0; border:1px solid var(--ui-border); border-radius:8px; color:var(--ui-ink); background:var(--ui-bg); }
 .accessiblit-intro { grid-column:1/-1; margin:12px 0 0; color:var(--ui-muted); font-size:13px; line-height:1.5; }
