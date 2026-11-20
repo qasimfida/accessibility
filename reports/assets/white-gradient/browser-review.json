@@ -1,0 +1,212 @@
+{
+  "keyboard": [
+    {
+      "name": "Skip to main content",
+      "id": ""
+    },
+    {
+      "name": "Meet the free toolkit",
+      "id": ""
+    },
+    {
+      "name": "Accessiblit",
+      "id": ""
+    },
+    {
+      "name": "Home",
+      "id": ""
+    },
+    {
+      "name": "Install",
+      "id": ""
+    },
+    {
+      "name": "Options",
+      "id": ""
+    },
+    {
+      "name": "Pricing",
+      "id": ""
+    },
+    {
+      "name": "FAQ and privacy",
+      "id": ""
+    },
+    {
+      "name": "Try the toolkit",
+      "id": ""
+    },
+    {
+      "name": "Explore the live demo",
+      "id": ""
+    },
+    {
+      "name": "Find your installation",
+      "id": ""
+    },
+    {
+      "name": "Explore all 18 controls",
+      "id": ""
+    },
+    {
+      "name": "Read the privacy details",
+      "id": ""
+    },
+    {
+      "name": "Try it on this page",
+      "id": ""
+    },
+    {
+      "name": "Open live demo options",
+      "id": "demo-open"
+    }
+  ],
+  "opened": true,
+  "returned": true,
+  "header": {
+    "foreground": "rgb(22, 43, 61)",
+    "background": "rgb(255, 255, 255)",
+    "gradient": "linear-gradient(125deg, rgb(255, 255, 255) 35%, rgb(241, 243, 247))",
+    "focusWidth": "3px",
+    "buttonTargets": [
+      {
+        "width": 48,
+        "height": 48
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 44,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 328,
+        "height": 44
+      },
+      {
+        "width": 406,
+        "height": 44
+      }
+    ]
+  },
+  "performance": {
+    "load": 62.40000003576279,
+    "cls": 0,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4184/accessiblit/fonts/manrope-latin.woff2",
+        "bytes": 24532
+      },
+      {
+        "name": "http://127.0.0.1:4184/accessiblit/bootstrap.js",
+        "bytes": 114
+      },
+      {
+        "name": "http://127.0.0.1:4184/accessiblit/accessiblit.min.js",
+        "bytes": 65866
+      },
+      {
+        "name": "http://127.0.0.1:4184/accessiblit/assets/main-BTf250SQ.css",
+        "bytes": 47727
+      },
+      {
+        "name": "http://127.0.0.1:4184/accessiblit/images/editorial-demo.webp",
+        "bytes": 42828
+      },
+      {
+        "name": "http://127.0.0.1:4184/accessiblit/images/toolkit-white.png",
+        "bytes": 59267
+      },
+      {
+        "name": "http://127.0.0.1:4184/accessiblit/assets/main-BzfngP_B.js",
+        "bytes": 1167
+      }
+    ],
+    "fontLoaded": true,
+    "overflow": 0
+  },
+  "requests": [
+    "http://127.0.0.1:4184/accessiblit/",
+    "http://127.0.0.1:4184/accessiblit/fonts/manrope-latin.woff2",
+    "http://127.0.0.1:4184/accessiblit/accessiblit.min.js",
+    "http://127.0.0.1:4184/accessiblit/bootstrap.js",
+    "http://127.0.0.1:4184/accessiblit/assets/main-BzfngP_B.js",
+    "http://127.0.0.1:4184/accessiblit/assets/main-BTf250SQ.css",
+    "http://127.0.0.1:4184/accessiblit/images/editorial-demo.webp",
+    "http://127.0.0.1:4184/accessiblit/images/toolkit-white.png"
+  ]
+}
