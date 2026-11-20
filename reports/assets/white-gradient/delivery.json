@@ -1,0 +1,39 @@
+{
+  "deployedSource": "1bdc0ce6e567a2788be9574e831e5f8c982bb3e6",
+  "pages": {
+    "run": 44727566730,
+    "build": "success",
+    "deploy": "success",
+    "url": "https://qasimfida.github.io/accessiblit/"
+  },
+  "ci": {
+    "run": 44727566733,
+    "verifyNodes20And22": "success",
+    "allTenFunctionalBrowserJobs": "success",
+    "site": "success",
+    "initTrend22": "success",
+    "initTrend20": "failure",
+    "failedJob": 136258745765,
+    "errorAnnotation": "Process completed with exit code 1.",
+    "detailedLogs": "unavailable: connector transport error; anonymous download HTTP 403"
+  },
+  "live": {
+    "http": 200,
+    "heading": "Web accessibility tools,\nbuilt around your visitors.",
+    "image": {
+      "width": 1120,
+      "loaded": true
+    },
+    "font": true,
+    "header": {
+      "background": "rgb(255, 255, 255)",
+      "gradient": "linear-gradient(125deg, rgb(255, 255, 255) 35%, rgb(241, 243, 247))",
+      "titleSize": "19px",
+      "titleLineHeight": "26.6px"
+    },
+    "closedAxe": [],
+    "openAxe": [],
+    "thirdParty": [],
+    "errors": []
+  }
+}

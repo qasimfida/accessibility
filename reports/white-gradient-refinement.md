@@ -118,3 +118,9 @@ After Pages deployment, compare the home page and opened toolkit in light appear
 - e900a5c style(site): add original editorial photo and real toolkit preview
 - dd371ae style(site): introduce self-hosted geometric typography
 - e16afd6 style(panel): adopt compact white surfaces and subtle gradient
+
+## Public delivery verification
+
+Pages run [44727566730](https://github.com/qasimfida/accessiblit/actions/runs/44727566730) built and deployed source `1bdc0ce`. The live home page returned HTTP 200, loaded the local Manrope font and original image, and displayed the white gradient toolkit header with 19px title and 26.6px line height. Live axe scans returned zero violations with the panel closed and open; no third-party requests or console errors were observed. Raw evidence: [delivery.json](assets/white-gradient/delivery.json).
+
+CI run [44727566733](https://github.com/qasimfida/accessiblit/actions/runs/44727566733) passed both Node verification jobs, all ten functional browser jobs, the site job and Node 22 init trend. Node 20 init trend failed. Its public annotation only reports exit code 1; the connected log tool failed and anonymous log download returned HTTP 403. The numeric timing and actual failure cause remain unverified. The user has been asked for the error and median/p95 lines. Neither timing thresholds nor committed baselines were changed. Quality closure remains BLOCKED on this job, although the UI is deployed.
