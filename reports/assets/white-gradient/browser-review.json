@@ -164,7 +164,7 @@
     ]
   },
   "performance": {
-    "load": 62.40000003576279,
+    "load": 123.19999998807907,
     "cls": 0,
     "resources": [
       {
@@ -172,28 +172,28 @@
         "bytes": 24532
       },
       {
-        "name": "http://127.0.0.1:4184/accessiblit/bootstrap.js",
-        "bytes": 114
-      },
-      {
         "name": "http://127.0.0.1:4184/accessiblit/accessiblit.min.js",
         "bytes": 65866
       },
       {
-        "name": "http://127.0.0.1:4184/accessiblit/assets/main-BTf250SQ.css",
-        "bytes": 47727
+        "name": "http://127.0.0.1:4184/accessiblit/bootstrap.js",
+        "bytes": 114
+      },
+      {
+        "name": "http://127.0.0.1:4184/accessiblit/assets/main-BzfngP_B.js",
+        "bytes": 1167
       },
       {
         "name": "http://127.0.0.1:4184/accessiblit/images/editorial-demo.webp",
         "bytes": 42828
       },
       {
-        "name": "http://127.0.0.1:4184/accessiblit/images/toolkit-white.png",
-        "bytes": 59267
+        "name": "http://127.0.0.1:4184/accessiblit/assets/main-BTf250SQ.css",
+        "bytes": 47727
       },
       {
-        "name": "http://127.0.0.1:4184/accessiblit/assets/main-BzfngP_B.js",
-        "bytes": 1167
+        "name": "http://127.0.0.1:4184/accessiblit/images/toolkit-white.png",
+        "bytes": 59777
       }
     ],
     "fontLoaded": true,

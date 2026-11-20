@@ -1,5 +1,5 @@
 {
-  "source": "c0fc674bac0c1141881ee5c36217125241ef4572",
+  "source": "7547dcb64ab0d4795d5d58c93ca075ffa8ef6414",
   "site": {
     "passed": 295,
     "duration": "3.4m",
@@ -7,58 +7,9 @@
     "skipped": 0
   },
   "panel": {
-    "passed": 60,
-    "duration": "38.0s",
-    "raw": [
-      "PANEL_A11Y chromium desktop light forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium desktop light forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium desktop light forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium desktop light forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium desktop dark forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox desktop light forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium desktop dark forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium desktop dark forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox desktop light forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium desktop dark forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium 320x256 light forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y firefox desktop light forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium 320x256 light forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y chromium 320x256 light forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y firefox desktop light forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium 320x256 light forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y firefox desktop dark forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium 320x256 dark forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y chromium 320x256 dark forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y firefox desktop dark forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y chromium 320x256 dark forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y chromium 320x256 dark forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y firefox desktop dark forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox desktop dark forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox 320x256 light forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y firefox 320x256 light forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit desktop light forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox 320x256 light forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit desktop light forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox 320x256 light forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit desktop light forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox 320x256 dark forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit desktop light forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox 320x256 dark forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit desktop dark forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox 320x256 dark forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit desktop dark forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y firefox 320x256 dark forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit desktop dark forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":16.67115667431794,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":16.67115667431794},\"iconRatio\":16.67115667431794,\"minimumBoundaryContrast\":16.67115667431794,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y webkit desktop dark forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":16.67115667431794,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":16.67115667431794},\"iconRatio\":16.67115667431794,\"minimumBoundaryContrast\":16.67115667431794,\"panel\":{\"left\":824,\"right\":1264,\"top\":68,\"bottom\":828,\"width\":440,\"height\":760,\"scrollWidth\":438,\"clientWidth\":438,\"scrollHeight\":758,\"clientHeight\":758}}",
-      "PANEL_A11Y webkit 320x256 light forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit 320x256 light forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":6.7992810071864005,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":7.32096843010406},\"iconRatio\":6.7992810071864005,\"minimumBoundaryContrast\":3.6773946394230874,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit 320x256 light forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit 320x256 light forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":21,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":21},\"iconRatio\":21,\"minimumBoundaryContrast\":21,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit 320x256 dark forced=none motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit 320x256 dark forced=none motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":9.940009945072063,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":9.940009945072063},\"iconRatio\":9.940009945072063,\"minimumBoundaryContrast\":4.9162912282582045,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":940,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit 320x256 dark forced=active motion=no-preference {\"minimumTarget\":24,\"minimumTextContrast\":16.67115667431794,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":16.67115667431794},\"iconRatio\":16.67115667431794,\"minimumBoundaryContrast\":16.67115667431794,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}",
-      "PANEL_A11Y webkit 320x256 dark forced=active motion=reduce {\"minimumTarget\":24,\"minimumTextContrast\":16.67115667431794,\"focus\":{\"width\":3,\"style\":\"solid\",\"ratio\":16.67115667431794},\"iconRatio\":16.67115667431794,\"minimumBoundaryContrast\":16.67115667431794,\"panel\":{\"left\":8,\"right\":312,\"top\":8,\"bottom\":184,\"width\":304,\"height\":176,\"scrollWidth\":302,\"clientWidth\":302,\"scrollHeight\":1023,\"clientHeight\":174}}"
-    ]
+    "passed": 94,
+    "skipped": 2,
+    "duration": "48.1s"
   },
   "axe": [
     {
@@ -632,25 +583,6 @@
       }
     },
     {
-      "project": "firefox",
-      "path": "",
-      "profile": "spacing",
-      "site": {
-        "minimumTextContrast": 6.045473927095201,
-        "minimumTarget": 43.19999694824219
-      },
-      "widget": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": ["color-contrast"],
-        "open": ["color-contrast"]
-      }
-    },
-    {
       "project": "chromium",
       "path": "faq/",
       "profile": "reduced",
@@ -666,6 +598,25 @@
       "open": 0,
       "incomplete": {
         "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 43.19999694824219
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
         "open": ["color-contrast"]
       }
     },
@@ -1069,9 +1020,9 @@
       }
     },
     {
-      "project": "firefox",
-      "path": "options/",
-      "profile": "light",
+      "project": "chromium",
+      "path": "404.html",
+      "profile": "rtl",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
         "minimumTarget": 44
@@ -1088,9 +1039,9 @@
       }
     },
     {
-      "project": "chromium",
-      "path": "404.html",
-      "profile": "rtl",
+      "project": "firefox",
+      "path": "options/",
+      "profile": "light",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
         "minimumTarget": 44
@@ -1116,25 +1067,6 @@
       },
       "widget": {
         "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": [],
-        "open": ["color-contrast"]
-      }
-    },
-    {
-      "project": "firefox",
-      "path": "options/",
-      "profile": "dark",
-      "site": {
-        "minimumTextContrast": 9.29390643036386,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 7.8678914128040836,
         "minimumTarget": 24
       },
       "closed": 0,
@@ -1166,6 +1098,25 @@
     {
       "project": "firefox",
       "path": "options/",
+      "profile": "dark",
+      "site": {
+        "minimumTextContrast": 9.29390643036386,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 7.8678914128040836,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "options/",
       "profile": "forced",
       "site": {
         "minimumTextContrast": 9.397615840239814,
@@ -1487,25 +1438,6 @@
       }
     },
     {
-      "project": "webkit",
-      "path": "",
-      "profile": "reduced",
-      "site": {
-        "minimumTextContrast": 6.045473927095201,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": ["color-contrast"],
-        "open": ["color-contrast"]
-      }
-    },
-    {
       "project": "firefox",
       "path": "pricing/",
       "profile": "forced",
@@ -1521,6 +1453,25 @@
       "open": 0,
       "incomplete": {
         "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
         "open": ["color-contrast"]
       }
     },
@@ -1696,25 +1647,6 @@
       }
     },
     {
-      "project": "webkit",
-      "path": "install/",
-      "profile": "dark",
-      "site": {
-        "minimumTextContrast": 9.29390643036386,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 7.8678914128040836,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": [],
-        "open": ["color-contrast"]
-      }
-    },
-    {
       "project": "firefox",
       "path": "404.html",
       "profile": "dark",
@@ -1736,13 +1668,13 @@
     {
       "project": "webkit",
       "path": "install/",
-      "profile": "forced",
+      "profile": "dark",
       "site": {
-        "minimumTextContrast": 9.397615840239814,
+        "minimumTextContrast": 9.29390643036386,
         "minimumTarget": 44
       },
       "widget": {
-        "minimumTextContrast": 21,
+        "minimumTextContrast": 7.8678914128040836,
         "minimumTarget": 24
       },
       "closed": 0,
@@ -1774,13 +1706,13 @@
     {
       "project": "webkit",
       "path": "install/",
-      "profile": "reduced",
+      "profile": "forced",
       "site": {
-        "minimumTextContrast": 6.7992810071864005,
+        "minimumTextContrast": 9.397615840239814,
         "minimumTarget": 44
       },
       "widget": {
-        "minimumTextContrast": 6.7992810071864005,
+        "minimumTextContrast": 21,
         "minimumTarget": 24
       },
       "closed": 0,
@@ -1812,6 +1744,25 @@
     {
       "project": "webkit",
       "path": "install/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "firefox",
+      "path": "404.html",
       "profile": "rtl",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
@@ -1829,8 +1780,8 @@
       }
     },
     {
-      "project": "firefox",
-      "path": "404.html",
+      "project": "webkit",
+      "path": "install/",
       "profile": "rtl",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
@@ -2266,6 +2217,25 @@
       }
     },
     {
+      "project": "iphone",
+      "path": "",
+      "profile": "forced",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
       "project": "webkit",
       "path": "pricing/",
       "profile": "forced",
@@ -2285,25 +2255,6 @@
       }
     },
     {
-      "project": "iphone",
-      "path": "",
-      "profile": "forced",
-      "site": {
-        "minimumTextContrast": 6.045473927095201,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 21,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": ["color-contrast"],
-        "open": ["color-contrast"]
-      }
-    },
-    {
       "project": "webkit",
       "path": "pricing/",
       "profile": "reduced",
@@ -2357,6 +2308,25 @@
       "open": 0,
       "incomplete": {
         "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "",
+      "profile": "rtl",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
         "open": ["color-contrast"]
       }
     },
@@ -2376,25 +2346,6 @@
       "open": 0,
       "incomplete": {
         "closed": [],
-        "open": ["color-contrast"]
-      }
-    },
-    {
-      "project": "iphone",
-      "path": "",
-      "profile": "rtl",
-      "site": {
-        "minimumTextContrast": 6.045473927095201,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": ["color-contrast"],
         "open": ["color-contrast"]
       }
     },
@@ -2494,25 +2445,6 @@
       }
     },
     {
-      "project": "webkit",
-      "path": "404.html",
-      "profile": "forced",
-      "site": {
-        "minimumTextContrast": 9.397615840239814,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 21,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": [],
-        "open": ["color-contrast"]
-      }
-    },
-    {
       "project": "iphone",
       "path": "install/",
       "profile": "light",
@@ -2534,13 +2466,13 @@
     {
       "project": "webkit",
       "path": "404.html",
-      "profile": "reduced",
+      "profile": "forced",
       "site": {
-        "minimumTextContrast": 6.7992810071864005,
+        "minimumTextContrast": 9.397615840239814,
         "minimumTarget": 44
       },
       "widget": {
-        "minimumTextContrast": 6.7992810071864005,
+        "minimumTextContrast": 21,
         "minimumTarget": 24
       },
       "closed": 0,
@@ -2572,7 +2504,7 @@
     {
       "project": "webkit",
       "path": "404.html",
-      "profile": "rtl",
+      "profile": "reduced",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
         "minimumTarget": 44
@@ -2610,7 +2542,7 @@
     {
       "project": "webkit",
       "path": "404.html",
-      "profile": "small",
+      "profile": "rtl",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
         "minimumTarget": 44
@@ -2648,10 +2580,10 @@
     {
       "project": "webkit",
       "path": "404.html",
-      "profile": "spacing",
+      "profile": "small",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 43.1875
+        "minimumTarget": 44
       },
       "widget": {
         "minimumTextContrast": 6.7992810071864005,
@@ -2671,6 +2603,25 @@
       "site": {
         "minimumTextContrast": 6.7992810071864005,
         "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "webkit",
+      "path": "404.html",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 43.1875
       },
       "widget": {
         "minimumTextContrast": 6.7992810071864005,
@@ -2902,6 +2853,25 @@
       },
       "widget": {
         "minimumTextContrast": 21,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "iphone",
+      "path": "faq/",
+      "profile": "reduced",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
         "minimumTarget": 24
       },
       "closed": 0,
@@ -2927,25 +2897,6 @@
       "open": 0,
       "incomplete": {
         "closed": ["color-contrast"],
-        "open": ["color-contrast"]
-      }
-    },
-    {
-      "project": "iphone",
-      "path": "faq/",
-      "profile": "reduced",
-      "site": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": [],
         "open": ["color-contrast"]
       }
     },
@@ -3159,25 +3110,6 @@
       }
     },
     {
-      "project": "pixel",
-      "path": "",
-      "profile": "spacing",
-      "site": {
-        "minimumTextContrast": 6.045473927095201,
-        "minimumTarget": 43.1875
-      },
-      "widget": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": ["color-contrast"],
-        "open": ["color-contrast"]
-      }
-    },
-    {
       "project": "iphone",
       "path": "pricing/",
       "profile": "reduced",
@@ -3193,6 +3125,25 @@
       "open": 0,
       "incomplete": {
         "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "",
+      "profile": "spacing",
+      "site": {
+        "minimumTextContrast": 6.045473927095201,
+        "minimumTarget": 43.1875
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
         "open": ["color-contrast"]
       }
     },
@@ -3292,12 +3243,12 @@
       }
     },
     {
-      "project": "pixel",
-      "path": "install/",
-      "profile": "reduced",
+      "project": "iphone",
+      "path": "pricing/",
+      "profile": "spacing",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 44
+        "minimumTarget": 43.1875
       },
       "widget": {
         "minimumTextContrast": 6.7992810071864005,
@@ -3311,12 +3262,12 @@
       }
     },
     {
-      "project": "iphone",
-      "path": "pricing/",
-      "profile": "spacing",
+      "project": "pixel",
+      "path": "install/",
+      "profile": "reduced",
       "site": {
         "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 43.1875
+        "minimumTarget": 44
       },
       "widget": {
         "minimumTextContrast": 6.7992810071864005,
@@ -3421,25 +3372,6 @@
       "open": 0,
       "incomplete": {
         "closed": [],
-        "open": ["color-contrast"]
-      }
-    },
-    {
-      "project": "pixel",
-      "path": "options/",
-      "profile": "light",
-      "site": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": ["color-contrast"],
         "open": ["color-contrast"]
       }
     },
@@ -3465,6 +3397,25 @@
     {
       "project": "pixel",
       "path": "options/",
+      "profile": "light",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
       "profile": "dark",
       "site": {
         "minimumTextContrast": 9.29390643036386,
@@ -3596,25 +3547,6 @@
       }
     },
     {
-      "project": "pixel",
-      "path": "options/",
-      "profile": "small",
-      "site": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 44
-      },
-      "widget": {
-        "minimumTextContrast": 6.7992810071864005,
-        "minimumTarget": 24
-      },
-      "closed": 0,
-      "open": 0,
-      "incomplete": {
-        "closed": ["color-contrast"],
-        "open": ["color-contrast"]
-      }
-    },
-    {
       "project": "iphone",
       "path": "404.html",
       "profile": "spacing",
@@ -3630,6 +3562,25 @@
       "open": 0,
       "incomplete": {
         "closed": [],
+        "open": ["color-contrast"]
+      }
+    },
+    {
+      "project": "pixel",
+      "path": "options/",
+      "profile": "small",
+      "site": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 44
+      },
+      "widget": {
+        "minimumTextContrast": 6.7992810071864005,
+        "minimumTarget": 24
+      },
+      "closed": 0,
+      "open": 0,
+      "incomplete": {
+        "closed": ["color-contrast"],
         "open": ["color-contrast"]
       }
     },
@@ -4244,5 +4195,31 @@
     "high": 0,
     "critical": 0,
     "total": 0
+  },
+  "runtime": {
+    "passed": 985,
+    "skipped": 8,
+    "duration": "16.8m",
+    "command": "npx playwright test --project=chromium --project=firefox --project=webkit --grep-invert '5000-(node|element) toggle budget' --workers=1",
+    "skips": [
+      "  -  477 [firefox] › e2e/navigation-performance.spec.ts:29:1 › measures overlay task time during continuous pointer movement",
+      "  -  478 [firefox] › e2e/navigation-performance.spec.ts:109:1 › measures retained heap after 200 cycles of each navigation feature",
+      "  -  506 [firefox] › e2e/panel-layout.spec.ts:198:1 › fits the visual viewport at 400 percent pinch zoom",
+      "  -  564 [firefox] › e2e/qa-heap.spec.ts:3:1 › post-GC heap has no detectable growth trend across 200 lifecycles",
+      "  -  808 [webkit] › e2e/navigation-performance.spec.ts:29:1 › measures overlay task time during continuous pointer movement",
+      "  -  809 [webkit] › e2e/navigation-performance.spec.ts:109:1 › measures retained heap after 200 cycles of each navigation feature",
+      "  -  837 [webkit] › e2e/panel-layout.spec.ts:198:1 › fits the visual viewport at 400 percent pinch zoom",
+      "  -  895 [webkit] › e2e/qa-heap.spec.ts:3:1 › post-GC heap has no detectable growth trend across 200 lifecycles"
+    ]
+  },
+  "unit": {
+    "passed": 197,
+    "files": 62
+  },
+  "initialCI": {
+    "run": 44719960686,
+    "initTrendNode20": "failed; error details unavailable",
+    "pagesRun": 44719960585,
+    "pagesConclusion": "cancelled during browser installation; deploy skipped"
   }
 }
