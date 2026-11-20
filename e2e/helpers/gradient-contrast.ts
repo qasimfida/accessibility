@@ -1,18 +1,26 @@
-/** Bound the banner's white-text contrast over every opaque stop and translucent decorative layer. */
-export function bannerContrast(backgroundImage: string): number {
+/** Bound actual foreground contrast against every channel range in the banner's gradient layers. */
+export function bannerContrast(
+  backgroundImage: string,
+  foregroundColor: string,
+): number {
+  const parse = (value: string) => {
+    const channels = value.split(',').map(Number);
+    if (
+      channels.length < 3 ||
+      channels.some((channel) => !Number.isFinite(channel))
+    )
+      throw new Error(`Unsupported gradient color: ${value}`);
+    return { rgb: channels.slice(0, 3), alpha: channels[3] ?? 1 };
+  };
   const colors = [...backgroundImage.matchAll(/rgba?\(([^)]+)\)/g)].map(
-    (match) => {
-      const channels = match[1]!.split(',').map(Number);
-      if (
-        channels.length < 3 ||
-        channels.some((value) => !Number.isFinite(value))
-      )
-        throw new Error(`Unsupported gradient color: ${match[0]}`);
-      return { rgb: channels.slice(0, 3), alpha: channels[3] ?? 1 };
-    },
+    (match) => parse(match[1]!),
   );
   const stops = colors.filter((color) => color.alpha === 1);
   if (!stops.length) throw new Error('No opaque gradient stops found');
+  const foreground = foregroundColor.match(/^rgba?\(([^)]+)\)$/);
+  if (!foreground) throw new Error('Unsupported foreground color');
+  const ink = parse(foreground[1]!);
+  if (ink.alpha !== 1) throw new Error('Foreground must be opaque');
   const overlays = colors.filter((color) => color.alpha > 0 && color.alpha < 1);
   const luminance = (rgb: number[]) =>
     rgb.reduce((sum, value, index) => {
@@ -34,5 +42,16 @@ export function bannerContrast(backgroundImage: string): number {
       ),
     ),
   ]);
-  return Math.min(...candidates.map((rgb) => 1.05 / (luminance(rgb) + 0.05)));
+  // Channel extrema bound every interpolation, including combinations absent at actual stops.
+  const lower = luminance(
+    [0, 1, 2].map((index) => Math.min(...candidates.map((rgb) => rgb[index]!))),
+  );
+  const upper = luminance(
+    [0, 1, 2].map((index) => Math.max(...candidates.map((rgb) => rgb[index]!))),
+  );
+  const text = luminance(ink.rgb);
+  if (text >= lower && text <= upper) return 1;
+  return text < lower
+    ? (lower + 0.05) / (text + 0.05)
+    : (text + 0.05) / (upper + 0.05);
 }

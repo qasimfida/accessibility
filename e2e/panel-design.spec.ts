@@ -14,8 +14,14 @@ for (const width of [1280, 320])
     const panel = page.getByRole('dialog', { name: 'Accessibility options' });
     const body = panel.locator('.accessiblit-body');
     const header = panel.locator('.accessiblit-header');
-    const contrast = bannerContrast(
-      await header.evaluate((node) => getComputedStyle(node).backgroundImage),
+    const banner = await header.evaluate((node) => ({
+      gradient: getComputedStyle(node).backgroundImage,
+      colors: [
+        ...node.querySelectorAll('h2,.accessiblit-brand,.accessiblit-intro'),
+      ].map((text) => getComputedStyle(text).color),
+    }));
+    const contrast = Math.min(
+      ...banner.colors.map((color) => bannerContrast(banner.gradient, color)),
     );
     expect(contrast).toBeGreaterThanOrEqual(4.5);
     console.log(
@@ -35,10 +41,9 @@ for (const width of [1280, 320])
       .evaluateAll((nodes) =>
         nodes.slice(0, 2).map((node) => node.getBoundingClientRect().toJSON()),
       );
-    if (width === 1280) {
-      expect(cards[0]!.top).toBe(cards[1]!.top);
-      expect(cards[1]!.left).toBeGreaterThan(cards[0]!.right);
-    } else expect(cards[1]!.top).toBeGreaterThan(cards[0]!.bottom);
+    expect(cards[1]!.top).toBeGreaterThan(cards[0]!.bottom);
+    expect(cards[1]!.left).toBe(cards[0]!.left);
+    expect(cards[1]!.width).toBe(cards[0]!.width);
     const initialHeader = await header.boundingBox();
     const initialReset = await reset.boundingBox();
     await body.evaluate((node) => {
