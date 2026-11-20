@@ -67,10 +67,17 @@ test('isolates UI typography, painting and author zoom from root adjustments', a
     name: 'Accessibility options',
     exact: true,
   });
+  const typography = () =>
+    heading.evaluate((e) => ({
+      font: getComputedStyle(e).fontSize,
+      spacing: getComputedStyle(e).letterSpacing,
+      line: parseFloat(getComputedStyle(e).lineHeight),
+    }));
   const before = {
     launcher: await launcher.boundingBox(),
     panel: await panel.boundingBox(),
     image: await heading.screenshot(),
+    typography: await typography(),
   };
   await page.evaluate(() => {
     const sheet = document.createElement('style');
@@ -83,15 +90,11 @@ test('isolates UI typography, painting and author zoom from root adjustments', a
   await expect.poll(() => launcher.boundingBox()).toEqual(before.launcher);
   expect(await panel.boundingBox()).toEqual(before.panel);
   expect(await heading.screenshot()).toEqual(before.image);
-  const typography = await heading.evaluate((e) => ({
-    font: getComputedStyle(e).fontSize,
-    spacing: getComputedStyle(e).letterSpacing,
-    line: parseFloat(getComputedStyle(e).lineHeight),
-  }));
-  expect(typography.font).toBe('24px');
-  expect(typography.spacing).toBe('normal');
-  // WebKit serializes 24 * 1.3 as 31.199999px; compare the numeric value.
-  expect(typography.line).toBeCloseTo(31.2, 5);
+  const after = await typography();
+  expect(after.font).toBe(before.typography.font);
+  expect(after.spacing).toBe(before.typography.spacing);
+  // Preserve the measured style across author zoom without assuming an obsolete title size.
+  expect(after.line).toBeCloseTo(before.typography.line, 5);
 });
 
 for (const adjustment of ['default', 'spacing', 'text-size'] as const)
