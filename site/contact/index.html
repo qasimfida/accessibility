@@ -61,7 +61,7 @@
     <script src="/bootstrap.js"></script>
     <script type="module" src="/src/main.ts"></script>
   </head>
-  <body>
+  <body class="inner-page page-contact">
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header wrap">
       <a class="brand" href="%BASE_URL%"
@@ -83,72 +83,99 @@
         ><a href="%BASE_URL%faq/">FAQ</a>
       </nav>
     </header>
-    <main id="main" class="wrap" tabindex="-1">
-      <p class="eyebrow">Accessiblit / contact</p>
-      <h1>Good feedback makes better tools.</h1>
-      <div class="editorial-intro">
-        <p class="eyebrow">Start a conversation</p>
-        <p>
-          Found a rough edge, have an integration question or want to
-          contribute? Choose the channel that fits. This page has no form,
-          tracking or account requirement.
+    <nav class="inner-breadcrumbs wrap" aria-label="Breadcrumb">
+      <a href="%BASE_URL%">Home</a><span aria-hidden="true">/</span
+      ><span aria-current="page">Contact</span>
+    </nav>
+    <main id="main" class="inner-main" tabindex="-1">
+      <section class="page-hero wrap" aria-labelledby="page-title">
+        <h1 id="page-title">Good feedback makes better tools.</h1>
+        <p class="lede">
+          Questions, rough edges or an idea to share? Start a conversation with
+          the people maintaining the toolkit.
         </p>
-      </div>
-      <section aria-labelledby="channels">
-        <h2 id="channels">How can we help?</h2>
-        <div class="page-grid">
-          <article>
-            <h3>Report an issue</h3>
-            <p>
-              Include your browser, package version, framework and a small
-              reproduction. Remove customer data, passwords and tokens before
-              sharing.
-            </p>
-            <a href="https://github.com/qasimfida/accessiblit/issues"
-              >Open GitHub issues</a
-            >
-          </article>
-          <article>
-            <h3>Contact the maintainer</h3>
-            <p>
-              For questions that do not belong in a public issue, email Qasim
-              Fida. Community support has no guaranteed response time.
-            </p>
-            <a href="mailto:qasimfida0054@gmail.com">Email Qasim Fida</a>
-          </article>
+      </section>
+      <div class="inner-content wrap">
+        <div class="editorial-intro">
+          <p class="eyebrow">Start a conversation</p>
+          <p>
+            Found a rough edge, have an integration question or want to
+            contribute? Choose the channel that fits. This page has no form,
+            tracking or account requirement.
+          </p>
         </div>
-      </section>
-      <section aria-labelledby="before">
-        <h2 id="before">A useful place to begin</h2>
-        <p>
-          The installation guide covers client-side setup, server rendering and
-          cleanup. The FAQ explains storage, keyboard use and the boundaries of
-          page adjustments.
-        </p>
-        <nav aria-label="Help resources">
-          <a href="%BASE_URL%install/">Installation guide</a
-          ><a href="%BASE_URL%options/">Options reference</a
-          ><a href="%BASE_URL%faq/">FAQ and privacy</a>
-        </nav>
-      </section>
+        <section aria-labelledby="channels">
+          <h2 id="channels">How can we help?</h2>
+          <div class="page-grid">
+            <article>
+              <h3>Report an issue</h3>
+              <p>
+                Include your browser, package version, framework and a small
+                reproduction. Remove customer data, passwords and tokens before
+                sharing.
+              </p>
+              <a href="https://github.com/qasimfida/accessiblit/issues"
+                >Open GitHub issues</a
+              >
+            </article>
+            <article>
+              <h3>Contact the maintainer</h3>
+              <p>
+                For questions that do not belong in a public issue, email Qasim
+                Fida. Community support has no guaranteed response time.
+              </p>
+              <a href="mailto:qasimfida0054@gmail.com">Email Qasim Fida</a>
+            </article>
+          </div>
+        </section>
+        <section aria-labelledby="before">
+          <h2 id="before">A useful place to begin</h2>
+          <p>
+            The installation guide covers client-side setup, server rendering
+            and cleanup. The FAQ explains storage, keyboard use and the
+            boundaries of page adjustments.
+          </p>
+          <nav aria-label="Help resources">
+            <a href="%BASE_URL%install/">Installation guide</a
+            ><a href="%BASE_URL%options/">Options reference</a
+            ><a href="%BASE_URL%faq/">FAQ and privacy</a>
+          </nav>
+        </section>
+      </div>
     </main>
-    <footer class="site-footer wrap">
-      <p>
-        Personalisation supports visitor choice. It does not make a site
-        conformant by itself.
-      </p>
-      <nav aria-label="Footer">
-        <a href="%BASE_URL%faq/#privacy">Privacy</a
-        ><a href="https://github.com/qasimfida/accessiblit" rel="noreferrer"
-          >Source code</a
-        >
-      </nav>
-      <p class="small">MIT licensed · Qasim Fida</p>
-      <nav aria-label="Project links">
-        <a href="%BASE_URL%about/">About</a
-        ><a href="%BASE_URL%contact/">Contact</a
-        ><a href="%BASE_URL%options/">Options reference</a>
-      </nav>
+    <footer class="inner-footer">
+      <div class="wrap">
+        <div class="inner-footer-grid">
+          <div>
+            <a class="brand" href="%BASE_URL%" translate="no">Accessiblit</a>
+            <p>One small toolkit.<br />More personal choice.</p>
+          </div>
+          <div>
+            <h2>Build with it</h2>
+            <nav aria-label="Documentation links">
+              <a href="%BASE_URL%install/">Installation</a
+              ><a href="%BASE_URL%options/">Options reference</a
+              ><a href="%BASE_URL%toolkit/">Live toolkit</a>
+            </nav>
+          </div>
+          <div>
+            <h2>The project</h2>
+            <nav aria-label="Project links">
+              <a href="%BASE_URL%about/">About</a
+              ><a href="%BASE_URL%contact/">Contact</a
+              ><a href="%BASE_URL%pricing/">Free and open source</a
+              ><a href="%BASE_URL%faq/#privacy">Privacy</a
+              ><a href="https://github.com/qasimfida/accessiblit"
+                >Source code</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="inner-footer-bottom">
+          <p>MIT licensed · Qasim Fida</p>
+          <p>Personalisation complements accessible design and testing.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -64,7 +64,7 @@
     <script src="/bootstrap.js"></script>
     <script type="module" src="/src/main.ts"></script>
   </head>
-  <body>
+  <body class="inner-page page-pricing">
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header wrap">
       <a class="brand" href="%BASE_URL%"
@@ -86,63 +86,87 @@
         ><a href="%BASE_URL%faq/">FAQ</a>
       </nav>
     </header>
-    <main id="main" class="wrap" tabindex="-1">
-      <p class="eyebrow">Simple by design</p>
-      <h1>Personalisation without a subscription.</h1>
-      <p class="lede">
-        The complete toolkit is free under the MIT license. Host it yourself and
-        keep control of your integration.
-      </p>
-      <section class="pricing-card" aria-labelledby="free-plan">
-        <p class="eyebrow">The whole toolkit</p>
-        <h2 id="free-plan">Free</h2>
-        <p class="price">$0 <span>/ forever</span></p>
-        <p>No account, trial countdown or feature upgrade required.</p>
-        <ul>
-          <li>All 18 text, colour and navigation features</li>
-          <li>JavaScript, TypeScript and optional React integration</li>
-          <li>Unlimited self-hosted integrations under the MIT license</li>
-          <li>Local preferences, no tracking or runtime requests</li>
-          <li>Source code and community issue reporting</li>
-        </ul>
-        <a class="button" href="%BASE_URL%install/">Get the toolkit</a>
-      </section>
-      <section>
-        <h2>What does free include?</h2>
-        <p>
-          The MIT license permits commercial use and modification while
-          requiring its copyright and license notice. Hosting, integration work
-          and accessibility testing are your responsibility. No managed hosting,
-          guaranteed response time or paid support service is offered.
+    <nav class="inner-breadcrumbs wrap" aria-label="Breadcrumb">
+      <a href="%BASE_URL%">Home</a><span aria-hidden="true">/</span
+      ><span aria-current="page">Pricing</span>
+    </nav>
+    <main id="main" class="inner-main" tabindex="-1">
+      <section class="page-hero wrap" aria-labelledby="page-title">
+        <h1 id="page-title">Personalisation without a subscription.</h1>
+        <p class="lede">
+          The complete toolkit is free under the MIT license. Host it yourself
+          and keep control of your integration.
         </p>
       </section>
-      <section>
-        <h2>Do I need a paid plan to be accessible?</h2>
-        <p>
-          There are no paid plans. A widget helps visitors personalise a page;
-          it does not make your website conformant by itself. Accessible
-          content, design, development and testing remain essential.
-        </p>
-        <a href="%BASE_URL%faq/">Read our toolkit FAQ</a>
-      </section>
+      <div class="inner-content wrap">
+        <section class="pricing-card" aria-labelledby="free-plan">
+          <p class="eyebrow">The whole toolkit</p>
+          <h2 id="free-plan">Free</h2>
+          <p class="price">$0 <span>/ forever</span></p>
+          <p>No account, trial countdown or feature upgrade required.</p>
+          <ul>
+            <li>All 18 text, colour and navigation features</li>
+            <li>JavaScript, TypeScript and optional React integration</li>
+            <li>Unlimited self-hosted integrations under the MIT license</li>
+            <li>Local preferences, no tracking or runtime requests</li>
+            <li>Source code and community issue reporting</li>
+          </ul>
+          <a class="button" href="%BASE_URL%install/">Get the toolkit</a>
+        </section>
+        <section>
+          <h2>What does free include?</h2>
+          <p>
+            The MIT license permits commercial use and modification while
+            requiring its copyright and license notice. Hosting, integration
+            work and accessibility testing are your responsibility. No managed
+            hosting, guaranteed response time or paid support service is
+            offered.
+          </p>
+        </section>
+        <section>
+          <h2>Do I need a paid plan to be accessible?</h2>
+          <p>
+            There are no paid plans. A widget helps visitors personalise a page;
+            it does not make your website conformant by itself. Accessible
+            content, design, development and testing remain essential.
+          </p>
+          <a href="%BASE_URL%faq/">Read our toolkit FAQ</a>
+        </section>
+      </div>
     </main>
-    <footer class="site-footer wrap">
-      <p>
-        Personalisation supports visitor choice. It does not make a site
-        conformant by itself.
-      </p>
-      <nav aria-label="Footer">
-        <a href="%BASE_URL%faq/#privacy">Privacy</a
-        ><a href="https://github.com/qasimfida/accessiblit" rel="noreferrer"
-          >Source code</a
-        >
-      </nav>
-      <p class="small">MIT licensed · Qasim Fida</p>
-      <nav aria-label="Project links">
-        <a href="%BASE_URL%about/">About</a
-        ><a href="%BASE_URL%contact/">Contact</a
-        ><a href="%BASE_URL%options/">Options reference</a>
-      </nav>
+    <footer class="inner-footer">
+      <div class="wrap">
+        <div class="inner-footer-grid">
+          <div>
+            <a class="brand" href="%BASE_URL%" translate="no">Accessiblit</a>
+            <p>One small toolkit.<br />More personal choice.</p>
+          </div>
+          <div>
+            <h2>Build with it</h2>
+            <nav aria-label="Documentation links">
+              <a href="%BASE_URL%install/">Installation</a
+              ><a href="%BASE_URL%options/">Options reference</a
+              ><a href="%BASE_URL%toolkit/">Live toolkit</a>
+            </nav>
+          </div>
+          <div>
+            <h2>The project</h2>
+            <nav aria-label="Project links">
+              <a href="%BASE_URL%about/">About</a
+              ><a href="%BASE_URL%contact/">Contact</a
+              ><a href="%BASE_URL%pricing/">Free and open source</a
+              ><a href="%BASE_URL%faq/#privacy">Privacy</a
+              ><a href="https://github.com/qasimfida/accessiblit"
+                >Source code</a
+              >
+            </nav>
+          </div>
+        </div>
+        <div class="inner-footer-bottom">
+          <p>MIT licensed · Qasim Fida</p>
+          <p>Personalisation complements accessible design and testing.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
