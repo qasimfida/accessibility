@@ -8,6 +8,7 @@ export const SITE_PAGES = [
   'options/',
   'faq/',
   'pricing/',
+  'about/',
   '404.html',
 ] as const;
 

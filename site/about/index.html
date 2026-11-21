@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>About Accessiblit</title>
+    <meta
+      name="description"
+      content="Meet the open-source accessibility personalisation toolkit and its maintainer."
+    />
+    <link
+      rel="canonical"
+      href="https://qasimfida.github.io/accessiblit/about/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Accessiblit" />
+    <meta property="og:title" content="About Accessiblit" />
+    <meta
+      property="og:description"
+      content="Meet the open-source accessibility personalisation toolkit and its maintainer."
+    />
+    <meta
+      property="og:url"
+      content="https://qasimfida.github.io/accessiblit/about/"
+    />
+    <meta
+      property="og:image"
+      content="https://qasimfida.github.io/accessiblit/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Accessiblit: text, colour and navigation controls"
+    />
+
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0b1927"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script src="/accessiblit.min.js"></script>
+    <script src="/bootstrap.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="%BASE_URL%"
+        ><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="currentColor" />
+          <path
+            d="M8 25 14 7h4l6 18h-4l-1-4h-6l-1 4zm6-8h4l-2-6z"
+            fill="var(--surface)"
+            fill-rule="evenodd"
+          /></svg
+        ><span>Accessiblit</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="%BASE_URL%">Home</a><a href="%BASE_URL%install/">Install</a
+        ><a href="%BASE_URL%options/">Options</a
+        ><a href="%BASE_URL%pricing/">Pricing</a
+        ><a href="%BASE_URL%faq/">FAQ and privacy</a>
+      </nav>
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+      <p class="eyebrow">Accessiblit / about</p>
+      <h1>A small toolkit. A considered purpose.</h1>
+      <div class="editorial-intro">
+        <p class="eyebrow">Made for personal choice</p>
+        <h2>People read the web differently.</h2>
+        <p>
+          Accessiblit gives visitors control over text, colour and navigation
+          without asking them to create an account. Eighteen tools, one small
+          integration and preferences that stay in their browser.
+        </p>
+      </div>
+      <section aria-labelledby="principles">
+        <h2 id="principles">Less infrastructure. More independence.</h2>
+        <div class="page-grid">
+          <article>
+            <h3>Open by design</h3>
+            <p>
+              The toolkit is free under the MIT license. Read the source,
+              self-host a build and adapt it to your project.
+            </p>
+            <a href="https://github.com/qasimfida/accessiblit"
+              >Explore the source</a
+            >
+          </article>
+          <article>
+            <h3>Honest about its role</h3>
+            <p>
+              Personalisation can make a page more comfortable. It does not fix
+              missing labels, inaccessible flows or the underlying site's
+              conformance.
+            </p>
+            <a href="%BASE_URL%faq/">Read the limitations</a>
+          </article>
+        </div>
+      </section>
+      <section aria-labelledby="maintainer">
+        <h2 id="maintainer">Maintained by Qasim Fida</h2>
+        <p>
+          Accessiblit is an independent open-source project. Bug reports,
+          reproducible examples and thoughtful contributions help improve it
+          across real host pages.
+        </p>
+        <a class="button" href="%BASE_URL%contact/">Get in touch</a>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <p>
+        Personalisation supports visitor choice. It does not make a site
+        conformant by itself.
+      </p>
+      <nav aria-label="Footer">
+        <a href="%BASE_URL%faq/#privacy">Privacy</a
+        ><a href="https://github.com/qasimfida/accessiblit" rel="noreferrer"
+          >Source code</a
+        >
+      </nav>
+      <p class="small">MIT licensed · Qasim Fida</p>
+    </footer>
+  </body>
+</html>
