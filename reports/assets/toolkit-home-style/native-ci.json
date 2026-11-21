@@ -1,0 +1,20 @@
+{
+  "source": "fb7d47b07d9398308e083ae0d0287a65adfa6670",
+  "run": 44921832759,
+  "jobs": [
+    {
+      "id": 136899350070,
+      "name": "init trend (20)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/qasimfida/accessiblit/actions/runs/44921832759/job/136899350070"
+    },
+    {
+      "id": 136899350185,
+      "name": "init trend (22)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/qasimfida/accessiblit/actions/runs/44921832759/job/136899350185"
+    }
+  ]
+}

@@ -1,0 +1,1192 @@
+{
+  "date": "2026-11-21",
+  "browserResult": "95 passed (1.7m); two existing CDP pinch capability skips",
+  "siteResult": "15 passed (19.3s)",
+  "rows": [
+    {
+      "profile": "PANEL_A11Y chromium desktop light forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium desktop light forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium desktop light forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium desktop light forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium desktop dark forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium desktop dark forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium desktop dark forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium desktop dark forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium 320x256 light forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium 320x256 light forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium 320x256 light forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium 320x256 light forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium 320x256 dark forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium 320x256 dark forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium 320x256 dark forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y chromium 320x256 dark forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox desktop light forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox desktop light forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox desktop light forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox desktop light forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox desktop dark forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox desktop dark forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox desktop dark forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox desktop dark forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox 320x256 light forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox 320x256 light forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox 320x256 light forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox 320x256 light forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox 320x256 dark forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox 320x256 dark forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox 320x256 dark forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y firefox 320x256 dark forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit desktop light forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit desktop light forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit desktop light forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit desktop light forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit desktop dark forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit desktop dark forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit desktop dark forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 16.67115667431794,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 16.67115667431794
+      },
+      "iconRatio": 16.67115667431794,
+      "minimumBoundaryContrast": 16.67115667431794,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit desktop dark forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 16.67115667431794,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 16.67115667431794
+      },
+      "iconRatio": 16.67115667431794,
+      "minimumBoundaryContrast": 16.67115667431794,
+      "panel": {
+        "left": 824,
+        "right": 1264,
+        "top": 68,
+        "bottom": 828,
+        "width": 440,
+        "height": 760,
+        "scrollWidth": 438,
+        "clientWidth": 438,
+        "scrollHeight": 758,
+        "clientHeight": 758
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit 320x256 light forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit 320x256 light forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 7.259229797299611,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 7.259229797299611
+      },
+      "iconRatio": 7.259229797299611,
+      "minimumBoundaryContrast": 3.804925090992188,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit 320x256 light forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit 320x256 light forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 21,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 21
+      },
+      "iconRatio": 21,
+      "minimumBoundaryContrast": 21,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit 320x256 dark forced=none motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit 320x256 dark forced=none motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 9.940009945072063,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 9.940009945072063
+      },
+      "iconRatio": 9.940009945072063,
+      "minimumBoundaryContrast": 4.9162912282582045,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1056,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit 320x256 dark forced=active motion=no-preference",
+      "minimumTarget": 24,
+      "minimumTextContrast": 16.67115667431794,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 16.67115667431794
+      },
+      "iconRatio": 16.67115667431794,
+      "minimumBoundaryContrast": 16.67115667431794,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    },
+    {
+      "profile": "PANEL_A11Y webkit 320x256 dark forced=active motion=reduce",
+      "minimumTarget": 24,
+      "minimumTextContrast": 16.67115667431794,
+      "focus": {
+        "width": 3,
+        "style": "solid",
+        "ratio": 16.67115667431794
+      },
+      "iconRatio": 16.67115667431794,
+      "minimumBoundaryContrast": 16.67115667431794,
+      "panel": {
+        "left": 8,
+        "right": 312,
+        "top": 8,
+        "bottom": 184,
+        "width": 304,
+        "height": 176,
+        "scrollWidth": 302,
+        "clientWidth": 302,
+        "scrollHeight": 1172,
+        "clientHeight": 174
+      }
+    }
+  ],
+  "bannerContrast": [
+    "PANEL_BANNER_CONTRAST chromium 1280 7.586200596290668",
+    "PANEL_BANNER_CONTRAST chromium 320 7.586200596290668",
+    "PANEL_BANNER_CONTRAST firefox 1280 7.586200596290668",
+    "PANEL_BANNER_CONTRAST firefox 320 7.586200596290668",
+    "PANEL_BANNER_CONTRAST webkit 1280 7.586200596290668",
+    "PANEL_BANNER_CONTRAST webkit 320 7.586200596290668"
+  ],
+  "keyboard": [
+    "PANEL_KEYBOARD chromium [\"Close\",\"Decrease Font size\",\"Increase Font size\",\"Text alignment Off\",\"Dark mode\",\"Focus highlight\",\"Reset all\",\"Outside widget: no focus trap\"]",
+    "PANEL_KEYBOARD firefox [\"Close\",\"Decrease Font size\",\"Increase Font size\",\"Text alignment Off\",\"Dark mode\",\"Focus highlight\",\"Reset all\",\"Outside widget: no focus trap\"]",
+    "PANEL_KEYBOARD webkit [\"Close\",\"Decrease Font size\",\"Increase Font size\",\"Text alignment Off\",\"Dark mode\",\"Focus highlight\",\"Reset all\",\"Outside widget: no focus trap\"]"
+  ],
+  "bundle": {
+    "raw": 66478,
+    "gzip": 21918
+  },
+  "audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "productionAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  }
+}

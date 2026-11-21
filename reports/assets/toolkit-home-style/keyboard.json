@@ -1,0 +1,20 @@
+{
+  "closedPanelRulesInstalled": false,
+  "keyboard": [
+    "Close",
+    "Decrease Font size",
+    "Increase Font size",
+    "Decrease Line height",
+    "Increase Line height",
+    "Decrease Letter spacing",
+    "Increase Letter spacing",
+    "Decrease Word spacing",
+    "Increase Word spacing",
+    "",
+    "Decrease Content scale",
+    "Increase Content scale"
+  ],
+  "focusReturn": true,
+  "requestsAfterLoad": [],
+  "hostCount": 1
+}
