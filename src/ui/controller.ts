@@ -9,6 +9,7 @@ import { matchesShortcut } from './keyboard';
 import { placeUI } from './placement';
 import { createViewportReader } from './viewport';
 import { UI_CSS, positionCSS } from './styles';
+import { LAUNCHER_CSS } from './launcher-styles';
 import type { PanelActions } from './panel';
 import type { ResolvedOptions } from '../core/options';
 import type { Feature, FeatureId } from '../core/types';
@@ -28,6 +29,7 @@ export function createUI(
   const report = createReporter();
   const scope = createScope(() => report('ui', 'UI cleanup failed.'));
   let opened = false;
+  let panelStylesReady = false;
   let zoom = 1;
   let lastCSS = '';
   let refreshFrame: number | undefined;
@@ -57,7 +59,9 @@ export function createUI(
     scope.add(panelLayer.destroy);
     const viewport = createViewportReader(() => doc.documentElement, view);
     const draw = (position: ReturnType<typeof placeUI>) => {
-      const css = UI_CSS + positionCSS(position, zoom);
+      const css =
+        (panelStylesReady ? UI_CSS : LAUNCHER_CSS) +
+        positionCSS(position, zoom);
       if (css !== lastCSS) {
         sheet.set(css);
         lastCSS = css;
@@ -126,6 +130,11 @@ export function createUI(
     });
     function open() {
       if (!scope.active || opened) return;
+      if (!panelStylesReady) {
+        panelStylesReady = true;
+        // Install before showPopover can flush an unstyled dialog into layout.
+        draw(placeUI(viewport(), options));
+      }
       panel.prepare();
       opened = true;
       launcherLayer.show();

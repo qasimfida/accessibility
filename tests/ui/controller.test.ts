@@ -244,3 +244,25 @@ it('defers controls until first open and creates them exactly once', () => {
   ui.destroy();
   expect(root.childNodes).toHaveLength(0);
 });
+
+it('installs panel CSS only on first open while keeping launcher appearance ready', () => {
+  const { ui, root } = setup();
+  const css = () =>
+    [...root.querySelectorAll('style')]
+      .map((node) => node.textContent)
+      .join('\n');
+  const initial = css();
+  expect(initial).toContain('.accessiblit-launcher');
+  expect(initial).toContain('prefers-color-scheme:dark');
+  expect(initial).toContain('forced-colors:active');
+  expect(initial).not.toContain('.accessiblit-header');
+  ui.open();
+  const full = css();
+  expect(full).toContain('.accessiblit-header');
+  expect(full).toContain('.accessiblit-feature');
+  ui.close();
+  ui.open();
+  expect(css()).toBe(full);
+  ui.destroy();
+  expect(root.childNodes).toHaveLength(0);
+});
