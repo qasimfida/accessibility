@@ -61,12 +61,7 @@
 }
 .product-hero {
   padding-block: 5.5rem 4rem;
-  background: var(--surface);
-  background-image: radial-gradient(
-    ellipse at 50% 72%,
-    var(--hero-glow),
-    transparent 65%
-  );
+  background: var(--cream);
 }
 .product-hero h1 {
   max-inline-size: 25ch;

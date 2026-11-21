@@ -1,0 +1,208 @@
+/* Match the supplied page's rhythm with original product content and artwork. */
+.landing-page .site-header {
+  background: var(--surface);
+  border: 1px solid var(--soft);
+  margin-block: 1rem 0.4rem;
+}
+.breadcrumbs {
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.breadcrumbs a {
+  min-block-size: 24px;
+  padding: 0;
+}
+.product-hero {
+  padding-block: 5.5rem 6rem;
+}
+.product-hero h1 {
+  max-inline-size: 31ch;
+  font-size: clamp(2rem, 3.6vw, 3.25rem);
+  margin-block: 1.4rem 1.75rem;
+}
+.product-hero .lede {
+  margin-block-end: 2.5rem;
+}
+.marketing-main .eyebrow {
+  font-size: 0.875rem;
+}
+.product-stage {
+  inline-size: min(37rem, 100%);
+  margin-block-start: 8rem;
+  block-size: 37rem;
+}
+.store-browser {
+  inset-block-start: 2.5rem;
+  block-size: 24rem;
+}
+.toolkit-preview {
+  inset-inline-start: 24%;
+  inline-size: 18rem;
+}
+.floating-setting {
+  inset-inline-start: 2%;
+  inset-block-end: 9rem;
+}
+.integration-strip h2 {
+  font:
+    650 1rem/1.5 Manrope,
+    Arial,
+    sans-serif;
+  letter-spacing: -0.02em;
+}
+.integration-strip {
+  padding-block: 3rem 4rem;
+}
+.journey {
+  padding-block: 3rem 7rem;
+}
+.journey-grid {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.journey-card:first-child,
+.journey-card:last-child {
+  background: var(--soft);
+}
+.journey-art {
+  min-block-size: 22rem;
+}
+.journey-copy {
+  padding: 2rem 1.5rem;
+}
+.journey-copy p {
+  min-block-size: 7rem;
+  font-size: 0.95rem;
+}
+.blue-band {
+  padding-block: 5.5rem;
+}
+.band-layout h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+.benefit-card {
+  min-block-size: 16rem;
+}
+.technology-art {
+  padding: 5rem 3rem;
+}
+.focus-scene {
+  padding: 3rem 1.75rem;
+  overflow: hidden;
+  isolation: isolate;
+  min-block-size: 28rem;
+}
+.scene-photo {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+  opacity: 0.35;
+  z-index: -1;
+}
+.scene-label {
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 0.4rem;
+  inline-size: fit-content;
+}
+.scene-page {
+  margin-block-start: 3rem;
+  background: #fffffff2;
+}
+.accordion summary,
+.feature-accordions summary {
+  list-style: none;
+  position: relative;
+  padding-inline-end: 2.5rem;
+}
+.accordion summary::-webkit-details-marker,
+.feature-accordions summary::-webkit-details-marker {
+  display: none;
+}
+.accordion summary::after,
+.feature-accordions summary::after {
+  content: '';
+  position: absolute;
+  inset-inline-end: 0.5rem;
+  inset-block-start: 1.5rem;
+  inline-size: 0.45rem;
+  block-size: 0.45rem;
+  border-inline-end: 1.5px solid currentColor;
+  border-block-end: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+.accordion details[open] > summary::after,
+.feature-accordions details[open] > summary::after {
+  transform: rotate(225deg);
+}
+.feature-accordions details {
+  border-radius: 1.25rem;
+  padding-inline: 2rem;
+}
+.feature-accordions details[open]:not(.full-catalogue) {
+  padding-block-end: 1rem;
+}
+.feature-detail {
+  min-block-size: 12rem;
+}
+.principle-seals li > span {
+  border-radius: 35% 45%;
+}
+.faq-section .accordion {
+  margin-block-start: 4rem;
+}
+.closing-section {
+  padding-block: 6rem;
+}
+.marketing-footer {
+  padding-block: 5rem 2rem;
+}
+@media (max-width: 48rem) {
+  .breadcrumbs {
+    margin-block: 1rem;
+  }
+  .product-hero {
+    padding-block: 3rem;
+  }
+  .product-stage {
+    margin-block-start: 4rem;
+    block-size: 27rem;
+  }
+  .store-browser {
+    block-size: 17.5rem;
+  }
+  .toolkit-preview {
+    inline-size: min(65%, 13rem);
+    inset-inline-start: 22%;
+  }
+  .journey-grid {
+    grid-template-columns: 1fr;
+  }
+  .journey-copy p {
+    min-block-size: 0;
+  }
+  .benefit-card {
+    min-block-size: 0;
+  }
+  .feature-accordions details {
+    padding-inline: 1rem;
+  }
+  .technology-art {
+    padding: 3rem 1rem;
+  }
+}
+@media (forced-colors: active) {
+  .scene-photo {
+    display: none;
+  }
+  .scene-label,
+  .scene-page {
+    background: Canvas;
+    color: CanvasText;
+    border: 1px solid CanvasText;
+  }
+}
