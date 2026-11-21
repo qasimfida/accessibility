@@ -1,0 +1,238 @@
+/* Quietly expressive: shared surfaces, editorial scale and tactile detail. */
+.site-header {
+  padding: 0.7rem 1.25rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 6px 24px #142c4307;
+}
+.site-header nav a {
+  padding-inline: 0.65rem;
+}
+.brand {
+  letter-spacing: -0.055em;
+}
+.button,
+button {
+  border-radius: 999px;
+  padding-inline: 1.4rem;
+}
+.product-hero {
+  position: relative;
+  isolation: isolate;
+  padding-block: clamp(3rem, 7vw, 6rem) 3rem;
+}
+.product-hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 34% 5% 2%;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #a6c5f32b, transparent 68%);
+}
+.product-hero h1 {
+  max-inline-size: 23ch;
+  font-size: clamp(2.25rem, 4.8vw, 4.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+.product-hero .lede {
+  font-size: 1.1rem;
+  max-inline-size: 55ch;
+}
+.product-stage {
+  margin-block-start: 4rem;
+}
+.product-stage::before {
+  content: '';
+  position: absolute;
+  inset: 0 -6% 9%;
+  border-radius: 3rem;
+  background-image: radial-gradient(#748aa52b 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+  pointer-events: none;
+}
+.store-browser {
+  box-shadow: 0 28px 70px #142c4318;
+}
+.toolkit-preview {
+  box-shadow: 0 24px 55px #142c4329;
+}
+.marketing-main .section-heading {
+  max-inline-size: 42rem;
+}
+.marketing-main h2 {
+  font-size: clamp(1.9rem, 3.4vw, 3rem);
+  line-height: 1.15;
+}
+.marketing-main .eyebrow {
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+}
+.platform-list {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+.journey-grid {
+  gap: 1rem;
+  border-radius: 0;
+  overflow: visible;
+}
+.journey-card {
+  border-radius: 1.5rem;
+  overflow: clip;
+}
+.journey-copy {
+  padding: 1.75rem;
+}
+.journey-copy p {
+  font-size: 0.95rem;
+}
+.benefit-card {
+  border-radius: 1.5rem;
+}
+.feature-accordions details {
+  border-radius: 1rem;
+}
+.accordion summary {
+  font-weight: 600;
+}
+.privacy-art {
+  border-radius: 2rem 0 0 2rem;
+}
+main.wrap {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+main.wrap > h1 {
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  max-inline-size: 22ch;
+}
+main.wrap > .lede {
+  max-inline-size: 54ch;
+}
+main.wrap > section {
+  padding-block: 1rem;
+  border-block-start: 1px solid var(--border);
+}
+.notice {
+  border-radius: 1rem;
+  border-inline-start: 3px solid var(--accent);
+}
+.on-this-page {
+  gap: 0.6rem;
+}
+.on-this-page a {
+  border-radius: 999px;
+  padding-inline: 1rem;
+  text-decoration: none;
+}
+pre {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  line-height: 1.7;
+}
+.feature-card {
+  border-radius: 1rem;
+}
+.site-footer {
+  padding-block: 3rem;
+}
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.page-grid > article {
+  min-inline-size: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  background: var(--surface);
+}
+.page-grid h3 {
+  margin-block-start: 0;
+}
+.page-grid a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+}
+.editorial-intro {
+  padding: clamp(1.5rem, 5vw, 4rem);
+  border-radius: 1.5rem;
+  background: var(--soft);
+  margin-block: 2rem 3rem;
+}
+.editorial-intro p {
+  max-inline-size: 56ch;
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) and (forced-colors: none) {
+  .button,
+  button,
+  .journey-card,
+  .benefit-card,
+  .page-grid > article,
+  .on-this-page a {
+    transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .button:hover,
+  button:enabled:hover {
+    transform: translateY(-2px) scale(1.015);
+  }
+  .journey-card:hover,
+  .benefit-card:hover,
+  .page-grid > article:hover {
+    transform: translateY(-3px);
+  }
+  .on-this-page a:hover {
+    transform: translateY(-2px);
+  }
+  :is(.journey-card, .benefit-card, .page-grid > article):focus-within,
+  :is(.button, button, .on-this-page a):focus-visible {
+    transform: none;
+  }
+}
+.accessiblit-stop-animations *,
+.accessiblit-stop-animations *::before,
+.accessiblit-stop-animations *::after {
+  transition: none !important;
+}
+@media (max-width: 48rem) {
+  .site-header {
+    padding: 0.8rem;
+  }
+  .site-header nav {
+    gap: 0.15rem;
+  }
+  .site-header nav a {
+    font-size: 0.85rem;
+    padding-inline: 0.45rem;
+  }
+  .product-stage::before {
+    inset-inline: 0;
+  }
+  .product-hero h1 {
+    font-size: clamp(2.1rem, 7.5vw, 3.4rem);
+  }
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+  .privacy-art {
+    border-radius: 1.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce), (forced-colors: active), print {
+  .product-hero::before,
+  .product-stage::before {
+    display: none;
+  }
+  .button,
+  button,
+  .journey-card,
+  .benefit-card,
+  .page-grid > article,
+  .on-this-page a {
+    transition: none;
+    transform: none;
+  }
+}
