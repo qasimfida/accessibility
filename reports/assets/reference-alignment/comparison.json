@@ -1,0 +1,11 @@
+{
+  "hosts": 1,
+  "background": "rgb(250, 248, 245)",
+  "heading": {
+    "size": "50px",
+    "weight": "400",
+    "tracking": "-0.75px",
+    "lineHeight": "60px"
+  },
+  "overflow": 0
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://accessibe.com/accesswidget",
+  "date": "2026-11-21",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "hero": {
+    "fontFamilyObserved": "PolySans, sans-serif",
+    "size": "50px",
+    "weight": "400",
+    "lineHeight": "60px",
+    "letterSpacing": "normal",
+    "color": "rgb(10, 37, 64)",
+    "radius": "0px"
+  },
+  "sectionHeading": {
+    "fontFamilyObserved": "PolySans, sans-serif",
+    "size": "36px",
+    "weight": "400",
+    "lineHeight": "54px",
+    "letterSpacing": "normal",
+    "color": "rgb(10, 37, 64)",
+    "radius": "0px"
+  },
+  "primaryAction": {
+    "fontFamilyObserved": "Circular, sans-serif",
+    "size": "16px",
+    "weight": "700",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(10, 37, 64)",
+    "radius": "12px"
+  },
+  "observedInteractions": [
+    "Hero panels converge horizontally on scroll exposure",
+    "Hover changes the expanded product card",
+    "Rounded navigation stays available on scroll"
+  ],
+  "assetPolicy": "Reference fonts and artwork were observed, not copied. Reference screenshots stayed outside the repository."
+}
