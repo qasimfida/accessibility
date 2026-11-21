@@ -220,6 +220,24 @@ const state = widget.getState();
 widget.reset();
 widget.destroy();</code></pre>
       </section>
+      <section aria-labelledby="interface-appearance">
+        <h2 id="interface-appearance">Interface appearance</h2>
+        <p>
+          The toolkit follows the operating system's light or dark appearance by
+          default. To match a deliberately light site, add this rule to your own
+          stylesheet. Use dark to request a dark interface, or light dark to
+          return to the system preference. Forced colours always retain the
+          operating system's palette.
+        </p>
+        <pre><code>[data-accessiblit-host] {
+  --accessiblit-color-scheme: light;
+}</code></pre>
+        <p>
+          This changes the toolkit's interface, independently of visitors'
+          page-colour adjustments. It adds no requests or stored setting and is
+          not a JavaScript init option.
+        </p>
+      </section>
     </main>
     <footer class="site-footer wrap">
       <p>
