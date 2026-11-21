@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-21",
+  "source": "500d378db47a747f1184717fa4e116ff79a290da",
+  "ci": {
+    "conclusion": "success",
+    "url": "https://github.com/qasimfida/accessiblit/actions/runs/44887921065"
+  },
+  "pages": {
+    "conclusion": "success",
+    "url": "https://github.com/qasimfida/accessiblit/actions/runs/44887921020"
+  },
+  "url": "https://qasimfida.github.io/accessiblit/?revision=500d378",
+  "heading": "Website personalisation, built around your visitors.",
+  "closedViolations": [],
+  "openViolations": [],
+  "incomplete": {
+    "closed": ["color-contrast"],
+    "open": ["color-contrast"]
+  },
+  "errors": [],
+  "thirdParty": []
+}

@@ -2,7 +2,7 @@
 
 Status: PASS WITH NOTES
 Date: 2026-11-21
-Commit range: `29de48a..f24a0e1` (plus this evidence commit)
+Commit range: `29de48a..500d378` (plus this evidence commit)
 
 ## Summary
 
@@ -29,6 +29,10 @@ Final command results and raw browser evidence are recorded in `assets/reference
 - Deployment follow-up: the first Pages job failed at `npm ci`. Local npm 11 clean install passed, but npm 10.9.4 reproduced EUSAGE for two missing optional lock entries. Regenerating the lock with npm 10 restored those entries; a real npm 10 clean install then added 302 packages, audited 303 packages and reported zero vulnerabilities. Full verify passed again after that clean install. No existing package version changed. See [install compatibility evidence](assets/reference-motion/install-compatibility.json).
 - Real Chromium keyboard inspection: Tab to the skip link, Enter into main, Tab through the hero and journey links to the live demo, Space to open, verify close-button focus, Escape to return to the launcher. A native FAQ was activated with Space. The existing automated keyboard journey also exercises feature adjustment, reset and page navigation.
 - JavaScript-disabled inspection: heading and all eleven FAQs remain readable; the real demo correctly requires JavaScript.
+
+The repaired source subsequently passed [CI](https://github.com/qasimfida/accessiblit/actions/runs/44887921065) and [Pages deployment](https://github.com/qasimfida/accessiblit/actions/runs/44887921020). The live URL returned HTTP 200 with the new heading, warm theme metadata and `main-Dk8AvCWM.js` animation bundle. The completed live Chromium axe run found zero violations with the panel closed and open, no page errors and no third-party requests. Layered-artwork colour-contrast incompletes remain disclosed. See [deployment evidence](assets/reference-motion/deployment.json).
+
+An immediate post-deployment locator probe timed out; independent inspection then confirmed the host and launcher were present with no HTTP or JavaScript errors. A separate axe probe needed an explicit BrowserContext; the final completed probe used that required setup. No application change or test exclusion was used to obtain the live result.
 
 ## Review findings and fixes
 
@@ -82,6 +86,7 @@ Use npm 10 when maintaining this lockfile, and run its real `npm ci` check befor
 - `1712c04` fix(site): match theme metadata to the warm page background
 - `d13d78a` docs(report): record reference layout and Motion verification
 - `f24a0e1` fix(build): restore npm 10 clean-install lock entries
+- `500d378` docs(report): record CI install compatibility recovery
 
 ## Visual evidence
 
