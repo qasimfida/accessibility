@@ -1,0 +1,124 @@
+/* Original browser scenes echo the reference's wide-to-centred product composition. */
+.product-stage {
+  inline-size: min(62.5rem, 100%);
+  block-size: 40.5rem;
+  margin: 10rem auto 0;
+}
+.product-stage .store-browser {
+  inset-inline: 20%;
+  inset-block-start: 3rem;
+  block-size: 25rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px #0a254012;
+}
+.product-stage .toolkit-preview {
+  inset-inline-start: 35%;
+  inset-block-start: 1rem;
+  inline-size: 30%;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px #0a254026;
+}
+.product-stage .floating-setting {
+  inset-inline-start: 17%;
+  inset-block-end: 7rem;
+}
+.stage-satellite {
+  position: absolute;
+  inset-block-start: 7rem;
+  inline-size: 42%;
+  block-size: 21rem;
+  border: 8px solid #edf0f6;
+  border-radius: 24px;
+  background: #ffffff;
+  color: #0a2540;
+  padding: 2rem;
+  overflow: hidden;
+  text-align: start;
+}
+.stage-reading {
+  inset-inline-start: 0;
+}
+.stage-studio {
+  inset-inline-end: 0;
+  background: #e0eeee;
+}
+.satellite-bar {
+  display: block;
+  inline-size: 1.5rem;
+  block-size: 2px;
+  background: #47637b;
+  box-shadow:
+    0 5px #47637b,
+    0 10px #47637b;
+  margin-block-end: 2.5rem;
+}
+.satellite-label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+}
+.stage-satellite strong {
+  display: block;
+  margin-block: 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.satellite-rule {
+  display: block;
+  inline-size: 70%;
+  block-size: 4px;
+  background: #c5d4df;
+  margin-block: 8px;
+}
+.satellite-rule.short {
+  inline-size: 50%;
+}
+.satellite-page {
+  display: block;
+  font-size: 0.75rem;
+  margin-block-start: 1.5rem;
+}
+.satellite-orbit {
+  position: absolute;
+  inline-size: 12rem;
+  block-size: 12rem;
+  border: 1px solid #8caeb0;
+  border-radius: 50%;
+  inset-inline-end: -4rem;
+  inset-block-end: -4rem;
+  box-shadow: 0 0 0 1.5rem #c3dfe0;
+}
+.product-stage .hero-caption {
+  inset-block-end: 0;
+}
+@media (max-width: 48rem) {
+  .product-stage {
+    block-size: 27rem;
+    margin-block-start: 5rem;
+  }
+  .stage-satellite {
+    display: none;
+  }
+  .product-stage .store-browser {
+    inset-inline: 0;
+    inset-block-start: 3rem;
+    block-size: 17.5rem;
+  }
+  .product-stage .toolkit-preview {
+    inset-inline-start: 22%;
+    inset-block-start: 0;
+    inline-size: min(65%, 13rem);
+  }
+}
+@media (forced-colors: active) {
+  .stage-satellite {
+    color: CanvasText;
+    background: Canvas;
+    border-color: CanvasText;
+  }
+  .satellite-orbit {
+    display: none;
+  }
+}
