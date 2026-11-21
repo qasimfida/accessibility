@@ -31,3 +31,15 @@ for (const width of [1440, 390, 320])
     expect(geometry.image.right).toBeLessThanOrEqual(geometry.showcase.right);
     expect(geometry.image.top).toBeGreaterThanOrEqual(geometry.header.bottom);
   });
+
+test('About facts have a named semantic group', async ({ page }) => {
+  await loadSite(page, 'about/', 'reduced');
+  const facts = page.getByRole('group', {
+    name: 'Accessiblit at a glance',
+    exact: true,
+  });
+  await expect(facts).toHaveCount(1);
+  await expect(facts).toContainText('18');
+  await expect(facts).toContainText('runtime dependencies');
+  await expect(facts).toContainText('MIT');
+});
