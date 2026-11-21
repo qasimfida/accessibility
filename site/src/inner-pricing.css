@@ -65,11 +65,11 @@
   }
   .donate-button {
     background: ButtonFace;
-    color: GrayText;
-    border-color: GrayText;
+    color: CanvasText;
+    border-color: CanvasText;
   }
   .donate-button[aria-disabled='true']:hover {
     background: ButtonFace;
-    color: GrayText;
+    color: CanvasText;
   }
 }
