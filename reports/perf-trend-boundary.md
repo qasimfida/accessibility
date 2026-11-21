@@ -21,7 +21,7 @@ The maintainer supplied the missing Node 20 CI output from source `1bdc0ce`. Chr
 - `npm run verify`: passed, including 197 unit tests, coverage, build, SSR, package formats/types and size checks. IIFE gzip remains 21,863 bytes against 35,000 bytes.
 - Replayed all 30 samples per engine from the maintainer's output: Chromium median 2.250000000014552 ms / p95 4 ms / corrected guard PASS; WebKit median 2 ms / p95 5 ms / guard PASS.
 - Raw replay input: [timing-boundary.json](assets/white-gradient/timing-boundary.json). This is supplied CI evidence, not a new local benchmark.
-- Fresh CI [44880327368](https://github.com/qasimfida/accessiblit/actions/runs/44880327368) was triggered by pushing `c7d4d90` and was queued when checked; its result must be checked separately. A future measured regression still fails the unchanged guard.
+- Fresh CI [44880327368](https://github.com/qasimfida/accessiblit/actions/runs/44880327368) was triggered by pushing `c7d4d90`. Both init-trend jobs (Node 20: job 136774008821; Node 22: job 136774008776) completed successfully when checked on 2026-11-21. The broader browser/example matrix was still running; no full remote-matrix pass is claimed. A future measured regression still fails the unchanged guard.
 
 ## Review findings and fixes
 
