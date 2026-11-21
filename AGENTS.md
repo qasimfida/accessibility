@@ -145,6 +145,7 @@ The widget must meet these on any host page:
 ## 9. Engineering standards
 
 - Small modules, no god files (soft limit: 250 lines per file).
+- Website and toolkit design follow `docs/design-system.md`: editorial typography, tactile surfaces and progressive, interruptible motion. Accessibility, reduced-motion preferences and the Stop animations feature take precedence over decorative effects.
 - Feature modules implement one interface (`id`, `group`, `label`, `description`, `control`, `apply(value, api) → cleanup`). The UI is generated from the registry; adding a feature never edits the UI code.
 - Page-affecting CSS goes into one injected stylesheet (or `adoptedStyleSheets` where available) driven by classes and CSS variables on `<html>`. No per-element inline styles.
 - Doc comments on every exported symbol. Explain *why* in comments, not *what*.
