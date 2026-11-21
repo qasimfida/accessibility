@@ -73,9 +73,12 @@ test('keyboard visits every content page and operates the real demo', async ({
   ).toBeFocused();
   path.push('Launcher focus restored', 'Shift+Tab back to the header');
   for (const [label, route] of [
-    ['Install', 'install/'],
-    ['Options', 'options/'],
-    ['FAQ and privacy', 'faq/'],
+    ['Documentation', 'install/'],
+    ['Toolkit', 'toolkit/'],
+    ['About', 'about/'],
+    ['Contact', 'contact/'],
+    ['Pricing', 'pricing/'],
+    ['FAQ', 'faq/'],
     ['Home', ''],
   ] as const) {
     await page.bringToFront();
@@ -84,7 +87,7 @@ test('keyboard visits every content page and operates the real demo', async ({
       .getByRole('link', { name: label, exact: true });
     // Firefox preserves the skip fragment as its forward-wrap starting point.
     const navigationKey =
-      label === 'Install'
+      label === 'Documentation'
         ? tab === 'Alt+Tab'
           ? 'Alt+Shift+Tab'
           : 'Shift+Tab'
