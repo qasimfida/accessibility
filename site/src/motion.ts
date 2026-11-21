@@ -40,10 +40,10 @@ export function startSiteMotion(doc: Document): () => void {
     const elements = doc.querySelectorAll<HTMLElement>(
       '.product-hero h1, .section-heading, .journey-card, ' +
         '.benefit-card, .focus-scene, .format-grid, .principle-quote, ' +
-        '.privacy-visual, .free-plan, .store-browser, .toolkit-preview, .stage-satellite, ' +
+        '.privacy-visual, .free-plan, ' +
         'main.wrap > h1, main.wrap > section, .page-grid > article',
     );
-    stopObserving = inView(elements, (element) => {
+    const visit = (element: Element) => {
       if (disabled() || visited.has(element)) return;
       visited.add(element);
       // Keyboard focus can scroll a card into view after focusin has fired.
@@ -85,7 +85,17 @@ export function startSiteMotion(doc: Document): () => void {
           active.delete(animation);
         });
       });
-    });
+    };
+    const products = doc.querySelectorAll<HTMLElement>(
+      '.store-browser, .toolkit-preview, .stage-satellite',
+    );
+    const stopContent = inView(elements, visit);
+    // Wait for deliberate product exposure rather than playing at the viewport edge.
+    const stopProducts = inView(products, visit, { amount: 0.5 });
+    stopObserving = () => {
+      stopContent();
+      stopProducts();
+    };
   };
 
   const observer = new view.MutationObserver(update);

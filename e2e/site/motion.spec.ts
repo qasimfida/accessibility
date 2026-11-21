@@ -184,3 +184,34 @@ test('product layers assemble and documentation receives progressive motion', as
   // Documentation motion remains optional; its heading is never hidden.
   await expect(page.locator('h1')).toBeVisible();
 });
+
+test('hero motion waits for substantial product exposure while scrolling', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await loadSite(page, '');
+  await expect
+    .poll(() =>
+      page.evaluate(() => Reflect.get(window, '__siteMotionCalls').length),
+    )
+    .toBeGreaterThan(0);
+  expect(
+    await page.evaluate(
+      () =>
+        Reflect.get(window, '__siteMotionCalls').filter(
+          (call: { element: string }) => call.element === 'store-browser',
+        ).length,
+    ),
+  ).toBe(0);
+  await page.locator('.store-browser').scrollIntoViewIfNeeded();
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          Reflect.get(window, '__siteMotionCalls').filter(
+            (call: { element: string }) => call.element === 'store-browser',
+          ).length,
+      ),
+    )
+    .toBe(1);
+});
