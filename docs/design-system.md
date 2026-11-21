@@ -30,11 +30,13 @@ the drop-in toolkit keeps its system font and makes no network requests.
 - Light surfaces: paper #faf8f5, white, pale blue #e9f0fa.
 - Text: existing ink/muted tokens; maintain measured AA contrast.
 - Primary action: existing accessible blue; one dominant action per section.
-- Shapes: subtle gridded texture, restrained radial light and outlined orbits.
-  Decorative layers are CSS, non-interactive and never the source of meaning.
+- Shapes: framed browser surfaces and restrained outlined orbits. Keep the hero
+  background flat rather than adding grain or an ambient glow. Decorative layers
+  are non-interactive and never the source of meaning.
 - Radius: 24 px feature surfaces, 16 px document surfaces, 12 px action corners.
 - Spacing: 8 px rhythm; 64–112 px desktop section padding, 40–64 px mobile.
-- Layout: maximum 78 rem; retain safe-area gutters and 320 px reflow.
+- Layout: maximum 81.25 rem; 70 px desktop gutters at 1440 px; safe-area mobile
+  gutters and 320 px reflow.
 - Marketing surfaces remain light under either OS scheme to match the reference;
   the toolkit itself continues to honour the OS dark preference. Forced colours
   retain system palettes. Never place
@@ -46,10 +48,14 @@ Motion describes hierarchy: a wide product stack converges into a centred demons
 settle into a grid and actions acknowledge hover. No looping ornaments, autoplay
 carousels, cursor followers, scroll hijacking or animation-dependent content.
 
-- Entry: once per element; 450–650 ms, up to 24 px translation on content surfaces; decorative hero layers may
-  converge horizontally as they enter the viewport. The final state is always static.
+- Entry: content settles once over 650 ms and 20 px. Decorative hero layers
+  converge over 1000 ms with up to 80 px travel on desktop; mobile travel is
+  limited to 12 px to preserve caption clearance. The final state is static.
 - Hover: fine pointers only; up to 3 px lift or 1.015 scale, 180–220 ms. Transform
-  the surface rather than changing document dimensions. Keep focus rings intact.
+  action surfaces rather than changing their dimensions. Selected journey cards
+  use a single grid-layout update and a 450 ms FLIP transform; native selection
+  buttons stay outside that moving grid. Keyboard selection settles immediately.
+  Keep focus rings intact.
 - All animation is transform/opacity only. Never transition all properties.
 - Reduced motion, forced colours, print and the toolkit's Stop animations setting
   suppress motion. Preference changes cancel active effects immediately.
