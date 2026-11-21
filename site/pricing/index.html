@@ -99,7 +99,10 @@
         </p>
       </section>
       <div class="inner-content wrap">
-        <section class="pricing-card" aria-labelledby="free-plan">
+        <section
+          class="pricing-card free-plan-card"
+          aria-labelledby="free-plan"
+        >
           <p class="eyebrow">The whole toolkit</p>
           <h2 id="free-plan">Free</h2>
           <p class="price">$0 <span>/ forever</span></p>
@@ -112,6 +115,30 @@
             <li>Source code and community issue reporting</li>
           </ul>
           <a class="button" href="%BASE_URL%install/">Get the toolkit</a>
+        </section>
+        <section class="donation-card" aria-labelledby="support-title">
+          <div>
+            <p class="eyebrow">A little support. Entirely optional.</p>
+            <h2 id="support-title">Help keep choice open.</h2>
+            <p>
+              The toolkit stays free. If you would like to support its
+              development, a donation option is planned.
+            </p>
+          </div>
+          <div>
+            <button
+              class="donate-button"
+              type="button"
+              aria-disabled="true"
+              aria-describedby="donation-note"
+              title="Donations coming soon. Accessiblit stays free."
+            >
+              Donate
+            </button>
+            <p id="donation-note">
+              Donations coming soon. This button does not collect a payment.
+            </p>
+          </div>
         </section>
         <section>
           <h2>What does free include?</h2>
