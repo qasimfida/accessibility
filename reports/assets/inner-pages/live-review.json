@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-21T19:17:25.372Z",
+  "source": "449d16b",
+  "url": "https://qasimfida.github.io/accessiblit/",
+  "engine": "158.0.8127.18",
+  "rows": [
+    {
+      "path": "",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    },
+    {
+      "path": "about/",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    },
+    {
+      "path": "install/",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    },
+    {
+      "path": "options/",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    },
+    {
+      "path": "faq/",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    },
+    {
+      "path": "toolkit/",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    },
+    {
+      "path": "contact/",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    },
+    {
+      "path": "pricing/",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    },
+    {
+      "path": "404.html",
+      "status": 200,
+      "closed": 0,
+      "open": 0
+    }
+  ],
+  "checkedLinks": [
+    "https://qasimfida.github.io/accessiblit/#main",
+    "https://qasimfida.github.io/accessiblit/pricing/",
+    "https://qasimfida.github.io/accessiblit/",
+    "https://qasimfida.github.io/accessiblit/toolkit/",
+    "https://qasimfida.github.io/accessiblit/install/",
+    "https://qasimfida.github.io/accessiblit/about/",
+    "https://qasimfida.github.io/accessiblit/contact/",
+    "https://qasimfida.github.io/accessiblit/faq/",
+    "https://qasimfida.github.io/accessiblit/#demo",
+    "https://qasimfida.github.io/accessiblit/#features",
+    "https://qasimfida.github.io/accessiblit/faq/#privacy",
+    "https://qasimfida.github.io/accessiblit/faq/#limits",
+    "https://qasimfida.github.io/accessiblit/options/",
+    "https://qasimfida.github.io/accessiblit/about/#main",
+    "https://qasimfida.github.io/accessiblit/install/#main",
+    "https://qasimfida.github.io/accessiblit/install/#cdn",
+    "https://qasimfida.github.io/accessiblit/install/#npm",
+    "https://qasimfida.github.io/accessiblit/install/#react",
+    "https://qasimfida.github.io/accessiblit/install/#next",
+    "https://qasimfida.github.io/accessiblit/install/#self-hosted",
+    "https://qasimfida.github.io/accessiblit/install/#private",
+    "https://qasimfida.github.io/accessiblit/install/#html",
+    "https://qasimfida.github.io/accessiblit/install/#vue",
+    "https://qasimfida.github.io/accessiblit/install/#angular",
+    "https://qasimfida.github.io/accessiblit/install/#wordpress",
+    "https://qasimfida.github.io/accessiblit/install/#shopify",
+    "https://qasimfida.github.io/accessiblit/options/#main",
+    "https://qasimfida.github.io/accessiblit/faq/#main",
+    "https://qasimfida.github.io/accessiblit/toolkit/#main",
+    "https://qasimfida.github.io/accessiblit/#features-title",
+    "https://qasimfida.github.io/accessiblit/contact/#main",
+    "https://qasimfida.github.io/accessiblit/pricing/#main",
+    "https://qasimfida.github.io/accessiblit/404.html#main"
+  ],
+  "requests": 58,
+  "thirdParty": [],
+  "errors": []
+}

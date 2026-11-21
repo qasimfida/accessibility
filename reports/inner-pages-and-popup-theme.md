@@ -1,7 +1,7 @@
 # Design follow-up — Inner pages and toolkit appearance
 
 Status: PASS WITH NOTES
-Date: 2026-11-21
+Date: 2026-11-21–22 (Asia/Karachi)
 Commit range: `3fb7baa..HEAD` for this unnumbered follow-up on `main`.
 
 ## Summary
@@ -173,11 +173,46 @@ Review the deployed About, Toolkit and Pricing pages and the popup under a dark
 OS. Keep donation collection inactive until a real destination is supplied.
 Run the existing manual screen-reader script on real devices. Publish the new
 organization package manually when ready; preserve accurate CDN version/SRI copy.
-CI/Pages deployment results will be recorded after pushing this verified chunk.
+The redesign is deployed and checked on the public site; see the closing evidence below.
+
+## Deployed build and final CI evidence
+
+Build `449d16b` is live at [GitHub Pages](https://qasimfida.github.io/accessiblit/).
+All **15 CI jobs passed**, including Node 20/22 verification, all ten browser
+matrix jobs, both native macOS init-trend jobs and the complete site run.
+[CI run](https://github.com/qasimfida/accessiblit/actions/runs/44938175925):
+**495 site tests passed in 16.7 minutes**, with all 315 page/profile axe states
+reporting zero violations. The independent
+[Pages run](https://github.com/qasimfida/accessiblit/actions/runs/44938176024)
+passed its own **495 tests in 17.1 minutes**, integration snippets, build and deployment.
+No retries or gate changes were used. See [job receipts](assets/inner-pages/github-actions.json).
+
+Fresh shared-runner init measurements (median / p95, milliseconds):
+
+| Node | Chromium     | WebKit      | Existing regression guard |
+| ---- | ------------ | ----------- | ------------------------- |
+| 20   | 1.20 / 10.50 | 2.00 / 2.00 | Passed                    |
+| 22   | 2.45 / 4.30  | 2.00 / 7.00 | Passed                    |
+
+These are **CI trends**, not the maintainer-Mac absolute reference measurement.
+Raw samples, machine details and unchanged limits are committed in
+[Node 20](assets/inner-pages/perf-ci-node20.json) and
+[Node 22](assets/inner-pages/perf-ci-node22.json). No baseline was modified.
+
+The deployed site was then checked directly in Chromium under a dark OS scheme:
+**9 pages returned 200**, **18 axe scans had zero violations**, **33 internal
+links/fragments passed**, and **58 browser requests used zero third-party hosts**.
+The live popup rendered white with navy text. The About group and static Donate
+button were checked in the actual deployed DOM. No browser page errors occurred.
+[Live receipt](assets/inner-pages/live-review.json),
+[live About screenshot](assets/inner-pages/live-about.png),
+[live popup screenshot](assets/inner-pages/live-popup.png).
+This closing update only adds reports and evidence; the deployed runtime source
+remains the fully verified `449d16b` build.
 
 ## Commit list
 
-Implementation, fixes and evidence since `3fb7baa` (this report follows):
+Commits since `3fb7baa`, preceding this closing evidence update:
 
 ```text
 6738654 fix(theme): let the demo popup follow its host colour scheme
@@ -206,4 +241,5 @@ ec62231 fix(pricing): retain readable donation text in forced colours
 5ecdc1d docs(evidence): record sidebar focus and layout stability
 e3d638d fix(docs): reserve full-link focus clearance in Firefox
 d3830a3 docs(evidence): record completed cross-browser validation
+449d16b docs(report): record inner-page redesign and appearance audits
 ```

@@ -1,0 +1,107 @@
+{
+  "source": "449d16b8b0a0c0af0cd29bb31b1859f44e6f046d",
+  "ci": {
+    "url": "https://github.com/qasimfida/accessiblit/actions/runs/44938175925",
+    "jobs": [
+      {
+        "name": "site (22)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify (22)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (22, chromium)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "init trend (20)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (22, firefox)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (20, chromium)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify (20)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (20, firefox)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (22, iphone)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (20, iphone)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (20, webkit)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (22, pixel)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (22, webkit)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "browsers (20, pixel)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "init trend (22)",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "siteTests": 495,
+    "siteMinutes": 16.7,
+    "axeStates": 315,
+    "axeViolations": 0,
+    "minimumTextContrast": 6.045473927095201,
+    "minimumTarget": 24
+  },
+  "pages": {
+    "url": "https://github.com/qasimfida/accessiblit/actions/runs/44938176024",
+    "jobs": [
+      {
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "siteTests": 495,
+    "siteMinutes": 17.1,
+    "deployedUrl": "https://qasimfida.github.io/accessiblit/"
+  }
+}
