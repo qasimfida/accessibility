@@ -91,8 +91,11 @@
 .inner-band p {
   max-inline-size: 60ch;
 }
-.inner-band a {
+.inner-band a:not(.button) {
   color: inherit;
+}
+.inner-band :focus-visible {
+  outline-color: #ffffff;
 }
 .inner-band .eyebrow {
   color: inherit;
@@ -210,6 +213,7 @@
   .inner-footer h2 {
     color: CanvasText;
   }
+  .inner-band :focus-visible,
   .inner-footer :focus-visible {
     outline-color: Highlight;
   }
