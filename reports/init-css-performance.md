@@ -74,7 +74,7 @@ its recorded HEAD remains the pre-commit source and is explicitly annotated.
 - Computed-style comparison against 17a0969: zero differences across all nine
   engine/appearance profiles, comparing launcher, panel and descendants' colour,
   backgrounds, fonts, display, padding, radius, borders and outline width.
-  [Comparison receipt](assets/init-css-performance/presentation-comparison.json).
+  [Comparison receipt](assets/init-css-performance/style-equivalence.json).
 - Full and production-only npm audits: zero vulnerabilities. No dependencies,
   lockfile, CI configuration, baseline or threshold changes.
 
@@ -120,3 +120,5 @@ jobs and the normal Pages deployment. npm publication remains human-managed.
 ## Commit list
 
 - 118c20a perf(ui): defer panel stylesheet parsing until first open
+
+- ecf708a docs(report): record init optimization and native CI guard passes
