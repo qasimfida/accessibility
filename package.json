@@ -85,6 +85,7 @@
     "@vitest/coverage-v8": "4.1.12",
     "eslint": "10.14.0",
     "jsdom": "29.1.1",
+    "motion": "14.14.0",
     "prettier": "3.10.1",
     "publint": "0.3.25",
     "react": "19.3.1",
