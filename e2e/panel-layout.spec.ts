@@ -254,11 +254,13 @@ test('owner colour-scheme override matches a light host without losing forced co
   await page.emulateMedia({ forcedColors: 'active' });
   const values = await panel.evaluate((e) => {
     const probe = document.createElement('span');
+    // System colours in Safari also depend on the element's own colour scheme.
     probe.style.color = 'CanvasText';
     probe.style.backgroundColor = 'Canvas';
+    const surface = getComputedStyle(e);
+    probe.style.colorScheme = surface.colorScheme;
     document.body.append(probe);
     const system = getComputedStyle(probe);
-    const surface = getComputedStyle(e);
     const result = {
       scheme: surface.colorScheme,
       forced: matchMedia('(forced-colors: active)').matches,
