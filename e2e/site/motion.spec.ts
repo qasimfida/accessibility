@@ -158,7 +158,7 @@ test('product layers assemble and documentation receives progressive motion', as
       page.evaluate(() =>
         Reflect.get(window, '__siteMotionCalls').some(
           (call: { frames: { transform: string[] } }) =>
-            call.frames.transform[0]?.includes('rotate(-1.5deg)'),
+            call.frames.transform[0]?.includes('translateY(80px)'),
         ),
       ),
     )

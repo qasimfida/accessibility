@@ -38,9 +38,9 @@ export function startSiteMotion(doc: Document): () => void {
     }
     if (stopObserving) return;
     const elements = doc.querySelectorAll<HTMLElement>(
-      '.product-hero h1, .product-stage, .section-heading, .journey-card, ' +
+      '.product-hero h1, .section-heading, .journey-card, ' +
         '.benefit-card, .focus-scene, .format-grid, .principle-quote, ' +
-        '.privacy-visual, .free-plan, .store-browser, .toolkit-preview, ' +
+        '.privacy-visual, .free-plan, .store-browser, .toolkit-preview, .stage-satellite, ' +
         'main.wrap > h1, main.wrap > section, .page-grid > article',
     );
     stopObserving = inView(elements, (element) => {
@@ -55,18 +55,23 @@ export function startSiteMotion(doc: Document): () => void {
         if (previous === null) target.removeAttribute('style');
         else target.setAttribute('style', previous);
       };
-      // Start slightly unarranged; compositor transforms never change layout.
-      const assembly = element.matches(
-        '.journey-card, .store-browser, .toolkit-preview, .page-grid > article',
+      // Side panels converge horizontally; the real toolkit rises between them.
+      const desktop = view.matchMedia('(min-width: 49rem)').matches;
+      const from =
+        desktop && element.matches('.stage-reading')
+          ? 'translateX(-80px)'
+          : desktop && element.matches('.stage-studio')
+            ? 'translateX(80px)'
+            : element.matches('.toolkit-preview')
+              ? 'translateY(80px)'
+              : 'translateY(20px)';
+      const product = element.matches(
+        '.stage-satellite, .toolkit-preview, .store-browser',
       );
-      const turn = element.matches('.toolkit-preview') ? 2 : -1.5;
-      const from = assembly
-        ? `translateY(18px) rotate(${turn}deg) scale(.985)`
-        : 'translateY(18px)';
       const animation = animate(
         element,
-        { transform: [from, 'translateY(0px) rotate(0deg) scale(1)'] },
-        { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+        { transform: [from, 'translate(0px, 0px)'] },
+        { duration: product ? 1 : 0.65, ease: [0.22, 1, 0.36, 1] },
       );
       active.set(animation, restore);
       void animation.then(() => {

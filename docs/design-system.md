@@ -35,7 +35,9 @@ the drop-in toolkit keeps its system font and makes no network requests.
 - Radius: 24 px feature surfaces, 16 px document surfaces, 12 px action corners.
 - Spacing: 8 px rhythm; 64–112 px desktop section padding, 40–64 px mobile.
 - Layout: maximum 78 rem; retain safe-area gutters and 320 px reflow.
-- Toolkit dark appearance and forced colours use semantic tokens. Never place
+- Marketing surfaces remain light under either OS scheme to match the reference;
+  the toolkit itself continues to honour the OS dark preference. Forced colours
+  retain system palettes. Never place
   essential text on an unmeasured translucent surface.
 
 ## Motion language
