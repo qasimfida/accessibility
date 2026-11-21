@@ -186,7 +186,22 @@
             A small addition.<br />More room for personal choice.
           </h2>
         </div>
-        <div class="journey-grid">
+        <div
+          class="journey-controls"
+          role="group"
+          aria-label="Preview a toolkit step"
+        >
+          <button type="button" data-journey="0" aria-pressed="true">
+            Setup
+          </button>
+          <button type="button" data-journey="1" aria-pressed="false">
+            Visitor controls
+          </button>
+          <button type="button" data-journey="2" aria-pressed="false">
+            Privacy
+          </button>
+        </div>
+        <div class="journey-grid" data-active="0">
           <article class="journey-card">
             <div class="journey-art setup-art" aria-hidden="true">
               <div class="mini-store">

@@ -1,0 +1,41 @@
+.journey-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-block: -1rem 2rem;
+}
+.journey-controls button {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+.journey-controls button[aria-pressed='true'] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+.journey-card {
+  min-inline-size: 0;
+  transform-origin: left center;
+}
+.journey-copy a {
+  align-self: start;
+}
+@media (min-width: 49rem) {
+  .journey-grid[data-active='0'] {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .journey-grid[data-active='1'] {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .journey-grid[data-active='2'] {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+@media (forced-colors: active) {
+  .journey-controls button[aria-pressed='true'] {
+    outline: 2px solid CanvasText;
+    outline-offset: -5px;
+  }
+}

@@ -1,6 +1,8 @@
 import { startSiteMotion } from './motion';
+import { startJourney } from './journey';
 
 startSiteMotion(document);
+startJourney(document);
 
 const demo = document.querySelector<HTMLButtonElement>('#demo-open');
 if (demo) {
