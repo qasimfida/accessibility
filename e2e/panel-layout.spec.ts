@@ -252,9 +252,28 @@ test('owner colour-scheme override matches a light host without losing forced co
   });
   await expect(panel).toHaveCSS('background-color', 'rgb(255, 255, 255)');
   await page.emulateMedia({ forcedColors: 'active' });
-  const values = await panel.evaluate((e) => ({
-    scheme: getComputedStyle(e).colorScheme,
-    forced: matchMedia('(forced-colors: active)').matches,
-  }));
-  if (values.forced) expect(values.scheme).toBe('light dark');
+  const values = await panel.evaluate((e) => {
+    const probe = document.createElement('span');
+    probe.style.color = 'CanvasText';
+    probe.style.backgroundColor = 'Canvas';
+    document.body.append(probe);
+    const system = getComputedStyle(probe);
+    const surface = getComputedStyle(e);
+    const result = {
+      scheme: surface.colorScheme,
+      forced: matchMedia('(forced-colors: active)').matches,
+      color: surface.color,
+      background: surface.backgroundColor,
+      systemColor: system.color,
+      systemBackground: system.backgroundColor,
+    };
+    probe.remove();
+    return result;
+  });
+  if (values.forced) {
+    // Firefox computes normal in forced colours; verify the resulting system palette.
+    expect(values.scheme).not.toBe('light');
+    expect(values.color).toBe(values.systemColor);
+    expect(values.background).toBe(values.systemBackground);
+  }
 });
