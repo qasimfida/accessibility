@@ -20,3 +20,13 @@ test('50 percent is inclusive and any greater regression fails', () => {
   for (const invalid of [0, -1, NaN, Infinity])
     assert.throws(() => regression(1, invalid));
 });
+
+test('timestamp cancellation at the inclusive boundary is not a regression', () => {
+  assert.deepEqual(regression(2.250000000014552, 1.5), {
+    limitMs: 2.25,
+    pass: true,
+  });
+  assert.equal(regression(2.25000001, 1.5).pass, false);
+  assert.equal(regression(2.2501, 1.5).pass, false);
+  assert.equal(regression(2.3, 1.5).pass, false);
+});

@@ -16,5 +16,12 @@ export function summarize(samples) {
 export function regression(current, baseline) {
   if (!Number.isFinite(baseline) || baseline <= 0)
     throw new Error('A positive committed baseline median is required.');
-  return { limitMs: baseline * 1.5, pass: current <= baseline * 1.5 };
+  const limitMs = baseline * 1.5;
+  // Subtracting performance.now timestamps introduces tiny binary cancellation
+  // errors. Compare at picosecond precision, far below browser timer resolution,
+  // while preserving the raw samples and reported statistics for inspection.
+  return {
+    limitMs,
+    pass: Number(current.toFixed(9)) <= Number(limitMs.toFixed(9)),
+  };
 }
