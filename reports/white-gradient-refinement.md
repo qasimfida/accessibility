@@ -1,12 +1,12 @@
 # Website and toolkit — white gradient refinement
 
-Status: BLOCKED
+Status: PASS WITH NOTES
 Date: 2026-11-20
 Commit range: e5fb577 to the report commit (unnumbered design follow-up).
 
 ## Summary
 
-The design is implemented and local checks passed. Closing is currently blocked by CI follow-up: the first Pages run timed out during browser dependency installation, and the Node 20 init-trend job failed with logs unavailable through the connected tool. The 50ms absolute gate and 50% trend guard are unchanged. The user has been asked for the Node 20 error/median lines.
+The design is implemented and deployed. Live verification in `assets/white-gradient/delivery.json` records successful Pages deployment, no live axe violations, and all functional CI jobs passing. On 2026-11-21 the maintainer supplied the missing Node 20 timing output: Chromium was exactly at the inclusive 50% boundary apart from binary timestamp cancellation noise. Fix `c7d4d90` corrects comparison precision without changing raw samples, baselines or thresholds. See `perf-trend-boundary.md` for replay evidence and fresh-CI status.
 
 Addressed the visual gaps identified in the user's screenshot feedback: heavy system typography, flat placeholder artwork, equal-width introductory cards, warm backgrounds and an oversized blue toolkit header. The light design now uses white surfaces with a restrained blue radial gradient, geometric typography, a layered real-toolkit screenshot over an original fictional-store photograph, a wider centre feature panel and additional sections matching the reference's long-page rhythm.
 
