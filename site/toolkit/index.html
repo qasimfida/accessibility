@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>The Accessiblit toolkit</title>
+    <meta
+      name="description"
+      content="Explore eighteen text, colour and navigation tools in the real Accessiblit demo."
+    />
+    <link
+      rel="canonical"
+      href="https://qasimfida.github.io/accessiblit/toolkit/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Accessiblit" />
+    <meta property="og:title" content="The Accessiblit toolkit" />
+    <meta
+      property="og:description"
+      content="Explore eighteen text, colour and navigation tools in the real Accessiblit demo."
+    />
+    <meta
+      property="og:url"
+      content="https://qasimfida.github.io/accessiblit/toolkit/"
+    />
+    <meta
+      property="og:image"
+      content="https://qasimfida.github.io/accessiblit/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Accessiblit: text, colour and navigation controls"
+    />
+
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0b1927"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script src="/accessiblit.min.js"></script>
+    <script src="/bootstrap.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="%BASE_URL%"
+        ><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="currentColor" />
+          <path
+            d="M8 25 14 7h4l6 18h-4l-1-4h-6l-1 4zm6-8h4l-2-6z"
+            fill="var(--surface)"
+            fill-rule="evenodd"
+          /></svg
+        ><span>Accessiblit</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="%BASE_URL%">Home</a><a href="%BASE_URL%install/">Install</a
+        ><a href="%BASE_URL%options/">Options</a
+        ><a href="%BASE_URL%pricing/">Pricing</a
+        ><a href="%BASE_URL%faq/">FAQ and privacy</a>
+      </nav>
+    </header>
+    <main id="main" class="wrap" tabindex="-1">
+      <p class="eyebrow">Accessiblit / toolkit</p>
+      <h1>Small adjustments. Your kind of web.</h1>
+      <div class="editorial-intro">
+        <p class="eyebrow">Try the real thing</p>
+        <p>
+          Open the toolkit on this page. Change a setting, explore the controls
+          and reset whenever you like. The demo runs this repository's local
+          build.
+        </p>
+        <button id="demo-open" type="button" disabled>
+          Open live demo options
+        </button>
+      </div>
+      <section aria-labelledby="groups">
+        <h2 id="groups">Eighteen tools. Three clear groups.</h2>
+        <div class="page-grid">
+          <article>
+            <h3>Content</h3>
+            <p>
+              Font size, line height, letter spacing, word spacing, text
+              alignment, content scale and readable fonts.
+            </p>
+            <a href="%BASE_URL%#features-title">Explore content controls</a>
+          </article>
+          <article>
+            <h3>Colour and contrast</h3>
+            <p>
+              Dark mode, high contrast, monochrome and low saturation. The
+              operating system stays in charge when forced colours are active.
+            </p>
+            <a href="%BASE_URL%options/">Configure available features</a>
+          </article>
+          <article>
+            <h3>Navigation and orientation</h3>
+            <p>
+              Reading guide, reading mask, link and heading highlights, larger
+              cursor, stop animations and a stronger focus ring.
+            </p>
+            <a href="%BASE_URL%faq/">Understand feature boundaries</a>
+          </article>
+          <article>
+            <h3>Made to integrate</h3>
+            <p>
+              A plain JavaScript API, TypeScript types and a separate optional
+              React entry. No runtime dependencies, accounts or requests.
+            </p>
+            <a href="%BASE_URL%install/">Choose your integration</a>
+          </article>
+        </div>
+      </section>
+      <aside class="notice">
+        <p>
+          Personalisation helps visitors adjust a page. Continue to design,
+          build and test accessible content and interactions on the host site.
+        </p>
+      </aside>
+    </main>
+    <footer class="site-footer wrap">
+      <p>
+        Personalisation supports visitor choice. It does not make a site
+        conformant by itself.
+      </p>
+      <nav aria-label="Footer">
+        <a href="%BASE_URL%faq/#privacy">Privacy</a
+        ><a href="https://github.com/qasimfida/accessiblit" rel="noreferrer"
+          >Source code</a
+        >
+      </nav>
+      <p class="small">MIT licensed · Qasim Fida</p>
+    </footer>
+  </body>
+</html>

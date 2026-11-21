@@ -22,6 +22,7 @@ export default defineConfig({
           'pricing/index.html',
           'about/index.html',
           'contact/index.html',
+          'toolkit/index.html',
           '404.html',
         ].map((path) => [path, fileURLToPath(new URL(path, import.meta.url))]),
       ),
