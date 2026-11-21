@@ -16,12 +16,18 @@ for (const width of [1280, 320])
     const header = panel.locator('.accessiblit-header');
     const banner = await header.evaluate((node) => ({
       gradient: getComputedStyle(node).backgroundImage,
+      background: getComputedStyle(node).backgroundColor,
       colors: [
         ...node.querySelectorAll('h2,.accessiblit-brand,.accessiblit-intro'),
       ].map((text) => getComputedStyle(text).color),
     }));
     const contrast = Math.min(
-      ...banner.colors.map((color) => bannerContrast(banner.gradient, color)),
+      ...banner.colors.map((color) =>
+        bannerContrast(
+          banner.gradient === 'none' ? banner.background : banner.gradient,
+          color,
+        ),
+      ),
     );
     expect(contrast).toBeGreaterThanOrEqual(4.5);
     console.log(
