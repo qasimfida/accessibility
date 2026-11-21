@@ -45,6 +45,8 @@ export function startSiteMotion(doc: Document): () => void {
     stopObserving = inView(elements, (element) => {
       if (disabled() || visited.has(element)) return;
       visited.add(element);
+      // Keyboard focus can scroll a card into view after focusin has fired.
+      if (element.contains(doc.activeElement)) return;
       const target = element as HTMLElement;
       const previous = target.getAttribute('style');
       const restore = () => {

@@ -118,3 +118,32 @@ test('changing reduced-motion preference cancels current and pending motion', as
     await page.evaluate(() => Reflect.get(window, '__siteMotionCalls').length),
   ).toBe(count);
 });
+
+test('keyboard entry keeps the focused card stationary', async ({
+  page,
+  browserName,
+}) => {
+  await loadSite(page, '');
+  const tab =
+    browserName === 'webkit' && process.platform === 'darwin'
+      ? 'Alt+Tab'
+      : 'Tab';
+  const card = page.locator('.journey-card').first();
+  const link = card.getByRole('link');
+  for (let count = 0; count < 30; count++) {
+    if (await link.evaluate((element) => document.activeElement === element))
+      break;
+    await page.keyboard.press(tab);
+  }
+  await expect(link).toBeFocused();
+  await page.evaluate(
+    () =>
+      new Promise<void>((resolve) => {
+        requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+      }),
+  );
+  await expect(card).toHaveCSS('transform', 'none');
+  expect(await card.evaluate((element) => element.getAnimations().length)).toBe(
+    0,
+  );
+});
