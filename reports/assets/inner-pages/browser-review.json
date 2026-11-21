@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-21T18:33:40.268Z",
+  "engine": "158.0.8127.18",
+  "rows": [
+    {
+      "title": "A small toolkit. A considered purpose.",
+      "size": "50px",
+      "weight": "400",
+      "lineHeight": "60px",
+      "overflow": false
+    },
+    {
+      "title": "Choose how to install.",
+      "size": "50px",
+      "weight": "400",
+      "lineHeight": "60px",
+      "overflow": false
+    },
+    {
+      "title": "Configure Accessiblit.",
+      "size": "50px",
+      "weight": "400",
+      "lineHeight": "60px",
+      "overflow": false
+    },
+    {
+      "title": "Know what the widget does.",
+      "size": "50px",
+      "weight": "400",
+      "lineHeight": "60px",
+      "overflow": false
+    },
+    {
+      "title": "Small adjustments. Your kind of web.",
+      "size": "50px",
+      "weight": "400",
+      "lineHeight": "60px",
+      "overflow": false
+    },
+    {
+      "title": "Good feedback makes better tools.",
+      "size": "50px",
+      "weight": "400",
+      "lineHeight": "60px",
+      "overflow": false
+    },
+    {
+      "title": "Personalisation without a subscription.",
+      "size": "50px",
+      "weight": "400",
+      "lineHeight": "60px",
+      "overflow": false
+    }
+  ],
+  "popup": {
+    "background": "rgb(255, 255, 255)",
+    "color": "rgb(10, 37, 64)"
+  },
+  "donation": {
+    "url": "http://127.0.0.1:4189/accessiblit/pricing/",
+    "description": "Donations coming soon. This button does not collect a payment.",
+    "title": "Donations coming soon. Accessiblit stays free."
+  },
+  "faq": {
+    "focused": true,
+    "open": true
+  },
+  "requests": 70,
+  "thirdParty": [],
+  "performance": {
+    "note": "Local headless browser with reduced motion, warm server; diagnostic samples, not the official Mac init gate.",
+    "timings": [
+      {
+        "path": "/accessiblit/about/",
+        "domContentLoadedMs": 26.899999976158142,
+        "loadMs": 27,
+        "resources": 6,
+        "bodyBytes": 9121
+      },
+      {
+        "path": "/accessiblit/install/",
+        "domContentLoadedMs": 37.30000001192093,
+        "loadMs": 37.39999997615814,
+        "resources": 5,
+        "bodyBytes": 17093
+      },
+      {
+        "path": "/accessiblit/faq/",
+        "domContentLoadedMs": 31.400000035762787,
+        "loadMs": 31.400000035762787,
+        "resources": 5,
+        "bodyBytes": 9874
+      },
+      {
+        "path": "/accessiblit/toolkit/",
+        "domContentLoadedMs": 27.69999998807907,
+        "loadMs": 27.80000001192093,
+        "resources": 6,
+        "bodyBytes": 7723
+      },
+      {
+        "path": "/accessiblit/contact/",
+        "domContentLoadedMs": 27.100000023841858,
+        "loadMs": 27.19999998807907,
+        "resources": 5,
+        "bodyBytes": 6966
+      },
+      {
+        "path": "/accessiblit/pricing/",
+        "domContentLoadedMs": 28.19999998807907,
+        "loadMs": 28.19999998807907,
+        "resources": 5,
+        "bodyBytes": 7626
+      }
+    ],
+    "iifeBytes": 66262,
+    "iifeGzipBytes": 21909
+  }
+}
