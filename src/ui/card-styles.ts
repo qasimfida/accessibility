@@ -22,7 +22,7 @@ export const CARD_CSS = `
 .accessiblit-choice:has(input:checked) { background:var(--ui-accent); color:var(--ui-accent-ink); border-color:var(--ui-accent-ink); }
 .accessiblit-choice input { flex:none; inline-size:24px; block-size:24px; margin:0; accent-color:var(--ui-accent); }
 .accessiblit-choice span { min-inline-size:0; font-size:14px; }
-.accessiblit-surface .accessiblit-reset { inline-size:100%; border-radius:12px; font-weight:600; background:var(--ui-accent); color:var(--ui-accent-ink); border-color:var(--ui-accent); }
+.accessiblit-surface .accessiblit-reset { inline-size:100%; border-radius:12px; font-weight:600; background:var(--ui-accent); color:var(--ui-accent-ink); border-color:var(--ui-accent-ink); }
 .accessiblit-surface button,.accessiblit-choice input { scroll-margin:12px; touch-action:manipulation; }
 @container (max-width:340px) { .accessiblit-feature .accessiblit-stepper,.accessiblit-feature .accessiblit-options,.accessiblit-feature .accessiblit-toggle { grid-column:1/-1; } }
 @media (hover:hover) {

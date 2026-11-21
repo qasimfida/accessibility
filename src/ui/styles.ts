@@ -20,7 +20,7 @@ ${CARD_CSS}
 .accessiblit-forced-colours-note { display:none; }
 @media (forced-colors:active) {
   .accessiblit-forced-colours-note,.accessiblit-cursor-note { display:block; }
-  .accessiblit-surface .accessiblit-step { background:Canvas; color:CanvasText; border-color:CanvasText; }
+  .accessiblit-surface .accessiblit-step,.accessiblit-surface .accessiblit-reset { background:Canvas; color:CanvasText; border-color:CanvasText; }
   .accessiblit-choice input { accent-color:auto; }
   .accessiblit-header { color:CanvasText; background:Canvas; }
   .accessiblit-intro { color:CanvasText; }
