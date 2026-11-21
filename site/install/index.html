@@ -107,7 +107,10 @@
       <nav class="on-this-page" aria-label="Installation methods">
         <a href="#cdn">CDN</a><a href="#npm">npm</a><a href="#react">React</a
         ><a href="#next">Next.js</a><a href="#self-hosted">Self-hosted file</a
-        ><a href="#private">Private distribution</a>
+        ><a href="#private">Private distribution</a
+        ><a href="#html">HTML / JavaScript</a><a href="#vue">Vue</a
+        ><a href="#angular">Angular</a><a href="#wordpress">WordPress</a
+        ><a href="#shopify">Shopify</a>
       </nav>
       <section aria-labelledby="cdn">
         <h2 id="cdn">CDN script tag</h2>
@@ -176,6 +179,94 @@ export default function Accessibility() {
   }, []);
   return null;
 }</code></pre>
+      </section>
+      <section aria-labelledby="html">
+        <h2 id="html">HTML and plain JavaScript</h2>
+        <p>
+          Use the CDN example above for the previous published release, or
+          self-host this build. Place the local IIFE before your own
+          initialization file. Load both with defer to preserve their order.
+        </p>
+        <pre><code>&lt;script defer src=&quot;/assets/accessiblit.min.js&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;/assets/accessibility-init.js&quot;&gt;&lt;/script&gt;</code></pre>
+        <p>In <code>accessibility-init.js</code>:</p>
+        <pre><code>const widget = Accessiblit.init({ position: &#x27;bottom-right&#x27; });
+// Before removing this integration: widget.destroy();</code></pre>
+      </section>
+      <section aria-labelledby="vue">
+        <h2 id="vue">Vue 3</h2>
+        <p>
+          Mount this component once in your application shell. Lifecycle hooks
+          keep initialization in the browser and clean up the owned instance,
+          including with server rendering.
+        </p>
+        <pre><code>&lt;script setup lang=&quot;ts&quot;&gt;
+import { onMounted, onBeforeUnmount } from &#x27;vue&#x27;;
+import { init, type AccessiblitInstance } from &#x27;@widgets/accessibility&#x27;;
+let widget: AccessiblitInstance | undefined;
+onMounted(() =&gt; { widget = init(); });
+onBeforeUnmount(() =&gt; { widget?.destroy(); });
+&lt;/script&gt;
+&lt;template&gt;&lt;span hidden&gt;&lt;/span&gt;&lt;/template&gt;</code></pre>
+      </section>
+      <section aria-labelledby="angular">
+        <h2 id="angular">Angular 17+</h2>
+        <p>
+          Render this standalone component once in the root template.
+          afterNextRender runs only in the browser; DestroyRef releases the
+          instance when Angular removes the component.
+        </p>
+        <pre><code>import { Component, DestroyRef, afterNextRender, inject } from &#x27;@angular/core&#x27;;
+import { init } from &#x27;@widgets/accessibility&#x27;;
+
+@Component({ selector: &#x27;app-accessibility&#x27;, standalone: true, template: &#x27;&#x27; })
+export class AccessibilityComponent {
+  private readonly destroyRef = inject(DestroyRef);
+  constructor() {
+    afterNextRender(() =&gt; {
+      const widget = init();
+      this.destroyRef.onDestroy(() =&gt; widget.destroy());
+    });
+  }
+}</code></pre>
+      </section>
+      <section aria-labelledby="wordpress">
+        <h2 id="wordpress">WordPress</h2>
+        <p>
+          This is a manual theme integration, not a WordPress plugin. Copy the
+          IIFE to your child theme's assets folder and create
+          accessibility-init.js using the plain JavaScript example above.
+          Enqueue both from the child theme's functions.php; the dependency
+          preserves initialization order.
+        </p>
+        <pre><code>add_action(&#x27;wp_enqueue_scripts&#x27;, function () {
+    $assets = get_stylesheet_directory_uri() . &#x27;/assets/&#x27;;
+    wp_enqueue_script(&#x27;accessiblit&#x27;, $assets . &#x27;accessiblit.min.js&#x27;, array(), &#x27;0.1.1&#x27;, true);
+    wp_enqueue_script(&#x27;accessiblit-init&#x27;, $assets . &#x27;accessibility-init.js&#x27;, array(&#x27;accessiblit&#x27;), &#x27;0.1.1&#x27;, true);
+});</code></pre>
+        <p>
+          Footer loading can show the original page before persisted preferences
+          apply. For strict CSP, allow your local assets and pass the response's
+          nonce to init. Do not paste credentials into theme files.
+        </p>
+      </section>
+      <section aria-labelledby="shopify">
+        <h2 id="shopify">Shopify</h2>
+        <p>
+          This is a manual Online Store theme integration, not an App Store app.
+          In a duplicate theme, upload accessiblit.min.js and
+          accessibility-init.js to Assets. Use the initialization file shown
+          above. Add these tags once in layout/theme.liquid before the closing
+          body tag, preview and test before publishing the theme.
+        </p>
+        <pre><code>&lt;script defer src=&quot;{{ &#x27;accessiblit.min.js&#x27; | asset_url }}&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;{{ &#x27;accessibility-init.js&#x27; | asset_url }}&quot;&gt;&lt;/script&gt;</code></pre>
+        <p>
+          The theme serves these assets through Shopify's own asset
+          infrastructure. The widget makes no requests after loading. Checkout
+          and embedded third-party frames have separate platform restrictions.
+          Footer initialization does not guarantee flash-free restoration.
+        </p>
       </section>
       <section aria-labelledby="self-hosted">
         <h2 id="self-hosted">Self-hosted file</h2>
