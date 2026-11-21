@@ -151,6 +151,7 @@ test('keyboard entry keeps the focused card stationary', async ({
 test('product layers assemble and documentation receives progressive motion', async ({
   page,
 }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
   await loadSite(page, '');
   await page.locator('.product-stage').scrollIntoViewIfNeeded();
   await expect

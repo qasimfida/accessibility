@@ -63,7 +63,9 @@ export function startSiteMotion(doc: Document): () => void {
           : desktop && element.matches('.stage-studio')
             ? 'translateX(80px)'
             : element.matches('.toolkit-preview')
-              ? 'translateY(80px)'
+              ? desktop
+                ? 'translateY(80px)'
+                : 'translateY(12px)'
               : 'translateY(20px)';
       const product = element.matches(
         '.stage-satellite, .toolkit-preview, .store-browser',
