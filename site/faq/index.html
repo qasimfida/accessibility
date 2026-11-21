@@ -92,93 +92,114 @@
           the boundaries of the toolkit.
         </p>
       </section>
-      <div class="inner-content wrap">
-        <section>
-          <h2>Does adding a widget make a site conformant?</h2>
-          <p>
-            No. A widget helps visitors personalise a page, but it does not make
-            a site conformant by itself. The underlying content, semantics,
-            navigation and interactions still need accessible design and
-            testing.
-          </p>
-        </section>
-        <section id="privacy">
-          <h2>What stays in the browser?</h2>
-          <p>
-            Accessiblit sets no cookies, includes no tracking or analytics, and
-            makes no runtime requests. Settings use localStorage under one key,
-            accessiblit:v1 by default. Blocked storage falls back to memory.
-            Owners can change the key or set persist: false.
-          </p>
-          <p>
-            The settings contain feature choices, not page text or visitor
-            identity. Reset all restores defaults. To remove a stored key
-            entirely, use your browser's site-data controls. An owner's optional
-            onChange callback is separate integration code; the widget does not
-            send settings to a server.
-          </p>
-        </section>
-        <section id="limits">
-          <h2>Will every page adjustment work everywhere?</h2>
-          <p>
-            Host layouts differ. Fixed-height boxes, unusual CSS, native modals
-            and embedded content need integration testing. Page styles do not
-            automatically cross iframe or other components' shadow-tree
-            boundaries. The widget does not repair markup.
-          </p>
-          <p>
-            Stopping animations covers CSS animation, transitions, smooth
-            scrolling and autoplay video. GIFs, canvas and JavaScript-driven
-            motion cannot all be stopped by those rules. Paused videos remain
-            paused until the visitor or site resumes playback.
-          </p>
-        </section>
-        <section>
-          <h2>Does it download a font?</h2>
-          <p>
-            No font file is bundled or fetched. Readable mode uses a system
-            stack. Dyslexia-friendly mode uses an owner's already loaded
-            AccessiblitDyslexia font when configured; otherwise it uses a
-            documented system fallback. It is a presentation choice, not a claim
-            of medical benefit.
-          </p>
-        </section>
-        <section>
-          <h2>How does keyboard operation work?</h2>
-          <p>
-            Alt+A opens or closes the options by default. The shortcut is
-            configurable and can be disabled. Escape closes the panel and
-            returns focus to its launcher. The panel is non-modal: Tab can leave
-            it.
-          </p>
-        </section>
-        <section>
-          <h2>Do I need React?</h2>
-          <p>
-            No. The core is dependency-free. The optional React entry provides
-            AccessiblitWidget and useAccessiblit for React 17 or newer; React is
-            not included in the core browser bundle.
-          </p>
-        </section>
-        <section>
-          <h2>What happens when I remove it?</h2>
-          <p>
-            Call the owned instance's destroy method when unmounting your
-            integration. It removes its nodes, styles, classes, attributes and
-            listeners. Stored preferences intentionally remain, and paused
-            videos do not resume automatically.
-          </p>
-        </section>
-        <section>
-          <h2>Are all eighteen features really free?</h2>
-          <p>
-            Yes. Text scaling and spacing, colour choices, reading tools and
-            navigation highlights are all included under the MIT license. There
-            is no paid feature unlock or visitor account. Your own hosting and
-            integration costs are separate.
-          </p>
-          <a href="%BASE_URL%pricing/">See what the free toolkit includes</a>
-        </section>
+      <div class="inner-content wrap faq-content">
+        <h2>Questions, answered.</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Does adding a widget make a site conformant?</summary>
+            <div class="faq-answer">
+              <p>
+                No. A widget helps visitors personalise a page, but it does not
+                make a site conformant by itself. The underlying content,
+                semantics, navigation and interactions still need accessible
+                design and testing.
+              </p>
+            </div>
+          </details>
+          <details id="privacy" open>
+            <summary>What stays in the browser?</summary>
+            <div class="faq-answer">
+              <p>
+                Accessiblit sets no cookies, includes no tracking or analytics,
+                and makes no runtime requests. Settings use localStorage under
+                one key, accessiblit:v1 by default. Blocked storage falls back
+                to memory. Owners can change the key or set persist: false.
+              </p>
+              <p>
+                The settings contain feature choices, not page text or visitor
+                identity. Reset all restores defaults. To remove a stored key
+                entirely, use your browser's site-data controls. An owner's
+                optional onChange callback is separate integration code; the
+                widget does not send settings to a server.
+              </p>
+            </div>
+          </details>
+          <details id="limits" open>
+            <summary>Will every page adjustment work everywhere?</summary>
+            <div class="faq-answer">
+              <p>
+                Host layouts differ. Fixed-height boxes, unusual CSS, native
+                modals and embedded content need integration testing. Page
+                styles do not automatically cross iframe or other components'
+                shadow-tree boundaries. The widget does not repair markup.
+              </p>
+              <p>
+                Stopping animations covers CSS animation, transitions, smooth
+                scrolling and autoplay video. GIFs, canvas and JavaScript-driven
+                motion cannot all be stopped by those rules. Paused videos
+                remain paused until the visitor or site resumes playback.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Does it download a font?</summary>
+            <div class="faq-answer">
+              <p>
+                No font file is bundled or fetched. Readable mode uses a system
+                stack. Dyslexia-friendly mode uses an owner's already loaded
+                AccessiblitDyslexia font when configured; otherwise it uses a
+                documented system fallback. It is a presentation choice, not a
+                claim of medical benefit.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>How does keyboard operation work?</summary>
+            <div class="faq-answer">
+              <p>
+                Alt+A opens or closes the options by default. The shortcut is
+                configurable and can be disabled. Escape closes the panel and
+                returns focus to its launcher. The panel is non-modal: Tab can
+                leave it.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Do I need React?</summary>
+            <div class="faq-answer">
+              <p>
+                No. The core is dependency-free. The optional React entry
+                provides AccessiblitWidget and useAccessiblit for React 17 or
+                newer; React is not included in the core browser bundle.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>What happens when I remove it?</summary>
+            <div class="faq-answer">
+              <p>
+                Call the owned instance's destroy method when unmounting your
+                integration. It removes its nodes, styles, classes, attributes
+                and listeners. Stored preferences intentionally remain, and
+                paused videos do not resume automatically.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Are all eighteen features really free?</summary>
+            <div class="faq-answer">
+              <p>
+                Yes. Text scaling and spacing, colour choices, reading tools and
+                navigation highlights are all included under the MIT license.
+                There is no paid feature unlock or visitor account. Your own
+                hosting and integration costs are separate.
+              </p>
+              <a href="%BASE_URL%pricing/"
+                >See what the free toolkit includes</a
+              >
+            </div>
+          </details>
+        </div>
       </div>
     </main>
     <footer class="inner-footer">
