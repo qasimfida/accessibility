@@ -145,58 +145,58 @@
     "bounds": [
       {
         "label": "CDN",
-        "top": 151.5625,
-        "bottom": 199.953125
+        "top": 127.5625,
+        "bottom": 175.953125
       },
       {
         "label": "npm",
-        "top": 191.546875,
-        "bottom": 239.9375
+        "top": 143.546875,
+        "bottom": 191.9375
       },
       {
         "label": "React",
-        "top": 191.53125,
-        "bottom": 239.921875
+        "top": 143.53125,
+        "bottom": 191.921875
       },
       {
         "label": "Next.js",
-        "top": 191.515625,
-        "bottom": 239.90625
+        "top": 143.515625,
+        "bottom": 191.90625
       },
       {
         "label": "Self-hosted file",
-        "top": 191.5,
-        "bottom": 239.890625
+        "top": 143.5,
+        "bottom": 191.890625
       },
       {
         "label": "Private distribution",
-        "top": 165.484375,
-        "bottom": 240.265625
+        "top": 117.484375,
+        "bottom": 192.265625
       },
       {
         "label": "HTML / JavaScript",
-        "top": 191.859375,
-        "bottom": 240.25
+        "top": 143.859375,
+        "bottom": 192.25
       },
       {
         "label": "Vue",
-        "top": 191.84375,
-        "bottom": 240.234375
+        "top": 143.84375,
+        "bottom": 192.234375
       },
       {
         "label": "Angular",
-        "top": 191.828125,
-        "bottom": 240.21875
+        "top": 143.828125,
+        "bottom": 192.21875
       },
       {
         "label": "WordPress",
-        "top": 191.8125,
-        "bottom": 240.203125
+        "top": 143.8125,
+        "bottom": 192.203125
       },
       {
         "label": "Shopify",
-        "top": 191.796875,
-        "bottom": 240.1875
+        "top": 143.796875,
+        "bottom": 192.1875
       }
     ]
   },
@@ -228,12 +228,12 @@
   ],
   "siteAssets": [
     {
-      "file": "main-Di2otxWl.css",
+      "file": "main-B42W-NJ5.css",
       "bytes": 90766,
-      "gzipBytes": 11572
+      "gzipBytes": 11573
     },
     {
-      "file": "main-DmHtLJeu.js",
+      "file": "main-eZXaNq7j.js",
       "bytes": 14522,
       "gzipBytes": 5356
     }
