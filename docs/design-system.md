@@ -95,3 +95,26 @@ Audit every authored route with axe, keyboard, links, no third-party requests,
 320 px reflow, dark mode, forced colours and reduced motion. Test motion
 cancellation and final resting states. Report real bundle size, screenshot
 results and remaining human screen-reader checks. Keep the core API unchanged.
+
+## Inner-page editorial composition
+
+The About reference (https://accessibe.com/about, inspected 21 November 2026)
+provides composition cues, not reusable content or assets: centred 50/60 px
+regular-weight desktop heroes, generous white space, a staggered mosaic,
+broad blue story sections and a structured navy footer. Use original product
+facts and locally owned toolkit images. Never invent customers, awards or team
+photographs. Keep the existing home composition intact.
+
+Inner pages share breadcrumbs, a centred hero, 24 px tactile surfaces and the
+same footer. Documentation pairs a desktop contents rail with a readable article;
+the rail becomes normal flow on smaller screens. FAQ answers use native details
+and summary, with privacy and limitations expanded for direct links. Contact
+provides real email and issue links. Pricing has one complete free MIT offering.
+Its static Donate button is focusable, aria-disabled and described by a visible
+“Donations coming soon” note; a native title provides the same hover message.
+It must not navigate or imply that payment collection is available.
+
+The hosted toolkit explicitly inherits the light brand through
+`--accessiblit-color-scheme: light` on its host. Ordinary package embeds remain
+system-aware; forced colours always retain operating-system priority. No new
+JavaScript option or persisted appearance preference is introduced.
