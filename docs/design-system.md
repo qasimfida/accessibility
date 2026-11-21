@@ -14,9 +14,10 @@ hero heading, 36 px section headings, 12 px action corners, navy #0a2540, blue
 geometric alternative; do not download or copy proprietary font files or assets.
 
 The marketing site intentionally keeps this light brand presentation even when
-the OS requests dark appearance. The independently themed toolkit continues to
-honour prefers-color-scheme; its Dark mode feature remains available for visitor
-choice. Forced colours still override both. Browser metadata must match actual
+the OS requests dark appearance. The hosted demo pins its popup to the light brand with
+`--accessiblit-color-scheme: light` on its host. Other package integrations
+continue to follow the OS by default; the page Dark mode feature remains
+available for visitor choice. Forced colours still override both. Browser metadata must match actual
 page backgrounds in both OS appearances.
 
 ## Art direction
@@ -38,7 +39,7 @@ the drop-in toolkit keeps its system font and makes no network requests.
 - Layout: maximum 81.25 rem; 70 px desktop gutters at 1440 px; safe-area mobile
   gutters and 320 px reflow.
 - Marketing surfaces remain light under either OS scheme to match the reference;
-  the toolkit itself continues to honour the OS dark preference. Forced colours
+  ordinary toolkit integrations continue to honour the OS dark preference. Forced colours
   retain system palettes. Never place
   essential text on an unmeasured translucent surface.
 

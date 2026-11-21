@@ -1,11 +1,11 @@
 /** Shared launcher foundation and system appearance are sufficient before the panel opens. */
 export const LAUNCHER_CSS = `
 .accessiblit-surface {
-  all:initial; --ui-bg:#ffffff; --ui-ink:#0a2540; --ui-muted:#3c526b; --ui-border:#698197;
-  --ui-quiet:#f6f8fb; --ui-body:#faf8f5; --ui-accent:#0047d8; --ui-accent-ink:#ffffff; --ui-focus:#0047d8;
+  all:initial; --ui-bg:light-dark(#ffffff,#142331); --ui-ink:light-dark(#0a2540,#f5f8fc); --ui-muted:light-dark(#3c526b,#c4d2e1); --ui-border:light-dark(#698197,#91a8bc);
+  --ui-quiet:light-dark(#f6f8fb,#22384b); --ui-body:light-dark(#faf8f5,#101c28); --ui-accent:light-dark(#0047d8,#a5d0ff); --ui-accent-ink:light-dark(#ffffff,#142331); --ui-focus:light-dark(#0047d8,#a5d0ff);
   position:fixed; display:block; box-sizing:border-box; margin:0; padding:0;
   color:var(--ui-ink); background:var(--ui-bg); font:16px/1.5 "Avenir Next",Arial,system-ui,sans-serif;
-  color-scheme:light dark; text-align:start; letter-spacing:normal; word-spacing:normal; text-transform:none; text-indent:0;
+  color-scheme:var(--accessiblit-color-scheme,light dark); text-align:start; letter-spacing:normal; word-spacing:normal; text-transform:none; text-indent:0;
   pointer-events:auto; overflow-wrap:anywhere; animation:none; transition:none; scroll-behavior:auto;
 }
 .accessiblit-surface[hidden] { display:none!important; }
@@ -23,14 +23,11 @@ export const LAUNCHER_CSS = `
   border-radius:50%; color:var(--ui-accent-ink); background:var(--ui-accent); box-shadow:0 4px 16px #12263833; cursor:pointer;
 }
 .accessiblit-launcher svg { display:block; flex:none; }
-@media (prefers-color-scheme:dark) {
-  .accessiblit-surface { --ui-bg:#142331; --ui-ink:#f5f8fc; --ui-muted:#c4d2e1; --ui-border:#91a8bc; --ui-quiet:#22384b; --ui-body:#101c28; --ui-accent:#a5d0ff; --ui-accent-ink:#142331; --ui-focus:#a5d0ff; }
-}
 @media (prefers-reduced-motion:reduce) {
   .accessiblit-surface, .accessiblit-surface * { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
 }
 @media (forced-colors:active) {
-  .accessiblit-surface { --ui-bg:Canvas; --ui-ink:CanvasText; --ui-muted:CanvasText; --ui-border:CanvasText; --ui-quiet:Canvas; --ui-body:Canvas; --ui-accent:CanvasText; --ui-accent-ink:Canvas; --ui-focus:CanvasText; forced-color-adjust:auto; box-shadow:none; }
+  .accessiblit-surface { --ui-bg:Canvas; --ui-ink:CanvasText; --ui-muted:CanvasText; --ui-border:CanvasText; --ui-quiet:Canvas; --ui-body:Canvas; --ui-accent:CanvasText; --ui-accent-ink:Canvas; --ui-focus:CanvasText; color-scheme:light dark; forced-color-adjust:auto; box-shadow:none; }
   .accessiblit-surface button, .accessiblit-launcher { background:Canvas; color:CanvasText; border-color:CanvasText; }
 }
 

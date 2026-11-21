@@ -237,3 +237,24 @@ test('fits the visual viewport at 400 percent pinch zoom', async ({
   await session.detach();
   await context.close();
 });
+
+test('owner colour-scheme override matches a light host without losing forced colours', async ({
+  page,
+}) => {
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.goto('/panel.html');
+  await page.waitForFunction(() => !!window.panelInstance);
+  await page.keyboard.press('Alt+KeyA');
+  const panel = page.getByRole('dialog');
+  await expect(panel).toHaveCSS('background-color', 'rgb(20, 35, 49)');
+  await page.addStyleTag({
+    content: '[data-accessiblit-host]{--accessiblit-color-scheme:light}',
+  });
+  await expect(panel).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+  await page.emulateMedia({ forcedColors: 'active' });
+  const values = await panel.evaluate((e) => ({
+    scheme: getComputedStyle(e).colorScheme,
+    forced: matchMedia('(forced-colors: active)').matches,
+  }));
+  if (values.forced) expect(values.scheme).toBe('light dark');
+});

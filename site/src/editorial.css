@@ -246,3 +246,8 @@ main.wrap > h1 {
     scroll-margin-block-start: 7rem;
   }
 }
+
+/* The hosted demo follows the light brand; ordinary package embeds remain OS-aware. */
+[data-accessiblit-host] {
+  --accessiblit-color-scheme: light;
+}

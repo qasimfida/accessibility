@@ -66,7 +66,7 @@ test('pressed actions keep visible feedback in forced colors', async ({
   }
 });
 
-test('brand stays light under a dark OS while the toolkit honours its preference', async ({
+test('hosted demo stays light with the brand under a dark OS', async ({
   page,
 }) => {
   await loadSite(page, '', 'dark');
@@ -78,6 +78,6 @@ test('brand stays light under a dark OS while the toolkit honours its preference
   await page.keyboard.press('Alt+KeyA');
   await expect(page.getByRole('dialog')).toHaveCSS(
     'background-color',
-    'rgb(20, 35, 49)',
+    'rgb(255, 255, 255)',
   );
 });

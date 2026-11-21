@@ -253,7 +253,10 @@ it('installs panel CSS only on first open while keeping launcher appearance read
       .join('\n');
   const initial = css();
   expect(initial).toContain('.accessiblit-launcher');
-  expect(initial).toContain('prefers-color-scheme:dark');
+  expect(initial).toContain(
+    'color-scheme:var(--accessiblit-color-scheme,light dark)',
+  );
+  expect(initial).toContain('light-dark(');
   expect(initial).toContain('forced-colors:active');
   expect(initial).not.toContain('.accessiblit-header');
   ui.open();

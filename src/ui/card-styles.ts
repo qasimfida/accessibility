@@ -29,9 +29,6 @@ export const CARD_CSS = `
  .accessiblit-surface button:hover,.accessiblit-choice:hover { border-color:var(--ui-focus); box-shadow:inset 0 0 0 1px var(--ui-focus); }
 }
 @media (hover:hover) and (forced-colors:none) {
- .accessiblit-surface .accessiblit-reset:hover,.accessiblit-surface .accessiblit-step:not([aria-disabled=true]):hover { background:#0038ac; color:#ffffff; }
-}
-@media (hover:hover) and (prefers-color-scheme:dark) and (forced-colors:none) {
- .accessiblit-surface .accessiblit-reset:hover,.accessiblit-surface .accessiblit-step:not([aria-disabled=true]):hover { background:#b8dcff; color:#142331; }
+ .accessiblit-surface .accessiblit-reset:hover,.accessiblit-surface .accessiblit-step:not([aria-disabled=true]):hover { background:light-dark(#0038ac,#b8dcff); color:var(--ui-accent-ink); }
 }
 `;
