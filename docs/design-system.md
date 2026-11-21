@@ -78,7 +78,9 @@ Keep existing published-package availability warnings accurate.
 
 ## Toolkit
 
-Use the same ink, paper, blue, fine borders and rounded surfaces. Group labels,
+Use the home page's #0a2540 ink, #0047d8 blue, #faf8f5 paper and white cards.
+Use 12 px action corners, 20 px cards, a 24 px panel frame and regular-weight
+heading typography. Keep the header flat rather than using a decorative gradient. Group labels,
 visible descriptions and native controls remain central. Express selection with
 words and states, not colour alone. Keep 44 px action targets, 24 px minimum radio
 targets, open dialog semantics, no focus trap, and Escape focus return. Small

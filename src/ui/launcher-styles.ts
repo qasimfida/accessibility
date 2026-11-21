@@ -1,10 +1,10 @@
 /** Shared launcher foundation and system appearance are sufficient before the panel opens. */
 export const LAUNCHER_CSS = `
 .accessiblit-surface {
-  all:initial; --ui-bg:#ffffff; --ui-ink:#162b3d; --ui-muted:#42566c; --ui-border:#6b8094;
-  --ui-quiet:#f1f3f7; --ui-body:#faf8f5; --ui-accent:#004cde; --ui-accent-ink:#ffffff; --ui-focus:#1456a0;
+  all:initial; --ui-bg:#ffffff; --ui-ink:#0a2540; --ui-muted:#3c526b; --ui-border:#698197;
+  --ui-quiet:#f6f8fb; --ui-body:#faf8f5; --ui-accent:#0047d8; --ui-accent-ink:#ffffff; --ui-focus:#0047d8;
   position:fixed; display:block; box-sizing:border-box; margin:0; padding:0;
-  color:var(--ui-ink); background:var(--ui-bg); font:15px/1.5 "Avenir Next",Arial,system-ui,sans-serif;
+  color:var(--ui-ink); background:var(--ui-bg); font:16px/1.5 "Avenir Next",Arial,system-ui,sans-serif;
   color-scheme:light dark; text-align:start; letter-spacing:normal; word-spacing:normal; text-transform:none; text-indent:0;
   pointer-events:auto; overflow-wrap:anywhere; animation:none; transition:none; scroll-behavior:auto;
 }
@@ -12,7 +12,7 @@ export const LAUNCHER_CSS = `
 .accessiblit-surface *, .accessiblit-surface *::before, .accessiblit-surface *::after { box-sizing:border-box; letter-spacing:inherit; word-spacing:inherit; }
 .accessiblit-surface button {
   appearance:none; font:inherit; color:var(--ui-ink); background:var(--ui-bg); border:1px solid var(--ui-border);
-  border-radius:8px; min-inline-size:44px; min-block-size:44px; padding:8px 12px; cursor:pointer; text-align:center; overflow-wrap:anywhere;
+  border-radius:12px; min-inline-size:44px; min-block-size:44px; padding:8px 12px; cursor:pointer; text-align:center; overflow-wrap:anywhere;
 }
 .accessiblit-surface:focus, .accessiblit-surface :focus {
   outline:3px solid var(--ui-focus); outline-offset:3px; box-shadow:0 0 0 6px var(--ui-bg);
