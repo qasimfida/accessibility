@@ -43,3 +43,26 @@ test('About facts have a named semantic group', async ({ page }) => {
   await expect(facts).toContainText('runtime dependencies');
   await expect(facts).toContainText('MIT');
 });
+
+test('documentation sidebar keeps keyboard focus visible in a short viewport', async ({
+  page,
+  browserName,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 256 });
+  await loadSite(page, 'install/', 'reduced');
+  const links = page
+    .getByRole('navigation', { name: 'Installation methods', exact: true })
+    .getByRole('link');
+  const tab =
+    browserName === 'webkit' && process.platform === 'darwin'
+      ? 'Alt+Tab'
+      : 'Tab';
+  await links.first().focus();
+  for (let index = 0; index < (await links.count()); index++) {
+    await expect(links.nth(index)).toBeFocused();
+    const rect = await links.nth(index).boundingBox();
+    expect(rect!.y).toBeGreaterThanOrEqual(0);
+    expect(rect!.y + rect!.height).toBeLessThanOrEqual(256);
+    if (index + 1 < (await links.count())) await page.keyboard.press(tab);
+  }
+});
