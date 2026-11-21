@@ -138,5 +138,104 @@
       "bottom": 1451.5625,
       "left": 16
     }
-  }
+  },
+  "sidebarShortViewport": {
+    "width": 1440,
+    "height": 256,
+    "bounds": [
+      {
+        "label": "CDN",
+        "top": 151.5625,
+        "bottom": 199.953125
+      },
+      {
+        "label": "npm",
+        "top": 191.546875,
+        "bottom": 239.9375
+      },
+      {
+        "label": "React",
+        "top": 191.53125,
+        "bottom": 239.921875
+      },
+      {
+        "label": "Next.js",
+        "top": 191.515625,
+        "bottom": 239.90625
+      },
+      {
+        "label": "Self-hosted file",
+        "top": 191.5,
+        "bottom": 239.890625
+      },
+      {
+        "label": "Private distribution",
+        "top": 165.484375,
+        "bottom": 240.265625
+      },
+      {
+        "label": "HTML / JavaScript",
+        "top": 191.859375,
+        "bottom": 240.25
+      },
+      {
+        "label": "Vue",
+        "top": 191.84375,
+        "bottom": 240.234375
+      },
+      {
+        "label": "Angular",
+        "top": 191.828125,
+        "bottom": 240.21875
+      },
+      {
+        "label": "WordPress",
+        "top": 191.8125,
+        "bottom": 240.203125
+      },
+      {
+        "label": "Shopify",
+        "top": 191.796875,
+        "bottom": 240.1875
+      }
+    ]
+  },
+  "layoutShift": [
+    {
+      "route": "about",
+      "cls": 0
+    },
+    {
+      "route": "install",
+      "cls": 0
+    },
+    {
+      "route": "faq",
+      "cls": 0
+    },
+    {
+      "route": "toolkit",
+      "cls": 0
+    },
+    {
+      "route": "contact",
+      "cls": 0
+    },
+    {
+      "route": "pricing",
+      "cls": 0
+    }
+  ],
+  "siteAssets": [
+    {
+      "file": "main-Di2otxWl.css",
+      "bytes": 90766,
+      "gzipBytes": 11572
+    },
+    {
+      "file": "main-DmHtLJeu.js",
+      "bytes": 14522,
+      "gzipBytes": 5356
+    }
+  ]
 }
