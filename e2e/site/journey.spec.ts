@@ -23,6 +23,14 @@ test('product cards expand through hover and stable keyboard controls', async ({
   expect(widths[2]!).toBeGreaterThan(widths[0]! * 1.8);
   await page.getByRole('button', { name: 'Setup', exact: true }).click();
   await expect(grid).toHaveAttribute('data-active', '0');
+  if (
+    await page.evaluate(
+      () => matchMedia('(hover: hover) and (pointer: fine)').matches,
+    )
+  ) {
+    await grid.locator('.journey-card').nth(1).hover();
+    await expect(grid).toHaveAttribute('data-active', '1');
+  }
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await expect
     .poll(() => grid.evaluate((n) => n.getAnimations({ subtree: true }).length))
@@ -41,3 +49,32 @@ test('mobile cards remain a single column with every description visible', async
   for (const paragraph of await cards.locator('.journey-copy p').all())
     await expect(paragraph).toBeVisible();
 });
+
+for (const preference of ['print', 'stopAnimations'] as const) {
+  test(`${preference} cancels an active product-card expansion`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 1440, height: 1000 });
+    await loadSite(page, '');
+    const controls = page.getByRole('group', {
+      name: 'Preview a toolkit step',
+    });
+    await controls
+      .getByRole('button', { name: 'Privacy', exact: true })
+      .click();
+    if (preference === 'print') await page.emulateMedia({ media: 'print' });
+    else
+      await page.evaluate(() =>
+        Reflect.get(window, 'Accessiblit')
+          .init()
+          .setFeature('stopAnimations', true),
+      );
+    await expect
+      .poll(() =>
+        page
+          .locator('.journey-grid')
+          .evaluate((n) => n.getAnimations({ subtree: true }).length),
+      )
+      .toBe(0);
+  });
+}

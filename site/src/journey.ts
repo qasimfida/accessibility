@@ -9,6 +9,7 @@ export function startJourney(doc: Document): () => void {
   ];
   const reduce = view.matchMedia('(prefers-reduced-motion: reduce)');
   const forced = view.matchMedia('(forced-colors: active)');
+  const printing = view.matchMedia('print');
   const wide = view.matchMedia('(min-width: 49rem)');
   const fine = view.matchMedia('(hover: hover) and (pointer: fine)');
   const active = new Set<Animation>();
@@ -18,6 +19,7 @@ export function startJourney(doc: Document): () => void {
   };
   const disabled = () =>
     reduce.matches ||
+    printing.matches ||
     forced.matches ||
     !wide.matches ||
     doc.hidden ||
@@ -81,7 +83,7 @@ export function startJourney(doc: Document): () => void {
     attributes: true,
     attributeFilter: ['class'],
   });
-  for (const media of [reduce, forced, wide])
+  for (const media of [reduce, forced, wide, printing])
     media.addEventListener('change', update);
   doc.addEventListener('focusin', cancel);
   doc.addEventListener('visibilitychange', update);
@@ -89,7 +91,7 @@ export function startJourney(doc: Document): () => void {
     cancel();
     observer.disconnect();
     cleanups.forEach((cleanup) => cleanup());
-    for (const media of [reduce, forced, wide])
+    for (const media of [reduce, forced, wide, printing])
       media.removeEventListener('change', update);
     doc.removeEventListener('focusin', cancel);
     doc.removeEventListener('visibilitychange', update);
