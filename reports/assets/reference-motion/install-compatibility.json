@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-21",
+  "finding": "R-3",
+  "failedPagesRun": "https://github.com/qasimfida/accessiblit/actions/runs/44886425079",
+  "failedStep": "npm ci",
+  "localNpm11Ci": "passed",
+  "localNpm10CiBeforeRepair": {
+    "version": "10.9.4",
+    "exitCode": 1,
+    "error": "EUSAGE: Missing @emnapi/core@2.0.0-beta.2 and @emnapi/runtime@2.0.0-beta.2 from lock file"
+  },
+  "repairCommand": "npx --yes npm@10.9.4 install --package-lock-only",
+  "cleanInstallAfterRepair": {
+    "command": "npx --yes npm@10.9.4 ci",
+    "exitCode": 0,
+    "packagesAdded": 302,
+    "packagesAudited": 303,
+    "vulnerabilities": 0
+  },
+  "addedLockEntries": [
+    "node_modules/@emnapi/core",
+    "node_modules/@emnapi/runtime"
+  ],
+  "changedPackageVersions": [],
+  "fixCommit": "f24a0e1"
+}
