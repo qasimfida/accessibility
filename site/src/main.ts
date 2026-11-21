@@ -1,3 +1,7 @@
+import { startSiteMotion } from './motion';
+
+startSiteMotion(document);
+
 const demo = document.querySelector<HTMLButtonElement>('#demo-open');
 if (demo) {
   demo.disabled = false;
