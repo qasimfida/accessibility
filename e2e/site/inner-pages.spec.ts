@@ -61,8 +61,8 @@ test('documentation sidebar keeps keyboard focus visible in a short viewport', a
   for (let index = 0; index < (await links.count()); index++) {
     await expect(links.nth(index)).toBeFocused();
     const rect = await links.nth(index).boundingBox();
-    expect(rect!.y).toBeGreaterThanOrEqual(0);
-    expect(rect!.y + rect!.height).toBeLessThanOrEqual(256);
+    expect(rect!.y).toBeGreaterThanOrEqual(3);
+    expect(rect!.y + rect!.height).toBeLessThanOrEqual(253);
     if (index + 1 < (await links.count())) await page.keyboard.press(tab);
   }
 });
