@@ -115,5 +115,28 @@
     ],
     "iifeBytes": 66262,
     "iifeGzipBytes": 21909
+  },
+  "toolkitPreviewAfterR5": {
+    "position": "static",
+    "image": {
+      "x": 40,
+      "y": 876.296875,
+      "width": 310,
+      "height": 551.265625,
+      "top": 876.296875,
+      "right": 350,
+      "bottom": 1427.5625,
+      "left": 40
+    },
+    "showcase": {
+      "x": 16,
+      "y": 498.15625,
+      "width": 358,
+      "height": 953.40625,
+      "top": 498.15625,
+      "right": 374,
+      "bottom": 1451.5625,
+      "left": 16
+    }
   }
 }
