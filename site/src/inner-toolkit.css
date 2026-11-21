@@ -1,0 +1,58 @@
+.toolkit-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 4rem);
+  margin-block-end: 5rem;
+  border-radius: 24px;
+  background: var(--cream);
+}
+.toolkit-invitation h2 {
+  max-inline-size: 14ch;
+}
+.toolkit-invitation p {
+  line-height: 1.7;
+  max-inline-size: 46ch;
+}
+.toolkit-preview {
+  margin: 0;
+  padding: 2rem 2rem 1rem;
+  border-radius: 24px;
+  background: #cef3f7;
+  text-align: center;
+}
+.toolkit-preview img {
+  display: block;
+  inline-size: min(100%, 18rem);
+  block-size: auto;
+  margin-inline: auto;
+  box-shadow: 0 12px 32px #0a25401f;
+  border-radius: 12px;
+}
+.toolkit-preview figcaption {
+  padding-block-start: 1rem;
+  color: #0a2540;
+  font-size: 0.875rem;
+}
+@media (max-width: 48rem) {
+  .toolkit-showcase {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+  .toolkit-invitation h2 {
+    max-inline-size: none;
+  }
+  .toolkit-preview {
+    padding: 1rem;
+  }
+}
+@media (forced-colors: active) {
+  .toolkit-preview {
+    background: Canvas;
+    border: 1px solid CanvasText;
+  }
+  .toolkit-preview figcaption {
+    color: CanvasText;
+  }
+}
