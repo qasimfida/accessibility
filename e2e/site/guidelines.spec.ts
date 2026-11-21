@@ -65,3 +65,19 @@ test('pressed actions keep visible feedback in forced colors', async ({
     await page.mouse.up();
   }
 });
+
+test('brand stays light under a dark OS while the toolkit honours its preference', async ({
+  page,
+}) => {
+  await loadSite(page, '', 'dark');
+  await expect(page.locator('body')).toHaveCSS(
+    'background-color',
+    'rgb(250, 248, 245)',
+  );
+  await expect(page.locator('h1')).toHaveCSS('font-weight', '400');
+  await page.keyboard.press('Alt+KeyA');
+  await expect(page.getByRole('dialog')).toHaveCSS(
+    'background-color',
+    'rgb(20, 35, 49)',
+  );
+});
