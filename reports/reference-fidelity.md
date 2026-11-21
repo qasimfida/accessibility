@@ -46,24 +46,6 @@ No changes were made to the library's public API or widget lifecycle.
 
 ## Verification
 
-Final command outcomes are recorded after the closing browser run.
-
-## Review findings and fixes
-
-| Severity   | Finding                                                                 | Fix                                                                     | Status |
-| ---------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------ |
-| Medium R-1 | Repeated hero illustration layers and stylesheet import during assembly | e490a54 removes duplicates                                              | Fixed  |
-| Medium R-2 | Product-card FLIP effects also needed to stop for printing              | 4bbb2dd cancels print effects and tests print/Stop animations           | Fixed  |
-| Medium R-3 | Desktop entry travel could overlap the mobile artwork caption           | 9e21574 limits mobile travel to 12 px and retains overlap assertions    | Fixed  |
-| Low R-4    | Shared campaign stylesheet exceeded the module soft limit               | 81eca72 separates document surfaces while preserving cascade order      | Fixed  |
-| Medium     | Product entry could run before deliberate scrolling                     | Separate 50% product intersection threshold and browser regression test | Fixed  |
-
-The first matrix was interrupted after identifying the caption defect; its partial
-results are not represented as a pass. No threshold, axe rule or assertion was
-relaxed. No Blocker or High findings remain in the reviewed implementation.
-
-## Verification
-
 - Full site matrix: **460 passed in 5.5 minutes**, all five browser/device projects and nine authored pages. Axe reports zero violations in all 315 page/profile rows, closed and open. No retries or skips.
 - After the final scroll-exposure change, **130 closing regressions passed in 1.7 minutes**, including real motion, keyboard, mobile caption clearance, dark-OS branding, hover selection, print and Stop animations.
 - Full `npm run verify`: PASS; 197 unit tests in 62 files, six performance-script tests, lint, typecheck, build, SSR checks, size, publint and attw. Core coverage: 98.63% lines and 97.96% branches.
@@ -162,3 +144,5 @@ under a dark OS. GitHub Pages deploys from main after verification and push.
 - 81eca72 refactor(styles): separate document surfaces from campaign layout
 - 7d58299 docs(design): specify reference spacing and motion limits
 - 501305f fix(motion): defer hero convergence until meaningful scroll exposure
+
+- b26d24d docs(report): record measured reference alignment and motion evidence
