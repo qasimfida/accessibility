@@ -1,9 +1,23 @@
-# Design system — Quietly expressive
+# Design system — Reference-aligned product presentation
 
 This is the visual and interaction contract for the Accessiblit website and
 shadow-root toolkit. Product truth and AGENTS.md accessibility/privacy gates take
 precedence. The supplied reference informs space, rhythm and composition, never
 copy, assets, certifications or compliance claims.
+
+## Measured reference baseline
+
+Inspect https://accessibe.com/accesswidget in a browser at 1440 × 1000 before
+making visual changes. The 2026-11-21 inspection found a 50 px / 60 px regular
+hero heading, 36 px section headings, 12 px action corners, navy #0a2540, blue
+#0047d8 and warm-white hero surfaces. Use our local Manrope as an original
+geometric alternative; do not download or copy proprietary font files or assets.
+
+The marketing site intentionally keeps this light brand presentation even when
+the OS requests dark appearance. The independently themed toolkit continues to
+honour prefers-color-scheme; its Dark mode feature remains available for visitor
+choice. Forced colours still override both. Browser metadata must match actual
+page backgrounds in both OS appearances.
 
 ## Art direction
 
@@ -18,20 +32,20 @@ the drop-in toolkit keeps its system font and makes no network requests.
 - Primary action: existing accessible blue; one dominant action per section.
 - Shapes: subtle gridded texture, restrained radial light and outlined orbits.
   Decorative layers are CSS, non-interactive and never the source of meaning.
-- Radius: 24 px feature surfaces, 16 px document surfaces, pill actions.
+- Radius: 24 px feature surfaces, 16 px document surfaces, 12 px action corners.
 - Spacing: 8 px rhythm; 64–112 px desktop section padding, 40–64 px mobile.
 - Layout: maximum 78 rem; retain safe-area gutters and 320 px reflow.
-- Dark appearance and forced colours use existing semantic tokens. Never place
+- Toolkit dark appearance and forced colours use semantic tokens. Never place
   essential text on an unmeasured translucent surface.
 
 ## Motion language
 
-Motion describes hierarchy: a product stack gently assembles, related cards
+Motion describes hierarchy: a wide product stack converges into a centred demonstration, related cards
 settle into a grid and actions acknowledge hover. No looping ornaments, autoplay
 carousels, cursor followers, scroll hijacking or animation-dependent content.
 
-- Entry: once per element; 450–650 ms, up to 18 px translation and 2 degrees
-  rotation on decorative/card surfaces. The final state is always static.
+- Entry: once per element; 450–650 ms, up to 24 px translation on content surfaces; decorative hero layers may
+  converge horizontally as they enter the viewport. The final state is always static.
 - Hover: fine pointers only; up to 3 px lift or 1.015 scale, 180–220 ms. Transform
   the surface rather than changing document dimensions. Keep focus rings intact.
 - All animation is transform/opacity only. Never transition all properties.
