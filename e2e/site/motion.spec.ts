@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
     const animate = Element.prototype.animate;
     Object.defineProperty(window, '__siteMotionCalls', { value: [] });
     Element.prototype.animate = function (...args) {
-      if (this.closest('.marketing-main')) {
+      if (this.closest('main')) {
         const calls = Reflect.get(window, '__siteMotionCalls') as unknown[];
         calls.push({
           element: this.className,
@@ -166,10 +166,20 @@ test('product layers assemble and documentation receives progressive motion', as
   await loadSite(page, 'install/');
   await expect
     .poll(() =>
+      page.evaluate(() =>
+        Reflect.get(window, '__siteMotionCalls').some(
+          (call: { text: string }) =>
+            call.text.includes('Choose how to install.'),
+        ),
+      ),
+    )
+    .toBe(true);
+  await expect
+    .poll(() =>
       page.locator('h1').evaluate((element) => element.getAnimations().length),
     )
     .toBe(0);
   await expect(page.locator('h1')).not.toHaveAttribute('style');
-  // Documentation motion runs outside marketing-main, without hiding the heading.
+  // Documentation motion remains optional; its heading is never hidden.
   await expect(page.locator('h1')).toBeVisible();
 });
