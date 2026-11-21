@@ -5,7 +5,7 @@ import type { placeUI } from './placement';
 export const UI_CSS = `
 .accessiblit-surface {
   all:initial; --ui-bg:#ffffff; --ui-ink:#162b3d; --ui-muted:#42566c; --ui-border:#6b8094;
-  --ui-quiet:#f1f3f7; --ui-body:#ffffff; --ui-accent:#004cde; --ui-accent-ink:#ffffff; --ui-focus:#1456a0;
+  --ui-quiet:#f1f3f7; --ui-body:#faf8f5; --ui-accent:#004cde; --ui-accent-ink:#ffffff; --ui-focus:#1456a0;
   position:fixed; display:block; box-sizing:border-box; margin:0; padding:0;
   color:var(--ui-ink); background:var(--ui-bg); font:15px/1.5 "Avenir Next",Arial,system-ui,sans-serif;
   color-scheme:light dark; text-align:start; letter-spacing:normal; word-spacing:normal; text-transform:none; text-indent:0;
@@ -26,9 +26,9 @@ export const UI_CSS = `
   border-radius:50%; color:var(--ui-accent-ink); background:var(--ui-accent); box-shadow:0 4px 16px #12263833; cursor:pointer;
 }
 .accessiblit-launcher svg { display:block; flex:none; }
-.accessiblit-panel { display:flex; flex-direction:column; padding:0; border:1px solid var(--ui-border); border-radius:14px; box-shadow:0 12px 40px #12263833; overflow:hidden; }
-.accessiblit-header { flex:none; display:grid; grid-template-columns:40px 1fr 44px; gap:4px 12px; padding:20px; color:var(--ui-ink); background:var(--ui-bg); background-image:linear-gradient(125deg,var(--ui-bg) 35%,var(--ui-quiet)); border-block-end:1px solid var(--ui-border); }
-.accessiblit-emblem { grid-column:1; grid-row:1/3; display:flex; align-items:center; justify-content:center; inline-size:40px; block-size:40px; border:1px solid var(--ui-accent); border-radius:10px; color:var(--ui-accent-ink); background:var(--ui-accent); }
+.accessiblit-panel { display:flex; flex-direction:column; padding:0; border:1px solid var(--ui-border); border-radius:22px; box-shadow:0 16px 48px #12263826; overflow:hidden; }
+.accessiblit-header { flex:none; display:grid; grid-template-columns:40px 1fr 44px; gap:4px 12px; padding:20px; color:var(--ui-ink); background:var(--ui-bg); background-image:linear-gradient(125deg,var(--ui-bg) 55%,var(--ui-quiet)); border-block-end:1px solid var(--ui-border); }
+.accessiblit-emblem { grid-column:1; grid-row:1/3; display:flex; align-items:center; justify-content:center; inline-size:40px; block-size:40px; border:1px solid var(--ui-accent); border-radius:14px; color:var(--ui-accent-ink); background:var(--ui-accent); }
 .accessiblit-emblem svg { inline-size:26px; block-size:26px; }
 .accessiblit-header h2 { grid-column:2; grid-row:1; margin:0; align-self:end; min-inline-size:0; font-size:19px; line-height:1.4; font-weight:600; text-wrap:balance; letter-spacing:-.025em; }
 .accessiblit-brand { grid-column:2; grid-row:2; color:var(--ui-muted); font-size:12px; font-weight:500; }
