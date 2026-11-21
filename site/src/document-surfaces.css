@@ -1,0 +1,67 @@
+/* Documentation and company-page surfaces share the product palette. */
+main.wrap {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+main.wrap > h1 {
+  max-inline-size: 22ch;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+}
+main.wrap > .lede {
+  max-inline-size: 54ch;
+}
+main.wrap > section {
+  padding-block: 1rem;
+  border-block-start: 1px solid var(--border);
+}
+.notice {
+  border-radius: 12px;
+  border-inline-start: 3px solid var(--accent);
+}
+.on-this-page {
+  gap: 0.6rem;
+}
+.on-this-page a {
+  border-radius: 8px;
+  padding-inline: 1rem;
+  text-decoration: none;
+}
+pre {
+  border-radius: 12px;
+  padding: 1.5rem;
+  line-height: 1.7;
+}
+.feature-card {
+  border-radius: 12px;
+}
+.site-footer {
+  padding-block: 3rem;
+}
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.page-grid > article {
+  min-inline-size: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+}
+.page-grid h3 {
+  margin-block-start: 0;
+}
+.page-grid a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 44px;
+}
+.editorial-intro {
+  padding: clamp(1.5rem, 5vw, 4rem);
+  border-radius: 20px;
+  background: var(--soft);
+  margin-block: 2rem 3rem;
+}
+.editorial-intro p {
+  max-inline-size: 56ch;
+}
