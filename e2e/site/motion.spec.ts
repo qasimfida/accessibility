@@ -147,3 +147,29 @@ test('keyboard entry keeps the focused card stationary', async ({
     0,
   );
 });
+
+test('product layers assemble and documentation receives progressive motion', async ({
+  page,
+}) => {
+  await loadSite(page, '');
+  await page.locator('.product-stage').scrollIntoViewIfNeeded();
+  await expect
+    .poll(() =>
+      page.evaluate(() =>
+        Reflect.get(window, '__siteMotionCalls').some(
+          (call: { frames: { transform: string[] } }) =>
+            call.frames.transform[0]?.includes('rotate(-1.5deg)'),
+        ),
+      ),
+    )
+    .toBe(true);
+  await loadSite(page, 'install/');
+  await expect
+    .poll(() =>
+      page.locator('h1').evaluate((element) => element.getAnimations().length),
+    )
+    .toBe(0);
+  await expect(page.locator('h1')).not.toHaveAttribute('style');
+  // Documentation motion runs outside marketing-main, without hiding the heading.
+  await expect(page.locator('h1')).toBeVisible();
+});

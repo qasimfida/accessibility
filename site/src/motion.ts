@@ -4,7 +4,7 @@ import { animate } from 'motion/mini';
 /** Enhance the static landing page without hiding content or moving focused controls. */
 export function startSiteMotion(doc: Document): () => void {
   const view = doc.defaultView;
-  if (!view || !doc.body.classList.contains('landing-page')) return () => {};
+  if (!view) return () => {};
 
   const reduce = view.matchMedia('(prefers-reduced-motion: reduce)');
   const forced = view.matchMedia('(forced-colors: active)');
@@ -40,7 +40,8 @@ export function startSiteMotion(doc: Document): () => void {
     const elements = doc.querySelectorAll<HTMLElement>(
       '.product-hero h1, .product-stage, .section-heading, .journey-card, ' +
         '.benefit-card, .focus-scene, .format-grid, .principle-quote, ' +
-        '.privacy-visual, .free-plan',
+        '.privacy-visual, .free-plan, .store-browser, .toolkit-preview, ' +
+        'main.wrap > h1, main.wrap > section, .page-grid > article',
     );
     stopObserving = inView(elements, (element) => {
       if (disabled() || visited.has(element)) return;
@@ -54,10 +55,17 @@ export function startSiteMotion(doc: Document): () => void {
         if (previous === null) target.removeAttribute('style');
         else target.setAttribute('style', previous);
       };
-      // Translation preserves text contrast; content is readable before JS runs.
+      // Start slightly unarranged; compositor transforms never change layout.
+      const assembly = element.matches(
+        '.journey-card, .store-browser, .toolkit-preview, .page-grid > article',
+      );
+      const turn = element.matches('.toolkit-preview') ? 2 : -1.5;
+      const from = assembly
+        ? `translateY(18px) rotate(${turn}deg) scale(.985)`
+        : 'translateY(18px)';
       const animation = animate(
         element,
-        { transform: ['translateY(18px)', 'translateY(0px)'] },
+        { transform: [from, 'translateY(0px) rotate(0deg) scale(1)'] },
         { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
       );
       active.set(animation, restore);
