@@ -11,9 +11,6 @@ export const SITE_PAGES = [
   'about/',
   'contact/',
   'toolkit/',
-  'about/',
-  'contact/',
-  'toolkit/',
   '404.html',
 ] as const;
 
