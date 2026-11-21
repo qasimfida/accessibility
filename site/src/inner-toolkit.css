@@ -15,14 +15,14 @@
   line-height: 1.7;
   max-inline-size: 46ch;
 }
-.page-toolkit .toolkit-preview {
+.toolkit-detail-preview {
   margin: 0;
   padding: 2rem 2rem 1rem;
   border-radius: 24px;
   background: #cef3f7;
   text-align: center;
 }
-.page-toolkit .toolkit-preview img {
+.toolkit-detail-preview img {
   display: block;
   inline-size: min(100%, 18rem);
   block-size: auto;
@@ -30,7 +30,7 @@
   box-shadow: 0 12px 32px #0a25401f;
   border-radius: 12px;
 }
-.page-toolkit .toolkit-preview figcaption {
+.toolkit-detail-preview figcaption {
   padding-block-start: 1rem;
   color: #0a2540;
   font-size: 0.875rem;
@@ -43,16 +43,16 @@
   .toolkit-invitation h2 {
     max-inline-size: none;
   }
-  .page-toolkit .toolkit-preview {
+  .toolkit-detail-preview {
     padding: 1rem;
   }
 }
 @media (forced-colors: active) {
-  .page-toolkit .toolkit-preview {
+  .toolkit-detail-preview {
     background: Canvas;
     border: 1px solid CanvasText;
   }
-  .page-toolkit .toolkit-preview figcaption {
+  .toolkit-detail-preview figcaption {
     color: CanvasText;
   }
 }

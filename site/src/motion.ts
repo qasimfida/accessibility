@@ -62,13 +62,13 @@ export function startSiteMotion(doc: Document): () => void {
           ? 'translateX(-80px)'
           : desktop && element.matches('.stage-studio')
             ? 'translateX(80px)'
-            : element.matches('.toolkit-preview')
+            : element.matches('.toolkit-preview, .toolkit-detail-preview')
               ? desktop
                 ? 'translateY(80px)'
                 : 'translateY(12px)'
               : 'translateY(20px)';
       const product = element.matches(
-        '.stage-satellite, .toolkit-preview, .store-browser',
+        '.stage-satellite, .toolkit-preview, .toolkit-detail-preview, .store-browser',
       );
       const animation = animate(
         element,
@@ -87,7 +87,7 @@ export function startSiteMotion(doc: Document): () => void {
       });
     };
     const products = doc.querySelectorAll<HTMLElement>(
-      '.store-browser, .toolkit-preview, .stage-satellite',
+      '.store-browser, .toolkit-preview, .toolkit-detail-preview, .stage-satellite',
     );
     const stopContent = inView(elements, visit);
     // Wait for deliberate product exposure rather than playing at the viewport edge.
