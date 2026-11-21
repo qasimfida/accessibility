@@ -1,4 +1,4 @@
-/* Original browser scenes echo the reference's wide-to-centred product composition. */
+/* Original browser scenes echo the reference's wide-to-centred composition. */
 .product-stage {
   inline-size: min(62.5rem, 100%);
   block-size: 40.5rem;
@@ -15,19 +15,14 @@
   inset-inline-start: 35%;
   inset-block-start: 1rem;
   inline-size: 30%;
-  border-radius: 12px;
-  box-shadow: 0 12px 32px #0a254026;
-}
-.product-stage .floating-setting {
-  inset-inline-start: 17%;
-  inset-block-end: 7rem;
+  border-radius: 8px;
 }
 .stage-satellite {
   position: absolute;
-  inset-block-start: 7rem;
+  inset-block-start: 6rem;
   inline-size: 42%;
-  block-size: 21rem;
-  border: 8px solid #edf0f6;
+  block-size: 22rem;
+  border: 8px solid #edf0f5;
   border-radius: 24px;
   background: #ffffff;
   color: #0a2540;
@@ -77,26 +72,26 @@
 }
 .satellite-page {
   display: block;
+  margin-block-start: 1rem;
   font-size: 0.75rem;
-  margin-block-start: 1.5rem;
 }
 .satellite-orbit {
-  position: absolute;
-  inline-size: 12rem;
-  block-size: 12rem;
-  border: 1px solid #8caeb0;
+  display: block;
+  inline-size: 5rem;
+  block-size: 5rem;
+  margin-inline-start: auto;
+  border: 1px solid #658b92;
   border-radius: 50%;
-  inset-inline-end: -4rem;
-  inset-block-end: -4rem;
-  box-shadow: 0 0 0 1.5rem #c3dfe0;
+  box-shadow: 0 0 0 1rem #cbe0e2;
 }
-.product-stage .hero-caption {
-  inset-block-end: 0;
+.product-stage .floating-setting {
+  inset-inline-start: 19%;
+  inset-block-end: 7rem;
 }
 @media (max-width: 48rem) {
   .product-stage {
     block-size: 27rem;
-    margin-block-start: 5rem;
+    margin-block-start: 4rem;
   }
   .stage-satellite {
     display: none;
@@ -114,11 +109,8 @@
 }
 @media (forced-colors: active) {
   .stage-satellite {
-    color: CanvasText;
     background: Canvas;
+    color: CanvasText;
     border-color: CanvasText;
-  }
-  .satellite-orbit {
-    display: none;
   }
 }
