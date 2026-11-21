@@ -1,0 +1,56 @@
+[
+  {
+    "engine": "chromium",
+    "profile": "light",
+    "elements": 239,
+    "differences": []
+  },
+  {
+    "engine": "chromium",
+    "profile": "dark",
+    "elements": 239,
+    "differences": []
+  },
+  {
+    "engine": "chromium",
+    "profile": "forced",
+    "elements": 239,
+    "differences": []
+  },
+  {
+    "engine": "firefox",
+    "profile": "light",
+    "elements": 239,
+    "differences": []
+  },
+  {
+    "engine": "firefox",
+    "profile": "dark",
+    "elements": 239,
+    "differences": []
+  },
+  {
+    "engine": "firefox",
+    "profile": "forced",
+    "elements": 239,
+    "differences": []
+  },
+  {
+    "engine": "webkit",
+    "profile": "light",
+    "elements": 239,
+    "differences": []
+  },
+  {
+    "engine": "webkit",
+    "profile": "dark",
+    "elements": 239,
+    "differences": []
+  },
+  {
+    "engine": "webkit",
+    "profile": "forced",
+    "elements": 239,
+    "differences": []
+  }
+]

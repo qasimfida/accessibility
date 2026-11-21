@@ -1,0 +1,39 @@
+{
+  "unit": {
+    "files": 62,
+    "tests": 198
+  },
+  "perfScriptTests": 7,
+  "browser": {
+    "accessibilityAndDesign": {
+      "passed": 54,
+      "seconds": 41.4
+    },
+    "interactionLayoutCSP": {
+      "passed": 41,
+      "seconds": 18.4,
+      "skipped": 2,
+      "reason": "Existing Firefox/WebKit CDP pinch-zoom capability skips"
+    }
+  },
+  "bundle": {
+    "raw": 65958,
+    "gzip": 21921
+  },
+  "audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "productionAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  }
+}

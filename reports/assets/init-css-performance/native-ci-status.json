@@ -1,0 +1,118 @@
+{
+  "source": "118c20ac73ce85ce291c1fe72d21ce8b888aaac3",
+  "run": 44900220742,
+  "jobs": [
+    {
+      "id": 136834357044,
+      "name": "init trend (20)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/qasimfida/accessiblit/actions/runs/44900220742/job/136834357044",
+      "startedAt": "2026-11-21T11:40:33Z",
+      "completedAt": "2026-11-21T11:41:31Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm ci",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npx playwright install chromium webkit",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm run perf -- --ci --baseline reports/perf-ci-node20-baseline.json --output reports/perf-ci-node20.json",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 136834357207,
+      "name": "init trend (22)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/qasimfida/accessiblit/actions/runs/44900220742/job/136834357207",
+      "startedAt": "2026-11-21T11:40:32Z",
+      "completedAt": "2026-11-21T11:41:17Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm ci",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npx playwright install chromium webkit",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm run perf -- --ci --baseline reports/perf-ci-node22-baseline.json --output reports/perf-ci-node22.json",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}
