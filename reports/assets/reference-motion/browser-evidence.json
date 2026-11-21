@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-21",
+  "visual": [
+    {
+      "name": "desktop",
+      "reducedMotion": "reduce",
+      "overflow": 0,
+      "loadMs": 109.89999997615814,
+      "resources": [
+        {
+          "name": "/accessiblit/fonts/manrope-latin.woff2",
+          "bytes": 24532
+        },
+        {
+          "name": "/accessiblit/bootstrap.js",
+          "bytes": 114
+        },
+        {
+          "name": "/accessiblit/accessiblit.min.js",
+          "bytes": 65866
+        },
+        {
+          "name": "/accessiblit/assets/main-Dk8AvCWM.js",
+          "bytes": 12008
+        },
+        {
+          "name": "/accessiblit/assets/main-CSJaBhVH.css",
+          "bytes": 61035
+        },
+        {
+          "name": "/accessiblit/images/editorial-demo.webp",
+          "bytes": 42828
+        },
+        {
+          "name": "/accessiblit/images/toolkit-white.png",
+          "bytes": 59777
+        }
+      ],
+      "thirdParty": []
+    },
+    {
+      "name": "mobile",
+      "reducedMotion": "reduce",
+      "overflow": 0,
+      "loadMs": 50.09999996423721,
+      "resources": [
+        {
+          "name": "/accessiblit/fonts/manrope-latin.woff2",
+          "bytes": 24532
+        },
+        {
+          "name": "/accessiblit/bootstrap.js",
+          "bytes": 114
+        },
+        {
+          "name": "/accessiblit/assets/main-CSJaBhVH.css",
+          "bytes": 61035
+        },
+        {
+          "name": "/accessiblit/accessiblit.min.js",
+          "bytes": 65866
+        },
+        {
+          "name": "/accessiblit/assets/main-Dk8AvCWM.js",
+          "bytes": 12008
+        },
+        {
+          "name": "/accessiblit/images/editorial-demo.webp",
+          "bytes": 42828
+        },
+        {
+          "name": "/accessiblit/images/toolkit-white.png",
+          "bytes": 59777
+        }
+      ],
+      "thirdParty": []
+    },
+    {
+      "name": "dark",
+      "reducedMotion": "reduce",
+      "overflow": 0,
+      "loadMs": 45.39999997615814,
+      "resources": [
+        {
+          "name": "/accessiblit/accessiblit.min.js",
+          "bytes": 65866
+        },
+        {
+          "name": "/accessiblit/fonts/manrope-latin.woff2",
+          "bytes": 24532
+        },
+        {
+          "name": "/accessiblit/bootstrap.js",
+          "bytes": 114
+        },
+        {
+          "name": "/accessiblit/assets/main-Dk8AvCWM.js",
+          "bytes": 12008
+        },
+        {
+          "name": "/accessiblit/assets/main-CSJaBhVH.css",
+          "bytes": 61035
+        },
+        {
+          "name": "/accessiblit/images/editorial-demo.webp",
+          "bytes": 42828
+        },
+        {
+          "name": "/accessiblit/images/toolkit-white.png",
+          "bytes": 59777
+        }
+      ],
+      "thirdParty": []
+    }
+  ],
+  "keyboard": [
+    {
+      "label": "Skip to main content",
+      "visible": true
+    },
+    {
+      "label": "Explore the live demo",
+      "tag": "A"
+    },
+    {
+      "label": "Find your installation",
+      "tag": "A"
+    },
+    {
+      "label": "Explore all 18 controls",
+      "tag": "A"
+    },
+    {
+      "label": "Read the privacy details",
+      "tag": "A"
+    },
+    {
+      "label": "Try it on this page",
+      "tag": "A"
+    },
+    {
+      "label": "Open live demo options",
+      "tag": "BUTTON"
+    },
+    {
+      "step": "Demo opened with Space",
+      "focused": true
+    },
+    {
+      "step": "Escape returns launcher focus",
+      "focused": true
+    },
+    {
+      "step": "Native FAQ toggled with Space",
+      "open": true
+    }
+  ],
+  "bundle": {
+    "rawBytes": 65866,
+    "gzipBytes": 21863
+  },
+  "siteAssets": [
+    {
+      "file": "main-CSJaBhVH.css",
+      "rawBytes": 61035,
+      "gzipBytes": 7588
+    },
+    {
+      "file": "main-Dk8AvCWM.js",
+      "rawBytes": 12008,
+      "gzipBytes": 4669
+    }
+  ],
+  "noJavaScript": {
+    "title": "Website personalisation,\nbuilt around your visitors.",
+    "faq": 11,
+    "hidden": "visible"
+  },
+  "source": "1712c04e9bf4f22bcad1b57386a2b95baf7ff11c",
+  "documentBytes": 37426
+}
