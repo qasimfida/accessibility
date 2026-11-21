@@ -1,0 +1,23 @@
+{
+  "method": "Single local headless Chromium load per page, fresh context, reduced motion. Resources exclude HTML. Not an internet benchmark or init-time gate.",
+  "rows": [
+    {
+      "route": "",
+      "loadEventMs": 90.59999996423721,
+      "resourceBytes": 271790,
+      "observedLayoutShift": 0
+    },
+    {
+      "route": "toolkit/",
+      "loadEventMs": 30.19999998807907,
+      "resourceBytes": 169185,
+      "observedLayoutShift": 0
+    },
+    {
+      "route": "install/",
+      "loadEventMs": 37.39999997615814,
+      "resourceBytes": 169185,
+      "observedLayoutShift": 0
+    }
+  ]
+}

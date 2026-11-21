@@ -1,0 +1,317 @@
+[
+  {
+    "route": "",
+    "path": [
+      {
+        "text": "Skip to main content",
+        "tag": "A",
+        "href": "#main"
+      },
+      {
+        "text": "Meet the free toolkit",
+        "tag": "A",
+        "href": "/accessiblit/pricing/"
+      },
+      {
+        "text": "Accessiblit",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Home",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Toolkit",
+        "tag": "A",
+        "href": "/accessiblit/toolkit/"
+      },
+      {
+        "text": "Documentation",
+        "tag": "A",
+        "href": "/accessiblit/install/"
+      },
+      {
+        "text": "About",
+        "tag": "A",
+        "href": "/accessiblit/about/"
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "href": "/accessiblit/contact/"
+      },
+      {
+        "text": "Pricing",
+        "tag": "A",
+        "href": "/accessiblit/pricing/"
+      },
+      {
+        "text": "FAQ",
+        "tag": "A",
+        "href": "/accessiblit/faq/"
+      },
+      {
+        "text": "Try the toolkit",
+        "tag": "A",
+        "href": "#demo"
+      }
+    ],
+    "focusReturned": true,
+    "thirdParty": [],
+    "overflow": 0
+  },
+  {
+    "route": "about/",
+    "path": [
+      {
+        "text": "Skip to main content",
+        "tag": "A",
+        "href": "#main"
+      },
+      {
+        "text": "Accessiblit",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Home",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Toolkit",
+        "tag": "A",
+        "href": "/accessiblit/toolkit/"
+      },
+      {
+        "text": "Documentation",
+        "tag": "A",
+        "href": "/accessiblit/install/"
+      },
+      {
+        "text": "About",
+        "tag": "A",
+        "href": "/accessiblit/about/"
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "href": "/accessiblit/contact/"
+      },
+      {
+        "text": "Pricing",
+        "tag": "A",
+        "href": "/accessiblit/pricing/"
+      },
+      {
+        "text": "FAQ",
+        "tag": "A",
+        "href": "/accessiblit/faq/"
+      },
+      {
+        "text": "Explore the source",
+        "tag": "A",
+        "href": "https://github.com/qasimfida/accessiblit"
+      },
+      {
+        "text": "Read the limitations",
+        "tag": "A",
+        "href": "/accessiblit/faq/"
+      }
+    ],
+    "focusReturned": true,
+    "thirdParty": [],
+    "overflow": 0
+  },
+  {
+    "route": "contact/",
+    "path": [
+      {
+        "text": "Skip to main content",
+        "tag": "A",
+        "href": "#main"
+      },
+      {
+        "text": "Accessiblit",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Home",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Toolkit",
+        "tag": "A",
+        "href": "/accessiblit/toolkit/"
+      },
+      {
+        "text": "Documentation",
+        "tag": "A",
+        "href": "/accessiblit/install/"
+      },
+      {
+        "text": "About",
+        "tag": "A",
+        "href": "/accessiblit/about/"
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "href": "/accessiblit/contact/"
+      },
+      {
+        "text": "Pricing",
+        "tag": "A",
+        "href": "/accessiblit/pricing/"
+      },
+      {
+        "text": "FAQ",
+        "tag": "A",
+        "href": "/accessiblit/faq/"
+      },
+      {
+        "text": "Open GitHub issues",
+        "tag": "A",
+        "href": "https://github.com/qasimfida/accessiblit/issues"
+      },
+      {
+        "text": "Email Qasim Fida",
+        "tag": "A",
+        "href": "mailto:qasimfida0054@gmail.com"
+      }
+    ],
+    "focusReturned": true,
+    "thirdParty": [],
+    "overflow": 0
+  },
+  {
+    "route": "toolkit/",
+    "path": [
+      {
+        "text": "Skip to main content",
+        "tag": "A",
+        "href": "#main"
+      },
+      {
+        "text": "Accessiblit",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Home",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Toolkit",
+        "tag": "A",
+        "href": "/accessiblit/toolkit/"
+      },
+      {
+        "text": "Documentation",
+        "tag": "A",
+        "href": "/accessiblit/install/"
+      },
+      {
+        "text": "About",
+        "tag": "A",
+        "href": "/accessiblit/about/"
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "href": "/accessiblit/contact/"
+      },
+      {
+        "text": "Pricing",
+        "tag": "A",
+        "href": "/accessiblit/pricing/"
+      },
+      {
+        "text": "FAQ",
+        "tag": "A",
+        "href": "/accessiblit/faq/"
+      },
+      {
+        "text": "Open live demo options",
+        "tag": "BUTTON",
+        "href": null
+      },
+      {
+        "text": "Explore content controls",
+        "tag": "A",
+        "href": "/accessiblit/#features-title"
+      }
+    ],
+    "focusReturned": true,
+    "thirdParty": [],
+    "overflow": 0
+  },
+  {
+    "route": "install/",
+    "path": [
+      {
+        "text": "Skip to main content",
+        "tag": "A",
+        "href": "#main"
+      },
+      {
+        "text": "Accessiblit",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Home",
+        "tag": "A",
+        "href": "/accessiblit/"
+      },
+      {
+        "text": "Toolkit",
+        "tag": "A",
+        "href": "/accessiblit/toolkit/"
+      },
+      {
+        "text": "Documentation",
+        "tag": "A",
+        "href": "/accessiblit/install/"
+      },
+      {
+        "text": "About",
+        "tag": "A",
+        "href": "/accessiblit/about/"
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "href": "/accessiblit/contact/"
+      },
+      {
+        "text": "Pricing",
+        "tag": "A",
+        "href": "/accessiblit/pricing/"
+      },
+      {
+        "text": "FAQ",
+        "tag": "A",
+        "href": "/accessiblit/faq/"
+      },
+      {
+        "text": "CDN",
+        "tag": "A",
+        "href": "#cdn"
+      },
+      {
+        "text": "npm",
+        "tag": "A",
+        "href": "#npm"
+      }
+    ],
+    "focusReturned": true,
+    "thirdParty": [],
+    "overflow": 0
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "vue": {
+    "version": "3.5.46",
+    "checks": ["SFC parse", "compileScript", "strict TypeScript"]
+  },
+  "angular": {
+    "version": "21.2.26",
+    "checks": ["real @angular/core types", "strict TypeScript"]
+  },
+  "existingSnippets": "npm run test:site-snippets passed: real CDN plus tarball ESM, lifecycle, React and Next in Chromium, Firefox and WebKit; Node16 and Bundler types",
+  "limitations": [
+    "No real WordPress or Shopify deployment tested",
+    "Angular and Vue compiler checks do not replace a complete application deployment"
+  ]
+}
