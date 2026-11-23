@@ -64,5 +64,5 @@ MIT © 2026 Qasim Fida. See [LICENSE](LICENSE).
 ## Branding
 
 The widget and website share an original editable SVG mark. See
-[editing the logo](docs/branding.md) for the single source, asset synchronisation
+[editing the logo](https://github.com/qasimfida/accessiblit/blob/main/docs/branding.md) for the single source, asset synchronisation
 and real-widget preview capture commands. No runtime logo request is introduced.
