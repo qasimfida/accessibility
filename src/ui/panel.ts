@@ -1,3 +1,4 @@
+import { createBrand } from './brand';
 import { createOptionStepper } from './option-stepper';
 import { createIcon } from './icon';
 import { createReporter } from '../core/diagnostics';
@@ -95,12 +96,7 @@ export function createPanel(
   const prepare = () => {
     if (prepared || !scope.active) return;
     prepared = true;
-    emblem.append(
-      createIcon(doc, [
-        'M10 4a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z',
-        'M3 9l9 2 9-2M12 11v5m0 0-5 6m5-6 5 6',
-      ]),
-    );
+    emblem.append(createBrand(doc));
     const groups = [
       ['content', 'contentGroup'],
       ['colour', 'colourGroup'],
