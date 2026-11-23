@@ -118,3 +118,26 @@ The hosted toolkit explicitly inherits the light brand through
 `--accessiblit-color-scheme: light` on its host. Ordinary package embeds remain
 system-aware; forced colours always retain operating-system priority. No new
 JavaScript option or persisted appearance preference is introduced.
+
+## Compact toolkit controls and hints
+
+Binary features use two cards per row, with a single visible feature name, a
+visible description and an On/Off switch indicator. Selected cards use the blue
+accent with contrasting text and icons. State words and the moved switch knob
+supplement colour. Other controls keep a full-width row. Do not force three
+columns at the expense of readable names or target sizes.
+
+Option lists remain native radio groups with icon-and-label pills and a selected
+checkmark. Their inputs retain native keyboard behaviour; parent pills show the
+keyboard focus outline. The close action has no resting border, turns blue on
+hover/focus and retains a keyboard focus indicator. Its action target stays 44 px.
+
+Icon actions have persistent hover/focus hints, black with white text in light
+mode and white with black text in dark mode. Forced colours use the system palette.
+Hints occupy an owned sibling layer, stay inside the visible viewport and hide on
+Escape, scroll or viewport changes. They add no runtime requests. Construct hint
+DOM and CSS only after the first action receives pointer or keyboard attention.
+
+The shared logo is editable through `src/ui/brand.ts`; see [branding](branding.md)
+for synchronising website assets and real panel previews. Avoid independent logo
+copies or mock panel illustrations that drift from the working widget.
