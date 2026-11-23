@@ -32,8 +32,8 @@ for (const width of [390, 320])
     await expect(toggle).toHaveText('Off');
     const close = panel.getByRole('button', { name: 'Close', exact: true });
     await close.focus();
-    await expect(panel.locator('.accessiblit-tooltip')).toBeVisible();
-    await expect(panel.locator('.accessiblit-tooltip')).toHaveText('Close');
+    await expect(page.getByRole('tooltip')).toBeVisible();
+    await expect(page.getByRole('tooltip')).toHaveText('Close');
     expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
     await page.keyboard.press('Escape');
     await expect(panel).toBeHidden();
@@ -50,7 +50,7 @@ test('action tooltips invert with the system scheme', async ({ page }) => {
     await expect(tip).toBeVisible();
     await expect(tip).toHaveCSS(
       'background-color',
-      colorScheme === 'light' ? 'rgb(17, 17, 17)' : 'rgb(255, 255, 255)',
+      colorScheme === 'light' ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)',
     );
   }
 });

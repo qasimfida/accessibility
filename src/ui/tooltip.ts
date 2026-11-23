@@ -15,7 +15,7 @@ export function createTooltips(
   tip.className = 'accessiblit-tooltip';
   tip.setAttribute('role', 'tooltip');
   tip.setAttribute('popover', 'manual');
-  panel.append(tip);
+  root.append(tip);
   let target: Element | undefined;
   const hide = () => {
     target = undefined;
@@ -35,7 +35,7 @@ export function createTooltips(
     target = button;
     tip.textContent = button.dataset.tooltip ?? '';
     const css =
-      '.accessiblit-tooltip{all:initial;position:fixed;inset:auto;margin:0;padding:8px 12px;max-inline-size:220px;box-sizing:border-box;border:1px solid transparent;border-radius:8px;font:14px/1.5 Arial,system-ui,sans-serif;overflow-wrap:anywhere;color-scheme:inherit;background:light-dark(#111,#fff);color:light-dark(#fff,#111);pointer-events:auto} @media(forced-colors:active){.accessiblit-tooltip{background:Canvas;color:CanvasText;border-color:CanvasText}}';
+      '.accessiblit-tooltip{all:initial;position:fixed;inset:auto;margin:0;padding:8px 12px;max-inline-size:220px;box-sizing:border-box;border:1px solid transparent;border-radius:8px;font:14px/1.5 Arial,system-ui,sans-serif;overflow-wrap:anywhere;color-scheme:var(--accessiblit-color-scheme,light dark);background:light-dark(#000,#fff);color:light-dark(#fff,#000);pointer-events:auto} @media(forced-colors:active){.accessiblit-tooltip{background:Canvas;color:CanvasText;border-color:CanvasText}}';
     sheet.set(css);
     try {
       tip.showPopover();
