@@ -1,5 +1,9 @@
 import { expect, test } from '@playwright/test';
 import { loadQA } from './helpers/qa';
+
+// DOM trace snapshots retain instrumentation metadata per lifecycle. Keep trace
+// events, but measure application memory without the snapshot recorder's heap.
+test.use({ trace: { mode: 'retain-on-failure', snapshots: false } });
 test('post-GC heap has no detectable growth trend across 200 lifecycles', async ({
   page,
   browserName,
