@@ -34,10 +34,7 @@ for (const width of [390, 320])
     await close.focus();
     await expect(page.getByRole('tooltip')).toBeVisible();
     await expect(page.getByRole('tooltip')).toHaveText('Close');
-    expect(
-      (await new AxeBuilder({ page }).options({ iframes: false }).analyze())
-        .violations,
-    ).toEqual([]);
+    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
     await page.keyboard.press('Escape');
     await expect(panel).toBeHidden();
   });
