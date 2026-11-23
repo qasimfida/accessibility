@@ -27,7 +27,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Setup plus the complete five-project site suite exceeds 20 minutes on shared runners.
+    # This is an orchestration allowance; all test and product performance gates remain intact.
+    timeout-minutes: 35
     permissions:
       contents: read
       pages: read
