@@ -1,4 +1,4 @@
-import { createTooltips } from './tooltip';
+import { createTooltipTriggers } from './tooltip';
 import { keepPanelFocusVisible } from './focus';
 import { createReporter } from '../core/diagnostics';
 import { createScope } from '../core/scope';
@@ -31,7 +31,6 @@ export function createUI(
   const scope = createScope(() => report('ui', 'UI cleanup failed.'));
   let opened = false;
   let panelStylesReady = false;
-  let tooltips: ReturnType<typeof createTooltips> | undefined;
   let zoom = 1;
   let lastCSS = '';
   let refreshFrame: number | undefined;
@@ -55,6 +54,8 @@ export function createUI(
       () => toggle(),
     );
     scope.add(launcher.destroy);
+    const tooltips = createTooltipTriggers(root, panel.element, options.nonce);
+    scope.add(tooltips.destroy);
     const launcherLayer = createLayer(launcher.element);
     scope.add(launcherLayer.destroy);
     const panelLayer = createLayer(panel.element);
@@ -138,10 +139,6 @@ export function createUI(
         draw(placeUI(viewport(), options));
       }
       panel.prepare();
-      if (!tooltips) {
-        tooltips = createTooltips(root, panel.element, options.nonce);
-        scope.add(tooltips.destroy);
-      }
       opened = true;
       launcherLayer.show();
       panelLayer.show();
@@ -155,7 +152,6 @@ export function createUI(
     function close(returnFocus = true) {
       if (!scope.active || !opened) return;
       opened = false;
-      tooltips?.hide();
       panelLayer.hide();
       launcher.update(false);
       if (returnFocus) {
@@ -163,6 +159,7 @@ export function createUI(
         launcher.element.focus({ preventScroll: true });
       }
       refresh();
+      tooltips.hide();
     }
     function toggle() {
       if (opened) close();

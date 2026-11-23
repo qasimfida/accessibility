@@ -20,6 +20,7 @@ export function createTooltips(
     'aria-label',
     panel.getAttribute('aria-label') ?? 'Accessibility',
   );
+  region.hidden = true;
   region.append(tip);
   root.append(region);
   let target: Element | undefined;
@@ -31,6 +32,7 @@ export function createTooltips(
       /* Already closed during teardown. */
     }
     sheet.clear();
+    region.hidden = true;
   };
   const show = (event: Event) => {
     const element = event.target;
@@ -39,6 +41,7 @@ export function createTooltips(
     if (!button || button === target) return;
     hide();
     target = button;
+    region.hidden = false;
     tip.textContent = button.dataset.tooltip ?? '';
     tip.setAttribute('aria-label', tip.textContent);
     const css =
@@ -76,16 +79,44 @@ export function createTooltips(
       return;
     hide();
   };
-  scope.listen(root, 'pointerover', show);
-  scope.listen(root, 'focusin', show);
   scope.listen(root, 'pointerout', leave);
   scope.listen(root, 'focusout', leave);
   scope.listen(panel, 'scroll', hide, { capture: true });
   scope.listen(view, 'resize', hide);
+  if (view.visualViewport) {
+    scope.listen(view.visualViewport, 'resize', hide);
+    scope.listen(view.visualViewport, 'scroll', hide);
+  }
   scope.add(() => {
     hide();
     sheet.destroy();
     region.remove();
   });
-  return { hide, destroy: scope.dispose };
+  return { show, hide, destroy: scope.dispose };
+}
+
+/** Allocate hint DOM and CSS only after a labelled action receives pointer or keyboard attention. */
+export function createTooltipTriggers(
+  root: ShadowRoot,
+  panel: HTMLElement,
+  nonce?: string,
+) {
+  const scope = createScope(() => {});
+  let hints: ReturnType<typeof createTooltips> | undefined;
+  const show = (event: Event) => {
+    const view = root.ownerDocument.defaultView!;
+    if (
+      !(event.target instanceof view.Element) ||
+      !event.target.closest('[data-tooltip]')
+    )
+      return;
+    if (!hints) {
+      hints = createTooltips(root, panel, nonce);
+      scope.add(hints.destroy);
+    }
+    hints.show(event);
+  };
+  scope.listen(root, 'pointerover', show);
+  scope.listen(root, 'focusin', show);
+  return { hide: () => hints?.hide(), destroy: scope.dispose };
 }

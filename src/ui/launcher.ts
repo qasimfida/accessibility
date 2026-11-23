@@ -13,6 +13,7 @@ export function createLauncher(
 ) {
   const element = makeButton(doc, '');
   element.className = 'accessiblit-surface accessiblit-launcher';
+  element.dataset.tooltip = messages.launcher;
   element.setAttribute('aria-label', messages.launcher);
   element.setAttribute('aria-expanded', 'false');
   element.setAttribute('aria-controls', panelId);
@@ -29,7 +30,12 @@ export function createLauncher(
   return {
     element,
     update(expanded: boolean) {
-      if (scope.active) element.setAttribute('aria-expanded', String(expanded));
+      if (scope.active) {
+        element.setAttribute('aria-expanded', String(expanded));
+        element.dataset.tooltip = expanded
+          ? `${messages.close} ${messages.panelTitle}`
+          : messages.launcher;
+      }
     },
     destroy: scope.dispose,
   };

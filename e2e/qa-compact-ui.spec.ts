@@ -57,3 +57,25 @@ test('action tooltips invert with the system scheme', async ({ page }) => {
     );
   }
 });
+
+test('launcher hints dismiss with Escape and leave no region after destroy', async ({
+  page,
+}) => {
+  await page.goto('/qa/plain.html');
+  const launcher = page.getByRole('button', {
+    name: 'Open accessibility options',
+    exact: true,
+  });
+  await launcher.focus();
+  await expect(page.getByRole('tooltip')).toHaveText(
+    'Open accessibility options',
+  );
+  await launcher.click();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('tooltip')).toBeHidden();
+  await launcher.blur();
+  await launcher.focus();
+  await expect(page.getByRole('tooltip')).toBeVisible();
+  await page.evaluate(() => window.qaInstance.destroy());
+  await expect(page.locator('[data-accessiblit-host]')).toHaveCount(0);
+});
