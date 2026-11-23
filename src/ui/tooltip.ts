@@ -15,7 +15,13 @@ export function createTooltips(
   tip.className = 'accessiblit-tooltip';
   tip.setAttribute('role', 'tooltip');
   tip.setAttribute('popover', 'manual');
-  root.append(tip);
+  const region = doc.createElement('aside');
+  region.setAttribute(
+    'aria-label',
+    panel.getAttribute('aria-label') ?? 'Accessibility',
+  );
+  region.append(tip);
+  root.append(region);
   let target: Element | undefined;
   const hide = () => {
     target = undefined;
@@ -34,6 +40,7 @@ export function createTooltips(
     hide();
     target = button;
     tip.textContent = button.dataset.tooltip ?? '';
+    tip.setAttribute('aria-label', tip.textContent);
     const css =
       '.accessiblit-tooltip{all:initial;position:fixed;inset:auto;margin:0;padding:8px 12px;max-inline-size:220px;box-sizing:border-box;border:1px solid transparent;border-radius:8px;font:14px/1.5 Arial,system-ui,sans-serif;overflow-wrap:anywhere;color-scheme:var(--accessiblit-color-scheme,light dark);background:light-dark(#000,#fff);color:light-dark(#fff,#000);pointer-events:auto} @media(forced-colors:active){.accessiblit-tooltip{background:Canvas;color:CanvasText;border-color:CanvasText}}';
     sheet.set(css);
@@ -78,7 +85,7 @@ export function createTooltips(
   scope.add(() => {
     hide();
     sheet.destroy();
-    tip.remove();
+    region.remove();
   });
   return { hide, destroy: scope.dispose };
 }
