@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-23T11:11:18.269Z",
+  "runs": {
+    "runtime": {
+      "passed": 118,
+      "skipped": 2,
+      "minutes": 1.3
+    },
+    "defaultAxeFollowUp": {
+      "passed": 20,
+      "seconds": 20.4
+    },
+    "site": {
+      "passed": 495,
+      "minutes": 8.9
+    }
+  },
+  "coverage": {
+    "states": 315,
+    "axeViolations": 0,
+    "minimumSiteTextContrast": 6.045473927095201,
+    "minimumWidgetTextContrast": 6.847968092474467,
+    "minimumTarget": 24,
+    "minimumPanelBoundary": 3.804925090992188
+  },
+  "network": [
+    {
+      "project": "chromium",
+      "requests": 58,
+      "thirdParty": []
+    },
+    {
+      "project": "firefox",
+      "requests": 67,
+      "thirdParty": []
+    },
+    {
+      "project": "webkit",
+      "requests": 58,
+      "thirdParty": []
+    },
+    {
+      "project": "iphone",
+      "requests": 58,
+      "thirdParty": []
+    },
+    {
+      "project": "pixel",
+      "requests": 58,
+      "thirdParty": []
+    }
+  ],
+  "keyboard": [
+    {
+      "project": "chromium",
+      "tab": "Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Documentation",
+        "Toolkit",
+        "About",
+        "Contact",
+        "Pricing",
+        "FAQ",
+        "Home"
+      ],
+      "errors": []
+    },
+    {
+      "project": "firefox",
+      "tab": "Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Documentation",
+        "Toolkit",
+        "About",
+        "Contact",
+        "Pricing",
+        "FAQ",
+        "Home"
+      ],
+      "errors": []
+    },
+    {
+      "project": "webkit",
+      "tab": "Alt+Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Documentation",
+        "Toolkit",
+        "About",
+        "Contact",
+        "Pricing",
+        "FAQ",
+        "Home"
+      ],
+      "errors": []
+    },
+    {
+      "project": "iphone",
+      "tab": "Alt+Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Documentation",
+        "Toolkit",
+        "About",
+        "Contact",
+        "Pricing",
+        "FAQ",
+        "Home"
+      ],
+      "errors": []
+    },
+    {
+      "project": "pixel",
+      "tab": "Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Documentation",
+        "Toolkit",
+        "About",
+        "Contact",
+        "Pricing",
+        "FAQ",
+        "Home"
+      ],
+      "errors": []
+    }
+  ]
+}

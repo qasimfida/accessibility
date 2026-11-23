@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-23T11:01:37.100Z",
+  "rows": [
+    {
+      "scene": "dark hint",
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "route": "",
+      "matchingBrandMarks": 2
+    },
+    {
+      "route": "about/",
+      "matchingBrandMarks": 2
+    },
+    {
+      "route": "install/",
+      "matchingBrandMarks": 2
+    },
+    {
+      "route": "options/",
+      "matchingBrandMarks": 2
+    },
+    {
+      "route": "faq/",
+      "matchingBrandMarks": 2
+    },
+    {
+      "route": "toolkit/",
+      "matchingBrandMarks": 2
+    },
+    {
+      "route": "contact/",
+      "matchingBrandMarks": 2
+    },
+    {
+      "route": "pricing/",
+      "matchingBrandMarks": 2
+    },
+    {
+      "route": "404.html",
+      "matchingBrandMarks": 2
+    }
+  ]
+}
