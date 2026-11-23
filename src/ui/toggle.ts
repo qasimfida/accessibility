@@ -4,16 +4,15 @@ import type { ControlContext, RenderedControl } from './control-types';
 /** A stable button name plus aria-pressed exposes state without color-only cues. */
 export function createToggle(context: ControlContext): RenderedControl {
   const shell = controlShell(context);
+  shell.element.classList.add('accessiblit-binary-feature');
   const button = makeButton(context.document, '');
   button.className = 'accessiblit-toggle';
   button.setAttribute('aria-labelledby', shell.labelId);
   button.setAttribute('aria-describedby', shell.descriptionId);
-  const label = context.document.createElement('span');
-  label.textContent = shell.text.label;
   const badge = context.document.createElement('span');
   badge.setAttribute('aria-hidden', 'true');
   badge.className = 'accessiblit-badge';
-  button.append(label, badge);
+  button.append(badge);
   shell.element.append(button);
   shell.scope.listen(button, 'click', () =>
     context.setValue(context.getValue() !== true),
