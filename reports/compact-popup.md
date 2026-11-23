@@ -8,8 +8,7 @@ Commit range: `324dd22..HEAD` on main (unnumbered follow-up).
 
 The popup now has paired binary cards, blue selected states, On/Off switches,
 icon choices, borderless close styling, themed action hints and an original shared
-logo. The previous Firefox blocker is resolved. The complete site suite and
-relevant runtime checks pass without disabling axe rules or retries.
+logo. The previous Firefox blocker is resolved. The complete local site suite and targeted runtime checks passed without disabling axe rules or retries. A broader CI run then identified additional findings documented below; each received a separate correction.
 
 ## What changed (files and why)
 
@@ -27,9 +26,18 @@ relevant runtime checks pass without disabling axe rules or retries.
 
 ## Verification (commands run, real results)
 
+After C-7–C-10: full runtime suite **1228 passed, 9 existing skips, 23.5 minutes**.
+The skips are unsupported CDP heap/zoom and narrow-layout cases already present;
+none were added. [Full runtime receipts](assets/compact-popup/retry/full-runtime.json)
+record matching listener counts, restored sheets/DOM and heap results. Pixel's final
+six heap samples were identical (slope and lower bound both zero). All 1237
+scenarios were attempted with retries disabled. The 495-site run below preceded
+these targeted corrections; the 49-case forced-colours follow-up and full runtime
+run validate the changed styles.
+
 - Started clean on main; `git pull --ff-only`: already up to date.
 - Before each commit: lint, typecheck and 46 UI tests passed.
-- `npm run verify`: PASS, 198 unit tests / 62 files; build, SSR, size, publint,
+- `npm run verify`: PASS, 198 unit tests / 62 files; final corrected build, SSR, size, publint,
   attw and seven performance-statistics tests passed.
 - Core coverage: 98.63% lines, 97.96% branches; overall branches: 90.16%.
 - Relevant runtime suite: 118 passed, two existing CDP-only zoom skips, 1.3 minutes.
@@ -62,6 +70,27 @@ internals were not independently diagnosed. `1373c7d` restored default axe ifram
 traversal after the fix. The earlier three failed attempts remain recorded in git.
 No gate was weakened. Self-review found no remaining Blocker, High or Medium issue.
 
+## Findings from the broader CI run
+
+| Severity | Finding                                                                     | Fix                                                                                | Status                                             |
+| -------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------- |
+| High     | C-7 close lost shortcut focus ring after pointer input                      | `ee652d9` retain focus outline even without focus-visible                          | Three engines pass existing regression             |
+| Medium   | C-8 forced switch boundary used HighlightText against a forced light button | `ce9a27e` use Canvas/CanvasText consistently                                       | 49 forced-colours checks pass across five projects |
+| Medium   | C-9 trace snapshots added 48 bytes per lifecycle to measured heap           | `e0a365c` retain trace events, disable DOM snapshots only for the heap measurement | Both Chromium/Pixel original assertions pass       |
+| Medium   | C-10 Pages setup plus site suite exceeded 20-minute job allowance           | `67d5fca` allow 35 minutes for orchestration                                       | actionlint passes; deployment rerun pending        |
+
+C-9 profiling used the same 1000 warmups and 200 measured lifecycles. Trace snapshots
+produced an exact 9600-byte increase (48 bytes/cycle), while the equivalent loop
+without snapshot recording stayed flat. Production instances, DOM and listeners
+were released in both cases. The test retains all original forced-GC, WeakRef,
+zero-growth confidence-bound, node and listener assertions. This changes diagnostic
+recording, not the acceptance gate. Final lower 95% slope bounds were -0.09867
+bytes/cycle (Chromium) and -0.08153 (Pixel), with zero retained instances and hosts.
+See [profiling](assets/compact-popup/retry/heap-diagnosis.json) and
+[unchanged assertions](assets/compact-popup/retry/heap-verification.json).
+C-10 changes workflow wall-clock allowance only; no product timing, coverage, axe,
+size, test timeout or retry setting changed.
+
 ## Audits
 
 - Accessibility: zero axe violations in 315 site states. Minimum measured site text
@@ -73,7 +102,7 @@ No gate was weakened. Self-review found no remaining Blocker, High or Medium iss
 - Security/privacy: no runtime requests, cookies or new storage keys. All five site
   projects recorded zero third-party requests. Strict CSP tests passed. Local SVG
   paths are validated; text uses safe DOM APIs. No dependencies or secrets added.
-- Performance/size: IIFE 23,174 gzip bytes, below 35 KB. Tooltip work is lazy.
+- Performance/size: IIFE 23,159 gzip bytes, below 35 KB. Tooltip work is lazy.
   No fresh reference-Mac timing is claimed; committed timing baselines and guards
   are unchanged.
 
@@ -92,7 +121,11 @@ creates no invented phase tag and does not move existing phase tags.
 
 ## Handoff notes for the next phase
 
-Deployment checks are pending the push. Human screen-reader and real-device checks
+The first push (`44778a4`) passed CI verify, site and both init-trend jobs, but the
+broader runtime matrix found C-7 through C-9 below. Pages reached its 20-minute
+orchestration timeout before deployment. These results supersede the earlier
+all-local-gates status; the fixes are separate forward commits and await another
+push and CI run. Human screen-reader and real-device checks
 remain necessary; the human must publish any npm release under AGENTS.md §2.1.
 
 Screenshots: [selected cards](assets/compact-popup/retry/selected-cards.png),
@@ -120,4 +153,9 @@ ed16c19 feat(tooltips): cover launcher focus and viewport changes lazily
 250a6f7 docs(branding): resolve the guide link for npm consumers
 1373c7d test(panel): restore default axe traversal after the name fix
 9b0bd2b docs(evidence): record verified compact UI and shared branding
+44778a4 docs(report): record compact popup resolution and passing audits
+ee652d9 fix(focus): preserve shortcut focus after pointer interactions
+ce9a27e fix(switches): use matching system colours in forced mode
+e0a365c test(heap): isolate lifecycle samples from trace snapshot storage
+67d5fca ci(pages): allow the complete site audit to finish before deploy
 ```
