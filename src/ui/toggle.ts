@@ -7,7 +7,8 @@ export function createToggle(context: ControlContext): RenderedControl {
   shell.element.classList.add('accessiblit-binary-feature');
   const button = makeButton(context.document, '');
   button.className = 'accessiblit-toggle';
-  button.setAttribute('aria-labelledby', shell.labelId);
+  // Gecko can retain stale external name references after palette rollback.
+  button.setAttribute('aria-label', shell.text.label);
   button.setAttribute('aria-describedby', shell.descriptionId);
   const badge = context.document.createElement('span');
   badge.setAttribute('aria-hidden', 'true');

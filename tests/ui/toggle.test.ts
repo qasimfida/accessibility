@@ -24,8 +24,8 @@ it('keeps its visible label stable, updates pressed state and releases clicks on
   expect(button.type).toBe('button');
   expect(button.getAttribute('aria-pressed')).toBe('false');
   expect(button.textContent).toBe('Off');
-  expect(button.getAttribute('aria-labelledby')).toBe(
-    control.element.querySelector('h4')?.id,
+  expect(button.getAttribute('aria-label')).toBe(
+    control.element.querySelector('h4')?.textContent,
   );
   expect(button.getAttribute('aria-describedby')).toBe(
     control.element.querySelector('p')?.id,
