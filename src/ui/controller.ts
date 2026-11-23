@@ -173,6 +173,7 @@ export function createUI(
       'keydown',
       (event) => {
         const key = event as KeyboardEvent;
+        if (key.code === 'Escape') tooltips.hide();
         if (opened && key.code === 'Escape') {
           event.preventDefault();
           event.stopPropagation();

@@ -70,6 +70,8 @@ test('launcher hints dismiss with Escape and leave no region after destroy', asy
   await expect(page.getByRole('tooltip')).toHaveText(
     'Open accessibility options',
   );
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('tooltip')).toBeHidden();
   await launcher.click();
   await page.keyboard.press('Escape');
   await expect(page.getByRole('tooltip')).toBeHidden();
