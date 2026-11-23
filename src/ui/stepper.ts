@@ -33,6 +33,7 @@ export function createStepper(context: ControlContext): RenderedControl {
     symbol.textContent = direction < 0 ? '−' : '+';
     button.prepend(symbol);
     button.setAttribute('aria-label', `${action} ${shell.text.label}`);
+    button.dataset.tooltip = `${action} ${shell.text.label}`;
     button.setAttribute(
       'aria-describedby',
       `${shell.descriptionId} ${value.id}`,

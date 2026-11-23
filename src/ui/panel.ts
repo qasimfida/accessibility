@@ -60,6 +60,7 @@ export function createPanel(
   title.textContent = messages.panelTitle;
   const closeButton = makeButton(doc, messages.close);
   closeButton.className = 'accessiblit-close';
+  closeButton.dataset.tooltip = messages.close;
   const closeText = doc.createElement('span');
   closeText.className = 'accessiblit-step-text';
   closeText.textContent = messages.close;
