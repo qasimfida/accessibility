@@ -1,3 +1,4 @@
+import { createIcon } from './icon';
 import { controlShell, valueText } from './presentation';
 import type { ControlContext, RenderedControl } from './control-types';
 
@@ -33,7 +34,13 @@ export function createRadios(context: ControlContext): RenderedControl {
     input.value = String(value);
     const text = context.document.createElement('span');
     text.textContent = valueText(context.feature, value, context.messages);
-    label.append(input, text);
+    const mark = context.document.createElement('span');
+    mark.className = 'accessiblit-choice-icon';
+    mark.setAttribute('aria-hidden', 'true');
+    mark.append(
+      createIcon(context.document, context.feature.icon ?? ['M6 12h12']),
+    );
+    label.append(input, mark, text);
     group.append(label);
     shell.scope.listen(input, 'change', () => {
       if (input.checked) context.setValue(value);

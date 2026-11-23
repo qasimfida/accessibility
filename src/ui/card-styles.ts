@@ -50,4 +50,13 @@ export const CARD_CSS = `
 .accessiblit-surface .accessiblit-binary-feature .accessiblit-toggle { justify-content:space-between; }
 .accessiblit-choice input { appearance:none; border:1px solid currentColor; border-radius:50%; background:transparent; }
 .accessiblit-choice input:checked::after { content:"✓"; display:block; text-align:center; line-height:22px; font-weight:700; }
+.accessiblit-choice { position:relative; }
+.accessiblit-choice input { position:absolute; opacity:0; }
+.accessiblit-choice-icon { display:inline-flex; align-items:center; justify-content:center; inline-size:24px; block-size:24px; flex:none; }
+.accessiblit-choice-icon svg { inline-size:22px; block-size:22px; }
+.accessiblit-choice:has(input:checked) .accessiblit-choice-icon svg { display:none; }
+.accessiblit-choice:has(input:checked) .accessiblit-choice-icon::after { content:"✓"; font-size:20px; font-weight:700; }
+.accessiblit-choice:has(input:focus-visible) { outline:3px solid var(--ui-focus); outline-offset:3px; box-shadow:0 0 0 6px var(--ui-bg); }
+.accessiblit-toggle::after { inline-size:34px; block-size:20px; border:1px solid currentColor; border-radius:20px; box-shadow:none; background:radial-gradient(circle at 9px 50%,currentColor 0 6px,transparent 7px); }
+.accessiblit-toggle[aria-pressed=true]::after { background:radial-gradient(circle at 24px 50%,currentColor 0 6px,transparent 7px); }
 `;
