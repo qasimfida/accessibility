@@ -23,7 +23,7 @@ it('keeps its visible label stable, updates pressed state and releases clicks on
   const button = control.element.querySelector('button')!;
   expect(button.type).toBe('button');
   expect(button.getAttribute('aria-pressed')).toBe('false');
-  expect(button.textContent).toBe('Off');
+  expect(button.textContent).toBe('');
   expect(button.getAttribute('aria-label')).toBe(
     control.element.querySelector('h4')?.textContent,
   );
@@ -33,7 +33,7 @@ it('keeps its visible label stable, updates pressed state and releases clicks on
   button.click();
   expect(setValue).toHaveBeenCalledWith(true);
   expect(button.getAttribute('aria-pressed')).toBe('true');
-  expect(button.textContent).toBe('On');
+  expect(button.textContent).toBe('');
   button.click();
   expect(button.getAttribute('aria-pressed')).toBe('false');
   control.update(true);

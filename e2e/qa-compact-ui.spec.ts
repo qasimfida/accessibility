@@ -24,12 +24,17 @@ for (const width of [390, 320])
       name: 'Dark mode',
       exact: true,
     });
+    const card = toggle.locator('..');
+    const neutral = await card.evaluate(
+      (e) => getComputedStyle(e).backgroundColor,
+    );
     await toggle.click();
-    await expect(toggle).toHaveText('On');
+    await expect(card).toHaveCSS('background-color', neutral);
+    await expect(toggle).toHaveText('');
     await expect(toggle).toHaveAttribute('aria-pressed', 'true');
     await expect(toggle.locator('..').locator('h4')).toHaveText('Dark mode');
     await toggle.click();
-    await expect(toggle).toHaveText('Off');
+    await expect(toggle).toHaveText('');
     const close = panel.getByRole('button', { name: 'Close', exact: true });
     await close.focus();
     await expect(page.getByRole('tooltip')).toBeVisible();
