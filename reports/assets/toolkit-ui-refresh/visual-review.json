@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-24T11:34:52.307Z",
+  "metrics": {
+    "panel": {
+      "x": 864,
+      "y": 148,
+      "width": 400,
+      "height": 680,
+      "top": 148,
+      "right": 1264,
+      "bottom": 828,
+      "left": 864
+    },
+    "header": {
+      "x": 865,
+      "y": 149,
+      "width": 398,
+      "height": 156,
+      "top": 149,
+      "right": 1263,
+      "bottom": 305,
+      "left": 865
+    },
+    "brand": "Accessibility"
+  },
+  "mobile": {
+    "bounds": {
+      "x": 8,
+      "y": 148,
+      "width": 304,
+      "height": 680,
+      "top": 148,
+      "right": 312,
+      "bottom": 828,
+      "left": 8
+    },
+    "scrollWidth": 302,
+    "clientWidth": 302
+  },
+  "marks": [
+    {
+      "route": "",
+      "matchingMarks": 2
+    },
+    {
+      "route": "about/",
+      "matchingMarks": 2
+    },
+    {
+      "route": "contact/",
+      "matchingMarks": 2
+    },
+    {
+      "route": "faq/",
+      "matchingMarks": 2
+    },
+    {
+      "route": "install/",
+      "matchingMarks": 2
+    },
+    {
+      "route": "options/",
+      "matchingMarks": 2
+    },
+    {
+      "route": "toolkit/",
+      "matchingMarks": 2
+    },
+    {
+      "route": "404.html",
+      "matchingMarks": 2
+    }
+  ],
+  "source": "Local production build at /accessibility/; Chromium; light scheme; reduced motion",
+  "sourceCommit": "2e2685b9a61a0f8b6a56c0a87bc99d6e5cd0435d",
+  "clientDate": "2026-11-24"
+}
