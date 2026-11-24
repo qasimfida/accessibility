@@ -4,44 +4,36 @@
 .faq-content > h2 {
   margin-block: 0 2rem;
 }
-.faq-list details {
-  border-block-start: 1px solid var(--border);
-  padding-block: 0;
-}
-.faq-list details:last-child {
+/* Home and the FAQ route share the same native disclosure component. */
+.accordion details {
   border-block-end: 1px solid var(--border);
 }
-.faq-list summary {
+.accordion summary {
   min-block-size: 64px;
-  padding: 1.25rem 0.5rem;
-  cursor: pointer;
-  font-size: 1.125rem;
+  padding-block: 1.25rem;
+  padding-inline-start: 0.25rem;
+  font-size: 1rem;
   font-weight: 500;
+  line-height: 1.6;
 }
-.faq-list summary::marker {
+.accordion summary:hover {
   color: var(--accent);
 }
-.faq-list summary:hover {
-  color: var(--accent);
-}
-.faq-list .faq-answer {
-  padding: 0 0.5rem 1.5rem;
+.accordion details > p,
+.accordion .faq-answer {
+  padding: 0 0.25rem 1.5rem;
   max-inline-size: 65ch;
+  font-size: 1rem;
   line-height: 1.7;
 }
-.faq-list details[open] {
-  background: var(--cream);
-  border-radius: 12px;
+.accordion .faq-answer p:last-child {
+  margin-block-end: 0;
 }
 .faq-list details[id] {
   scroll-margin-block-start: calc(var(--site-header-height, 6rem) + 1.5rem);
 }
 @media (forced-colors: active) {
-  .faq-list details[open] {
-    background: Canvas;
-  }
-  .faq-list summary::marker,
-  .faq-list summary:hover {
+  .accordion summary:hover {
     color: LinkText;
   }
 }
