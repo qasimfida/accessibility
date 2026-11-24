@@ -94,8 +94,8 @@ test('Stop animations cancels site motion and prevents later entries', async ({
   const count = await page.evaluate(
     () => Reflect.get(window, '__siteMotionCalls').length,
   );
-  await page.locator('.free-plan').scrollIntoViewIfNeeded();
-  await expect(page.locator('.free-plan')).toBeInViewport();
+  await page.locator('.donation-card').scrollIntoViewIfNeeded();
+  await expect(page.locator('.donation-card')).toBeInViewport();
   expect(
     await page.evaluate(() => Reflect.get(window, '__siteMotionCalls').length),
   ).toBe(count);
@@ -112,8 +112,8 @@ test('changing reduced-motion preference cancels current and pending motion', as
   const count = await page.evaluate(
     () => Reflect.get(window, '__siteMotionCalls').length,
   );
-  await page.locator('.free-plan').scrollIntoViewIfNeeded();
-  await expect(page.locator('.free-plan')).toBeInViewport();
+  await page.locator('.donation-card').scrollIntoViewIfNeeded();
+  await expect(page.locator('.donation-card')).toBeInViewport();
   expect(
     await page.evaluate(() => Reflect.get(window, '__siteMotionCalls').length),
   ).toBe(count);

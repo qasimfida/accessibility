@@ -40,7 +40,7 @@ export function startSiteMotion(doc: Document): () => void {
     const elements = doc.querySelectorAll<HTMLElement>(
       '.product-hero h1, .page-hero h1, .section-heading, .journey-card, ' +
         '.benefit-card, .focus-scene, .format-grid, .principle-quote, ' +
-        '.privacy-visual, .free-plan, ' +
+        '.privacy-visual, .donation-card, ' +
         'main.wrap > h1, main.wrap > section, .page-grid > article, .mosaic-tile, .inner-band .wrap',
     );
     const visit = (element: Element) => {
