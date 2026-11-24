@@ -21,7 +21,7 @@ export function placeUI(
   const gap = 8;
   const right = options.position.endsWith('right');
   const bottom = options.position.startsWith('bottom');
-  const width = Math.max(0, Math.min(440, view.width - gap * 2));
+  const width = Math.max(0, Math.min(400, view.width - gap * 2));
   const x = clamp(options.offset.x, gap, view.width - size - gap);
   const px = clamp(options.offset.x, gap, view.width - width - gap);
   const y = clamp(options.offset.y, gap, view.height - size - 144 - gap * 3);
@@ -36,7 +36,7 @@ export function placeUI(
     panelWidth: width,
     panelMaxHeight: Math.max(
       0,
-      Math.min(760, view.height - y - size - gap * 2),
+      Math.min(680, view.height - y - size - gap * 2),
     ),
     layoutWidth: view.layoutWidth,
     zIndex: options.zIndex,

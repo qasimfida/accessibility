@@ -29,14 +29,14 @@ try {
     .getByRole('button', { name: 'Close', exact: true })
     .evaluate((e) => e.blur());
   const box = await panel.boundingBox();
-  assert.equal(box.width, 440);
-  assert.equal(box.height, 760);
+  assert.equal(box.width, 400);
+  assert.equal(box.height, 680);
   await panel.screenshot({
     path: fileURLToPath(
       new URL('../site/public/images/toolkit-white.png', import.meta.url),
     ),
   });
-  console.log('Captured real toolkit: 440 × 760');
+  console.log('Captured real toolkit: 400 × 680');
 } finally {
   await browser?.close();
   await new Promise((resolve) => server.close(resolve));

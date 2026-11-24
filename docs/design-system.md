@@ -125,6 +125,7 @@ Binary features use two compact neutral cards per row, with one visible name and
 description. Switches have no repeated On/Off text: a moved knob, a changed track
 colour and aria-pressed expose state. Selection must not repaint the whole card.
 Keep action targets at least 44 px while reducing padding and icon sizes.
+Cap the desktop popup at 400 × 680 px; smaller viewports still control its actual size.
 
 Option lists remain native radio groups. Text alignment uses distinct icon-only
 choices with accessible names and hover/focus hints. Cursor options preserve their

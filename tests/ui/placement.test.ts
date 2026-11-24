@@ -49,6 +49,11 @@ it('honours custom placement, z-index and visual viewport panning, with safe edg
   expect(custom.launcherLeft).toBe(30);
   expect(custom.launcherTop).toBe(24);
   expect(custom.panelLeft).toBe(30);
+  expect(custom.panelWidth).toBe(400);
+  expect(
+    placeUI({ ...desktop, height: 1000, layoutHeight: 1000 }, resolveOptions())
+      .panelMaxHeight,
+  ).toBe(680);
   expect(custom.panelTop).toBe(80);
   expect(custom.zIndex).toBe(50);
   const panned = placeUI(
