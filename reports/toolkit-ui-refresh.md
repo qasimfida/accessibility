@@ -64,6 +64,10 @@ GitHub Pages now use `/accessibility/`.
   TypeScript checks, 18 browser executions, packed-tarball consumers and React/Next
   StrictMode cleanup (two mounts and two removals). The real pinned CDN/SRI case
   also passed; private-registry/Git commands were syntax-checked without credentials.
+- `npm run test:examples`: PASS after U-8, including packed consumers, TypeScript
+  resolution modes, Node SSR and 15 browser/format cases with measured focus
+  widths of 3 px. Additional corrective runs: 20 compact-popup cases (25.8 seconds)
+  and 55 homepage/forced-colour/donation cases (1.5 minutes), all passed.
 - Full and production-only npm audits: zero vulnerabilities; no dependencies added.
 - `actionlint .github/workflows/pages.yml`: passed. No workflow permissions changed.
 
@@ -89,7 +93,22 @@ Evidence: [site verification](assets/toolkit-ui-refresh/site-verification.json),
 | Medium   | U-6 motion checks targeted the removed pricing card                     | `fce7578` targets the real support card in code and tests                                    | All motion checks pass                                       |
 | High     | U-7 borderless close lost its colour change under forced colours        | `2e2685b` uses system LinkText on focus/hover                                                | Distinct focus colour verified on five projects              |
 
-No Blocker, High or Medium finding remains unresolved in the tested scope. Heap
+The first GitHub run found three additional platform/tooling issues after the
+local matrices. These were fixed forward and are awaiting the fresh CI run:
+
+| Severity | Finding                                                                             | Fix                                                                                                                                          | Local verification                                    |
+| -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Medium   | U-8 packed examples still measured an outline on the borderless Close               | `0154e24` measures the actual SVG stroke, retaining the 2 px minimum gate                                                                    | Full packed examples pass                             |
+| Medium   | U-9 Linux Firefox crashed in axe after role-query interactions and palette rollback | `11c6d07` repeats both real clicks and the visible hint on an independent scan page; state, event history and control projections must match | All 20 compact cases pass; default axe rules retained |
+| High     | U-10 Linux WebKit forced-dark text contrast fell to 1.819:1                         | `167582d` uses Canvas/CanvasText for Donate rest, hover and focus; diagnostic output names any low-contrast text                             | All 55 relevant site cases pass; 4.5:1 gate unchanged |
+
+The 460-case local site run preceded U-10; the 55-case corrective run covers all
+changed homepage states across five projects. CI reruns the complete suite. The
+initial verification jobs passed npm verify but failed their additional packaged
+example check; the initial Pages deploy was correctly skipped after its site gate
+failed. No failed deployment is described as live success.
+
+No Blocker, High or Medium finding remains unresolved in the locally tested scope. Heap
 recorder isolation changes diagnostics only: warmups, measured lifecycle count,
 forced GC, WeakRefs, confidence bound and zero-residue assertions are unchanged.
 Transient allocations remain visible in raw samples; no claim of identical byte
@@ -155,8 +174,10 @@ The repository/Pages migration was explicitly confirmed by the maintainer.
 
 ## Handoff notes for the next phase
 
-Local gates passed. Push and GitHub CI/Pages deployment receipts are pending;
-these will be checked after this report commit. No live-deployment success is claimed yet.
+Local gates passed. Initial GitHub runs: [CI](https://github.com/qasimfida/accessibility/actions/runs/45390225861)
+and [Pages](https://github.com/qasimfida/accessibility/actions/runs/45390225851).
+Their failures are recorded above. Corrective commits are ready for the next CI
+and deployment run; live success is not yet claimed.
 Use `https://qasimfida.github.io/accessibility/` after Pages deploys. Run the human
 screen-reader/real-device checks, supply a donation destination when ready, and
 publish a new npm version if external consumers should receive this redesign.
@@ -193,4 +214,8 @@ fce7578 fix(motion): animate the support section instead of the removed plan
 077723b style(panel): reduce the desktop popup frame to 400 by 680
 2e2685b fix(close): preserve focus colour changes in forced-colours mode
 f8be5aa docs(evidence): capture compact popup and homepage refinements
+d61cab8 docs(report): record verified Accessibility UI refinements
+0154e24 test(examples): measure the painted close focus indicator
+11c6d07 test(axe): isolate scans from role-query instrumentation
+167582d fix(donate): keep forced-colour text on the matching system palette
 ```
