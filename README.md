@@ -1,6 +1,6 @@
-# Accessiblit
+# Accessibility
 
-Accessiblit is a dependency-free accessibility personalisation widget with eighteen controls for text, colour and navigation. The prepared package name is **`@widgets/accessibility`** (not yet published; npm organization access is pending); the browser global remains `Accessiblit`. Personalisation does not make a website WCAG compliant. See the [accessibility report](https://github.com/qasimfida/accessiblit/blob/main/docs/ACCESSIBILITY.md) for tested scope and remaining manual checks.
+Accessibility is a dependency-free accessibility personalisation widget with eighteen controls for text, colour and navigation. The prepared package name is **`@widgets/accessibility`** (not yet published; npm organization access is pending); the browser global remains `Accessiblit`. Personalisation does not make a website WCAG compliant. See the [accessibility report](https://github.com/qasimfida/accessiblit/blob/main/docs/ACCESSIBILITY.md) for tested scope and remaining manual checks.
 
 ## CDN
 

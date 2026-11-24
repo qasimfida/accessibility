@@ -1,6 +1,6 @@
 # Design system — Reference-aligned product presentation
 
-This is the visual and interaction contract for the Accessiblit website and
+This is the visual and interaction contract for the Accessibility website and
 shadow-root toolkit. Product truth and AGENTS.md accessibility/privacy gates take
 precedence. The supplied reference informs space, rhythm and composition, never
 copy, assets, certifications or compliance claims.
@@ -68,9 +68,9 @@ carousels, cursor followers, scroll hijacking or animation-dependent content.
 ## Page and content system
 
 Use a shared navigation and footer for Home, Toolkit, Documentation, About,
-Contact, Pricing and FAQ. Documentation retains deep links to installation,
+Contact and FAQ. Documentation retains deep links to installation,
 options and framework sections. Contact offers real maintainer channels, never a
-nonfunctional form. Pricing clearly says free under MIT without invented tiers.
+nonfunctional form. The home support section states that the toolkit is free under MIT without invented tiers.
 
 Every framework guide must explain loading, initialization and lifecycle cleanup;
 SSR frameworks initialize only in the browser. WordPress and Shopify instructions
@@ -109,7 +109,7 @@ Inner pages share breadcrumbs, a centred hero, 24 px tactile surfaces and the
 same footer. Documentation pairs a desktop contents rail with a readable article;
 the rail becomes normal flow on smaller screens. FAQ answers use native details
 and summary, with privacy and limitations expanded for direct links. Contact
-provides real email and issue links. Pricing has one complete free MIT offering.
+provides real email and issue links. The former Pricing route is removed; optional support lives on the home page.
 Its static Donate button is focusable, aria-disabled and described by a visible
 “Donations coming soon” note; a native title provides the same hover message.
 It must not navigate or imply that payment collection is available.
@@ -121,16 +121,25 @@ JavaScript option or persisted appearance preference is introduced.
 
 ## Compact toolkit controls and hints
 
-Binary features use two cards per row, with a single visible feature name, a
-visible description and an On/Off switch indicator. Selected cards use the blue
-accent with contrasting text and icons. State words and the moved switch knob
-supplement colour. Other controls keep a full-width row. Do not force three
-columns at the expense of readable names or target sizes.
+Binary features use two compact neutral cards per row, with one visible name and
+description. Switches have no repeated On/Off text: a moved knob, a changed track
+colour and aria-pressed expose state. Selection must not repaint the whole card.
+Keep action targets at least 44 px while reducing padding and icon sizes.
 
-Option lists remain native radio groups with icon-and-label pills and a selected
-checkmark. Their inputs retain native keyboard behaviour; parent pills show the
-keyboard focus outline. The close action has no resting border, turns blue on
-hover/focus and retains a keyboard focus indicator. Its action target stays 44 px.
+Option lists remain native radio groups. Text alignment uses distinct icon-only
+choices with accessible names and hover/focus hints. Cursor options preserve their
+pointer artwork when selected; colour, a heavier stroke and a stronger boundary
+supplement the checked state. Other option lists may use selected checkmarks.
+
+The header uses 12 px padding and a row of at most four frequent actions, selected
+through registry metadata: Dark mode, Reading guide, Stop animations and Focus
+highlight. These are shortcuts to the same store, respect feature exclusions and
+are prepared on first open. Names distinguish shortcuts from the full controls.
+
+Close has no outline, border or hover frame. Its solid 3 px icon becomes blue on
+hover/focus; contrast is measured for the painted icon rather than an absent ring.
+Keep its 44 px hit area and preserve Escape focus return. Forced colours always
+use the operating system palette.
 
 Icon actions have persistent hover/focus hints, black with white text in light
 mode and white with black text in dark mode. Forced colours use the system palette.
@@ -141,3 +150,15 @@ DOM and CSS only after the first action receives pointer or keyboard attention.
 The shared logo is editable through `src/ui/brand.ts`; see [branding](branding.md)
 for synchronising website assets and real panel previews. Avoid independent logo
 copies or mock panel illustrations that drift from the working widget.
+
+## Public name and integration marks
+
+The visible product name is **Accessibility**. Keep `Accessiblit`, package paths,
+TypeScript symbols and the storage key stable for existing integrations. Use the
+original editable open-orbit mark in all site headers/footers, the popup, launcher,
+favicon and social artwork. Integration marks are locally authored inline SVGs;
+retain readable platform names and hide decorative paths from assistive technology.
+
+The home support section offers a static Donate button with “Donations coming soon”
+on hover and a visible explanation. It must not collect payments or navigate until
+the maintainer supplies a destination. Do not advertise a separate Pricing page.
