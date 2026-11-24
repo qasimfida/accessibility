@@ -1,10 +1,28 @@
 import { defineConfig } from 'vite';
+import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
   root,
+  plugins: [
+    {
+      name: 'shared-editorial-footer',
+      transformIndexHtml: {
+        order: 'pre',
+        handler(html) {
+          return html.replace(
+            '<!-- shared-footer -->',
+            readFileSync(
+              new URL('./partials/footer.html', import.meta.url),
+              'utf8',
+            ),
+          );
+        },
+      },
+    },
+  ],
   // PAGES_URL is a project site, so assets must work beneath the repository path.
   base: '/accessibility/',
   appType: 'mpa',

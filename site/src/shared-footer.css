@@ -1,0 +1,24 @@
+/* One footer surface across marketing, documentation and error routes. */
+.marketing-footer .footer-grid h2 {
+  margin-block: 0.75rem 1.25rem;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.marketing-footer :focus-visible {
+  outline-color: #a4d4ff;
+}
+.marketing-footer > nav {
+  margin-block-start: 1.5rem;
+  padding-block-start: 1rem;
+}
+@media (forced-colors: active) {
+  .marketing-footer .footer-grid h2 {
+    color: CanvasText;
+  }
+  .marketing-footer :focus-visible {
+    outline-color: Highlight;
+  }
+}
