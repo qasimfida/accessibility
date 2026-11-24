@@ -93,16 +93,35 @@ export async function uiEvidence(page: Page) {
         background(element),
       ),
     }));
-    const focus = focused
-      ? {
-          width: parseFloat(getComputedStyle(focused).outlineWidth),
-          style: getComputedStyle(focused).outlineStyle,
-          ratio: contrast(
-            color(getComputedStyle(focused).outlineColor),
-            background(focused),
-          ),
-        }
-      : null;
+    // The borderless close uses its solid 3px icon stroke as the focus indicator.
+    // Measure that painted stroke, keeping the same width/contrast acceptance gates.
+    const indicator = focused?.matches('.accessiblit-close')
+      ? focused.querySelector('svg')
+      : focused;
+    const iconIndicator = indicator instanceof SVGElement;
+    const focus =
+      focused && indicator
+        ? {
+            width: parseFloat(
+              iconIndicator
+                ? getComputedStyle(indicator).strokeWidth
+                : getComputedStyle(focused).outlineWidth,
+            ),
+            style:
+              iconIndicator &&
+              getComputedStyle(indicator).strokeDasharray === 'none'
+                ? 'solid'
+                : getComputedStyle(focused).outlineStyle,
+            ratio: contrast(
+              color(
+                iconIndicator
+                  ? getComputedStyle(indicator).color
+                  : getComputedStyle(focused).outlineColor,
+              ),
+              background(focused),
+            ),
+          }
+        : null;
     const launcher = root.querySelector<HTMLElement>('.accessiblit-launcher')!;
     const iconRatio = contrast(
       color(getComputedStyle(launcher).color),

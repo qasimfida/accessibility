@@ -60,7 +60,9 @@ export const CARD_CSS = `
 .accessiblit-toggle::after { inline-size:34px; block-size:20px; border:1px solid currentColor; border-radius:20px; box-shadow:none; background:radial-gradient(circle at 9px 50%,currentColor 0 6px,transparent 7px); }
 .accessiblit-toggle[aria-pressed=true]::after { background:radial-gradient(circle at 24px 50%,currentColor 0 6px,transparent 7px); }
 .accessiblit-surface .accessiblit-toggle[aria-pressed=true] { border-color:var(--ui-accent-ink); }
-.accessiblit-surface .accessiblit-close { border:0 solid var(--ui-focus); }
+.accessiblit-surface .accessiblit-close { border:0 solid var(--ui-focus); outline:0; box-shadow:none; }
+.accessiblit-surface .accessiblit-close:hover,.accessiblit-surface .accessiblit-close:focus { outline:0; box-shadow:none; }
+.accessiblit-close svg { stroke-width:3px; }
 .accessiblit-surface .accessiblit-close:hover,.accessiblit-surface .accessiblit-close:focus { border-color:var(--ui-focus); }
 @media(forced-colors:active) { .accessiblit-surface .accessiblit-toggle[aria-pressed=true] { background:Canvas; color:CanvasText; border-color:CanvasText; } }
 `;

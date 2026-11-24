@@ -10,6 +10,8 @@ test('keeps shortcut-driven focus visible after pointer input', async ({
   await page.keyboard.press('Alt+KeyA');
   const close = page.getByRole('button', { name: 'Close', exact: true });
   await expect(close).toBeFocused();
+  await expect(close).toHaveCSS('outline-style', 'none');
+  await expect(close).toHaveCSS('border-top-width', '0px');
   const evidence = await uiEvidence(page);
   expect(evidence.focus!.style).toBe('solid');
   expect(evidence.focus!.width).toBeGreaterThanOrEqual(2);
