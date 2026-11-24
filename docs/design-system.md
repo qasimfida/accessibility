@@ -121,7 +121,7 @@ JavaScript option or persisted appearance preference is introduced.
 
 ## Compact toolkit controls and hints
 
-Binary features use two compact neutral cards per row, with one visible name and
+Binary features use two compact neutral cards per row with inset switches and a quiet header rule, with one visible name and
 description. Switches have no repeated On/Off text: a moved knob, a changed track
 colour and aria-pressed expose state. Selection must not repaint the whole card.
 Keep action targets at least 44 px while reducing padding and icon sizes.
@@ -132,8 +132,8 @@ choices with accessible names and hover/focus hints. Cursor options preserve the
 pointer artwork when selected; colour, a heavier stroke and a stronger boundary
 supplement the checked state. Other option lists may use selected checkmarks.
 
-The header uses 12 px padding and a row of at most four frequent actions, selected
-through registry metadata: Dark mode, Reading guide, Stop animations and Focus
+The header uses 12 px padding and a centred, wrapping row of at most six frequent actions, selected
+through registry metadata: Dark mode, High contrast, Reading guide, Reading mask, Stop animations and Focus
 highlight. These are shortcuts to the same store, respect feature exclusions and
 are prepared on first open. Names distinguish shortcuts from the full controls.
 
@@ -156,10 +156,36 @@ copies or mock panel illustrations that drift from the working widget.
 
 The visible product name is **Accessibility**. Keep `Accessiblit`, package paths,
 TypeScript symbols and the storage key stable for existing integrations. Use the
-original editable open-orbit mark in all site headers/footers, the popup, launcher,
+original editable layered mark in all site headers/footers, the popup, launcher,
 favicon and social artwork. Integration marks are locally authored inline SVGs;
 retain readable platform names and hide decorative paths from assistive technology.
 
 The home support section offers a static Donate button with “Donations coming soon”
 on hover and a visible explanation. It must not collect payments or navigate until
 the maintainer supplies a destination. Do not advertise a separate Pricing page.
+
+## Shared editorial components
+
+All eight routes use one build-time footer partial: brand, toolkit, integration
+links and project information. Framework links point to real install-guide
+anchors, including React, Next.js, JavaScript, TypeScript, WordPress, Shopify,
+Angular and Vue. No runtime request is needed to render shared content.
+
+Toolkit, Documentation, Contact and FAQ heroes use the homepage's warm paper,
+centred eyebrow, balanced regular-weight headline, generous reading measure and
+blue action treatment. Documentation uses a clearly grouped contents rail,
+numbered integration steps and distinct code surfaces without hiding content
+behind JavaScript. FAQ and home share the same native disclosure component,
+chevron, separator and answer spacing.
+
+Use original outlined platform symbols in integration tiles, with visible names.
+The brand mark is a compact layered stack with an open centre: three offset
+planes express adaptable reading, colour and navigation choices. Its editable
+source remains `src/ui/brand.ts`. Keep it distinct from platform trademarks.
+
+Popup cards use compact 16 px surfaces, clear labels and descriptions, and an
+inset switch dock. Only the switch track and knob change with binary state;
+never recolour the entire card. Centre six registry-driven shortcuts in one
+wrapping row. Keep every shortcut 44 px, so narrow widths wrap rather than
+shrink targets or overflow. Native pressed states, focus visibility, tooltip
+behaviour and forced-colour support remain mandatory.
