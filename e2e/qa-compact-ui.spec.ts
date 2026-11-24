@@ -1,6 +1,25 @@
 import { expect, test } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
+// Geometry/role assertions and axe use independent pages, matching the full
+// keyboard audit: Gecko can crash when these injected toolchains share caches.
+function projection() {
+  const root = document.querySelector('[data-accessiblit-host]')!.shadowRoot!;
+  return {
+    state: window.qaInstance.getState(),
+    changes: window.qaChanges,
+    features: [...root.querySelectorAll('.accessiblit-feature')].map(
+      (e) => e.textContent,
+    ),
+    controls: [...root.querySelectorAll('button,input')].map((e) => ({
+      name: e.getAttribute('aria-label') ?? e.textContent,
+      pressed: e.getAttribute('aria-pressed'),
+      disabled: e.getAttribute('aria-disabled'),
+      checked: e instanceof HTMLInputElement ? e.checked : null,
+    })),
+  };
+}
+
 for (const width of [390, 320])
   test(`compact binary cards and icon choices work at ${width}px`, async ({
     page,
@@ -39,7 +58,28 @@ for (const width of [390, 320])
     await close.focus();
     await expect(page.getByRole('tooltip')).toBeVisible();
     await expect(page.getByRole('tooltip')).toHaveText('Close');
-    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+    const expected = await page.evaluate(projection);
+    const auditPage = await page.context().newPage();
+    try {
+      await auditPage.setViewportSize({ width, height: 900 });
+      await auditPage.goto('/qa/plain.html');
+      await auditPage.locator('.accessiblit-launcher').click();
+      const auditToggle = auditPage.locator(
+        '.accessiblit-toggle[aria-label="Dark mode"]',
+      );
+      await auditToggle.click();
+      await auditToggle.click();
+      await auditPage.locator('.accessiblit-close').focus();
+      await expect(auditPage.locator('.accessiblit-tooltip')).toHaveText(
+        'Close',
+      );
+      expect(await auditPage.evaluate(projection)).toEqual(expected);
+      expect(
+        (await new AxeBuilder({ page: auditPage }).analyze()).violations,
+      ).toEqual([]);
+    } finally {
+      await auditPage.close();
+    }
     await page.keyboard.press('Escape');
     await expect(panel).toBeHidden();
   });
