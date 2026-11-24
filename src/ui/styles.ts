@@ -25,7 +25,7 @@ ${CARD_CSS}
   .accessiblit-header { color:CanvasText; background:Canvas; }
   .accessiblit-intro { color:CanvasText; }
   .accessiblit-feature,.accessiblit-emblem { border-color:CanvasText; box-shadow:none; }
-  .accessiblit-surface .accessiblit-close { --ui-focus:CanvasText; --ui-bg:Canvas; background:Canvas; color:CanvasText; border-color:CanvasText; }
+  .accessiblit-surface .accessiblit-close { --ui-focus:LinkText; --ui-bg:Canvas; background:Canvas; color:CanvasText; border-color:CanvasText; }
   .accessiblit-choice:has(input:checked) { background:Canvas; color:CanvasText; border-color:CanvasText; }
 
 }

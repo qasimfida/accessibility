@@ -109,3 +109,21 @@ test('alignment icon hints and cursor artwork preserve native option semantics',
   ).toBeChecked();
   await expect(large).not.toBeChecked();
 });
+
+test('borderless close retains a visible focus change in forced colours', async ({
+  page,
+}) => {
+  await page.emulateMedia({ forcedColors: 'active' });
+  await page.goto('/qa/plain.html');
+  await page
+    .getByRole('button', { name: 'Open accessibility options', exact: true })
+    .click();
+  const close = page.getByRole('button', { name: 'Close', exact: true });
+  await close.blur();
+  const rest = await close.evaluate((e) => getComputedStyle(e).color);
+  await close.focus();
+  const focused = await close.evaluate((e) => getComputedStyle(e).color);
+  expect(focused).not.toBe(rest);
+  await expect(close).toHaveCSS('outline-style', 'none');
+  await expect(close).toHaveCSS('border-top-width', '0px');
+});
