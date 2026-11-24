@@ -128,7 +128,10 @@ for (const profile of QA_PROFILES)
     ).toBeFocused();
     await page.keyboard.press('Alt+KeyA');
     let outside = false;
-    for (let i = 0; i < 30; i++) {
+    // Include registry-driven header actions instead of assuming a fixed tab count.
+    const exitBudget =
+      (await dialog.locator('button,input:checked').count()) + 4;
+    for (let i = 0; i < exitBudget; i++) {
       await page.keyboard.press(tab);
       outside = await page.evaluate(
         () =>
