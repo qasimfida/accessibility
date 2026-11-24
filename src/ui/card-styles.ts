@@ -1,13 +1,13 @@
 /** Cards use native buttons and radios; the icon and selected outline supplement visible words. */
 export const CARD_CSS = `
-.accessiblit-group { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:0 0 28px; }
+.accessiblit-group { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 20px; }
 .accessiblit-group h3 { grid-column:1/-1; margin:0 2px 4px; color:var(--ui-muted); font-size:13px; line-height:1.5; font-weight:650; }
-.accessiblit-feature { grid-column:1/-1; display:grid; grid-template-columns:36px minmax(0,1fr); gap:0 12px; min-inline-size:0; padding:16px; border:1px solid var(--ui-quiet); border-radius:20px; background:var(--ui-bg); text-align:start; }
-.accessiblit-feature h4 { grid-column:2; margin:0; font-size:16px; line-height:1.4; font-weight:500; }
-.accessiblit-feature p,.accessiblit-empty { grid-column:2; margin:4px 0 0; color:var(--ui-muted); font-size:14px; line-height:1.5; }
-.accessiblit-feature-icon { grid-column:1; grid-row:1/3; display:flex; align-items:center; justify-content:center; inline-size:36px; block-size:36px; border-radius:12px; background:var(--ui-quiet); color:var(--ui-accent); }
-.accessiblit-feature-icon svg { display:block; inline-size:22px; block-size:22px; }
-.accessiblit-feature .accessiblit-stepper,.accessiblit-feature .accessiblit-options,.accessiblit-feature .accessiblit-toggle { grid-column:2; margin-block-start:12px; }
+.accessiblit-feature { grid-column:1/-1; display:grid; grid-template-columns:28px minmax(0,1fr); gap:0 8px; min-inline-size:0; padding:12px; border:1px solid var(--ui-quiet); border-radius:20px; background:var(--ui-bg); text-align:start; }
+.accessiblit-feature h4 { grid-column:2; margin:0; font-size:15px; line-height:1.4; font-weight:500; }
+.accessiblit-feature p,.accessiblit-empty { grid-column:2; margin:3px 0 0; color:var(--ui-muted); font-size:13px; line-height:1.5; }
+.accessiblit-feature-icon { grid-column:1; grid-row:1/3; display:flex; align-items:center; justify-content:center; inline-size:28px; block-size:28px; border-radius:12px; background:var(--ui-quiet); color:var(--ui-accent); }
+.accessiblit-feature-icon svg { display:block; inline-size:20px; block-size:20px; }
+.accessiblit-feature .accessiblit-stepper,.accessiblit-feature .accessiblit-options,.accessiblit-feature .accessiblit-toggle { grid-column:2; margin-block-start:8px; }
 .accessiblit-value { min-inline-size:0; font-size:16px; font-weight:700; text-align:center; font-variant-numeric:tabular-nums; }
 .accessiblit-stepper { inline-size:min(100%,220px); display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:4px; }
 .accessiblit-surface .accessiblit-step { display:flex; align-items:center; justify-content:center; inline-size:44px; block-size:44px; padding:0; border:1px solid var(--ui-accent-ink); border-radius:12px; color:var(--ui-accent-ink); background:var(--ui-accent); font-size:26px; line-height:1; }
@@ -27,11 +27,12 @@ export const CARD_CSS = `
 @media (hover:hover) and (forced-colors:none) {
  .accessiblit-surface .accessiblit-reset:hover,.accessiblit-surface .accessiblit-step:not([aria-disabled=true]):hover { background:light-dark(#0038ac,#b8dcff); color:var(--ui-accent-ink); }
 }
-.accessiblit-binary-feature { grid-column:auto; grid-template-columns:1fr; gap:8px; padding:12px; text-align:center; }
-.accessiblit-binary-feature .accessiblit-feature-icon { grid-column:1; grid-row:auto; margin-inline:auto; }
-.accessiblit-binary-feature h4,.accessiblit-binary-feature p { grid-column:1; }
+.accessiblit-binary-feature { grid-column:auto; grid-template-columns:28px minmax(0,1fr); gap:4px 6px; padding:10px; text-align:start; }
+.accessiblit-binary-feature .accessiblit-feature-icon { grid-column:1; grid-row:1; }
+.accessiblit-binary-feature h4 { grid-column:2; align-self:center; font-size:14px; }
+.accessiblit-binary-feature p { grid-column:1/-1; }
 .accessiblit-binary-feature p { font-size:13px; }
-.accessiblit-binary-feature .accessiblit-toggle { grid-column:1; margin-block-start:4px; justify-content:center; }
+.accessiblit-binary-feature .accessiblit-toggle { grid-column:1/-1; margin-block-start:4px; justify-content:center; }
 .accessiblit-forced-colours-note,.accessiblit-empty { grid-column:1/-1; }
 .accessiblit-surface .accessiblit-close { border-color:transparent; background:transparent; box-shadow:none; }
 .accessiblit-surface .accessiblit-close:hover,.accessiblit-surface .accessiblit-close:focus { color:var(--ui-focus); border-color:transparent; }
@@ -41,7 +42,7 @@ export const CARD_CSS = `
 .accessiblit-choice { position:relative; }
 .accessiblit-choice input { position:absolute; opacity:0; }
 .accessiblit-choice-icon { display:inline-flex; align-items:center; justify-content:center; inline-size:24px; block-size:24px; flex:none; }
-.accessiblit-choice-icon svg { inline-size:22px; block-size:22px; }
+.accessiblit-choice-icon svg { inline-size:20px; block-size:20px; }
 .accessiblit-choice:has(input:checked) .accessiblit-choice-icon svg { display:none; }
 .accessiblit-choice:has(input:checked) .accessiblit-choice-icon::after { content:"✓"; font-size:20px; font-weight:700; }
 .accessiblit-choice:has(input:focus-visible) { outline:3px solid var(--ui-focus); outline-offset:3px; box-shadow:0 0 0 6px var(--ui-bg); }

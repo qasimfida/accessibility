@@ -5,15 +5,15 @@ import type { placeUI } from './placement';
 /** Panel rules are installed synchronously on first open, before exposing the dialog. */
 export const UI_CSS = `${LAUNCHER_CSS}
 .accessiblit-panel { display:flex; flex-direction:column; padding:0; border:1px solid var(--ui-border); border-radius:24px; box-shadow:0 16px 48px #12263826; overflow:hidden; }
-.accessiblit-header { flex:none; display:grid; grid-template-columns:44px minmax(0,1fr) 44px; gap:4px 12px; padding:24px; color:var(--ui-ink); background:var(--ui-body); border-block-end:1px solid var(--ui-border); }
-.accessiblit-emblem { grid-column:1; grid-row:1/3; display:flex; align-items:center; justify-content:center; inline-size:44px; block-size:44px; border:1px solid var(--ui-accent); border-radius:12px; color:var(--ui-accent-ink); background:var(--ui-accent); }
-.accessiblit-emblem svg { inline-size:26px; block-size:26px; }
-.accessiblit-header h2 { grid-column:2; grid-row:1; margin:0; align-self:end; min-inline-size:0; font-size:22px; line-height:1.5; font-weight:400; text-wrap:balance; letter-spacing:-.015em; }
+.accessiblit-header { flex:none; display:grid; grid-template-columns:32px minmax(0,1fr) 44px; gap:2px 8px; padding:12px; color:var(--ui-ink); background:var(--ui-body); border-block-end:1px solid var(--ui-border); }
+.accessiblit-emblem { grid-column:1; grid-row:1/3; display:flex; align-items:center; justify-content:center; inline-size:32px; block-size:32px; border:1px solid var(--ui-accent); border-radius:12px; color:var(--ui-accent-ink); background:var(--ui-accent); }
+.accessiblit-emblem svg { inline-size:24px; block-size:24px; }
+.accessiblit-header h2 { grid-column:2; grid-row:1; margin:0; align-self:end; min-inline-size:0; font-size:20px; line-height:1.3; font-weight:400; text-wrap:balance; letter-spacing:-.015em; }
 .accessiblit-brand { grid-column:2; grid-row:2; color:var(--ui-muted); font-size:13px; font-weight:500; }
 .accessiblit-surface .accessiblit-close { grid-column:3; grid-row:1/3; display:flex; align-items:center; justify-content:center; min-inline-size:44px; inline-size:44px; block-size:44px; padding:0; border:1px solid var(--ui-border); border-radius:12px; color:var(--ui-ink); background:var(--ui-bg); }
-.accessiblit-intro { grid-column:1/-1; margin:12px 0 0; color:var(--ui-muted); font-size:14px; line-height:1.5; }
-.accessiblit-body { flex:1; min-block-size:0; padding:20px 20px 0; container-type:inline-size; background:var(--ui-body); overflow:auto; overscroll-behavior:contain; scroll-padding:12px; }
-.accessiblit-footer { flex:none; padding:16px 20px; border-block-start:1px solid var(--ui-border); background:var(--ui-bg); }
+.accessiblit-intro { grid-column:1/-1; margin:6px 0 0; color:var(--ui-muted); font-size:13px; line-height:1.5; }
+.accessiblit-body { flex:1; min-block-size:0; padding:12px 12px 0; container-type:inline-size; background:var(--ui-body); overflow:auto; overscroll-behavior:contain; scroll-padding:12px; }
+.accessiblit-footer { flex:none; padding:10px 12px; border-block-start:1px solid var(--ui-border); background:var(--ui-bg); }
 ${CARD_CSS}
 .accessiblit-cursor-note { display:none; }
 @media not all and (any-pointer:fine) { .accessiblit-cursor-note { display:block; } }
