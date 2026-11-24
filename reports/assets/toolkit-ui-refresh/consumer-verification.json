@@ -1,0 +1,177 @@
+{
+  "extracted": [
+    "cdn",
+    "npm-install",
+    "esm",
+    "react-install",
+    "react",
+    "next",
+    "self-hosted",
+    "pack",
+    "git",
+    "private-registry",
+    "lifecycle"
+  ],
+  "types": ["Node16", "Bundler"],
+  "shellSyntax": [
+    "npm-install",
+    "react-install",
+    "pack",
+    "git",
+    "private-registry"
+  ],
+  "installedTarball": "widgets-accessibility-0.1.1.tgz",
+  "packedEntries": ["self-hosted", "esm", "lifecycle", "react", "next"],
+  "cdnSource": "Real version-pinned CDN URL with release SRI; no interception.",
+  "strictModeDevelopment": true,
+  "rows": [
+    {
+      "browser": "chromium",
+      "snippet": "cdn",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "chromium",
+      "snippet": "self-hosted",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "chromium",
+      "snippet": "esm",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "chromium",
+      "snippet": "lifecycle",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "chromium",
+      "snippet": "react",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": {
+        "created": 2,
+        "removed": 2
+      }
+    },
+    {
+      "browser": "chromium",
+      "snippet": "next",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": {
+        "created": 2,
+        "removed": 2
+      }
+    },
+    {
+      "browser": "firefox",
+      "snippet": "cdn",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "firefox",
+      "snippet": "self-hosted",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "firefox",
+      "snippet": "esm",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "firefox",
+      "snippet": "lifecycle",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "firefox",
+      "snippet": "react",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": {
+        "created": 2,
+        "removed": 2
+      }
+    },
+    {
+      "browser": "firefox",
+      "snippet": "next",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": {
+        "created": 2,
+        "removed": 2
+      }
+    },
+    {
+      "browser": "webkit",
+      "snippet": "cdn",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "webkit",
+      "snippet": "self-hosted",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "webkit",
+      "snippet": "esm",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "webkit",
+      "snippet": "lifecycle",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": null
+    },
+    {
+      "browser": "webkit",
+      "snippet": "react",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": {
+        "created": 2,
+        "removed": 2
+      }
+    },
+    {
+      "browser": "webkit",
+      "snippet": "next",
+      "errors": [],
+      "cleanup": true,
+      "strictMode": {
+        "created": 2,
+        "removed": 2
+      }
+    }
+  ],
+  "notes": [
+    "The CDN snippet validates published release bytes; other browser snippets use the installed local tarball.",
+    "Private registry and Git shell examples are syntax checked; no private credentials or registry is used."
+  ]
+}
