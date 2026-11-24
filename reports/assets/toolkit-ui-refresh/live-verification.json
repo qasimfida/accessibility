@@ -1,0 +1,322 @@
+{
+  "date": "2026-11-24T13:05:36.523Z",
+  "url": "https://qasimfida.github.io/accessibility/",
+  "sourceCommit": "67b24ad",
+  "rows": [
+    {
+      "browser": "chromium",
+      "route": "",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "chromium",
+      "route": "install/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "chromium",
+      "route": "options/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "chromium",
+      "route": "faq/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "chromium",
+      "route": "about/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "chromium",
+      "route": "contact/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "chromium",
+      "route": "toolkit/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "chromium",
+      "route": "404.html",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "firefox",
+      "route": "",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "firefox",
+      "route": "install/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "firefox",
+      "route": "options/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "firefox",
+      "route": "faq/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "firefox",
+      "route": "about/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "firefox",
+      "route": "contact/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "firefox",
+      "route": "toolkit/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "firefox",
+      "route": "404.html",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "webkit",
+      "route": "",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "webkit",
+      "route": "install/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "webkit",
+      "route": "options/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "webkit",
+      "route": "faq/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "webkit",
+      "route": "about/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "webkit",
+      "route": "contact/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "webkit",
+      "route": "toolkit/",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    },
+    {
+      "browser": "webkit",
+      "route": "404.html",
+      "closedViolations": 0,
+      "openViolations": 0,
+      "panel": {
+        "x": 864,
+        "y": 148,
+        "width": 400,
+        "height": 680
+      },
+      "matchingBrandMarks": 2
+    }
+  ],
+  "links": 37,
+  "thirdParty": [],
+  "errors": []
+}

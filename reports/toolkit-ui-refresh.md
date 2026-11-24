@@ -94,7 +94,7 @@ Evidence: [site verification](assets/toolkit-ui-refresh/site-verification.json),
 | High     | U-7 borderless close lost its colour change under forced colours        | `2e2685b` uses system LinkText on focus/hover                                                | Distinct focus colour verified on five projects              |
 
 The first GitHub run found three additional platform/tooling issues after the
-local matrices. These were fixed forward and are awaiting the fresh CI run:
+local matrices. These were fixed forward; the fresh CI and deployment runs passed:
 
 | Severity | Finding                                                                             | Fix                                                                                                                                          | Local verification                                    |
 | -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -103,12 +103,16 @@ local matrices. These were fixed forward and are awaiting the fresh CI run:
 | High     | U-10 Linux WebKit forced-dark text contrast fell to 1.819:1                         | `167582d` uses Canvas/CanvasText for Donate rest, hover and focus; diagnostic output names any low-contrast text                             | All 55 relevant site cases pass; 4.5:1 gate unchanged |
 
 The 460-case local site run preceded U-10; the 55-case corrective run covers all
-changed homepage states across five projects. CI reruns the complete suite. The
+changed homepage states across five projects. The fresh CI and Pages jobs then
+passed the complete site suite, including Linux WebKit forced-colour hover states. The
 initial verification jobs passed npm verify but failed their additional packaged
 example check; the initial Pages deploy was correctly skipped after its site gate
 failed. No failed deployment is described as live success.
 
-No Blocker, High or Medium finding remains unresolved in the locally tested scope. Heap
+All 15 CI jobs passed on `67b24ad`, including Node 20/22 verification, packed
+examples, all browser/device projects and both native-macOS trend jobs. Pages built
+and deployed successfully. No Blocker, High or Medium finding remains unresolved
+in the verified scope. Heap
 recorder isolation changes diagnostics only: warmups, measured lifecycle count,
 forced GC, WeakRefs, confidence bound and zero-residue assertions are unchanged.
 Transient allocations remain visible in raw samples; no claim of identical byte
@@ -154,7 +158,16 @@ the preceding 23,159-byte baseline). Shortcut controls and hint DOM remain lazy.
 The original 200-lifecycle cleanup and post-GC growth tests pass. Precise heap
 measurements use CDP on Chromium/Pixel; all five projects prove DOM/listener cleanup.
 No fresh reference-Mac init-time pass is claimed. The 50 ms reference gate and CI
-50% regression guard are unchanged.
+50% regression guard are unchanged. Shared-CI trend results on `67b24ad`:
+
+| Node | Chromium median / p95 | WebKit median / p95 | Result                     |
+| ---- | --------------------- | ------------------- | -------------------------- |
+| 20   | 1.8 / 3.2 ms          | 3 / 5 ms            | Both unchanged guards pass |
+| 22   | 1.2 / 2.2 ms          | 3 / 5 ms            | Both unchanged guards pass |
+
+Raw samples and machine details: [Node 20](assets/toolkit-ui-refresh/ci-init-node20.json),
+[Node 22](assets/toolkit-ui-refresh/ci-init-node22.json). These are CI trend results,
+not absolute measurements on the maintainer's reference Mac.
 
 ## Known limitations (honest)
 
@@ -174,13 +187,22 @@ The repository/Pages migration was explicitly confirmed by the maintainer.
 
 ## Handoff notes for the next phase
 
-Local gates passed. Initial GitHub runs: [CI](https://github.com/qasimfida/accessibility/actions/runs/45390225861)
-and [Pages](https://github.com/qasimfida/accessibility/actions/runs/45390225851).
-Their failures are recorded above. Corrective commits are ready for the next CI
-and deployment run; live success is not yet claimed.
-Use `https://qasimfida.github.io/accessibility/` after Pages deploys. Run the human
-screen-reader/real-device checks, supply a donation destination when ready, and
-publish a new npm version if external consumers should receive this redesign.
+Deployed and verified: https://qasimfida.github.io/accessibility/.
+Source `67b24ad`: [CI passed](https://github.com/qasimfida/accessibility/actions/runs/45396697090)
+(15/15 jobs); [Pages passed](https://github.com/qasimfida/accessibility/actions/runs/45396697245)
+(build and deployment). [Receipts](assets/toolkit-ui-refresh/deployment-receipts.json).
+
+The live audit visited all eight pages in Chromium, Firefox and WebKit: 24 page
+checks, zero open/closed axe violations, 37 internal destinations/fragments
+verified, zero third-party requests, zero console errors and no cookies. The removed
+Pricing route returns 404. The live popup has four shortcuts, Accessibility branding
+and the 400 × 680 px frame; every route has the matching shared logo. The served
+IIFE SHA-256 matches the local production build exactly. See [live audit](assets/toolkit-ui-refresh/live-verification.json)
+and [bundle identity](assets/toolkit-ui-refresh/live-build.json).
+
+Run the supplied human screen-reader/real-device checks, provide a donation URL
+when collection is ready, and publish a new npm version if external consumers
+should receive this redesign. No npm publication was performed.
 
 Screenshots: [desktop](assets/toolkit-ui-refresh/desktop.png),
 [switches](assets/toolkit-ui-refresh/switches.png),
@@ -218,4 +240,5 @@ d61cab8 docs(report): record verified Accessibility UI refinements
 0154e24 test(examples): measure the painted close focus indicator
 11c6d07 test(axe): isolate scans from role-query instrumentation
 167582d fix(donate): keep forced-colour text on the matching system palette
+67b24ad docs(report): record platform-specific CI findings and fixes
 ```

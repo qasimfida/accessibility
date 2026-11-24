@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-24T12:46:55.883Z",
+  "source": "67b24ad502269060d5c88d487ae0ba1603b18791",
+  "mode": "ci-trend",
+  "machine": {
+    "model": "VirtualMac2,1",
+    "chip": "Apple M1 (Virtual)",
+    "ramBytes": 7516192768,
+    "platform": "darwin",
+    "architecture": "arm64",
+    "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.7.2\nBuildVersion:\t\t25G332",
+    "node": "v20.20.2",
+    "logicalCpus": 3
+  },
+  "conditions": {
+    "power": "Now drawing from 'AC Power'",
+    "otherAppsClosed": "not applicable: shared CI",
+    "appsConditionException": null,
+    "headless": true,
+    "tracing": false
+  },
+  "method": {
+    "warmupRuns": 5,
+    "measuredRuns": 30,
+    "timer": "performance.now around init() only",
+    "fixture": "plain semantic host; 5000 paragraphs; default options; empty storage",
+    "gate": "report absolute; fail above 1.5 times committed CI median",
+    "median": "mean of middle pair",
+    "p95": "nearest rank"
+  },
+  "browsers": {
+    "chromium": {
+      "version": "158.0.8127.18",
+      "warmups": [
+        28.80000000000291, 1.7000000000116415, 2.5, 1.1999999999970896,
+        1.1999999999970896
+      ],
+      "samples": [
+        2.5, 2.099999999991269, 2.099999999991269, 2, 1.3000000000029104,
+        2.1000000000058208, 2.8000000000029104, 3, 2.099999999991269,
+        1.6000000000058208, 1.3000000000029104, 1.1999999999970896,
+        1.1999999999970896, 1.8999999999941792, 2, 1.3000000000029104,
+        2.099999999991269, 3.6000000000058208, 3.1999999999970896, 1.5, 1.5,
+        1.6999999999970896, 3, 1.1999999999970896, 2.599999999991269,
+        1.1000000000058208, 1, 1.1000000000058208, 1.3000000000029104,
+        1.4000000000087311
+      ],
+      "medianMs": 1.7999999999956344,
+      "p95Ms": 3.1999999999970896,
+      "guard": {
+        "limitMs": 2.25,
+        "pass": true
+      },
+      "pass": true
+    },
+    "webkit": {
+      "version": "27.2",
+      "warmups": [56, 4, 4, 7, 5],
+      "samples": [
+        4, 3, 3, 2, 2, 2, 2, 2, 5, 4, 2, 2, 3, 3, 4, 2, 4, 3, 2, 4, 5, 3, 3, 2,
+        2, 3, 4, 3, 2, 3
+      ],
+      "medianMs": 3,
+      "p95Ms": 5,
+      "guard": {
+        "limitMs": 4.5,
+        "pass": true
+      },
+      "pass": true
+    }
+  },
+  "pass": true
+}
