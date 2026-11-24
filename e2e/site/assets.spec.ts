@@ -21,3 +21,29 @@ test('local editorial media and typography load with their real content types', 
   ).toBe(true);
   expect(errors).toEqual([]);
 });
+
+test('one head request loads the real widget and restores its settings before body parsing', async ({
+  page,
+}) => {
+  const scripts: string[] = [];
+  page.on('request', (request) => {
+    if (request.resourceType() === 'script') scripts.push(request.url());
+  });
+  await page.goto('');
+  const entry = page.locator('head script[src$="/widget-bootstrap.js"]');
+  await expect(entry).toHaveCount(1);
+  expect(await entry.getAttribute('async')).toBeNull();
+  expect(await entry.getAttribute('defer')).toBeNull();
+  expect(
+    scripts.filter((url) => url.endsWith('/widget-bootstrap.js')),
+  ).toHaveLength(1);
+  expect(
+    scripts.some((url) => /\/(?:accessiblit\.min|bootstrap)\.js$/.test(url)),
+  ).toBe(false);
+  await expect(
+    page.getByRole('button', {
+      name: 'Open accessibility options',
+      exact: true,
+    }),
+  ).toBeVisible();
+});

@@ -1,4 +1,4 @@
-import { cp, mkdtemp, rm } from 'node:fs/promises';
+import { cp, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -30,6 +30,15 @@ try {
     outDir: assets,
     outExtension: () => ({ js: '.js' }),
   });
+  // Keep pre-paint preference restoration, with one parser-blocking request instead of two.
+  // This is a site entry only; the distributable widget and its SRI remain unchanged.
+  await writeFile(
+    join(assets, 'widget-bootstrap.js'),
+    (await readFile(join(assets, 'accessiblit.min.js'), 'utf8')) +
+      '\n' +
+      (await readFile(join(assets, 'bootstrap.js'), 'utf8')),
+  );
+  await rm(join(assets, 'bootstrap.js'));
   await build({
     configFile: fileURLToPath(
       new URL('../site/vite.config.ts', import.meta.url),
