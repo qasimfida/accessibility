@@ -30,7 +30,7 @@ try {
     ['404', '404.html'],
   ]) {
     const output = fileURLToPath(new URL(`${name}.json`, folder));
-    const url = `http://127.0.0.1:${server.address().port}/accessiblit/${path}`;
+    const url = `http://127.0.0.1:${server.address().port}/accessibility/${path}`;
     const args = [
       'exec',
       '--yes',

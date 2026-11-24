@@ -1,6 +1,6 @@
 # Accessibility
 
-Accessibility is a dependency-free accessibility personalisation widget with eighteen controls for text, colour and navigation. The prepared package name is **`@widgets/accessibility`** (not yet published; npm organization access is pending); the browser global remains `Accessiblit`. Personalisation does not make a website WCAG compliant. See the [accessibility report](https://github.com/qasimfida/accessiblit/blob/main/docs/ACCESSIBILITY.md) for tested scope and remaining manual checks.
+Accessibility is a dependency-free accessibility personalisation widget with eighteen controls for text, colour and navigation. The prepared package name is **`@widgets/accessibility`** (not yet published; npm organization access is pending); the browser global remains `Accessiblit`. Personalisation does not make a website WCAG compliant. See the [accessibility report](https://github.com/qasimfida/accessibility/blob/main/docs/ACCESSIBILITY.md) for tested scope and remaining manual checks.
 
 ## CDN
 
@@ -57,12 +57,12 @@ export default function Accessibility() {
 
 For Next.js App Router, put `'use client';` at the top of that component file, then render it from your layout. Keep React and DOM work inside this client boundary. The effect is safe under StrictMode and destroys the instance it created.
 
-See the [installation examples](https://qasimfida.github.io/accessiblit/install/), [options reference](https://qasimfida.github.io/accessiblit/options/) and [integration contracts](https://github.com/qasimfida/accessiblit/blob/main/docs/guides/integrations.md). The [panel redesign and organization rename report](https://github.com/qasimfida/accessiblit/blob/main/reports/panel-redesign-and-package-rename.md) records the current local build and release blockers. The source demo loads a local build; the public Pages deployment is tracked separately in the [post-publish report](https://github.com/qasimfida/accessiblit/blob/main/reports/phase-11-post-publish.md).
+See the [installation examples](https://qasimfida.github.io/accessibility/install/), [options reference](https://qasimfida.github.io/accessibility/options/) and [integration contracts](https://github.com/qasimfida/accessibility/blob/main/docs/guides/integrations.md). The [panel redesign and organization rename report](https://github.com/qasimfida/accessibility/blob/main/reports/panel-redesign-and-package-rename.md) records the current local build and release blockers. The source demo loads a local build; the public Pages deployment is tracked separately in the [post-publish report](https://github.com/qasimfida/accessibility/blob/main/reports/phase-11-post-publish.md).
 
 MIT © 2026 Qasim Fida. See [LICENSE](LICENSE).
 
 ## Branding
 
 The widget and website share an original editable SVG mark. See
-[editing the logo](https://github.com/qasimfida/accessiblit/blob/main/docs/branding.md) for the single source, asset synchronisation
+[editing the logo](https://github.com/qasimfida/accessibility/blob/main/docs/branding.md) for the single source, asset synchronisation
 and real-widget preview capture commands. No runtime logo request is introduced.

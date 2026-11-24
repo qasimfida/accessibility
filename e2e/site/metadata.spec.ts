@@ -37,7 +37,7 @@ test('catalogue, public options and search metadata describe the actual build', 
       'content',
       /\S/,
     );
-    const canonical = `https://qasimfida.github.io/accessiblit/${path}`;
+    const canonical = `https://qasimfida.github.io/accessibility/${path}`;
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       'href',
       canonical,
@@ -48,7 +48,7 @@ test('catalogue, public options and search metadata describe the actual build', 
     );
     await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
       'content',
-      'https://qasimfida.github.io/accessiblit/og.png',
+      'https://qasimfida.github.io/accessibility/og.png',
     );
     for (const colorScheme of ['light', 'dark'] as const) {
       await page.emulateMedia({ colorScheme });
@@ -76,11 +76,11 @@ test('catalogue, public options and search metadata describe the actual build', 
   const sitemap = await (await request.get('sitemap.xml')).text();
   for (const path of SITE_PAGES.filter((p) => p !== '404.html'))
     expect(sitemap).toContain(
-      `https://qasimfida.github.io/accessiblit/${path}`,
+      `https://qasimfida.github.io/accessibility/${path}`,
     );
   expect(sitemap).not.toContain('404.html');
   expect(await (await request.get('robots.txt')).text()).toContain(
-    'https://qasimfida.github.io/accessiblit/sitemap.xml',
+    'https://qasimfida.github.io/accessibility/sitemap.xml',
   );
   expect((await request.get('og.png')).headers()['content-type']).toContain(
     'image/png',

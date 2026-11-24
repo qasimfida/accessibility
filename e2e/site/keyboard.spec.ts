@@ -93,7 +93,7 @@ test('keyboard visits every content page and operates the real demo', async ({
         : tab;
     await tabTo(page, link, navigationKey);
     await page.keyboard.press('Enter');
-    await expect(page).toHaveURL(new RegExp(`/accessiblit/${route}$`));
+    await expect(page).toHaveURL(new RegExp(`/accessibility/${route}$`));
     path.push(label);
     await expect(page.locator('main h1')).toBeVisible();
   }

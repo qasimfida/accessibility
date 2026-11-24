@@ -8,7 +8,7 @@ const root = resolve(
   fileURLToPath(new URL('../../site/dist/', import.meta.url)),
 );
 const inside = (file) => file === root || file.startsWith(root + sep);
-const base = '/accessiblit/';
+const base = '/accessibility/';
 const types = {
   '.html': 'text/html',
   '.js': 'text/javascript',

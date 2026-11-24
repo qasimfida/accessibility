@@ -7,12 +7,12 @@
   "author": "Qasim Fida <qasimfida0054@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qasimfida/accessiblit.git"
+    "url": "git+https://github.com/qasimfida/accessibility.git"
   },
   "bugs": {
-    "url": "https://github.com/qasimfida/accessiblit/issues"
+    "url": "https://github.com/qasimfida/accessibility/issues"
   },
-  "homepage": "https://qasimfida.github.io/accessiblit/",
+  "homepage": "https://qasimfida.github.io/accessibility/",
   "engines": {
     "node": ">=20.19.0"
   },

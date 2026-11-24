@@ -8,8 +8,8 @@
 |---|---|
 | PKG_NAME | @widgets/accessibility |
 | GLOBAL_NAME | Accessiblit |
-| REPO_URL | https://github.com/qasimfida/accessiblit |
-| PAGES_URL | https://qasimfida.github.io/accessiblit/ |
+| REPO_URL | https://github.com/qasimfida/accessibility |
+| PAGES_URL | https://qasimfida.github.io/accessibility/ |
 | AUTHOR | Qasim Fida qasimfida0054@gmail.com |
 | LICENSE | MIT |
 | DEFAULT_BRANCH | main |

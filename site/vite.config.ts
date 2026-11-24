@@ -6,7 +6,7 @@ const root = fileURLToPath(new URL('.', import.meta.url));
 export default defineConfig({
   root,
   // PAGES_URL is a project site, so assets must work beneath the repository path.
-  base: '/accessiblit/',
+  base: '/accessibility/',
   appType: 'mpa',
   build: {
     target: 'es2019',

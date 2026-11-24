@@ -8,7 +8,7 @@ export default defineConfig({
   workers: 1,
   timeout: 45000,
   use: {
-    baseURL: 'http://127.0.0.1:4175/accessiblit/',
+    baseURL: 'http://127.0.0.1:4175/accessibility/',
     trace: 'retain-on-failure',
   },
   projects: [
@@ -20,7 +20,7 @@ export default defineConfig({
   ],
   webServer: {
     command: 'npm run build:site && npm run preview:site -- --port 4175',
-    url: 'http://127.0.0.1:4175/accessiblit/',
+    url: 'http://127.0.0.1:4175/accessibility/',
     timeout: 120000,
     reuseExistingServer: false,
   },

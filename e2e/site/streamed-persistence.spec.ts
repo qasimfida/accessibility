@@ -17,7 +17,7 @@ test('parser shells are empty until their first correctly scaled text frame', as
     release = resolve;
   });
   const server = createServer(async (request, response) => {
-    if (request.url === '/accessiblit/') {
+    if (request.url === '/accessibility/') {
       response.setHeader('Content-Type', 'text/html');
       response.write(html.slice(0, cut));
       await gate;
@@ -43,7 +43,7 @@ test('parser shells are empty until their first correctly scaled text frame', as
     const address = server.address();
     if (!address || typeof address === 'string')
       throw new Error('Missing test server address');
-    await page.goto(`http://127.0.0.1:${address.port}/accessiblit/`, {
+    await page.goto(`http://127.0.0.1:${address.port}/accessibility/`, {
       waitUntil: 'commit',
     });
     await page.waitForFunction(

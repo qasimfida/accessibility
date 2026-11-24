@@ -16,7 +16,7 @@ try {
   });
   const page = await context.newPage();
   await page.goto(
-    `http://127.0.0.1:${server.address().port}/accessiblit/toolkit/`,
+    `http://127.0.0.1:${server.address().port}/accessibility/toolkit/`,
   );
   await page
     .getByRole('button', { name: 'Open live demo options', exact: true })
