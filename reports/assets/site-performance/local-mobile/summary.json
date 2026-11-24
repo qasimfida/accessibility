@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "name": "home",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/",
+      "mode": "mobile",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1858.1997557451355,
+        "largest-contentful-paint": 1858.1997557451355,
+        "total-blocking-time": 58,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 333949
+      }
+    },
+    {
+      "name": "home",
+      "run": 2,
+      "url": "http://127.0.0.1:4180/accessibility/",
+      "mode": "mobile",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1805.4832999999999,
+        "largest-contentful-paint": 1805.4832999999999,
+        "total-blocking-time": 31,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 333949
+      }
+    },
+    {
+      "name": "home",
+      "run": 3,
+      "url": "http://127.0.0.1:4180/accessibility/",
+      "mode": "mobile",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1803.7004236054213,
+        "largest-contentful-paint": 1803.7004236054213,
+        "total-blocking-time": 28,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 333949
+      }
+    }
+  ],
+  "notes": [
+    "Pinned ephemeral Lighthouse; no new root dependency or runtime code.",
+    "Default Lighthouse mobile simulation unless --desktop is explicit; raw configuration is retained per page.",
+    "Each run launches a fresh browser profile with extensions disabled. All samples are retained; compare repeated runs, not a single best score.",
+    "Performance scores depend on the machine, network and hosting. GitHub Pages cache headers cannot be changed by this build.",
+    "404 intentionally uses noindex and is excluded from the sitemap."
+  ]
+}

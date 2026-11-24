@@ -1,0 +1,90 @@
+{
+  "source": "fad05c47a713c8866a0edecc989f6b1fb758fb27",
+  "date": "2026-11-24T18:21:42.227Z",
+  "rows": [
+    {
+      "path": "404.html",
+      "status": 200,
+      "sha256": "789c5f26670a2341d1e357de15a0f31e40074854ddcb3fcfe469b143cac5f169",
+      "expectedSha256": "789c5f26670a2341d1e357de15a0f31e40074854ddcb3fcfe469b143cac5f169",
+      "match": true
+    },
+    {
+      "path": "about/index.html",
+      "status": 200,
+      "sha256": "b97da54a6eea1c450348f448d8c5140a6cabaeee84ba2da8c79b4c69d9bd373c",
+      "expectedSha256": "b97da54a6eea1c450348f448d8c5140a6cabaeee84ba2da8c79b4c69d9bd373c",
+      "match": true
+    },
+    {
+      "path": "assets/main-CE6Clve3.css",
+      "status": 200,
+      "sha256": "a10b2f6739e4639df5d1dd0c557f2765599d151c22c1613d95b2b8bfbe08a946",
+      "expectedSha256": "a10b2f6739e4639df5d1dd0c557f2765599d151c22c1613d95b2b8bfbe08a946",
+      "match": true
+    },
+    {
+      "path": "contact/index.html",
+      "status": 200,
+      "sha256": "6d97c05e81ea029b727bdf59aa08bccffff467b289ed8b3bedfcdece50756432",
+      "expectedSha256": "6d97c05e81ea029b727bdf59aa08bccffff467b289ed8b3bedfcdece50756432",
+      "match": true
+    },
+    {
+      "path": "faq/index.html",
+      "status": 200,
+      "sha256": "d3292edcf009969bfc02577ebe3b5d0aba2ae9a78155be04c89265723899307c",
+      "expectedSha256": "d3292edcf009969bfc02577ebe3b5d0aba2ae9a78155be04c89265723899307c",
+      "match": true
+    },
+    {
+      "path": "favicon.svg",
+      "status": 200,
+      "sha256": "1db39b4bff0f778820bd503fd6438e67f5415f9532dab57f0b8d5f37596d7ddd",
+      "expectedSha256": "1db39b4bff0f778820bd503fd6438e67f5415f9532dab57f0b8d5f37596d7ddd",
+      "match": true
+    },
+    {
+      "path": "images/toolkit-preview.svg",
+      "status": 200,
+      "sha256": "a7f08bceaad261e7fa06102a55e5afdf5ea130958e2e5553aa969f069c49f388",
+      "expectedSha256": "a7f08bceaad261e7fa06102a55e5afdf5ea130958e2e5553aa969f069c49f388",
+      "match": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "86e5730b10e3b01c1b108f06f57b5be363bddb33d68d19a43d27f0fe8cc9f8b4",
+      "expectedSha256": "86e5730b10e3b01c1b108f06f57b5be363bddb33d68d19a43d27f0fe8cc9f8b4",
+      "match": true
+    },
+    {
+      "path": "install/index.html",
+      "status": 200,
+      "sha256": "431cdf0033e4b8a7b1e6131b616219dbdef77cfb2c1833cc16ed05896f9ba918",
+      "expectedSha256": "431cdf0033e4b8a7b1e6131b616219dbdef77cfb2c1833cc16ed05896f9ba918",
+      "match": true
+    },
+    {
+      "path": "og.svg",
+      "status": 200,
+      "sha256": "17e40c4808ae2605fbaa41745e77d6bb34f044822b5477bbfe3446ea95eb167b",
+      "expectedSha256": "17e40c4808ae2605fbaa41745e77d6bb34f044822b5477bbfe3446ea95eb167b",
+      "match": true
+    },
+    {
+      "path": "options/index.html",
+      "status": 200,
+      "sha256": "d2a59246dbe089d22e9f5dcbf36021008cef637994c2aacbb022befba97fa1da",
+      "expectedSha256": "d2a59246dbe089d22e9f5dcbf36021008cef637994c2aacbb022befba97fa1da",
+      "match": true
+    },
+    {
+      "path": "toolkit/index.html",
+      "status": 200,
+      "sha256": "4ab92ecf9099019cf1d2963c15164a105a5f9c82d50fdc4bb7cc8d0b66aa45f2",
+      "expectedSha256": "4ab92ecf9099019cf1d2963c15164a105a5f9c82d50fdc4bb7cc8d0b66aa45f2",
+      "match": true
+    }
+  ]
+}

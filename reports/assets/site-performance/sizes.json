@@ -1,0 +1,8 @@
+{
+  "source": "fad05c4",
+  "stylesheet": {
+    "before": { "bytes": 89079, "gzipBytes": 11490 },
+    "after": { "bytes": 44834, "gzipBytes": 9373 }
+  },
+  "iife": { "bytes": 74387, "gzipBytes": 23728 }
+}

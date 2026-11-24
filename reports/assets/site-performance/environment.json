@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-24T18:01:39.507Z",
+  "model": "Mac15,6",
+  "chip": "Apple M3 Pro",
+  "ramBytes": 19327352832,
+  "macOS": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2.1\nBuildVersion:\t\t26B131",
+  "node": "v24.13.0",
+  "lighthouse": "13.6.0",
+  "validator": "26.11.20 (c2805af)",
+  "conditions": {
+    "headless": true,
+    "extensions": false,
+    "mobile": "Default Lighthouse simulated mobile throttling; no custom CPU or network relaxation.",
+    "desktop": "Only explicitly marked desktop runs use the standard desktop preset.",
+    "otherApps": "Not controlled. Performance runs are sequential; browser and network variability remain."
+  },
+  "hostingHeaders": {
+    "server": "GitHub.com",
+    "content-type": "text/html; charset=utf-8",
+    "cache-control": "max-age=600"
+  }
+}

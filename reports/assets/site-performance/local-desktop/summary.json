@@ -1,0 +1,171 @@
+{
+  "rows": [
+    {
+      "name": "home",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/",
+      "mode": "desktop",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 443.9968,
+        "largest-contentful-paint": 443.9968,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 289695
+      }
+    },
+    {
+      "name": "install",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/install/",
+      "mode": "desktop",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 431.8351,
+        "largest-contentful-paint": 431.8351,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 178151
+      }
+    },
+    {
+      "name": "options",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/options/",
+      "mode": "desktop",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 365.9591,
+        "largest-contentful-paint": 365.9591,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 171847
+      }
+    },
+    {
+      "name": "faq",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/faq/",
+      "mode": "desktop",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 322.8627,
+        "largest-contentful-paint": 322.8627,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 170968
+      }
+    },
+    {
+      "name": "about",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/about/",
+      "mode": "desktop",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 323.415,
+        "largest-contentful-paint": 443.415,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 213670
+      }
+    },
+    {
+      "name": "contact",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/contact/",
+      "mode": "desktop",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 369.3859,
+        "largest-contentful-paint": 369.3859,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 168030
+      }
+    },
+    {
+      "name": "toolkit",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/toolkit/",
+      "mode": "desktop",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 368.3554,
+        "largest-contentful-paint": 468.3554,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 212233
+      }
+    },
+    {
+      "name": "404",
+      "run": 1,
+      "url": "http://127.0.0.1:4180/accessibility/404.html",
+      "mode": "desktop",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63
+      },
+      "metrics": {
+        "first-contentful-paint": 361.8905,
+        "largest-contentful-paint": 361.8905,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 166113
+      }
+    }
+  ],
+  "notes": [
+    "Pinned ephemeral Lighthouse; no new root dependency or runtime code.",
+    "Default Lighthouse mobile simulation unless --desktop is explicit; raw configuration is retained per page.",
+    "Each run launches a fresh browser profile with extensions disabled. All samples are retained; compare repeated runs, not a single best score.",
+    "Performance scores depend on the machine, network and hosting. GitHub Pages cache headers cannot be changed by this build.",
+    "404 intentionally uses noindex and is excluded from the sitemap."
+  ]
+}

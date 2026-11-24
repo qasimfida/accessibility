@@ -1,0 +1,51 @@
+{
+  "rows": [
+    {
+      "name": "home",
+      "run": 1,
+      "url": "https://qasimfida.github.io/accessibility/",
+      "mode": "mobile",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1128.1955,
+        "largest-contentful-paint": 1128.1955,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 161349
+      }
+    },
+    {
+      "name": "home",
+      "run": 2,
+      "url": "https://qasimfida.github.io/accessibility/",
+      "mode": "mobile",
+      "version": "13.6.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1077.1844999999998,
+        "largest-contentful-paint": 1077.1844999999998,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 161375
+      }
+    }
+  ],
+  "notes": [
+    "Pinned ephemeral Lighthouse; no new root dependency or runtime code.",
+    "Default Lighthouse mobile simulation unless --desktop is explicit; raw configuration is retained per page.",
+    "Each run launches a fresh browser profile with extensions disabled. All samples are retained; compare repeated runs, not a single best score.",
+    "Performance scores depend on the machine, network and hosting. GitHub Pages cache headers cannot be changed by this build.",
+    "404 intentionally uses noindex and is excluded from the sitemap."
+  ]
+}

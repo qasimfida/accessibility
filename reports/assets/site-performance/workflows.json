@@ -1,0 +1,142 @@
+{
+  "source": "fad05c47a713c8866a0edecc989f6b1fb758fb27",
+  "observed": "2026-11-24T18:26:17.938Z",
+  "pages": {
+    "run": 45455308121,
+    "url": "https://github.com/qasimfida/accessibility/actions/runs/45455308121",
+    "build": "success",
+    "deploy": "success"
+  },
+  "ci": {
+    "run": 45455307127,
+    "url": "https://github.com/qasimfida/accessibility/actions/runs/45455307127",
+    "jobs": [
+      {
+        "id": 138663017151,
+        "name": "verify (22)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001188",
+        "stepsStarted": 17
+      },
+      {
+        "id": 138663017567,
+        "name": "browsers (20, chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001195",
+        "stepsStarted": 11
+      },
+      {
+        "id": 138663017584,
+        "name": "browsers (22, webkit)",
+        "status": "in_progress",
+        "conclusion": null,
+        "runner": "GitHub Actions 1000001214",
+        "stepsStarted": 10
+      },
+      {
+        "id": 138663017630,
+        "name": "init trend (22)",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "runner": "",
+        "stepsStarted": 0
+      },
+      {
+        "id": 138663017674,
+        "name": "browsers (22, firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001191",
+        "stepsStarted": 11
+      },
+      {
+        "id": 138663017713,
+        "name": "browsers (22, pixel)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001197",
+        "stepsStarted": 11
+      },
+      {
+        "id": 138663017725,
+        "name": "browsers (22, iphone)",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "runner": "",
+        "stepsStarted": 0
+      },
+      {
+        "id": 138663017756,
+        "name": "site (22)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001189",
+        "stepsStarted": 10
+      },
+      {
+        "id": 138663017862,
+        "name": "browsers (22, chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001193",
+        "stepsStarted": 11
+      },
+      {
+        "id": 138663017964,
+        "name": "browsers (20, pixel)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001192",
+        "stepsStarted": 11
+      },
+      {
+        "id": 138663018122,
+        "name": "init trend (20)",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "runner": "",
+        "stepsStarted": 0
+      },
+      {
+        "id": 138663018421,
+        "name": "verify (20)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001194",
+        "stepsStarted": 17
+      },
+      {
+        "id": 138663018510,
+        "name": "browsers (20, webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001206",
+        "stepsStarted": 11
+      },
+      {
+        "id": 138663018540,
+        "name": "browsers (20, iphone)",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "runner": "",
+        "stepsStarted": 0
+      },
+      {
+        "id": 138663018691,
+        "name": "browsers (20, firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "runner": "GitHub Actions 1000001196",
+        "stepsStarted": 11
+      }
+    ],
+    "notes": [
+      "Four macOS jobs were cancelled before any steps ran; runner names are empty.",
+      "The connected GitHub app returned 403 Resource not accessible by integration when asked to rerun a cancelled job; the local GitHub CLI is not authenticated. No tokens or permissions were changed.",
+      "One WebKit job was still running at observation time. Do not claim the entire CI matrix passed.",
+      "The subsequent report-only commit triggers another CI run without changing the deployed site."
+    ]
+  }
+}
