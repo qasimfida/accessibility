@@ -89,6 +89,12 @@ export async function siteMetrics(page: Page) {
         : rgb('rgb(255,255,255)');
     };
     const values: number[] = [];
+    const lowContrastText: {
+      text: string;
+      foreground: string;
+      background: ReturnType<typeof rgb>;
+      ratio: number;
+    }[] = [];
     const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     let node: Node | null;
     while ((node = walk.nextNode())) {
@@ -103,7 +109,16 @@ export async function siteMetrics(page: Page) {
         rect = parent.getBoundingClientRect();
       if (style.visibility !== 'visible' || !rect.width || !rect.height)
         continue;
-      values.push(ratio(rgb(style.color), background(parent)));
+      const backdrop = background(parent);
+      const contrast = ratio(rgb(style.color), backdrop);
+      values.push(contrast);
+      if (contrast < 4.5)
+        lowContrastText.push({
+          text: node.textContent.trim().slice(0, 120),
+          foreground: style.color,
+          background: backdrop,
+          ratio: contrast,
+        });
     }
     const targets = [
       ...document.querySelectorAll<HTMLElement>(
@@ -114,6 +129,7 @@ export async function siteMetrics(page: Page) {
       .filter((r) => r.width && r.height);
     return {
       minimumTextContrast: Math.min(...values),
+      lowContrastText,
       minimumTarget: Math.min(
         ...targets.map((r) => Math.min(r.width, r.height)),
       ),

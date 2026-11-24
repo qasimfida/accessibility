@@ -47,9 +47,11 @@
     color: CanvasText;
     border: 1px solid CanvasText;
   }
-  .donate-button {
-    background: ButtonFace;
-    color: ButtonText;
-    border-color: ButtonText;
+  .donate-button,
+  .donate-button[aria-disabled='true']:hover,
+  .donate-button:focus-visible {
+    background: Canvas;
+    color: CanvasText;
+    border-color: CanvasText;
   }
 }

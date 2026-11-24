@@ -34,7 +34,10 @@ test('forced-color hover states retain readable text in both schemes', async ({
       .getByRole('link', { name: 'Explore the live demo', exact: true })
       .hover();
     const metrics = await siteMetrics(page);
-    expect(metrics.minimumTextContrast).toBeGreaterThanOrEqual(4.5);
+    expect(
+      metrics.minimumTextContrast,
+      JSON.stringify(metrics.lowContrastText),
+    ).toBeGreaterThanOrEqual(4.5);
   }
 });
 
