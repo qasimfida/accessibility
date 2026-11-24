@@ -5,6 +5,7 @@ import { createReporter } from '../core/diagnostics';
 /** Pause CSS timelines and autoplay media without initiating playback or fetching resources on cleanup. */
 export const stopAnimations: Feature = {
   id: 'stopAnimations',
+  quickAccess: true,
   group: 'navigation',
   label: 'Stop animations',
   description:

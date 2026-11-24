@@ -3,6 +3,7 @@ import { applyReadingOverlay } from './reading-overlay';
 /** A private, click-through reading surface follows pointer, touch and keyboard focus. */
 export const readingGuide: Feature = {
   id: 'readingGuide',
+  quickAccess: true,
   group: 'navigation',
   label: 'Reading guide',
   description: 'Follow the mouse, touch point or keyboard focus.',

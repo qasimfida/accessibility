@@ -6,6 +6,7 @@ import { topClearance } from './focus-geometry';
 /** Native focus-visible controls when to draw; two independent tones survive light and dark page surfaces. */
 export const focusHighlight: Feature = {
   id: 'focusHighlight',
+  quickAccess: true,
   group: 'navigation',
   label: 'Focus highlight',
   description:

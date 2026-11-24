@@ -41,6 +41,8 @@ export interface Messages {
   forcedColoursNote?: string;
   /** Explains why custom pointers defer to touch and system settings. */
   cursorAvailabilityNote?: string;
+  /** Names the optional row of frequently used feature actions. */
+  quickControls?: string;
   resetAnnouncement: string;
 }
 
@@ -132,5 +134,7 @@ export interface Feature {
   readonly icon?: readonly string[];
   /** Lets generic controls explain device-dependent pointer availability. */
   readonly requiresFinePointer?: boolean;
+  /** Opt into the compact header actions; only enabled toggle features are eligible. */
+  readonly quickAccess?: boolean;
   apply(value: unknown, api: FeatureApi): Cleanup;
 }

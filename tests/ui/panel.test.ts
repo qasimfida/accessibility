@@ -187,3 +187,45 @@ it('reads current state when deferred controls are prepared and ignores prepare 
   panel.prepare();
   expect(panel.element.isConnected).toBe(false);
 });
+
+it('keeps quick actions scoped to available metadata and synchronises normal controls', () => {
+  const state = createState();
+  const feature = { ...testFeatures()[1]!, quickAccess: true } as Feature;
+  const actions = {
+    getState: () => state,
+    setFeature: vi.fn((id, value) => {
+      state[id as keyof typeof state] = value;
+      panel.update(state);
+    }),
+    close: vi.fn(),
+    reset: vi.fn(),
+  };
+  const panel = createPanel(
+    document,
+    [feature],
+    resolveOptions().messages,
+    'quick',
+    actions,
+    true,
+  );
+  releases.push(panel.destroy);
+  expect(panel.element.querySelector('.accessiblit-quick-actions')).toBeNull();
+  panel.prepare();
+  const quick = panel.element.querySelector<HTMLButtonElement>(
+    '.accessiblit-quick-action',
+  )!;
+  expect(quick.getAttribute('aria-label')).toBe(
+    'Quick controls: Test dark mode',
+  );
+  quick.click();
+  expect(actions.setFeature).toHaveBeenCalledWith('darkMode', true);
+  expect(quick.getAttribute('aria-pressed')).toBe('true');
+  expect(
+    panel.element
+      .querySelector('.accessiblit-toggle')
+      ?.getAttribute('aria-pressed'),
+  ).toBe('true');
+  panel.destroy();
+  quick.click();
+  expect(actions.setFeature).toHaveBeenCalledTimes(1);
+});

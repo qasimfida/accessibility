@@ -4,6 +4,7 @@ import { paletteRules } from './colour-rules';
 /** An opaque palette makes HTML text predictable without filtering media or layout ancestors. */
 export const darkMode: Feature = {
   id: 'darkMode',
+  quickAccess: true,
   group: 'colour',
   label: 'Dark mode',
   description: 'Use dark surfaces and light text; preserve media colours.',

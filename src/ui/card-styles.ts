@@ -62,4 +62,11 @@ export const CARD_CSS = `
 .accessiblit-choice--retain-icon:has(input:checked) .accessiblit-choice-icon svg { display:block; color:var(--ui-focus); stroke-width:2.5px; }
 .accessiblit-choice--retain-icon:has(input:checked) .accessiblit-choice-icon::after { content:none; }
 .accessiblit-choice--retain-icon:has(input:checked) span { font-weight:700; }
+
+.accessiblit-quick-actions { grid-column:1/-1; display:flex; gap:8px; margin-block-start:8px; }
+.accessiblit-quick-actions[hidden] { display:none; }
+.accessiblit-surface .accessiblit-quick-action { display:flex; align-items:center; justify-content:center; inline-size:44px; block-size:44px; padding:10px; color:var(--ui-ink); background:var(--ui-bg); }
+.accessiblit-surface .accessiblit-quick-action[aria-pressed=true] { color:var(--ui-accent-ink); background:var(--ui-accent); border-color:var(--ui-accent-ink); }
+.accessiblit-quick-action[aria-pressed=true] svg { stroke-width:3px; }
+@media(forced-colors:active) { .accessiblit-surface .accessiblit-quick-action[aria-pressed=true] { color:CanvasText; background:Canvas; border-color:CanvasText; } }
 `;

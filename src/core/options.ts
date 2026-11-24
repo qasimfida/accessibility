@@ -26,6 +26,7 @@ function messages(): Messages {
     featureDescriptions: {},
     changeAnnouncement: 'Settings updated',
     panelDescription: 'Choose settings for this page.',
+    quickControls: 'Quick controls',
     increase: 'Increase',
     decrease: 'Decrease',
     on: 'On',

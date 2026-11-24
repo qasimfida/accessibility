@@ -1,3 +1,4 @@
+import { createQuickActions } from './quick-actions';
 import { createBrand } from './brand';
 import { createOptionStepper } from './option-stepper';
 import { createIcon } from './icon';
@@ -92,11 +93,16 @@ export function createPanel(
   scope.listen(closeButton, 'click', actions.close);
   const records = new Map<FeatureId, RenderedControl>();
   const resetButton = makeButton(doc, messages.reset);
+  let quick: ReturnType<typeof createQuickActions> | undefined;
   let prepared = false;
   const prepare = () => {
     if (prepared || !scope.active) return;
     prepared = true;
     emblem.append(createBrand(doc));
+    quick = createQuickActions(doc, features, messages, actions);
+    scope.add(quick.destroy);
+    header.append(quick.element);
+    quick.update(actions.getState());
     const groups = [
       ['content', 'contentGroup'],
       ['colour', 'colourGroup'],
@@ -160,8 +166,10 @@ export function createPanel(
     resetButton,
     prepare,
     update(state: Record<FeatureId, unknown>) {
-      if (scope.active)
+      if (scope.active) {
+        quick?.update(state);
         for (const [id, control] of records) control.update(state[id]);
+      }
     },
     destroy: scope.dispose,
   };
