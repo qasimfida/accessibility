@@ -1,0 +1,43 @@
+.format-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-inline-size: 0;
+  min-block-size: 8rem;
+  padding: 1.25rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background: var(--soft);
+  color: var(--ink);
+  text-decoration: none;
+  text-align: center;
+}
+.format-grid a svg {
+  inline-size: 32px;
+  block-size: 32px;
+  color: var(--accent);
+}
+.format-grid a span {
+  font-weight: 600;
+}
+.format-grid a small {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.format-grid a:hover {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+@media (forced-colors: active) {
+  .format-grid a {
+    border-color: CanvasText;
+    background: Canvas;
+    color: LinkText;
+  }
+  .format-grid a svg,
+  .format-grid a small {
+    color: inherit;
+  }
+}
