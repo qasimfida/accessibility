@@ -34,7 +34,7 @@ export function createTooltips(
     sheet.clear();
     region.hidden = true;
   };
-  const show = (event: Event) => {
+  const show = (event: Pick<Event, 'target'>) => {
     const element = event.target;
     if (!(element instanceof view.Element)) return;
     const button = element.closest<HTMLElement>('[data-tooltip]');
@@ -71,6 +71,9 @@ export function createTooltips(
     sheet.set(`${css}.accessiblit-tooltip{left:${left}px;top:${top}px}`);
   };
   const leave = (event: Event) => {
+    // Pointer movement must not dismiss a hint that keyboard focus still owns.
+    if (event.type === 'pointerout' && target?.contains(root.activeElement))
+      return;
     const next = (event as MouseEvent).relatedTarget;
     if (
       next instanceof view.Node &&
@@ -103,20 +106,36 @@ export function createTooltipTriggers(
 ) {
   const scope = createScope(() => {});
   let hints: ReturnType<typeof createTooltips> | undefined;
-  const show = (event: Event) => {
-    const view = root.ownerDocument.defaultView!;
-    if (
-      !(event.target instanceof view.Element) ||
-      !event.target.closest('[data-tooltip]')
-    )
+  const view = root.ownerDocument.defaultView!;
+  let focusFrame: number | undefined;
+  scope.add(() => {
+    if (focusFrame !== undefined) view.cancelAnimationFrame(focusFrame);
+  });
+  const display = (target: EventTarget | null) => {
+    if (!(target instanceof view.Element) || !target.closest('[data-tooltip]'))
       return;
     if (!hints) {
       hints = createTooltips(root, panel, nonce);
       scope.add(hints.destroy);
     }
-    hints.show(event);
+    hints.show({ target });
   };
-  scope.listen(root, 'pointerover', show);
-  scope.listen(root, 'focusin', show);
-  return { hide: () => hints?.hide(), destroy: scope.dispose };
+  scope.listen(root, 'pointerover', (event) => display(event.target));
+  scope.listen(root, 'focusin', (event) => {
+    const target = event.target;
+    if (focusFrame !== undefined) view.cancelAnimationFrame(focusFrame);
+    // Allow focus scrolling to settle before its scroll event dismisses the new hint.
+    focusFrame = view.requestAnimationFrame(() => {
+      focusFrame = undefined;
+      if (scope.active && root.activeElement === target) display(target);
+    });
+  });
+  return {
+    hide: () => {
+      if (focusFrame !== undefined) view.cancelAnimationFrame(focusFrame);
+      focusFrame = undefined;
+      hints?.hide();
+    },
+    destroy: scope.dispose,
+  };
 }
