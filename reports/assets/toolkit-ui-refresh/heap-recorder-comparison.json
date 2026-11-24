@@ -1,0 +1,164 @@
+{
+  "date": "2026-11-24T10:59:28.837Z",
+  "traceWithoutSnapshots": [
+    {
+      "project": "chromium",
+      "warmup": 1000,
+      "retained": [0, 0, 0, 0, 0, 0],
+      "rows": [
+        {
+          "cycles": 0,
+          "bytes": 1819504,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 40,
+          "bytes": 1820152,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 80,
+          "bytes": 1820152,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 120,
+          "bytes": 1820152,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 160,
+          "bytes": 1820152,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 200,
+          "bytes": 1821124,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        }
+      ],
+      "slopeBytesPerCycle": 5.785714285714286,
+      "standardError": 1.913080644149746,
+      "lower95": 0.47415109666794386
+    }
+  ],
+  "traceOff": [
+    {
+      "project": "chromium",
+      "warmup": 1000,
+      "retained": [0, 0, 0, 0, 0, 0],
+      "rows": [
+        {
+          "cycles": 0,
+          "bytes": 1820164,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 40,
+          "bytes": 1821124,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 80,
+          "bytes": 1821124,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 120,
+          "bytes": 1821124,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 160,
+          "bytes": 1821124,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 200,
+          "bytes": 1821124,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        }
+      ],
+      "slopeBytesPerCycle": 3.4285714285714284,
+      "standardError": 1.979486637221574,
+      "lower95": -2.067364347909224
+    },
+    {
+      "project": "pixel",
+      "warmup": 1000,
+      "retained": [0, 0, 0, 0, 0, 0],
+      "rows": [
+        {
+          "cycles": 0,
+          "bytes": 1846196,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 40,
+          "bytes": 1847156,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 80,
+          "bytes": 1847156,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 120,
+          "bytes": 1847156,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 160,
+          "bytes": 1847156,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 200,
+          "bytes": 1847156,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        }
+      ],
+      "slopeBytesPerCycle": 3.4285714285714284,
+      "standardError": 1.979486637221574,
+      "lower95": -2.067364347909224
+    }
+  ],
+  "method": "Identical 1000 warmups, 200 measured lifecycles, forced GC, WeakRef inspection and zero-growth confidence gate. Only diagnostic trace recording differs."
+}
