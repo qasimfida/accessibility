@@ -25,6 +25,14 @@ export const textAlign: Feature = {
     type: 'select',
     values: ['off', 'left', 'center', 'right'],
     labels: ['Off', 'Left', 'Center', 'Right'],
+    iconOnly: true,
+    retainIcon: true,
+    optionIcons: [
+      ['M5 6h14M5 10h14M5 14h14M5 18h14M2 3l20 18'],
+      ['M4 5h16M4 10h10M4 15h16M4 20h10'],
+      ['M4 5h16M7 10h10M4 15h16M7 20h10'],
+      ['M4 5h16M10 10h10M4 15h16M10 20h10'],
+    ],
   },
   apply(value, api) {
     if (

@@ -56,4 +56,10 @@ export const CARD_CSS = `
 .accessiblit-toggle[aria-pressed=true]::after { background:var(--ui-accent); border-color:var(--ui-accent); }
 .accessiblit-toggle[aria-pressed=true]::before { inset-inline-start:24px; background:var(--ui-accent-ink); }
 @media(forced-colors:active) { .accessiblit-toggle[aria-pressed=true]::after { background:CanvasText; border-color:CanvasText; forced-color-adjust:none; } .accessiblit-toggle[aria-pressed=true]::before { background:Canvas; forced-color-adjust:none; } }
+
+.accessiblit-choice--icon-only { inline-size:44px; justify-content:center; padding:8px; }
+.accessiblit-choice--retain-icon:has(input:checked) { background:var(--ui-quiet); color:var(--ui-ink); border-color:var(--ui-focus); }
+.accessiblit-choice--retain-icon:has(input:checked) .accessiblit-choice-icon svg { display:block; color:var(--ui-focus); stroke-width:2.5px; }
+.accessiblit-choice--retain-icon:has(input:checked) .accessiblit-choice-icon::after { content:none; }
+.accessiblit-choice--retain-icon:has(input:checked) span { font-weight:700; }
 `;

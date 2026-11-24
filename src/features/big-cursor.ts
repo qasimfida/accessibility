@@ -12,6 +12,12 @@ export const bigCursor: Feature = {
     type: 'select',
     values: [false, true, 2],
     labels: ['Off', 'Large', 'Extra large'],
+    retainIcon: true,
+    optionIcons: [
+      ['M8 6v12l4-4 3 6 2-1-3-6h5L8 6Z'],
+      ['M5 3v17l5-5 4 7 3-2-4-7h7L5 3Z'],
+      ['M3 2v20l6-6 4 7 4-2-4-7h9L3 2Z'],
+    ],
   },
   apply(value, api) {
     if (value !== true && value !== 2) return () => {};

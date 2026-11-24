@@ -27,6 +27,9 @@ export function createRadios(context: ControlContext): RenderedControl {
   const inputs = control.values.map((value, index) => {
     const label = context.document.createElement('label');
     label.className = 'accessiblit-choice';
+    if (control.retainIcon)
+      label.classList.add('accessiblit-choice--retain-icon');
+    if (control.iconOnly) label.classList.add('accessiblit-choice--icon-only');
     const input = context.document.createElement('input');
     input.type = 'radio';
     input.name = `${context.prefix}-${context.feature.id}`;
@@ -34,11 +37,19 @@ export function createRadios(context: ControlContext): RenderedControl {
     input.value = String(value);
     const text = context.document.createElement('span');
     text.textContent = valueText(context.feature, value, context.messages);
+    if (control.iconOnly) {
+      text.className = 'accessiblit-step-text';
+      input.setAttribute('aria-label', text.textContent);
+      label.dataset.tooltip = text.textContent;
+    }
     const mark = context.document.createElement('span');
     mark.className = 'accessiblit-choice-icon';
     mark.setAttribute('aria-hidden', 'true');
     mark.append(
-      createIcon(context.document, context.feature.icon ?? ['M6 12h12']),
+      createIcon(
+        context.document,
+        control.optionIcons?.[index] ?? context.feature.icon ?? ['M6 12h12'],
+      ),
     );
     label.append(input, mark, text);
     group.append(label);

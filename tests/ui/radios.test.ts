@@ -95,3 +95,32 @@ it('rejects empty, duplicate or unusable option lists', () => {
       createRadios({ ...base, feature: { ...feature, control } as Feature }),
     ).toThrow('Invalid option metadata');
 });
+
+it('keeps icon-only names and per-option artwork from feature metadata', () => {
+  const control = createRadios({
+    document,
+    feature: {
+      ...feature,
+      control: {
+        ...feature.control,
+        type: 'select',
+        values: ['off', 'left'],
+        iconOnly: true,
+        retainIcon: true,
+        optionIcons: [['M1 1h2'], ['M3 3h4']],
+      },
+    },
+    messages: resolveOptions().messages,
+    prefix: 'icons',
+    getValue: () => 'left',
+    setValue: () => {},
+  });
+  const options = control.element.querySelectorAll('input');
+  expect(options[1]?.getAttribute('aria-label')).toBe('Left');
+  expect(options[1]?.checked).toBe(true);
+  expect(options[1]?.parentElement?.dataset.tooltip).toBe('Left');
+  expect(
+    options[1]?.parentElement?.querySelector('path')?.getAttribute('d'),
+  ).toBe('M3 3h4');
+  control.destroy();
+});

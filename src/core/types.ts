@@ -112,6 +112,12 @@ export type FeatureControl =
       labels?: readonly string[];
       /** Ordered numeric levels can use minus/plus without changing their stored values. */
       presentation?: 'stepper';
+      /** Per-value paths keep icon-only controls driven by registry metadata. */
+      optionIcons?: readonly (readonly string[])[];
+      /** Keep the accessible option name and expose the visible label as a hint. */
+      iconOnly?: boolean;
+      /** Preserve meaningful option artwork rather than replacing it with a check. */
+      retainIcon?: boolean;
     }
   | { type: 'range'; min: number; max: number; step: number; unit?: string };
 
