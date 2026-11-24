@@ -65,7 +65,7 @@
     <a class="skip-link" href="#main">Skip to main content</a>
     <aside class="announcement" aria-label="Toolkit announcement">
       <p>18 ways to make a page your own. Free, open source and private.</p>
-      <a href="%BASE_URL%pricing/">Meet the free toolkit</a>
+      <a href="%BASE_URL%#support">Meet the free toolkit</a>
     </aside>
     <header class="site-header wrap">
       <a class="brand" href="%BASE_URL%" translate="no"
@@ -93,7 +93,6 @@
         ><a href="%BASE_URL%install/">Documentation</a
         ><a href="%BASE_URL%about/">About</a
         ><a href="%BASE_URL%contact/">Contact</a
-        ><a href="%BASE_URL%pricing/">Pricing</a
         ><a href="%BASE_URL%faq/">FAQ</a>
       </nav>
       <a class="button header-cta" href="#demo">Try the toolkit</a>
@@ -892,39 +891,39 @@
           </div>
         </div>
       </section>
-      <section class="pricing-section wrap" aria-labelledby="pricing-title">
-        <div class="section-heading centre">
-          <p class="eyebrow">A toolkit for every budget</p>
-          <h2 id="pricing-title">
-            All the features.<br />None of the subscription.
-          </h2>
-          <p>
-            Free and open source under the MIT license. No trial countdown or
-            paid feature unlocks.
-          </p>
-        </div>
-        <div class="free-plan">
+      <section
+        id="support"
+        class="pricing-section wrap"
+        aria-labelledby="support-title"
+      >
+        <div class="donation-card">
           <div>
-            <p class="eyebrow">The complete toolkit</p>
-            <h3>Free. For your next website.</h3>
+            <p class="eyebrow">Free and open source</p>
+            <h2 id="support-title">A little support. More possibilities.</h2>
             <p>
-              For personal projects, businesses and teams who want to offer
-              visitors more choice.
+              All 18 controls are free under the MIT license. Optional donations
+              will help maintain the toolkit; they will never unlock features.
+            </p>
+            <ul class="support-labels">
+              <li>Free to use</li>
+              <li>MIT licensed</li>
+              <li>No subscription</li>
+            </ul>
+          </div>
+          <div>
+            <button
+              class="button donate-button"
+              type="button"
+              aria-disabled="true"
+              aria-describedby="donation-note"
+              title="Donations coming soon — thank you for your support"
+            >
+              Donate
+            </button>
+            <p id="donation-note">
+              Donations coming soon. This button does not collect a payment.
             </p>
           </div>
-          <div class="plan-price">
-            <p><strong>$0</strong> <span>license cost</span></p>
-            <a class="button" href="%BASE_URL%install/">Get started for free</a
-            ><a href="%BASE_URL%pricing/">See what is included</a>
-          </div>
-          <ul>
-            <li>All 18 visitor controls</li>
-            <li>Unlimited self-hosted sites</li>
-            <li>JavaScript, TypeScript and React</li>
-            <li>No runtime dependencies</li>
-            <li>Commercial use under MIT</li>
-            <li>Your hosting and maintenance</li>
-          </ul>
         </div>
       </section>
       <section class="faq-section wrap" aria-labelledby="faq-title">
@@ -1061,7 +1060,7 @@
             <nav aria-label="Toolkit footer">
               <a href="#demo">Live demo</a
               ><a href="#features">All 18 features</a
-              ><a href="%BASE_URL%pricing/">Free pricing</a>
+              ><a href="%BASE_URL%#support">Support the project</a>
             </nav>
           </div>
           <div>

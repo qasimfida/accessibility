@@ -4,7 +4,7 @@ import { loadSite } from './helpers';
 test('planned donations explain availability without starting a payment', async ({
   page,
 }) => {
-  await loadSite(page, 'pricing/', 'light');
+  await loadSite(page, '', 'light');
   const donate = page.getByRole('button', { name: 'Donate', exact: true });
   await expect(donate).toHaveAttribute('aria-disabled', 'true');
   await expect(donate).toHaveAttribute('title', /Donations coming soon/);

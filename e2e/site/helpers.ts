@@ -7,7 +7,6 @@ export const SITE_PAGES = [
   'install/',
   'options/',
   'faq/',
-  'pricing/',
   'about/',
   'contact/',
   'toolkit/',

@@ -77,7 +77,6 @@ test('keyboard visits every content page and operates the real demo', async ({
     ['Toolkit', 'toolkit/'],
     ['About', 'about/'],
     ['Contact', 'contact/'],
-    ['Pricing', 'pricing/'],
     ['FAQ', 'faq/'],
     ['Home', ''],
   ] as const) {

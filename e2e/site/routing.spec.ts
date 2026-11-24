@@ -16,6 +16,7 @@ test('built routes and custom 404 work only beneath the project base', async ({
     ).toBeVisible();
     await expect(page.locator('[data-accessiblit-host]')).toHaveCount(1);
   }
+  expect((await request.get('/accessiblit/pricing/')).status()).toBe(404);
   expect((await page.goto('missing/deep/'))?.status()).toBe(404);
   await expect(page.locator('h1')).toContainText('page');
   expect(

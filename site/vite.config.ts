@@ -19,7 +19,6 @@ export default defineConfig({
           'install/index.html',
           'options/index.html',
           'faq/index.html',
-          'pricing/index.html',
           'about/index.html',
           'contact/index.html',
           'toolkit/index.html',

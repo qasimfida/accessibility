@@ -12,15 +12,9 @@ const mark = `<svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"
 for (const file of [
   'index.html',
   '404.html',
-  ...[
-    'about',
-    'contact',
-    'faq',
-    'install',
-    'options',
-    'pricing',
-    'toolkit',
-  ].map((s) => `${s}/index.html`),
+  ...['about', 'contact', 'faq', 'install', 'options', 'toolkit'].map(
+    (s) => `${s}/index.html`,
+  ),
 ]) {
   const url = new URL(`site/${file}`, root);
   const html = await readFile(url, 'utf8');
