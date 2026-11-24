@@ -74,7 +74,7 @@ export function createPanel(
   emblem.setAttribute('aria-hidden', 'true');
   const brand = doc.createElement('span');
   brand.className = 'accessiblit-brand';
-  brand.textContent = 'Accessiblit';
+  brand.textContent = 'Accessibility';
   brand.setAttribute('translate', 'no');
   header.append(emblem, closeButton, title, brand);
   const intro = doc.createElement('p');
