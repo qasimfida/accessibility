@@ -10,6 +10,9 @@ export default defineConfig({
   appType: 'mpa',
   build: {
     target: 'es2019',
+    // JavaScript's ES2019 target must not expand modern CSS into legacy browser shims.
+    // These CSS baselines predate the last two supported browser versions.
+    cssTarget: ['chrome120', 'firefox120', 'safari17.4'],
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {

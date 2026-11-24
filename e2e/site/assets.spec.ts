@@ -47,3 +47,20 @@ test('one head request loads the real widget and restores its settings before bo
     }),
   ).toBeVisible();
 });
+
+test('production CSS preserves logical properties without legacy expansions', async ({
+  page,
+  request,
+}) => {
+  await page.goto('');
+  const href = await page
+    .locator('link[rel="stylesheet"]')
+    .first()
+    .getAttribute('href');
+  expect(href).toBeTruthy();
+  const response = await request.get(href!);
+  expect(response.ok()).toBe(true);
+  const css = await response.text();
+  expect(css).toContain('inset-inline-start:');
+  expect(css).not.toMatch(/:-(?:webkit|moz)-any\(/);
+});
