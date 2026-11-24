@@ -251,3 +251,14 @@ main.wrap > h1 {
 [data-accessiblit-host] {
   --accessiblit-color-scheme: light;
 }
+
+.platform-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+.platform-list svg {
+  flex: none;
+  color: var(--ink);
+}
