@@ -102,13 +102,21 @@ export async function browserExamples(servers, bundle, cdnHtml) {
             .map((e) => e.getBoundingClientRect())
             .filter((r) => r.width && r.height);
           const button = root.querySelector('.accessiblit-launcher');
-          const focus = getComputedStyle(root.activeElement);
+          const focused = root.activeElement;
+          // The requested borderless close exposes focus through its painted icon.
+          const icon = focused.matches('.accessiblit-close')
+            ? focused.querySelector('svg')
+            : null;
+          const focus = getComputedStyle(icon ?? focused);
           const panel = root.querySelector('[role=dialog]');
           return {
             minimumTarget: Math.min(
               ...controls.map((r) => Math.min(r.width, r.height)),
             ),
-            focusWidth: parseFloat(focus.outlineWidth),
+            focusWidth: parseFloat(
+              icon ? focus.strokeWidth : focus.outlineWidth,
+            ),
+            focusIndicator: icon ? 'icon-stroke' : 'outline',
             foreground: getComputedStyle(button).color,
             background: getComputedStyle(button).backgroundColor,
             overflow: panel.scrollWidth - panel.clientWidth,
