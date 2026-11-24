@@ -35,7 +35,7 @@ for (const width of [1440, 390, 320])
 test('About facts have a named semantic group', async ({ page }) => {
   await loadSite(page, 'about/', 'reduced');
   const facts = page.getByRole('group', {
-    name: 'Accessiblit at a glance',
+    name: 'Accessibility at a glance',
     exact: true,
   });
   await expect(facts).toHaveCount(1);
