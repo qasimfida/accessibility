@@ -1,8 +1,8 @@
 import { createIcon } from './icon';
 
-/** Single editable source for the original open-orbit accessibility mark. */
+/** Single editable source for the original layered accessibility mark. */
 export const BRAND_PATH_DATA =
-  'M17 3.5a9.5 9.5 0 1 0 3.5 4|M10.5 6.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0Z|M6.5 10.5l5.5 1 5.5-1M12 11.5v4m0 0-3.5 4m3.5-4 3.5 4';
+  'M12 3 3 7.5 12 12l9-4.5L12 3Z|M3 12l9 4.5 9-4.5|M3 16.5l9 4.5 9-4.5';
 
 /** Inline vectors keep widget branding independent from networks and host assets. */
 export function createBrand(doc: Document): SVGSVGElement {

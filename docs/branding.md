@@ -1,6 +1,6 @@
 # Editing the Accessiblit logo
 
-The logo is an original open-orbit accessibility mark. Its editable vector paths
+The logo is an original layered accessibility mark. Its editable vector paths
 live in `src/ui/brand.ts` as `BRAND_PATH_DATA`, separated by `|` in a 24×24 viewBox.
 Change that one source to customise the artwork. Paths may contain SVG path
 commands, numbers, spaces and commas; URLs and markup are rejected by the helper.
@@ -17,7 +17,7 @@ npm run build:site
 npm run verify
 ```
 
-`sync-brand.mjs` updates all website header/footer marks, the SVG favicon and the
+`sync-brand.mjs` updates all website header marks and the shared footer partial, the SVG favicon and the
 SVG/PNG social image. Launcher and panel marks use the same source directly.
 `capture-toolkit.mjs` refreshes the website's 440×760 panel image from the working
 local build. Rebuild the site afterward to include that refreshed image.
