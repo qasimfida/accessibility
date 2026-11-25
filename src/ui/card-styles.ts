@@ -69,5 +69,6 @@ export const CARD_CSS = `
 .accessiblit-surface .accessiblit-quick-action { display:flex; align-items:center; justify-content:center; inline-size:44px; block-size:44px; padding:10px; color:var(--ui-ink); background:var(--ui-bg); }
 .accessiblit-surface .accessiblit-quick-action[aria-pressed=true] { color:var(--ui-accent-ink); background:var(--ui-accent); border-color:var(--ui-accent-ink); }
 .accessiblit-quick-action[aria-pressed=true] svg { stroke-width:3px; }
+@media(max-width:340px) { .accessiblit-quick-actions { max-inline-size:148px; margin-inline:auto; } }
 @media(forced-colors:active) { .accessiblit-surface .accessiblit-quick-action[aria-pressed=true] { color:CanvasText; background:Canvas; border-color:CanvasText; } }
 `;

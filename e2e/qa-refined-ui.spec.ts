@@ -33,6 +33,7 @@ for (const width of [320, 440])
     expect(groupBox).not.toBeNull();
     for (const y of new Set(boxes.map((b) => b.y))) {
       const row = boxes.filter((b) => b.y === y);
+      expect(row).toHaveLength(width === 320 ? 3 : 6);
       const left = Math.min(...row.map((b) => b.x));
       const right = Math.max(...row.map((b) => b.x + b.width));
       expect(
