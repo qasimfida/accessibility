@@ -3,6 +3,7 @@ import { applyReadingOverlay } from './reading-overlay';
 /** A low-luminance-change strip preserves page interaction and operating-system colours. */
 export const readingMask: Feature = {
   id: 'readingMask',
+  quickAccess: true,
   group: 'navigation',
   label: 'Reading mask',
   description: 'Gently dim outside the pointer or keyboard-focus strip.',

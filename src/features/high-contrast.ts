@@ -4,6 +4,7 @@ import { paletteRules } from './colour-rules';
 /** A higher-priority palette avoids activation-order-dependent contrast or media inversion. */
 export const highContrast: Feature = {
   id: 'highContrast',
+  quickAccess: true,
   group: 'colour',
   label: 'High contrast',
   description: 'Use black surfaces, white text and yellow links.',

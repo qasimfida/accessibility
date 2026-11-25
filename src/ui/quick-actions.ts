@@ -4,7 +4,7 @@ import { createScope } from '../core/scope';
 import type { Feature, FeatureId, Messages } from '../core/types';
 import type { PanelActions } from './panel';
 
-/** Registry opt-ins expose four frequent actions without duplicating their state. */
+/** Registry opt-ins expose six frequent actions without duplicating their state. */
 export function createQuickActions(
   doc: Document,
   features: readonly Feature[],
@@ -21,7 +21,7 @@ export function createQuickActions(
     .filter(
       (feature) => feature.quickAccess && feature.control.type === 'toggle',
     )
-    .slice(0, 4)
+    .slice(0, 6)
     .map((feature) => {
       const label = featureText(feature, messages).label;
       const button = makeButton(doc, '');

@@ -64,7 +64,7 @@ export const CARD_CSS = `
 .accessiblit-choice--retain-icon:has(input:checked) .accessiblit-choice-icon::after { content:none; }
 .accessiblit-choice--retain-icon:has(input:checked) span { font-weight:700; }
 
-.accessiblit-quick-actions { grid-column:1/-1; display:flex; gap:8px; margin-block-start:8px; }
+.accessiblit-quick-actions { grid-column:1/-1; display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-block-start:8px; }
 .accessiblit-quick-actions[hidden] { display:none; }
 .accessiblit-surface .accessiblit-quick-action { display:flex; align-items:center; justify-content:center; inline-size:44px; block-size:44px; padding:10px; color:var(--ui-ink); background:var(--ui-bg); }
 .accessiblit-surface .accessiblit-quick-action[aria-pressed=true] { color:var(--ui-accent-ink); background:var(--ui-accent); border-color:var(--ui-accent-ink); }
