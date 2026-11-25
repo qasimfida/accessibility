@@ -124,25 +124,53 @@
         </aside>
         <div class="docs-layout">
           <nav class="on-this-page" aria-label="Installation methods">
+            <span class="docs-rail-label">Get started</span>
             <a href="#cdn">CDN</a><a href="#npm">npm</a
-            ><a href="#react">React</a><a href="#next">Next.js</a
+            ><a href="#html">HTML / JavaScript</a
             ><a href="#self-hosted">Self-hosted file</a
-            ><a href="#private">Private distribution</a
-            ><a href="#html">HTML / JavaScript</a><a href="#vue">Vue</a
-            ><a href="#angular">Angular</a><a href="#wordpress">WordPress</a
-            ><a href="#shopify">Shopify</a>
+            ><a href="#private">Private distribution</a>
+            <span class="docs-rail-label">Your framework</span>
+            <a href="#react">React</a><a href="#next">Next.js</a
+            ><a href="#vue">Vue</a><a href="#angular">Angular</a
+            ><a href="#wordpress">WordPress</a><a href="#shopify">Shopify</a>
           </nav>
           <div class="docs-article">
+            <div class="docs-start">
+              <p class="eyebrow">A small addition to your stack</p>
+              <h2>From install to first open.</h2>
+              <p>
+                Choose a guide below. Keep one widget instance per document,
+                initialise in the browser and release it when your application
+                unmounts.
+              </p>
+              <ol class="docs-steps">
+                <li>
+                  <strong>Load the package</strong
+                  ><span>Use a script or module.</span>
+                </li>
+                <li>
+                  <strong>Initialise once</strong
+                  ><span>Choose your options.</span>
+                </li>
+                <li>
+                  <strong>Own the lifecycle</strong
+                  ><span>Clean up on unmount.</span>
+                </li>
+              </ol>
+            </div>
             <section aria-labelledby="cdn">
               <h2 id="cdn">CDN script tag</h2>
               <p>
                 Place the script before the init call. The library exposes the
                 Accessibility global and can wait for the document body.
               </p>
-              <pre><code data-snippet="cdn" data-language="html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.1/dist/accessiblit.min.js&quot; integrity=&quot;sha384-92p98tW9X5RIeEH3DgJaTj4mWx29zz9C5jAH1Jd+AeCQUHivVa6CYiWAkYtQ3JC3&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+              <figure class="code-sample">
+                <figcaption>HTML<span>Integration example</span></figcaption>
+                <pre><code data-snippet="cdn" data-language="html">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@qasimfida/accessibility-widget@0.1.1/dist/accessiblit.min.js&quot; integrity=&quot;sha384-92p98tW9X5RIeEH3DgJaTj4mWx29zz9C5jAH1Jd+AeCQUHivVa6CYiWAkYtQ3JC3&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   Accessiblit.init();
 &lt;/script&gt;</code></pre>
+              </figure>
             </section>
             <section aria-labelledby="npm">
               <h2 id="npm">npm and ESM</h2>
@@ -156,11 +184,21 @@
                 The CDN example above remains the previous published package and
                 does not include the redesigned panel.
               </p>
-              <pre><code data-snippet="npm-install" data-language="sh">npm install @widgets/accessibility@0.1.1</code></pre>
-              <pre><code data-snippet="esm" data-language="ts">import { init } from &#x27;@widgets/accessibility&#x27;;
+              <figure class="code-sample">
+                <figcaption>
+                  Terminal<span>Integration example</span>
+                </figcaption>
+                <pre><code data-snippet="npm-install" data-language="sh">npm install @widgets/accessibility@0.1.1</code></pre>
+              </figure>
+              <figure class="code-sample">
+                <figcaption>
+                  TypeScript<span>Integration example</span>
+                </figcaption>
+                <pre><code data-snippet="esm" data-language="ts">import { init } from &#x27;@widgets/accessibility&#x27;;
 
 const widget = init({ position: &#x27;bottom-left&#x27; });
 // Call widget.destroy() when removing this integration.</code></pre>
+              </figure>
             </section>
             <section aria-labelledby="react">
               <h2 id="react">React</h2>
@@ -169,8 +207,17 @@ const widget = init({ position: &#x27;bottom-left&#x27; });
                 effect keeps DOM work on the client and cleans up the instance
                 it created, including under StrictMode.
               </p>
-              <pre><code data-snippet="react-install" data-language="sh">npm install @widgets/accessibility@0.1.1 react react-dom</code></pre>
-              <pre><code data-snippet="react" data-language="tsx">import { useEffect } from &#x27;react&#x27;;
+              <figure class="code-sample">
+                <figcaption>
+                  Terminal<span>Integration example</span>
+                </figcaption>
+                <pre><code data-snippet="react-install" data-language="sh">npm install @widgets/accessibility@0.1.1 react react-dom</code></pre>
+              </figure>
+              <figure class="code-sample">
+                <figcaption>
+                  React / TSX<span>Integration example</span>
+                </figcaption>
+                <pre><code data-snippet="react" data-language="tsx">import { useEffect } from &#x27;react&#x27;;
 import { init } from &#x27;@widgets/accessibility&#x27;;
 
 export default function Accessibility() {
@@ -180,6 +227,7 @@ export default function Accessibility() {
   }, []);
   return null;
 }</code></pre>
+              </figure>
             </section>
             <section aria-labelledby="next">
               <h2 id="next">Next.js App Router</h2>
@@ -188,7 +236,11 @@ export default function Accessibility() {
                 effect owns and cleans up the widget instance. React stays in
                 your application rather than the core browser bundle.
               </p>
-              <pre><code data-snippet="next" data-language="tsx">&#x27;use client&#x27;;
+              <figure class="code-sample">
+                <figcaption>
+                  React / TSX<span>Integration example</span>
+                </figcaption>
+                <pre><code data-snippet="next" data-language="tsx">&#x27;use client&#x27;;
 
 import { useEffect } from &#x27;react&#x27;;
 import { init } from &#x27;@widgets/accessibility&#x27;;
@@ -200,6 +252,7 @@ export default function Accessibility() {
   }, []);
   return null;
 }</code></pre>
+              </figure>
             </section>
             <section aria-labelledby="html">
               <h2 id="html">HTML and plain JavaScript</h2>
@@ -209,11 +262,21 @@ export default function Accessibility() {
                 initialization file. Load both with defer to preserve their
                 order.
               </p>
-              <pre><code>&lt;script defer src=&quot;/assets/accessiblit.min.js&quot;&gt;&lt;/script&gt;
+              <figure class="code-sample">
+                <figcaption>
+                  Code example<span>Integration example</span>
+                </figcaption>
+                <pre><code>&lt;script defer src=&quot;/assets/accessiblit.min.js&quot;&gt;&lt;/script&gt;
 &lt;script defer src=&quot;/assets/accessibility-init.js&quot;&gt;&lt;/script&gt;</code></pre>
+              </figure>
               <p>In <code>accessibility-init.js</code>:</p>
-              <pre><code>const widget = Accessiblit.init({ position: &#x27;bottom-right&#x27; });
+              <figure class="code-sample">
+                <figcaption>
+                  Code example<span>Integration example</span>
+                </figcaption>
+                <pre><code>const widget = Accessiblit.init({ position: &#x27;bottom-right&#x27; });
 // Before removing this integration: widget.destroy();</code></pre>
+              </figure>
             </section>
             <section aria-labelledby="vue">
               <h2 id="vue">Vue 3</h2>
@@ -222,7 +285,11 @@ export default function Accessibility() {
                 hooks keep initialization in the browser and clean up the owned
                 instance, including with server rendering.
               </p>
-              <pre><code>&lt;script setup lang=&quot;ts&quot;&gt;
+              <figure class="code-sample">
+                <figcaption>
+                  Code example<span>Integration example</span>
+                </figcaption>
+                <pre><code>&lt;script setup lang=&quot;ts&quot;&gt;
 import { onMounted, onBeforeUnmount } from &#x27;vue&#x27;;
 import { init, type AccessiblitInstance } from &#x27;@widgets/accessibility&#x27;;
 let widget: AccessiblitInstance | undefined;
@@ -230,6 +297,7 @@ onMounted(() =&gt; { widget = init(); });
 onBeforeUnmount(() =&gt; { widget?.destroy(); });
 &lt;/script&gt;
 &lt;template&gt;&lt;span hidden&gt;&lt;/span&gt;&lt;/template&gt;</code></pre>
+              </figure>
             </section>
             <section aria-labelledby="angular">
               <h2 id="angular">Angular 17+</h2>
@@ -238,7 +306,11 @@ onBeforeUnmount(() =&gt; { widget?.destroy(); });
                 afterNextRender runs only in the browser; DestroyRef releases
                 the instance when Angular removes the component.
               </p>
-              <pre><code>import { Component, DestroyRef, afterNextRender, inject } from &#x27;@angular/core&#x27;;
+              <figure class="code-sample">
+                <figcaption>
+                  Code example<span>Integration example</span>
+                </figcaption>
+                <pre><code>import { Component, DestroyRef, afterNextRender, inject } from &#x27;@angular/core&#x27;;
 import { init } from &#x27;@widgets/accessibility&#x27;;
 
 @Component({ selector: &#x27;app-accessibility&#x27;, standalone: true, template: &#x27;&#x27; })
@@ -251,6 +323,7 @@ export class AccessibilityComponent {
     });
   }
 }</code></pre>
+              </figure>
             </section>
             <section aria-labelledby="wordpress">
               <h2 id="wordpress">WordPress</h2>
@@ -261,11 +334,16 @@ export class AccessibilityComponent {
                 Enqueue both from the child theme's functions.php; the
                 dependency preserves initialization order.
               </p>
-              <pre><code>add_action(&#x27;wp_enqueue_scripts&#x27;, function () {
+              <figure class="code-sample">
+                <figcaption>
+                  Code example<span>Integration example</span>
+                </figcaption>
+                <pre><code>add_action(&#x27;wp_enqueue_scripts&#x27;, function () {
     $assets = get_stylesheet_directory_uri() . &#x27;/assets/&#x27;;
     wp_enqueue_script(&#x27;accessiblit&#x27;, $assets . &#x27;accessiblit.min.js&#x27;, array(), &#x27;0.1.1&#x27;, true);
     wp_enqueue_script(&#x27;accessiblit-init&#x27;, $assets . &#x27;accessibility-init.js&#x27;, array(&#x27;accessiblit&#x27;), &#x27;0.1.1&#x27;, true);
 });</code></pre>
+              </figure>
               <p>
                 Footer loading can show the original page before persisted
                 preferences apply. For strict CSP, allow your local assets and
@@ -283,8 +361,13 @@ export class AccessibilityComponent {
                 the closing body tag, preview and test before publishing the
                 theme.
               </p>
-              <pre><code>&lt;script defer src=&quot;{{ &#x27;accessiblit.min.js&#x27; | asset_url }}&quot;&gt;&lt;/script&gt;
+              <figure class="code-sample">
+                <figcaption>
+                  Code example<span>Integration example</span>
+                </figcaption>
+                <pre><code>&lt;script defer src=&quot;{{ &#x27;accessiblit.min.js&#x27; | asset_url }}&quot;&gt;&lt;/script&gt;
 &lt;script defer src=&quot;{{ &#x27;accessibility-init.js&#x27; | asset_url }}&quot;&gt;&lt;/script&gt;</code></pre>
+              </figure>
               <p>
                 The theme serves these assets through Shopify's own asset
                 infrastructure. The widget makes no requests after loading.
@@ -302,10 +385,13 @@ export class AccessibilityComponent {
                 your script and supply an owner nonce when fallback styles need
                 one.
               </p>
-              <pre><code data-snippet="self-hosted" data-language="html">&lt;script src=&quot;/vendor/accessiblit.min.js&quot;&gt;&lt;/script&gt;
+              <figure class="code-sample">
+                <figcaption>HTML<span>Integration example</span></figcaption>
+                <pre><code data-snippet="self-hosted" data-language="html">&lt;script src=&quot;/vendor/accessiblit.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   Accessiblit.init({ position: &#x27;bottom-right&#x27; });
 &lt;/script&gt;</code></pre>
+              </figure>
             </section>
             <section aria-labelledby="private">
               <h2 id="private">Private distribution</h2>
@@ -315,10 +401,15 @@ export class AccessibilityComponent {
                 your consuming project. Adjust the path to the file you
                 received.
               </p>
-              <pre><code data-snippet="pack" data-language="sh">npm run build
+              <figure class="code-sample">
+                <figcaption>
+                  Terminal<span>Integration example</span>
+                </figcaption>
+                <pre><code data-snippet="pack" data-language="sh">npm run build
 npm pack
 # In the consuming project:
 npm install ./path/to/widgets-accessibility-0.1.1.tgz</code></pre>
+              </figure>
               <h3>Git source</h3>
               <p>
                 For private distribution, use these build-and-pack steps with
@@ -327,12 +418,17 @@ npm install ./path/to/widgets-accessibility-0.1.1.tgz</code></pre>
                 committed dist files. Build it before packing; do not assume a
                 bare Git dependency includes built artifacts.
               </p>
-              <pre><code data-snippet="git" data-language="sh">git clone https://github.com/qasimfida/accessibility.git
+              <figure class="code-sample">
+                <figcaption>
+                  Terminal<span>Integration example</span>
+                </figcaption>
+                <pre><code data-snippet="git" data-language="sh">git clone https://github.com/qasimfida/accessibility.git
 cd accessiblit
 git checkout 03037d0
 npm ci
 npm run build
 npm pack</code></pre>
+              </figure>
               <h3>Private registry</h3>
               <p>
                 Your team can distribute the package through its registry and
@@ -340,7 +436,12 @@ npm pack</code></pre>
                 with yours; no credentials belong in page source or these
                 snippets.
               </p>
-              <pre><code data-snippet="private-registry" data-language="sh">npm install @widgets/accessibility --registry=https://registry.example.invalid</code></pre>
+              <figure class="code-sample">
+                <figcaption>
+                  Terminal<span>Integration example</span>
+                </figcaption>
+                <pre><code data-snippet="private-registry" data-language="sh">npm install @widgets/accessibility --registry=https://registry.example.invalid</code></pre>
+              </figure>
             </section>
           </div>
         </div>
