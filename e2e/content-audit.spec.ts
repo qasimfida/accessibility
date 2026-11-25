@@ -22,23 +22,53 @@ test('walks production content controls by keyboard and measures targets', async
     expect(box.width).toBeGreaterThanOrEqual(24);
     expect(box.height).toBeGreaterThanOrEqual(24);
   }
+  await expect(
+    dialog.getByRole('button', { name: 'Close', exact: true }),
+  ).toBeFocused();
+  const expected = await dialog.locator('button,input').evaluateAll((nodes) =>
+    nodes.flatMap((node, index) => {
+      if (
+        node instanceof HTMLInputElement &&
+        node.type === 'radio' &&
+        !node.checked
+      )
+        return [];
+      if (
+        (node as HTMLButtonElement).disabled ||
+        (node as HTMLElement).tabIndex < 0
+      )
+        return [];
+      return [index];
+    }),
+  );
   const names: string[] = [];
-  for (let i = 0; i < 30; i++) {
+  const visited: number[] = [];
+  // Visit every remaining dialog stop before native host exit; allow a launcher stop if reached.
+  for (let i = 0; i < expected.length + 1; i++) {
     await page.keyboard.press(browserName === 'webkit' ? 'Alt+Tab' : 'Tab');
-    names.push(
-      await page.evaluate(() => {
-        const active = document.querySelector('[data-accessiblit-host]')
-          ?.shadowRoot?.activeElement;
-        return (
+    const focused = await page.evaluate(() => {
+      const active = document.querySelector('[data-accessiblit-host]')
+        ?.shadowRoot?.activeElement;
+      const panel = document
+        .querySelector('[data-accessiblit-host]')
+        ?.shadowRoot?.querySelector('[role=dialog]');
+      return {
+        name:
           active?.getAttribute('aria-label') ??
           active?.textContent?.trim() ??
-          'host page'
-        );
-      }),
-    );
+          'host page',
+        index:
+          panel && active
+            ? [...panel.querySelectorAll('button,input')].indexOf(active)
+            : -1,
+      };
+    });
+    names.push(focused.name);
+    if (focused.index >= 0) visited.push(focused.index);
     if (names[names.length - 1] === 'host page') break;
   }
-  expect(names).toContain('host page');
+  expect(visited).toEqual(expected.slice(1));
+  expect(names[names.length - 1]).toBe('host page');
   await page.keyboard.press('Escape');
   await page.keyboard.press('Alt+KeyA');
   await expect(dialog).toBeVisible();
