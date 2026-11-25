@@ -34,3 +34,19 @@ test('FAQ uses the home disclosure appearance and native keyboard behaviour', as
   );
   await expect(summary).toBeFocused();
 });
+
+for (const route of ['toolkit/', 'install/', 'contact/', 'faq/'])
+  test(`${route} has the shared editorial hero and a working section action`, async ({
+    page,
+  }) => {
+    await page.goto(route);
+    const hero = page.locator('.product-page-hero');
+    await expect(hero.getByRole('heading', { level: 1 })).toHaveCount(1);
+    await expect(hero.locator('.eyebrow')).toBeVisible();
+    const action = hero.getByRole('link');
+    await expect(action).toHaveCount(1);
+    const href = await action.getAttribute('href');
+    expect(href).toMatch(/^#/);
+    await action.click();
+    await expect(page.locator(href!)).toBeInViewport();
+  });

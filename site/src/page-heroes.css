@@ -1,0 +1,61 @@
+/* The home hero's typography, paper and action rhythm extend to product routes. */
+.product-page-hero {
+  background: var(--cream);
+  padding-block: 6rem 5rem;
+  margin-block-end: 4rem;
+  text-align: center;
+}
+.product-page-hero .eyebrow {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+.product-page-hero h1 {
+  max-inline-size: 50rem;
+  margin-block: 2rem 2.5rem;
+  margin-inline: auto;
+  font-size: clamp(2rem, 3.48vw, 3.125rem);
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+.product-page-hero .lede {
+  max-inline-size: 44rem;
+  margin: 0 auto 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.product-page-hero .button {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-radius: 12px;
+}
+.product-page-hero .button:hover {
+  background: var(--accent-hover);
+  color: var(--accent-hover-ink);
+}
+#answers,
+#contact-options {
+  scroll-margin-block-start: calc(var(--site-header-height, 6rem) + 1rem);
+}
+@media (max-width: 48rem) {
+  .product-page-hero {
+    padding-block: 3rem;
+    margin-block-end: 3rem;
+  }
+}
+@media (forced-colors: active) {
+  .product-page-hero {
+    background: Canvas;
+    color: CanvasText;
+  }
+  .product-page-hero .button,
+  .product-page-hero .button:hover {
+    background: Canvas;
+    color: LinkText;
+  }
+}
