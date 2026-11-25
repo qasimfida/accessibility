@@ -1,0 +1,172 @@
+{
+  "preExisting": {
+    "source": "5defde1 (before this UI task)",
+    "run": 45400544655,
+    "job": 138467666404,
+    "heap": {
+      "warmup": 1000,
+      "retained": [0, 0, 0, 0, 0, 0],
+      "rows": [
+        {
+          "cycles": 0,
+          "bytes": 1848272,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 40,
+          "bytes": 1848272,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 80,
+          "bytes": 1848920,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 120,
+          "bytes": 1848932,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 160,
+          "bytes": 1848920,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 200,
+          "bytes": 1848920,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        }
+      ],
+      "slopeBytesPerCycle": 3.7114285714285713,
+      "standardError": 1.2659142054302905,
+      "lower95": 0.1966874053326686
+    }
+  },
+  "followup": {
+    "run": 45628182536,
+    "source": "03e3ec2",
+    "failures": [
+      {
+        "name": "chromium-22",
+        "heap": {
+          "warmup": 1000,
+          "retained": [0, 0, 0, 0, 0, 0],
+          "rows": [
+            {
+              "cycles": 0,
+              "bytes": 1822560,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 40,
+              "bytes": 1822560,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 80,
+              "bytes": 1823208,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 120,
+              "bytes": 1823208,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 160,
+              "bytes": 1823220,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 200,
+              "bytes": 1823208,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            }
+          ],
+          "slopeBytesPerCycle": 3.7285714285714286,
+          "standardError": 1.2532569813188712,
+          "lower95": 0.2489723490735556
+        }
+      },
+      {
+        "name": "pixel-20",
+        "heap": {
+          "warmup": 1000,
+          "retained": [0, 0, 0, 0, 0, 0],
+          "rows": [
+            {
+              "cycles": 0,
+              "bytes": 1848700,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 40,
+              "bytes": 1848688,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 80,
+              "bytes": 1849336,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 120,
+              "bytes": 1849336,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 160,
+              "bytes": 1849348,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            },
+            {
+              "cycles": 200,
+              "bytes": 1849336,
+              "nodes": 38,
+              "listeners": 13,
+              "retained": 0
+            }
+          ],
+          "slopeBytesPerCycle": 3.6857142857142855,
+          "standardError": 1.2482641007840138,
+          "lower95": 0.21997766441301447
+        }
+      }
+    ]
+  }
+}

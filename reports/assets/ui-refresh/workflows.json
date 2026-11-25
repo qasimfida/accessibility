@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-25T14:14:59.120Z",
+  "pages": {
+    "run": 45621255578,
+    "source": "09865159f4e73dc7616ca90be04986eb74e2d926",
+    "build": "success",
+    "deploy": "success"
+  },
+  "initialCi": 45621255711,
+  "followup": {
+    "run": 45628182536,
+    "source": "03e3ec2a215c86e65f4af371e6afa03570a2c4a3",
+    "jobs": [
+      {
+        "id": 139253897752,
+        "name": "init trend (22)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898164,
+        "name": "init trend (20)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898389,
+        "name": "browsers (22, iphone)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898401,
+        "name": "browsers (20, firefox)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898405,
+        "name": "verify (20)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898453,
+        "name": "site (22)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898462,
+        "name": "browsers (22, firefox)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898483,
+        "name": "browsers (22, pixel)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898522,
+        "name": "browsers (20, webkit)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898559,
+        "name": "browsers (20, iphone)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898584,
+        "name": "browsers (20, pixel)",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "id": 139253898594,
+        "name": "verify (22)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253898645,
+        "name": "browsers (22, webkit)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253899013,
+        "name": "browsers (20, chromium)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 139253899120,
+        "name": "browsers (22, chromium)",
+        "status": "completed",
+        "conclusion": "failure"
+      }
+    ]
+  },
+  "notes": [
+    "No full-matrix pass is claimed. Heap trend assertions and all sampling counts remain unchanged.",
+    "The inherited heap failure before this task and both follow-up failures are retained in heap-history.json.",
+    "Local UI, website, validation and performance evidence remains separately recorded."
+  ]
+}

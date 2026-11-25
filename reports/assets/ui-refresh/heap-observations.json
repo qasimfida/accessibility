@@ -1,0 +1,117 @@
+{
+  "initialCi": {
+    "run": 45621255711,
+    "source": "0986515",
+    "result": "FAIL",
+    "heap": {
+      "warmup": 1000,
+      "retained": [0, 0, 0, 0, 0, 0],
+      "rows": [
+        {
+          "cycles": 0,
+          "bytes": 1848700,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 40,
+          "bytes": 1848688,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 80,
+          "bytes": 1849336,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 120,
+          "bytes": 1849336,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 160,
+          "bytes": 1849336,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 200,
+          "bytes": 1849336,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        }
+      ],
+      "slopeBytesPerCycle": 3.66,
+      "standardError": 1.2483818097269532,
+      "lower95": 0.19393656629264955
+    }
+  },
+  "notes": [
+    "The Linux Pixel sample contains a 648-byte step and positive lower bound 0.19393656629264955; all instance/host WeakRefs are collected and node/listener counts are constant.",
+    "Cause not established. The same unchanged test is flat on this Mac. No heap threshold, warm-up count, sample count or assertion was changed.",
+    "Retain this failure even if a later CI run passes; do not claim a heap fix from a non-reproducing local result."
+  ],
+  "local": {
+    "result": "PASS",
+    "heap": {
+      "warmup": 1000,
+      "retained": [0, 0, 0, 0, 0, 0],
+      "rows": [
+        {
+          "cycles": 0,
+          "bytes": 1845024,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 40,
+          "bytes": 1845024,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 80,
+          "bytes": 1845024,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 120,
+          "bytes": 1845024,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 160,
+          "bytes": 1845024,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        },
+        {
+          "cycles": 200,
+          "bytes": 1845024,
+          "nodes": 38,
+          "listeners": 13,
+          "retained": 0
+        }
+      ],
+      "slopeBytesPerCycle": 0,
+      "standardError": 0,
+      "lower95": 0
+    }
+  }
+}
