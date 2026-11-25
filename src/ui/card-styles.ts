@@ -2,7 +2,7 @@
 export const CARD_CSS = `
 .accessiblit-group { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 20px; }
 .accessiblit-group h3 { grid-column:1/-1; margin:0 2px 4px; color:var(--ui-muted); font-size:13px; line-height:1.5; font-weight:650; }
-.accessiblit-feature { grid-column:1/-1; display:grid; grid-template-columns:28px minmax(0,1fr); gap:0 8px; min-inline-size:0; padding:12px; border:1px solid var(--ui-quiet); border-radius:20px; background:var(--ui-bg); text-align:start; }
+.accessiblit-feature { grid-column:1/-1; display:grid; grid-template-columns:28px minmax(0,1fr); gap:0 8px; min-inline-size:0; padding:12px; border:1px solid var(--ui-quiet); border-radius:16px; background:var(--ui-bg); box-shadow:0 2px 6px #0a254006; text-align:start; }
 .accessiblit-feature h4 { grid-column:2; margin:0; font-size:15px; line-height:1.4; font-weight:500; }
 .accessiblit-feature p,.accessiblit-empty { grid-column:2; margin:3px 0 0; color:var(--ui-muted); font-size:13px; line-height:1.5; }
 .accessiblit-feature-icon { grid-column:1; grid-row:1/3; display:flex; align-items:center; justify-content:center; inline-size:28px; block-size:28px; border-radius:12px; background:var(--ui-quiet); color:var(--ui-accent); }
@@ -27,12 +27,12 @@ export const CARD_CSS = `
 @media (hover:hover) and (forced-colors:none) {
  .accessiblit-surface .accessiblit-reset:hover,.accessiblit-surface .accessiblit-step:not([aria-disabled=true]):hover { background:light-dark(#0038ac,#b8dcff); color:var(--ui-accent-ink); }
 }
-.accessiblit-binary-feature { grid-column:auto; grid-template-columns:28px minmax(0,1fr); gap:4px 6px; padding:10px; text-align:start; }
+.accessiblit-binary-feature { grid-column:auto; grid-template-columns:28px minmax(0,1fr); gap:6px 8px; grid-template-rows:auto 1fr auto; padding:12px; text-align:start; }
 .accessiblit-binary-feature .accessiblit-feature-icon { grid-column:1; grid-row:1; }
 .accessiblit-binary-feature h4 { grid-column:2; align-self:center; font-size:14px; }
 .accessiblit-binary-feature p { grid-column:1/-1; }
 .accessiblit-binary-feature p { font-size:13px; }
-.accessiblit-binary-feature .accessiblit-toggle { grid-column:1/-1; margin-block-start:4px; justify-content:center; }
+.accessiblit-binary-feature .accessiblit-toggle { grid-column:1/-1; margin-block-start:8px; justify-content:center; }
 .accessiblit-forced-colours-note,.accessiblit-empty { grid-column:1/-1; }
 .accessiblit-surface .accessiblit-close { border-color:transparent; background:transparent; box-shadow:none; }
 .accessiblit-surface .accessiblit-close:hover,.accessiblit-surface .accessiblit-close:focus { color:var(--ui-focus); border-color:transparent; }
@@ -52,8 +52,8 @@ export const CARD_CSS = `
 .accessiblit-surface .accessiblit-close:hover,.accessiblit-surface .accessiblit-close:focus { border-color:var(--ui-focus); }
 
 .accessiblit-surface .accessiblit-binary-feature .accessiblit-toggle { position:relative; inline-size:48px; block-size:44px; padding:0; margin-inline:auto; display:flex; align-items:center; justify-content:center; border:0 solid var(--ui-border); background:transparent; color:var(--ui-ink); }
-.accessiblit-toggle::after { content:""; display:block; inline-size:36px; block-size:22px; border:1px solid var(--ui-border); border-radius:20px; background:var(--ui-quiet); }
-.accessiblit-toggle::before { content:""; position:absolute; inline-size:14px; block-size:14px; inset-inline-start:10px; border-radius:50%; background:var(--ui-ink); }
+.accessiblit-toggle::after { content:""; display:block; inline-size:40px; block-size:24px; border:1px solid var(--ui-border); border-radius:20px; background:var(--ui-quiet); }
+.accessiblit-toggle::before { content:""; position:absolute; inline-size:16px; block-size:16px; inset-inline-start:8px; border-radius:50%; background:var(--ui-ink); box-shadow:0 1px 3px #0a25402b; }
 .accessiblit-toggle[aria-pressed=true]::after { background:var(--ui-accent); border-color:var(--ui-accent); }
 .accessiblit-toggle[aria-pressed=true]::before { inset-inline-start:24px; background:var(--ui-accent-ink); }
 @media(forced-colors:active) { .accessiblit-toggle[aria-pressed=true]::after { background:CanvasText; border-color:CanvasText; forced-color-adjust:none; } .accessiblit-toggle[aria-pressed=true]::before { background:Canvas; forced-color-adjust:none; } }
