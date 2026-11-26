@@ -43,6 +43,20 @@ for (const route of ['toolkit/', 'install/', 'contact/', 'faq/'])
     const hero = page.locator('.product-page-hero');
     await expect(hero.getByRole('heading', { level: 1 })).toHaveCount(1);
     await expect(hero.locator('.eyebrow')).toBeVisible();
+    for (const width of [1440, 320]) {
+      await page.setViewportSize({ width, height: 900 });
+      const centres = await hero
+        .locator('.eyebrow,h1,.lede')
+        .evaluateAll((elements) =>
+          elements.map((e) => {
+            const box = e.getBoundingClientRect();
+            return box.left + box.width / 2;
+          }),
+        );
+      expect(Math.max(...centres) - Math.min(...centres)).toBeLessThanOrEqual(
+        1,
+      );
+    }
     const action = hero.getByRole('link');
     await expect(action).toHaveCount(1);
     const href = await action.getAttribute('href');

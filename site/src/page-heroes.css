@@ -5,8 +5,15 @@
   margin-block-end: 4rem;
   text-align: center;
 }
+.product-page-hero > .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .product-page-hero .eyebrow {
-  margin: 0;
+  margin: 0 auto;
+  inline-size: fit-content;
+  max-inline-size: 100%;
   color: var(--muted);
   font-size: 0.875rem;
   font-weight: 400;
