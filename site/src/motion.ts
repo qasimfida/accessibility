@@ -1,7 +1,7 @@
 import { inView } from 'motion';
 import { animate } from 'motion/mini';
 
-/** Enhance the static landing page without hiding content or moving focused controls. */
+/** Enhance static pages without hiding content or moving focused controls. */
 export function startSiteMotion(doc: Document): () => void {
   const view = doc.defaultView;
   if (!view) return () => {};
@@ -37,12 +37,25 @@ export function startSiteMotion(doc: Document): () => void {
       return;
     }
     if (stopObserving) return;
-    const elements = doc.querySelectorAll<HTMLElement>(
+    const candidates = doc.querySelectorAll<HTMLElement>(
       '.product-hero h1, .page-hero h1, .section-heading, .journey-card, ' +
         '.benefit-card, .focus-scene, .format-grid, .principle-quote, ' +
         '.privacy-visual, .donation-card, ' +
-        'main.wrap > h1, main.wrap > section, .page-grid > article, .mosaic-tile, .inner-band .wrap',
+        'main.wrap > h1, main.wrap > section, .page-grid > article, .mosaic-tile, .inner-band .wrap, ' +
+        '.inner-content > section, .docs-start, .docs-article > section, ' +
+        '.faq-list > details, .contact-intro, .toolkit-invitation, .footer-grid > div',
     );
+    const selected = new Set<Element>(candidates);
+    // Animate one containing section rather than stacking transforms on its descendants.
+    const elements = Array.from(candidates).filter((element) => {
+      for (
+        let parent = element.parentElement;
+        parent;
+        parent = parent.parentElement
+      )
+        if (selected.has(parent)) return false;
+      return true;
+    });
     const visit = (element: Element) => {
       if (disabled() || visited.has(element)) return;
       visited.add(element);

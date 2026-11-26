@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { loadSite } from './helpers';
+import { loadSite, SITE_PAGES } from './helpers';
 
 test.beforeEach(async ({ page }) => {
   // Observe real WAAPI calls without replacing or delaying the animation engine.
@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
     const animate = Element.prototype.animate;
     Object.defineProperty(window, '__siteMotionCalls', { value: [] });
     Element.prototype.animate = function (...args) {
-      if (this.closest('main')) {
+      if (this.closest('main, footer')) {
         const calls = Reflect.get(window, '__siteMotionCalls') as unknown[];
         calls.push({
           element: this.className,
@@ -215,3 +215,27 @@ test('hero motion waits for substantial product exposure while scrolling', async
     )
     .toBe(1);
 });
+
+for (const route of SITE_PAGES) {
+  test(`scroll entries reach the shared footer on ${route || 'home'}`, async ({
+    page,
+  }) => {
+    const errors = await loadSite(page, route);
+    const footer = page.locator('.footer-grid > div').first();
+    await footer.scrollIntoViewIfNeeded();
+    await expect
+      .poll(() =>
+        page.evaluate(() =>
+          Reflect.get(window, '__siteMotionCalls').some(
+            (call: { text: string }) => call.text.includes('A small toolkit.'),
+          ),
+        ),
+      )
+      .toBe(true);
+    await expect
+      .poll(() => footer.evaluate((element) => element.getAnimations().length))
+      .toBe(0);
+    await expect(footer).not.toHaveAttribute('style');
+    expect(errors).toEqual([]);
+  });
+}
