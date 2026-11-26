@@ -1,6 +1,8 @@
+import { startNavigation } from './navigation';
 import { startSiteMotion } from './motion';
 import { startJourney } from './journey';
 
+startNavigation(document);
 startSiteMotion(document);
 startJourney(document);
 

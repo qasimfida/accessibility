@@ -91,6 +91,12 @@ test('keyboard visits every content page and operates the real demo', async ({
           ? 'Alt+Shift+Tab'
           : 'Shift+Tab'
         : tab;
+    const menu = page.locator('.mobile-menu > summary');
+    if (await menu.isVisible()) {
+      await tabTo(page, menu, navigationKey);
+      await page.keyboard.press('Enter');
+      path.push('Menu');
+    }
     await tabTo(page, link, navigationKey);
     await page.keyboard.press('Enter');
     await expect(page).toHaveURL(new RegExp(`/accessibility/${route}$`));
