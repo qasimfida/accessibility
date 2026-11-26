@@ -11,9 +11,23 @@ for (const path of SITE_PAGES)
       const errors = await loadSite(page, path, profile);
       await expect(page.locator('main h1')).toHaveCount(1);
       await expect(page.getByRole('main')).toHaveCount(1);
-      await expect(
-        page.getByRole('navigation', { name: 'Main navigation', exact: true }),
-      ).toHaveCount(1);
+      const menu = page.locator('.mobile-menu');
+      const toggle = menu.locator('summary');
+      const mobile = await toggle.isVisible();
+      const navigation = page.getByRole('navigation', {
+        name: 'Main navigation',
+        exact: true,
+      });
+      await expect(navigation).toHaveCount(mobile ? 0 : 1);
+      if (mobile) {
+        await toggle.click();
+        await expect(navigation).toHaveCount(1);
+        expect((await new AxeBuilder({ page }).analyze()).violations).toEqual(
+          [],
+        );
+        await toggle.press('Escape');
+        await expect(toggle).toBeFocused();
+      }
       expect(
         await page.evaluate(
           () =>
