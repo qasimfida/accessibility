@@ -22,6 +22,7 @@ test('top drawer opens, closes, restores focus and yields to desktop navigation'
     exact: true,
   });
   await expect(navigation).toBeVisible();
+  await expect(navigation).toHaveCSS('opacity', '1');
   await expect
     .poll(async () => {
       const header = await page.locator('header').boundingBox();
