@@ -63,13 +63,25 @@ export function startJourney(doc: Document): () => void {
     });
   };
   const cleanups: (() => void)[] = [];
-  cards.forEach((card, index) => {
-    const enter = () => {
-      if (fine.matches && wide.matches) select(index, true);
-    };
-    card.addEventListener('pointerenter', enter);
-    cleanups.push(() => card.removeEventListener('pointerenter', enter));
-  });
+  let pointerX: number | undefined;
+  let pointerY: number | undefined;
+  const move = (event: PointerEvent) => {
+    // Resizing beneath a stationary pointer fires enter events; only real movement selects.
+    if (event.clientX === pointerX && event.clientY === pointerY) return;
+    pointerX = event.clientX;
+    pointerY = event.clientY;
+    if (
+      !fine.matches ||
+      !wide.matches ||
+      !(event.target instanceof view.Element)
+    )
+      return;
+    const card = event.target.closest<HTMLElement>('.journey-card');
+    const index = card ? cards.indexOf(card) : -1;
+    if (index >= 0) select(index, true);
+  };
+  grid.addEventListener('pointermove', move);
+  cleanups.push(() => grid.removeEventListener('pointermove', move));
   buttons.forEach((button, index) => {
     const click = (event: MouseEvent) => select(index, event.detail > 0);
     button.addEventListener('click', click);

@@ -30,6 +30,15 @@ test('product cards expand through hover and stable keyboard controls', async ({
   ) {
     await grid.locator('.journey-card').nth(1).hover();
     await expect(grid).toHaveAttribute('data-active', '1');
+    // Layout movement beneath the pointer must not restart card selection forever.
+    await expect
+      .poll(() =>
+        grid.evaluate(
+          (element) => element.getAnimations({ subtree: true }).length,
+        ),
+      )
+      .toBe(0);
+    await expect(grid).toHaveAttribute('data-active', '1');
   }
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await expect
