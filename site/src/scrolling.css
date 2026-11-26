@@ -1,0 +1,6 @@
+/* Native anchors preserve history, modified clicks and cross-document navigation. */
+@media (prefers-reduced-motion: no-preference) and (forced-colors: none) {
+  html:not(.accessiblit-stop-animations) {
+    scroll-behavior: smooth;
+  }
+}
