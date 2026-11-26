@@ -31,8 +31,8 @@ the drop-in toolkit keeps its system font and makes no network requests.
 - Light surfaces: paper #faf8f5, white, pale blue #e9f0fa.
 - Text: existing ink/muted tokens; maintain measured AA contrast.
 - Primary action: existing accessible blue; one dominant action per section.
-- Shapes: framed browser surfaces and restrained outlined orbits. Keep the hero
-  background flat rather than adding grain or an ambient glow. Decorative layers
+- Shapes: framed browser surfaces and restrained outlined orbits. Use static, low-opacity dot textures and outlined abstract orbits at hero edges,
+  keeping the reading area quiet and text on a measured opaque surface. Decorative layers
   are non-interactive and never the source of meaning.
 - Radius: 24 px feature surfaces, 16 px document surfaces, 12 px action corners.
 - Spacing: 8 px rhythm; 64–112 px desktop section padding, 40–64 px mobile.
@@ -105,7 +105,7 @@ broad blue story sections and a structured navy footer. Use original product
 facts and locally owned toolkit images. Never invent customers, awards or team
 photographs. Keep the existing home composition intact.
 
-Inner pages share breadcrumbs, a centred hero, 24 px tactile surfaces and the
+Inner pages omit breadcrumbs and share a centred hero, 24 px tactile surfaces and the
 same footer. Documentation pairs a desktop contents rail with a readable article;
 the rail becomes normal flow on smaller screens. FAQ answers use native details
 and summary, with privacy and limitations expanded for direct links. Contact
@@ -189,3 +189,27 @@ never recolour the entire card. Centre six registry-driven shortcuts in one
 wrapping row. Keep every shortcut 44 px, so narrow widths wrap rather than
 shrink targets or overflow. Native pressed states, focus visibility, tooltip
 behaviour and forced-colour support remain mandatory.
+
+## Navigation and scrolling
+
+Remove breadcrumb rows beneath the header. Mobile navigation opens downward
+from a native details/summary disclosure; the desktop navigation stays visible.
+Only one navigation is exposed at each breakpoint. Escape closes the drawer and
+returns focus to its summary; outside clicks and leaving the drawer close it
+without stealing focus. Keep a scrollable drawer on short screens and no focus
+trap. Native links and no-JavaScript navigation remain available.
+
+Use native smooth document scrolling for fragment links when reduced motion,
+forced colours and Stop animations do not prohibit it. Preserve URLs, history,
+modified clicks and ordinary cross-document navigation; the latter has no scroll
+journey to animate until the destination loads. Keep anchor clearance below the
+sticky header. Entry motion extends to article sections, FAQ disclosures and
+footer columns, without opacity-hidden content or nested moving surfaces.
+
+Footer order is brand, Toolkit, Project, Integrations, Good to know. About,
+Contact and Options reference appear only in Project, never as a trailing row.
+On small screens the brand spans a compact two-column link grid; preserve at
+least 24 px targets and readable labels. Hero eyebrows, headlines and ledes share
+the same centre axis at every viewport size. Decorative textures/orbits are
+static, non-interactive, clipped to their own section, and hidden in forced
+colours and print.
