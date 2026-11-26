@@ -92,12 +92,14 @@ test('keyboard visits every content page and operates the real demo', async ({
           : 'Shift+Tab'
         : tab;
     const menu = page.locator('.mobile-menu > summary');
-    if (await menu.isVisible()) {
+    const mobile = await menu.isVisible();
+    if (mobile) {
       await tabTo(page, menu, navigationKey);
       await page.keyboard.press('Enter');
       path.push('Menu');
     }
-    await tabTo(page, link, navigationKey);
+    // After entering a disclosure, advance through its links; reverse Tab leaves it.
+    await tabTo(page, link, mobile ? tab : navigationKey);
     await page.keyboard.press('Enter');
     await expect(page).toHaveURL(new RegExp(`/accessibility/${route}$`));
     path.push(label);
