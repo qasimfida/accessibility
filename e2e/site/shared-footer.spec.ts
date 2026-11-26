@@ -10,6 +10,23 @@ test('every route renders the same footer with working framework destinations', 
     await page.goto(path || './');
     const footer = page.locator('footer');
     await expect(footer).toHaveCount(1);
+    expect(await footer.locator('.footer-grid h2').allTextContents()).toEqual([
+      'Toolkit',
+      'Project',
+      'Integrations',
+      'Good to know',
+    ]);
+    await expect(footer.locator(':scope > nav')).toHaveCount(0);
+    for (const name of ['About', 'Contact', 'Options reference']) {
+      await expect(footer.getByRole('link', { name, exact: true })).toHaveCount(
+        1,
+      );
+      await expect(
+        footer
+          .getByRole('navigation', { name: 'Project links' })
+          .getByRole('link', { name, exact: true }),
+      ).toBeVisible();
+    }
     const html = await footer.innerHTML();
     if (previous) expect(html).toBe(previous);
     previous = html;
