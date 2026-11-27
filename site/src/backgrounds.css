@@ -1,6 +1,9 @@
 /* Static, local textures stay behind content and never enter the accessibility tree. */
 .product-hero,
 .page-hero {
+  inline-size: 100%;
+  margin-inline: 0;
+  background-color: var(--cream);
   position: relative;
   isolation: isolate;
   overflow: clip;
@@ -26,7 +29,7 @@
   inline-size: clamp(240px, 38vw, 520px);
   aspect-ratio: 1;
   inset-inline-end: -20%;
-  inset-block-start: 12%;
+  inset-block-start: 48px;
   border: 1px solid #4774a421;
   border-radius: 50%;
   box-shadow:
