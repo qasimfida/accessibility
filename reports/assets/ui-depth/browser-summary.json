@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-27",
+  "source": "4946815",
+  "siteResult": "580 passed (5.9m)",
+  "projects": {
+    "chromium": 56,
+    "firefox": 56,
+    "webkit": 56,
+    "iphone": 56,
+    "pixel": 56
+  },
+  "axeProfileCases": 280,
+  "axeViolations": 0,
+  "minimumSiteTextContrast": 6.045473927095201,
+  "minimumWidgetTextContrast": 6.847968092474467,
+  "minimumSiteTargetPx": 36,
+  "minimumWidgetTargetPx": 24,
+  "runtimeUIResult": "136 passed, 2 existing CDP-only skips",
+  "runtimeUIAxeProfiles": 48,
+  "runtimeMinimumTextContrast": 6.847968092474467,
+  "runtimeMinimumFocusContrast": 6.847968092474467,
+  "runtimeMinimumBoundaryContrast": 3.804925090992188,
+  "network": [
+    {
+      "project": "chromium",
+      "requestCount": 44,
+      "thirdParty": []
+    },
+    {
+      "project": "firefox",
+      "requestCount": 52,
+      "thirdParty": []
+    },
+    {
+      "project": "webkit",
+      "requestCount": 44,
+      "thirdParty": []
+    },
+    {
+      "project": "iphone",
+      "requestCount": 44,
+      "thirdParty": []
+    },
+    {
+      "project": "pixel",
+      "requestCount": 44,
+      "thirdParty": []
+    }
+  ],
+  "keyboard": [
+    {
+      "project": "chromium",
+      "tab": "Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Documentation",
+        "Toolkit",
+        "About",
+        "Contact",
+        "FAQ",
+        "Home"
+      ],
+      "errors": []
+    },
+    {
+      "project": "firefox",
+      "tab": "Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Documentation",
+        "Toolkit",
+        "About",
+        "Contact",
+        "FAQ",
+        "Home"
+      ],
+      "errors": []
+    },
+    {
+      "project": "webkit",
+      "tab": "Alt+Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Documentation",
+        "Toolkit",
+        "About",
+        "Contact",
+        "FAQ",
+        "Home"
+      ],
+      "errors": []
+    },
+    {
+      "project": "iphone",
+      "tab": "Alt+Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Menu",
+        "Documentation",
+        "Menu",
+        "Toolkit",
+        "Menu",
+        "About",
+        "Menu",
+        "Contact",
+        "Menu",
+        "FAQ",
+        "Menu",
+        "Home"
+      ],
+      "errors": []
+    },
+    {
+      "project": "pixel",
+      "tab": "Tab",
+      "path": [
+        "Skip to main content",
+        "Main",
+        "Open live demo options",
+        "Close",
+        "Increase Font size",
+        "Reset all",
+        "Launcher focus restored",
+        "Shift+Tab back to the header",
+        "Menu",
+        "Documentation",
+        "Menu",
+        "Toolkit",
+        "Menu",
+        "About",
+        "Menu",
+        "Contact",
+        "Menu",
+        "FAQ",
+        "Menu",
+        "Home"
+      ],
+      "errors": []
+    }
+  ]
+}
