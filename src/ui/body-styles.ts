@@ -15,6 +15,6 @@ export const BODY_CSS = `
 .accessiblit-body .accessiblit-feature .accessiblit-options { justify-content:center; margin-block-start:12px; }
 .accessiblit-body .accessiblit-feature .accessiblit-toggle { flex:none; margin-block-start:auto; padding-block-start:0; }
 .accessiblit-body .accessiblit-binary-feature p { margin-block-end:8px; }
-@container (max-width:320px) { .accessiblit-body .accessiblit-group { grid-template-columns:minmax(0,1fr); } }
+@container (max-width:320px) { .accessiblit-body .accessiblit-feature:not(.accessiblit-binary-feature) { grid-column:1/-1; } }
 @media(forced-colors:active) { .accessiblit-body { background:Canvas; } .accessiblit-body .accessiblit-feature { box-shadow:none; } }
 `;
