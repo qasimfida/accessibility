@@ -5,7 +5,7 @@ live in `src/ui/brand.ts` as `BRAND_PATH_DATA`, separated by `|` in a 24×24 vie
 Change that one source to customise the artwork. Paths may contain SVG path
 commands, numbers, spaces and commas; URLs and markup are rejected by the helper.
 
-From a source checkout with development dependencies installed:
+From a source checkout with development dependencies installed and the `cwebp` encoder from libwebp available (`brew install webp` on macOS):
 
 ```sh
 npx playwright install chromium
@@ -19,8 +19,10 @@ npm run verify
 
 `sync-brand.mjs` updates all website header marks and the shared footer partial, the SVG favicon and the
 SVG/PNG social image. Launcher and panel marks use the same source directly.
-`capture-toolkit.mjs` refreshes the website's 400×680 panel image from the working
-local build. Rebuild the site afterward to include that refreshed image.
+`capture-toolkit.mjs` refreshes the website's 400×680 `toolkit-white.webp` panel
+image from the working local build. It encodes a temporary PNG losslessly and
+removes that temporary file. The encoder is needed only for maintainer recapture;
+ordinary builds and CI consume the committed WebP without it. Rebuild the site afterward to include that refreshed image.
 
 The SVG favicon and social SVG are also editable vector assets. Regeneration
 uses the authoritative paths in `brand.ts`, so copy artwork changes back there
