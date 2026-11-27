@@ -52,6 +52,11 @@ export function controlShell(context: ControlContext) {
   const text = featureText(feature, messages);
   const element = doc.createElement('div');
   element.className = 'accessiblit-feature';
+  if (
+    feature.control.type === 'select' &&
+    feature.control.presentation !== 'stepper'
+  )
+    element.classList.add('accessiblit-feature--options');
   const label = doc.createElement('h4');
   label.id = `${prefix}-${feature.id}-label`;
   label.textContent = text.label;

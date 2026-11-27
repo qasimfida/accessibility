@@ -1,3 +1,4 @@
+import { BODY_CSS } from './body-styles';
 import { CARD_CSS } from './card-styles';
 import { LAUNCHER_CSS } from './launcher-styles';
 import type { placeUI } from './placement';
@@ -15,6 +16,7 @@ export const UI_CSS = `${LAUNCHER_CSS}
 .accessiblit-body { flex:1; min-block-size:0; padding:12px 12px 0; container-type:inline-size; background:var(--ui-body); overflow:auto; overscroll-behavior:contain; scroll-padding:12px; }
 .accessiblit-footer { flex:none; padding:10px 12px; border-block-start:1px solid var(--ui-border); background:var(--ui-bg); }
 ${CARD_CSS}
+${BODY_CSS}
 .accessiblit-cursor-note { display:none; }
 @media not all and (any-pointer:fine) { .accessiblit-cursor-note { display:block; } }
 .accessiblit-forced-colours-note { display:none; }
