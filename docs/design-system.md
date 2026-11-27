@@ -213,3 +213,32 @@ least 24 px targets and readable labels. Hero eyebrows, headlines and ledes shar
 the same centre axis at every viewport size. Decorative textures/orbits are
 static, non-interactive, clipped to their own section, and hidden in forced
 colours and print.
+
+## Full-bleed heroes and dimensional motion
+
+Every authored hero spans the viewport; a nested `.wrap` limits its readable
+content. Use the same warm paper, dot texture and orbital placement across
+routes, including About, Options and the error page. Never use viewport-width
+breakout tricks that introduce horizontal scrolling.
+
+Original CSS sculptures express depth through three translucent blue planes and
+fine elliptical orbits at the hero edge. On entry their layers assemble once,
+with staggered perspective transforms, then settle. Scrolling may gently rotate
+the decorative sculpture; it never moves text, steals scroll, hides content or
+requires dragging. Do not load 3D engines, videos or remote assets. Reduced
+motion, forced colours, print, hidden documents and Stop animations cancel the
+sculpture effects; keyboard focus also cancels current effects. The static
+composition remains the complete fallback.
+
+## Popup body: icon-led tiles
+
+Keep the existing popup header, branding, close action and shortcut row unchanged.
+The body uses a pale neutral canvas, two columns of centred white cards, circular
+icon wells, round blue stepper buttons and clear group headings. Descriptions
+remain visible and native labels, button names and radio semantics remain intact.
+Range and ordinal-stepper features occupy one tile; option groups span both
+columns. Binary tiles retain inset switches and never repaint the complete card.
+At very narrow widths use one column rather than shrink the 44 px stepper targets
+or clip translated text. System dark/forced colours and text-spacing reflow take
+priority over the light reference. This section supersedes the earlier compact
+body alignment rules only; it does not change the header or the public API.
