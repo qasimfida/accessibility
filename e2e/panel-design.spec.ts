@@ -47,8 +47,13 @@ for (const width of [1280, 320])
       .evaluateAll((nodes) =>
         nodes.slice(0, 2).map((node) => node.getBoundingClientRect().toJSON()),
       );
-    expect(cards[1]!.top).toBeGreaterThan(cards[0]!.bottom);
-    expect(cards[1]!.left).toBe(cards[0]!.left);
+    if (width > 320) {
+      expect(cards[1]!.top).toBe(cards[0]!.top);
+      expect(cards[1]!.left).toBeGreaterThan(cards[0]!.right);
+    } else {
+      expect(cards[1]!.top).toBeGreaterThan(cards[0]!.bottom);
+      expect(cards[1]!.left).toBe(cards[0]!.left);
+    }
     expect(cards[1]!.width).toBe(cards[0]!.width);
     const initialHeader = await header.boundingBox();
     const initialReset = await reset.boundingBox();
