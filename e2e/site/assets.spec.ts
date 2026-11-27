@@ -9,7 +9,7 @@ test('local editorial media and typography load with their real content types', 
   for (const [path, mime] of [
     ['fonts/manrope-latin.woff2', 'font/woff2'],
     ['images/editorial-demo.webp', 'image/webp'],
-    ['images/toolkit-white.png', 'image/png'],
+    ['images/toolkit-white.webp', 'image/webp'],
   ]) {
     const response = await request.get(path!);
     expect(response.status()).toBe(200);
