@@ -1,0 +1,66 @@
+/* Original CSS geometry: no video, canvas, remote assets or permanent render loop. */
+.hero-sculpture {
+  position: absolute;
+  z-index: -1;
+  inset-inline-end: -140px;
+  inset-block-start: 90px;
+  inline-size: 480px;
+  block-size: 400px;
+  pointer-events: none;
+  perspective: 900px;
+  transform-style: preserve-3d;
+  transform: translateY(calc(var(--site-hero-depth, 0) * -24px))
+    rotateY(calc(var(--site-hero-depth, 0) * 20deg));
+}
+.sculpture-plane {
+  position: absolute;
+  inset: 80px 70px;
+  border: 1px solid #76a5e8;
+  border-radius: 48px;
+  background: linear-gradient(135deg, #eaf5ff 4%, #9fc7ff 50%, #3675db 100%);
+  box-shadow:
+    inset 0 2px 2px #fff,
+    inset 0 -6px 2px #2356a969,
+    0 22px 36px #0047d81c;
+  transform: rotateX(54deg) rotateZ(-32deg) translateZ(-70px);
+}
+.sculpture-plane:nth-child(2) {
+  background: linear-gradient(135deg, #fff, #cde2fb 42%, #78a7ed);
+  transform: rotateX(54deg) rotateZ(-32deg);
+}
+.sculpture-plane:nth-child(3) {
+  background: linear-gradient(135deg, #f8fcff, #a6c7ff 55%, #0047d8);
+  transform: rotateX(54deg) rotateZ(-32deg) translateZ(70px);
+}
+.sculpture-plane::after {
+  content: '';
+  position: absolute;
+  inset: 24px;
+  border: 1px solid #ffffffa6;
+  border-radius: 28px;
+}
+.hero-sculpture::after {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 1px solid #3273d754;
+  border-radius: 50%;
+  transform: rotateX(60deg) rotateZ(-25deg);
+}
+@media (max-width: 79.99rem) {
+  .hero-sculpture {
+    inset-inline-end: -160px;
+    inline-size: 320px;
+    block-size: 300px;
+    opacity: 0.18;
+  }
+  .sculpture-plane {
+    inset: 70px 40px;
+    border-radius: 32px;
+  }
+}
+@media (forced-colors: active), print {
+  .hero-sculpture {
+    display: none;
+  }
+}

@@ -1,8 +1,10 @@
+import { startSculpture } from './sculpture';
 import { startNavigation } from './navigation';
 import { startSiteMotion } from './motion';
 import { startJourney } from './journey';
 
 startNavigation(document);
+startSculpture(document);
 startSiteMotion(document);
 startJourney(document);
 
